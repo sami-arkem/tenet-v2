@@ -1,0 +1,1 @@
+{"input":{"task":"kyc_screening","full_name":"Jane Smith","entity_type":"individual","nationality":"US"},"output":{"task":"kyc_screening","entity_name":"Jane Smith","risk_score":15,"risk_band":"LOW","decision":"PASS","findings":["No sanctions hit identified"],"confidence":0.95}}
