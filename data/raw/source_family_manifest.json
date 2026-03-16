@@ -1,0 +1,14 @@
+{
+  "source_families": [
+    "sanctions",
+    "pep",
+    "aml",
+    "transaction_monitoring",
+    "enforcement",
+    "regulations",
+    "frameworks",
+    "policies",
+    "corporate",
+    "licensing"
+  ]
+}
