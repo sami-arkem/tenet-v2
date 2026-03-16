@@ -29,3 +29,15 @@ def test_report_contract():
     assert response.status_code == 200
     data = response.json()
     assert data["report_pipeline"]["reasoning_layer"] == "tenet_structured_model"
+
+def test_task_mock_endpoints():
+    endpoints = [
+        "/kyc/mock",
+        "/kyb/mock",
+        "/risk-classification/mock",
+        "/gap-detection/mock",
+        "/document-compliance/mock",
+    ]
+    for endpoint in endpoints:
+        response = client.get(endpoint)
+        assert response.status_code == 200
