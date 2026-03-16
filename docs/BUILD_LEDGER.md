@@ -21,3 +21,5 @@ PHASE 0.1 COMPLETE
 | 0.3 | Raw case catalog checks | pytest passes | All core tasks covered | Missing input/output fails | DONE |
 
 | 0.3 | Dataset manifest checks | pytest passes | Manifest exists and covers core tasks | Missing core sections fail | DONE |
+
+| 0.4 | Dataset validation checks | pytest passes | Raw cases validated | Task mismatch fails | DONE |
