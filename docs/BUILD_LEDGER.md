@@ -15,3 +15,5 @@ PHASE 0.1 COMPLETE
 | 0.2 | Training seed loader working | pytest passes | Seed file loads | Missing input/output fails | DONE |
 
 | 0.2 | Training seed catalog checks | pytest passes | Required tasks present | Missing output fields fail | DONE |
+
+| 0.2 | Expanded training seed catalog checks | pytest passes | Required tasks present | Missing output fields fail | DONE |
