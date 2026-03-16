@@ -9,3 +9,5 @@
 PHASE 0.1 COMPLETE
 
 | 0.2 | Gold test loader working | pytest passes | Gold file loads | Missing fields fail | DONE |
+
+| 0.2 | Gold catalog checks | pytest passes | Required tasks present | Duplicate ids fail | DONE |
