@@ -1,16 +1,16 @@
 # ROADMAP NOW
 
 ## current phase
-- Phase 0.1
-- lock contracts
-- lock schemas
-- lock core API surface
+- Phase 0.3
+- build real training dataset
+- expand gold cases
+- remove mock-only mindset
 
 ## next phase
-- Phase 0.2
-- add gold test runner
-- validate every mock output
-- fail if schema breaks
+- Phase 0.4
+- dataset validation
+- task balance checks
+- fine-tune prep
 
 ## after that
-- start real training dataset build
+- first training run
