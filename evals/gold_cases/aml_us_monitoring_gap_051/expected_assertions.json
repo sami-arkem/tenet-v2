@@ -1,0 +1,10 @@
+{
+  "case_id": "aml_us_monitoring_gap_051",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {},
+    "minimums": {}
+  }
+}

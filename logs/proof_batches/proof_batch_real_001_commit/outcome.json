@@ -1,0 +1,118 @@
+{
+  "batch_label": "proof_batch_real_001_commit",
+  "item_count": 3,
+  "pre_counts": {
+    "gold_cases_count": 50,
+    "customer_packs_count": 5
+  },
+  "post_counts": {
+    "gold_cases_count": 52,
+    "customer_packs_count": 6
+  },
+  "import_results": [
+    {
+      "kind": "gold_case",
+      "id": "aml_us_monitoring_gap_051",
+      "source_dir": "intake/proof_batch/aml_us_monitoring_gap_051",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "gold_case",
+        "--id",
+        "aml_us_monitoring_gap_051",
+        "--source-dir",
+        "intake/proof_batch/aml_us_monitoring_gap_051",
+        "--title",
+        "AML US monitoring escalation gap",
+        "--domains",
+        "aml,governance",
+        "--jurisdictions",
+        "us",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.11,
+      "stdout_tail": "{\n  \"kind\": \"gold_case\",\n  \"id\": \"aml_us_monitoring_gap_051\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_monitoring_gap_051\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_monitoring_gap_051\",\n  \"dry_run\": false,\n  \"validation\": {\n    \"domains\": [\n      \"aml\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"us\"\n    ],\n    \"title\": \"Real AML US Monitoring Gap 051\"\n  },\n  \"skip_gates\": true,\n  \"committed\": true\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "gold_case",
+      "id": "kyc_uk_periodic_review_failure_052",
+      "source_dir": "intake/proof_batch/kyc_uk_periodic_review_failure_052",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "gold_case",
+        "--id",
+        "kyc_uk_periodic_review_failure_052",
+        "--source-dir",
+        "intake/proof_batch/kyc_uk_periodic_review_failure_052",
+        "--title",
+        "KYC UK periodic review failure",
+        "--domains",
+        "kyc,governance",
+        "--jurisdictions",
+        "uk",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.114,
+      "stdout_tail": "{\n  \"kind\": \"gold_case\",\n  \"id\": \"kyc_uk_periodic_review_failure_052\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/kyc_uk_periodic_review_failure_052\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_uk_periodic_review_failure_052\",\n  \"dry_run\": false,\n  \"validation\": {\n    \"domains\": [\n      \"kyc\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"uk\"\n    ],\n    \"title\": \"Real KYC UK Periodic Review Failure 052\"\n  },\n  \"skip_gates\": true,\n  \"committed\": true\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_us_pack_006",
+      "source_dir": "intake/proof_batch/aml_us_pack_006",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "customer_pack",
+        "--id",
+        "aml_us_pack_006",
+        "--source-dir",
+        "intake/proof_batch/aml_us_pack_006",
+        "--title",
+        "AML US customer evidence pack 006",
+        "--domains",
+        "aml,governance",
+        "--jurisdictions",
+        "us",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.117,
+      "stdout_tail": "{\n  \"kind\": \"customer_pack\",\n  \"id\": \"aml_us_pack_006\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_pack_006\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/data/customer_evidence_packs/aml_us_pack_006\",\n  \"dry_run\": false,\n  \"validation\": {\n    \"domains\": [\n      \"aml\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"us\"\n    ],\n    \"title\": \"AML US Customer Pack 006\"\n  },\n  \"skip_gates\": true,\n  \"committed\": true\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "gate_results": [
+    {
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "scripts/final_execution_discipline.py"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 360.637,
+      "stdout_tail": "{\n  \"summary_version\": \"v1\",\n  \"generated_at_utc\": \"2026-03-17T20:33:07.268915+00:00\",\n  \"all_steps_passed\": true,\n  \"steps\": [\n    {\n      \"name\": \"py_compile\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.097\n    },\n    {\n      \"name\": \"pytest\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 3.175\n    },\n    {\n      \"name\": \"readiness_check\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.098\n    },\n    {\n      \"name\": \"live_model_evals\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 356.556\n    },\n    {\n      \"name\": \"customer_pack_stability_suite\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.325\n    },\n    {\n      \"name\": \"customer_pack_stability_summary\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.037\n    },\n    {\n      \"name\": \"workflow_smoke_customer_pack\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.143\n    },\n    {\n      \"name\": \"historical_reporting_smoke\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.144\n    }\n  ],\n  \"readiness\": {\n    \"gold_case_count\": 52,\n    \"gold_case_target_band_met\": true,\n    \"eval_case_count\": 50,\n    \"eval_pass_count\": 50,\n    \"eval_fail_count\": 0,\n    \"eval_min_weighted_score\": 1.0,\n    \"stable_live_outputs\": true,\n    \"customer_pack_count\": 6,\n    \"customer_packs_with_completed_runs\": 5,\n    \"clear_enterprise_workflow\": true,\n    \"overall_readiness\": true\n  },\n  \"eval\": {\n    \"case_count\": 52,\n    \"failed_count\": 0,\n    \"min_weighted_score\": 1.0\n  },\n  \"customer_pack_stability\": {\n    \"pack_count\": 4,\n    \"successful_workflow_runs\": 4,\n    \"failed_workflow_runs\": 0,\n    \"successful_packs\": [\n      \"us_aml_enterprise_pack\",\n      \"eu_sanctions_wallet_pack\",\n      \"uae_licensing_vendor_pack\",\n      \"canada_remediation_pack\"\n    ],\n    \"failed_packs\": []\n  },\n  \"boardroom_historical_reporting\": {\n    \"board_history_label\": \"Prior / Historical Context\",\n    \"regulator_history_label\": \"Prior / Historical Context\",\n    \"client_history_label\": \"Prior / Historical Context\"\n  }\n}\n",
+      "stderr_tail": "",
+      "name": "final_execution_discipline"
+    }
+  ],
+  "rollback_performed": false,
+  "rollback_removed_paths": [],
+  "success": true
+}

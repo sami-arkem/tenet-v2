@@ -1,0 +1,14 @@
+{
+  "audit_id": "aml_us_pack_006",
+  "entity_name": "AML US Customer Pack 006",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": ["US"],
+  "entity_type": "payments_platform",
+  "products": ["wallet"],
+  "customer_types": ["consumer"],
+  "domains": ["aml", "governance"],
+  "source_families": ["regulations", "aml", "industry_fintech"],
+  "query_terms": ["aml policy", "transaction monitoring", "alert workflow"],
+  "top_k": 5
+}
