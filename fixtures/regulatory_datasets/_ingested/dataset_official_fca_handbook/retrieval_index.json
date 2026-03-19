@@ -3,7 +3,7 @@
   "chunk_count": 1,
   "document_frequency": {
     "00:00": 1,
-    "2026-03-19t17:59:45.616453": 1,
+    "2026-03-19t19:10:58.631049": 1,
     "and": 1,
     "countries:": 1,
     "dataset_id:": 1,
@@ -38,7 +38,7 @@
       "token_start": 0,
       "token_end": 29,
       "token_count": 29,
-      "text": "url source manifest dataset_id: dataset_official_fca_handbook title: fca handbook of rules and guidance domain: governance dataset_type: law_text framework_ids: fca_handbook jurisdictions: uk countries: gb source_url: https://www.fca.org.uk/about/how-we-regulate/handbook ingested_at: 2026-03-19t17:59:45.616453 00:00 fetch_mode: metadata_only"
+      "text": "url source manifest dataset_id: dataset_official_fca_handbook title: fca handbook of rules and guidance domain: governance dataset_type: law_text framework_ids: fca_handbook jurisdictions: uk countries: gb source_url: https://www.fca.org.uk/about/how-we-regulate/handbook ingested_at: 2026-03-19t19:10:58.631049 00:00 fetch_mode: metadata_only"
     }
   ]
 }

@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import os
-from datetime import datetime, timezone
-from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 
 from apps.api.deps.authz import require_authenticated_user
 from apps.api.schemas.audits import CreateAuditRequest
 from apps.api.schemas.response import ApiResponse
+from apps.api.utils import api_success as _api_success
 from core.audit_runtime_service import execute_audit_run, runtime_paths
 from core.audit_application_service import (
     create_audit,
@@ -25,18 +24,6 @@ from core.audit_application_service import (
 
 router = APIRouter()
 
-
-def _now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
-
-def _api_success(request: Request, data: Any) -> dict:
-    return ApiResponse.success(
-        data=data,
-        request_id=request.state.request_id,
-        timestamp=request.state.timestamp,
-        run_id=getattr(request.state, "run_id", None),
-    ).model_dump()
 
 
 def _translate_error(request: Request, exc: Exception) -> HTTPException:

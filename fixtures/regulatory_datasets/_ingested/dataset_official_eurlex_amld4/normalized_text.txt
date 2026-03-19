@@ -7,5 +7,5 @@ framework_ids: EU_AMLD4
 jurisdictions: eu
 countries: EU
 source_url: https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng
-ingested_at: 2026-03-19T17:59:45.595344+00:00
+ingested_at: 2026-03-19T19:10:58.607066+00:00
 fetch_mode: metadata_only

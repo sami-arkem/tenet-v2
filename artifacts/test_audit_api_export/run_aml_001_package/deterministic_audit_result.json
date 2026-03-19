@@ -1,8 +1,8 @@
 {
   "run_id": "run_aml_001",
   "status": "COMPLETED",
-  "created_at": "2026-03-19T17:59:43.817873+00:00",
-  "completed_at": "2026-03-19T17:59:43.817898+00:00",
+  "created_at": "2026-03-19T19:10:56.802701+00:00",
+  "completed_at": "2026-03-19T19:10:56.802726+00:00",
   "company_profile": {
     "company_name": "Acme Fintech",
     "industry": "fintech",

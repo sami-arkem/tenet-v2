@@ -1,6 +1,6 @@
 {
   "run_id": "run_release_gate_api_001",
-  "created_at": "2026-03-19T17:59:46.558837+00:00",
+  "created_at": "2026-03-19T19:10:59.652008+00:00",
   "input_payload": {
     "run_id": "run_release_gate_api_001",
     "company_profile": {
@@ -90,8 +90,8 @@
   "deterministic_audit_result": {
     "run_id": "run_release_gate_api_001",
     "status": "COMPLETED",
-    "created_at": "2026-03-19T17:59:46.553083+00:00",
-    "completed_at": "2026-03-19T17:59:46.553098+00:00",
+    "created_at": "2026-03-19T19:10:59.645173+00:00",
+    "completed_at": "2026-03-19T19:10:59.645188+00:00",
     "company_profile": {
       "company_name": "Acme Fintech",
       "industry": "fintech",
@@ -169,7 +169,7 @@
   },
   "report_pack": {
     "report_pack_version": "v1",
-    "generated_at": "2026-03-19T17:59:46.553116+00:00",
+    "generated_at": "2026-03-19T19:10:59.645203+00:00",
     "run_id": "run_release_gate_api_001",
     "company_profile": {
       "company_name": "Acme Fintech",
@@ -247,7 +247,7 @@
   },
   "report_bundle": {
     "run_id": "run_release_gate_api_001",
-    "markdown": "# Tenet Deterministic Audit Report: run_release_gate_api_001\n\nGenerated: 2026-03-19T17:59:46.553044+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk\n- Overall posture: GREEN\n- Deployment decision: APPROVED\n- Summary: Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: SATISFIED\n- Evidence coverage ratio: 1.0\n- Rationale: Required evidence types are covered and control is declared effective.\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L2\n\n## Findings\n\n- No open findings.\n\n## Remediation Plan\n\n- No remediation items.\n\n## Prior / Historical Context\n\n- None provided.\n\n## Readiness Statement\n\nThe system is ready for deployment based on current deterministic audit truth.\n",
+    "markdown": "# Tenet Deterministic Audit Report: run_release_gate_api_001\n\nGenerated: 2026-03-19T19:10:59.645140+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk\n- Overall posture: GREEN\n- Deployment decision: APPROVED\n- Summary: Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: SATISFIED\n- Evidence coverage ratio: 1.0\n- Rationale: Required evidence types are covered and control is declared effective.\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L2\n\n## Findings\n\n- No open findings.\n\n## Remediation Plan\n\n- No remediation items.\n\n## Prior / Historical Context\n\n- None provided.\n\n## Readiness Statement\n\nThe system is ready for deployment based on current deterministic audit truth.\n",
     "deployment_decision": "APPROVED",
     "overall_posture": "GREEN",
     "finding_count": 0,
@@ -320,8 +320,8 @@
       "release_gate_present": false,
       "composed_report_bundle_present": false,
       "report_source": "deterministic_report_bundle",
-      "report_pack_sha256": "ab12d8591b5ecca5c0f3d7573f1471a6362684c4cebfc2dc2f72ebafee4bc5c4",
-      "report_bundle_sha256": "51eb0295df6a4e5d88ea17c9419a241277238e5b3492b8632a995d6bfc526369",
+      "report_pack_sha256": "3b9708e673319eec782313186fad894c9bd4f99c4657f91f4a96847b86d0c7e0",
+      "report_bundle_sha256": "d5bc5b80c6c85857b245dac7e2f55167a2e2c7aad23954b5b3ed98c986e576c6",
       "snapshot_sha256": "7cba0f772abb37a754f4719bfd485cb6a24fe769517dfb63458154640fd80818",
       "files": [
         {
@@ -356,17 +356,17 @@
         },
         {
           "path": "deterministic_audit_result.json",
-          "sha256": "e9a760c4c4ad7ff1f4ad8f6125bf19772530d76f2640b6a4d9a757a8fb98b316",
+          "sha256": "cdd478670bd2f36824f5a92adf43df93c768e7b86443ace2eae965ab40d414f9",
           "size_bytes": 2116
         },
         {
           "path": "report_pack.json",
-          "sha256": "1791037430742068a01d9ba96f82bbc80c018b19929a0dfbe2217e67ff715e92",
+          "sha256": "2add7fa62d483ab8933884e5e4752306ef2f3307896cf419ffd1e4684238ece0",
           "size_bytes": 2037
         },
         {
           "path": "report_bundle.json",
-          "sha256": "9740283b2b5dce412e571dc8e4c1e3e8ff48a22f88717e49938e393fd5c7832f",
+          "sha256": "eaf4991cdd54e600b64bbfdc68cbe670cd0866b0ed0acd2ce714830a38db2e87",
           "size_bytes": 1406
         },
         {
@@ -376,7 +376,7 @@
         },
         {
           "path": "report.md",
-          "sha256": "03abfc1e3ae95592d1e5f29878cbf1b626041e402a9a5eefa525497dfc16f297",
+          "sha256": "f79f43d346518c7140d551316aade6eabd4af7b523b3b7d2b691f0734805340f",
           "size_bytes": 1181
         }
       ]

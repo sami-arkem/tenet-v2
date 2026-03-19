@@ -1,12 +1,11 @@
 from __future__ import annotations
 
 import os
-from typing import Any
-
 from fastapi import APIRouter, Depends, HTTPException, Request
 
 from apps.api.deps.authz import require_authenticated_user
 from apps.api.schemas.response import ApiResponse
+from apps.api.utils import api_success as _api_success
 from core.audit_runtime_service import (
     get_export_manifest_summary,
     get_report_summary,
@@ -15,15 +14,6 @@ from core.audit_runtime_service import (
 
 
 router = APIRouter()
-
-
-def _api_success(request: Request, data: Any) -> dict:
-    return ApiResponse.success(
-        data=data,
-        request_id=request.state.request_id,
-        timestamp=request.state.timestamp,
-        run_id=getattr(request.state, "run_id", None),
-    ).model_dump()
 
 
 def _translate_error(request: Request, exc: Exception) -> HTTPException:

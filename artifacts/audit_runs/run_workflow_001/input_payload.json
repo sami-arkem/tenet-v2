@@ -94,7 +94,7 @@
           "evidence_id": "evidence_2133bff4d8bf1045",
           "title": "Monitoring Policy",
           "source_type": "policy_document",
-          "file_path": "/private/var/folders/_3/_mn031bx0r93tnmtx1w8jn0r0000gn/T/pytest-of-samisayyed/pytest-272/test_workflow_end_to_end0/blobs/pack_7c305aba2a22443a/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+          "file_path": "/private/var/folders/_3/_mn031bx0r93tnmtx1w8jn0r0000gn/T/pytest-of-samisayyed/pytest-274/test_workflow_end_to_end0/blobs/pack_9355acc5b0654287/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
           "citation": "monitoring_policy.txt#L1-L1"
         }
       ],
@@ -106,10 +106,10 @@
   "default_remediation_owner": "compliance@acme.com",
   "prior_historical_context": {},
   "metadata": {
-    "evidence_pack_id": "pack_7c305aba2a22443a",
+    "evidence_pack_id": "pack_9355acc5b0654287",
     "evidence_pack_name": "Acme AML Pack",
     "planned_control_count": 3,
-    "workflow_id": "wf_0befaaef448d42b9",
+    "workflow_id": "wf_738bc89518524f74",
     "corpus_ready": true,
     "ready_evidence_count": 1
   }

@@ -27,7 +27,7 @@
   },
   "metadata": {
     "freshness_check": "weekly",
-    "last_check": "2026-03-19T15:06:43.695716Z",
+    "last_check": "2026-03-19T19:10:11.441216Z",
     "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/licensed_vendor_feed.json",
     "promoted_from_source_id": "licensed_vendor_feed",
     "promotion_acquisition_method": "LICENSED_FEED",

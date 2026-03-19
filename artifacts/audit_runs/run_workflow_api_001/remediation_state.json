@@ -1,7 +1,7 @@
 {
   "run_id": "run_workflow_api_001",
-  "generated_at": "2026-03-19T17:59:47.410078+00:00",
-  "updated_at": "2026-03-19T17:59:47.410078+00:00",
+  "generated_at": "2026-03-19T19:11:00.750028+00:00",
+  "updated_at": "2026-03-19T19:11:00.750028+00:00",
   "items": [
     {
       "remediation_id": "remediation::0001",
@@ -13,8 +13,8 @@
       "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix.",
       "evidence_links": [],
       "comment_history": [],
-      "created_at": "2026-03-19T17:59:47.410078+00:00",
-      "updated_at": "2026-03-19T17:59:47.410078+00:00",
+      "created_at": "2026-03-19T19:11:00.750028+00:00",
+      "updated_at": "2026-03-19T19:11:00.750028+00:00",
       "status_source": "deterministic_seed"
     },
     {
@@ -27,8 +27,8 @@
       "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.",
       "evidence_links": [],
       "comment_history": [],
-      "created_at": "2026-03-19T17:59:47.410078+00:00",
-      "updated_at": "2026-03-19T17:59:47.410078+00:00",
+      "created_at": "2026-03-19T19:11:00.750028+00:00",
+      "updated_at": "2026-03-19T19:11:00.750028+00:00",
       "status_source": "deterministic_seed"
     },
     {
@@ -41,8 +41,8 @@
       "action_required": "Provide evidence covering missing evidence types: monitoring_report.",
       "evidence_links": [],
       "comment_history": [],
-      "created_at": "2026-03-19T17:59:47.410078+00:00",
-      "updated_at": "2026-03-19T17:59:47.410078+00:00",
+      "created_at": "2026-03-19T19:11:00.750028+00:00",
+      "updated_at": "2026-03-19T19:11:00.750028+00:00",
       "status_source": "deterministic_seed"
     }
   ]

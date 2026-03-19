@@ -1,0 +1,19 @@
+{
+  "call_id": "mc_e93e84b8edf74ac4",
+  "call_type": "document_classification",
+  "model_version": "claude-sonnet",
+  "fallback_used": false,
+  "success": true,
+  "created_at": "2026-03-19T19:10:58.285617+00:00",
+  "duration_ms": 0,
+  "system_prompt": "You classify compliance evidence documents. Return JSON only with keys: category, confidence, reason. Allowed confidence values: HIGH, MEDIUM, LOW, MANUAL, UNCLASSIFIED. This output is non-authoritative and cannot decide any verdict.",
+  "user_prompt": "Classify document.\nFilename: policy.txt\nText excerpt:\nAML policy and procedure for transaction monitoring.",
+  "response": {
+    "category": "policy_document",
+    "confidence": "HIGH",
+    "reason": "matched policy/procedure tokens"
+  },
+  "error": null,
+  "non_authoritative": true,
+  "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+}

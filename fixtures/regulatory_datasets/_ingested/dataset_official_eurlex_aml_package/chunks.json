@@ -6,7 +6,7 @@
       "token_start": 0,
       "token_end": 32,
       "token_count": 32,
-      "text": "url source manifest dataset_id: dataset_official_eurlex_aml_package title: eur-lex eu aml package and amla texts domain: aml dataset_type: law_text framework_ids: eu_amla eu_amlr eu_amld6 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/en/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html ingested_at: 2026-03-19t17:59:45.584012 00:00 fetch_mode: metadata_only"
+      "text": "url source manifest dataset_id: dataset_official_eurlex_aml_package title: eur-lex eu aml package and amla texts domain: aml dataset_type: law_text framework_ids: eu_amla eu_amlr eu_amld6 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/en/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html ingested_at: 2026-03-19t19:10:58.596032 00:00 fetch_mode: metadata_only"
     }
   ]
 }

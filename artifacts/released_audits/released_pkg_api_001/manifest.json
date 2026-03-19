@@ -8,20 +8,20 @@
   "overall_posture": "GREEN",
   "finding_count": 0,
   "remediation_item_count": 0,
-  "input_payload_sha256": "c6ecc4653adf85505eb9e7431f8a0b225bb2b1dde809be9a7dc947a19219c4ea",
+  "input_payload_sha256": "f05fa285c471545a8072775627d0416057676cf495dd530c3982324af9f013ca",
   "audit_context_pack_present": true,
   "control_coverage_present": true,
   "audit_dossier_present": true,
   "release_gate_present": true,
   "composed_report_bundle_present": true,
   "report_source": "composed_report_bundle",
-  "report_pack_sha256": "d1dfdd08b68b2fee1a3cf7eb4b1d0f8eb3f2177aca4809a3d5e2c73f2926d387",
+  "report_pack_sha256": "446d1debeacbd0672093f2d8b8acb39e4f4dbb806b7ac2a56645c14a172b2efe",
   "report_bundle_sha256": "82187a99bf0c6db293584f84e1df730243735e65816bdb7e47884ac95cec0644",
   "snapshot_sha256": "1152695703493ac1f90e01c79f062e515c296c9c01eb3d39cbfb5db257ededb5",
   "files": [
     {
       "path": "input_payload.json",
-      "sha256": "47ccebfb43356a0719c60afd83eeb122207fd3e5aedd0052045252b1f3608fd5",
+      "sha256": "943f491f09a47365a13dba26d71089159051b649b93e0c7a0f1c89bea30b3b12",
       "size_bytes": 9279
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "path": "control_coverage.json",
-      "sha256": "49ee530911aa1526c628b8c5890f08c99aab7a60e5dda7db05d4167da89c3d25",
+      "sha256": "ca7e658e21c26732fde07b2e7e2d90b6a8554c77293148b1e5e7be845b1a35d3",
       "size_bytes": 1594
     },
     {
@@ -41,7 +41,7 @@
     },
     {
       "path": "release_gate.json",
-      "sha256": "a23956a9c0043ca0ba469cb24e4bb33620d58f0d186004e6e14cef8282053171",
+      "sha256": "31f1fe9f9f8b67562fe4b3d03ec42cc82fa0f4454c62cacc5b34c1e338c2eefb",
       "size_bytes": 2939
     },
     {
@@ -51,12 +51,12 @@
     },
     {
       "path": "deterministic_audit_result.json",
-      "sha256": "cc4a9be65f4ce3da056c02ec5086426e13319ed8679ed4e0a72e2ae6deec0a61",
+      "sha256": "ddd7a9a9728042b77fba2d783c871d39d7150cc502371c5000c5af096e16a4cd",
       "size_bytes": 2112
     },
     {
       "path": "report_pack.json",
-      "sha256": "faba77b91ea04e358960a6e11c3622b833a96668b43cb3af655889d5882da3c0",
+      "sha256": "2b8486f6fdef44a43f7fbc790aedd7dee8eccda92d3fe40a24984c6b474f717d",
       "size_bytes": 2033
     },
     {

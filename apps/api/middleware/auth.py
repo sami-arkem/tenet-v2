@@ -47,7 +47,7 @@ class AuthMiddleware(BaseHTTPMiddleware):
         if actor_dir_path:
             actor_directory = load_actor_directory(Path(actor_dir_path))
 
-        request.app.state.actor_directory = actor_directory
+        request.state.actor_directory = actor_directory
 
         user_id = request.headers.get("X-User-ID")
         if not user_id:

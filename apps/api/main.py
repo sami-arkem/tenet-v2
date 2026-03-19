@@ -1,11 +1,27 @@
 from __future__ import annotations
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 
 from apps.api.middleware.auth import AuthMiddleware, RequestContextMiddleware
 from apps.api.routers import remediation, audits, findings, reports, evidence, evidence_jobs, upload_sessions, audit_preparation, ocr_submission
+
+
+def _allowed_origins() -> list[str]:
+    raw = os.getenv("TENET_ALLOWED_ORIGINS", "")
+    if raw.strip():
+        return [o.strip() for o in raw.split(",") if o.strip()]
+    return ["http://localhost:3000", "http://localhost:5173"]
+
+
+def _allowed_hosts() -> list[str] | None:
+    raw = os.getenv("TENET_ALLOWED_HOSTS", "")
+    if raw.strip():
+        return [h.strip() for h in raw.split(",") if h.strip()]
+    return None  # not configured — skip TrustedHostMiddleware
 
 
 def create_app() -> FastAPI:
@@ -17,13 +33,14 @@ def create_app() -> FastAPI:
         openapi_url="/openapi.json",
     )
 
-    app.add_middleware(
-        TrustedHostMiddleware,
-        allowed_hosts=["*"],
-    )
+    allowed_hosts = _allowed_hosts()
+    if allowed_hosts is not None:
+        app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
+    origins = _allowed_origins()
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=origins,
+        # allow_credentials requires an explicit origin list, not a wildcard
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],

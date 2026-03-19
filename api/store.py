@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 import uuid
 from dataclasses import dataclass
@@ -8,6 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from core.audit_pipeline import build_execution_bundle, result_to_snapshot, run_audit_from_payload
 from core.export_package import export_audit_package
@@ -134,7 +137,8 @@ def list_audits(store_root: Path = DEFAULT_STORE_ROOT) -> list[dict[str, Any]]:
             continue
         try:
             detail = load_json(detail_path)
-        except Exception:
+        except Exception as exc:
+            logger.warning("skipping corrupt audit detail at %s: %s", detail_path, exc)
             continue
 
         deterministic = detail.get("deterministic_audit_result", {})

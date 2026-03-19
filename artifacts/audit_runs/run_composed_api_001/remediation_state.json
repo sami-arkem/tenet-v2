@@ -1,7 +1,7 @@
 {
   "run_id": "run_composed_api_001",
-  "generated_at": "2026-03-19T17:59:43.991840+00:00",
-  "updated_at": "2026-03-19T17:59:43.991840+00:00",
+  "generated_at": "2026-03-19T19:10:56.996014+00:00",
+  "updated_at": "2026-03-19T19:10:56.996014+00:00",
   "items": [
     {
       "remediation_id": "remediation::0001",
@@ -13,8 +13,8 @@
       "action_required": "Provide evidence covering missing evidence types: monitoring_report.",
       "evidence_links": [],
       "comment_history": [],
-      "created_at": "2026-03-19T17:59:43.991840+00:00",
-      "updated_at": "2026-03-19T17:59:43.991840+00:00",
+      "created_at": "2026-03-19T19:10:56.996014+00:00",
+      "updated_at": "2026-03-19T19:10:56.996014+00:00",
       "status_source": "deterministic_seed"
     }
   ]

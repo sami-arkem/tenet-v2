@@ -10,6 +10,7 @@ from pydantic import BaseModel, Field
 
 from apps.api.deps.authz import require_authenticated_user, require_role
 from apps.api.schemas.response import ApiResponse
+from apps.api.utils import api_success as _api_success, now_iso
 from core.remediation_dashboard import build_remediation_dashboard
 from core.remediation_due_planner import (
     load_notification_outbox,
@@ -30,10 +31,6 @@ from core.remediation_operator_service import (
 router = APIRouter()
 
 
-def _now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
-
 def _paths() -> RemediationOperatorPaths:
     base = os.getenv("TENET_STATE_DIR", "state")
     return RemediationOperatorPaths(
@@ -48,17 +45,8 @@ def _paths() -> RemediationOperatorPaths:
 
 
 def _actor_directory(request: Request) -> dict:
-    actor_directory = getattr(request.app.state, "actor_directory", None)
+    actor_directory = getattr(request.state, "actor_directory", None)
     return actor_directory if isinstance(actor_directory, dict) else {}
-
-
-def _api_success(request: Request, data: Any) -> dict:
-    return ApiResponse.success(
-        data=data,
-        request_id=request.state.request_id,
-        timestamp=request.state.timestamp,
-        run_id=getattr(request.state, "run_id", None),
-    ).model_dump()
 
 
 def _translate_error(request: Request, exc: Exception) -> HTTPException:
@@ -294,7 +282,7 @@ async def remediation_plan_due_notifications_endpoint(
             lifecycle_items=scoped,
             existing_outbox=scoped_existing,
             today=today or datetime.now(timezone.utc).date().isoformat(),
-            now=now or _now_iso(),
+            now=now or now_iso(),
         )
         write_notification_outbox(Path(_paths().notification_outbox), other + planned)
         return _api_success(request, {"planned_events": len(planned) - len(scoped_existing)})

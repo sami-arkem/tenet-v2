@@ -14,6 +14,7 @@ from apps.api.schemas.evidence import (
     RegisterEvidenceUploadRequest,
 )
 from apps.api.schemas.response import ApiResponse
+from apps.api.utils import api_success as _api_success
 from core.evidence_application_service import (
     EvidenceApplicationPaths,
     cancel_upload,
@@ -33,15 +34,6 @@ router = APIRouter()
 
 def _paths() -> EvidenceApplicationPaths:
     return EvidenceApplicationPaths(os.getenv("TENET_STATE_DIR", "state"))
-
-
-def _api_success(request: Request, data: Any) -> dict:
-    return ApiResponse.success(
-        data=data,
-        request_id=request.state.request_id,
-        timestamp=request.state.timestamp,
-        run_id=getattr(request.state, "run_id", None),
-    ).model_dump()
 
 
 def _translate_error(request: Request, exc: Exception) -> HTTPException:

@@ -3,7 +3,7 @@
   "chunk_count": 1,
   "document_frequency": {
     "00:00": 1,
-    "2026-03-19t17:59:45.627510": 1,
+    "2026-03-19t19:10:58.643117": 1,
     "countries:": 1,
     "dataset_id:": 1,
     "dataset_official_ofac_sanctions_list_service": 1,
@@ -33,7 +33,7 @@
       "token_start": 0,
       "token_end": 27,
       "token_count": 27,
-      "text": "url source manifest dataset_id: dataset_official_ofac_sanctions_list_service title: ofac sanctions list service domain: sanctions dataset_type: law_text framework_ids: ofac jurisdictions: us countries: us source_url: https://ofac.treasury.gov/ofac-sanctions-lists ingested_at: 2026-03-19t17:59:45.627510 00:00 fetch_mode: metadata_only"
+      "text": "url source manifest dataset_id: dataset_official_ofac_sanctions_list_service title: ofac sanctions list service domain: sanctions dataset_type: law_text framework_ids: ofac jurisdictions: us countries: us source_url: https://ofac.treasury.gov/ofac-sanctions-lists ingested_at: 2026-03-19t19:10:58.643117 00:00 fetch_mode: metadata_only"
     }
   ]
 }

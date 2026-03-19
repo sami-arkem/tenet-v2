@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from core.dataset_registry_service import DEFAULT_DATASET_ROOT, load_dataset_registry
 
@@ -88,8 +91,8 @@ def _extract_last_refresh_date(item: dict[str, Any]) -> date | None:
     if isinstance(ingested_at, str) and ingested_at.strip():
         try:
             return _parse_iso_datetime_to_date(ingested_at)
-        except Exception:
-            pass
+        except ValueError as exc:
+            logger.warning("failed to parse last_ingested_at %r: %s", ingested_at, exc)
     return _parse_iso_date(item.get("freshness_date"))
 
 

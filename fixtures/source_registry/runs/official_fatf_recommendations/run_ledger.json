@@ -509,8 +509,28 @@
       "snapshot_id": "2026-03-19T175946.140818_0000_b1267b00680d",
       "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T175946.140818_0000_b1267b00680d",
       "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T19:10:10.558134+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T191010.558134_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191010.558134_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T19:10:59.223285+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T191059.223285_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191059.223285_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
     }
   ],
-  "entry_count": 51,
-  "latest_fetched_at": "2026-03-19T17:59:46.140818+00:00"
+  "entry_count": 53,
+  "latest_fetched_at": "2026-03-19T19:10:59.223285+00:00"
 }

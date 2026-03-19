@@ -1,0 +1,894 @@
+{
+  "workflow_id": "wf_20d9a602f2064854",
+  "pack_id": "pack_fdb7a15ab5c54536",
+  "pack_name": "Acme AML Pack",
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk",
+    "eu"
+  ],
+  "created_by": "sami",
+  "created_at": "2026-03-19T19:10:11.991175+00:00",
+  "updated_at": "2026-03-19T19:10:12.004360+00:00",
+  "status": "REMEDIATION_ACTIVE",
+  "latest_readiness": {
+    "pack_id": "pack_fdb7a15ab5c54536",
+    "pack_name": "Acme AML Pack",
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "domain": "aml",
+    "jurisdictions": [
+      "uk",
+      "eu"
+    ],
+    "summary": {
+      "overall_status": "REMEDIATION_REQUIRED",
+      "control_count": 3,
+      "ready_controls": 0,
+      "partial_controls": 1,
+      "missing_evidence_controls": 2,
+      "blocked_controls": 0,
+      "missing_evidence_by_type": {
+        "cdd_policy": 1,
+        "governance_charter": 1,
+        "monitoring_report": 1,
+        "owner_matrix": 1,
+        "periodic_review_log": 1
+      }
+    },
+    "controls": [
+      {
+        "control_id": "GOV.RISK.001",
+        "regime_id": "INT_GOV.001",
+        "title": "Compliance governance ownership",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "provided_evidence_types": [],
+        "missing_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "readiness_status": "MISSING_EVIDENCE",
+        "rationale": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.KYC.002",
+        "regime_id": "UK_MLR.002",
+        "title": "CDD review evidence",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "periodic_review_log",
+          "cdd_policy"
+        ],
+        "provided_evidence_types": [],
+        "missing_evidence_types": [
+          "cdd_policy",
+          "periodic_review_log"
+        ],
+        "readiness_status": "MISSING_EVIDENCE",
+        "rationale": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "policy_document",
+          "monitoring_report"
+        ],
+        "provided_evidence_types": [
+          "policy_document"
+        ],
+        "missing_evidence_types": [
+          "monitoring_report"
+        ],
+        "readiness_status": "PARTIAL",
+        "rationale": "Control is present, but evidence coverage is incomplete."
+      }
+    ],
+    "requested_evidence_actions": [
+      {
+        "control_id": "GOV.RISK.001",
+        "regime_id": "INT_GOV.001",
+        "title": "Compliance governance ownership",
+        "request_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "reason": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.KYC.002",
+        "regime_id": "UK_MLR.002",
+        "title": "CDD review evidence",
+        "request_evidence_types": [
+          "cdd_policy",
+          "periodic_review_log"
+        ],
+        "reason": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "request_evidence_types": [
+          "monitoring_report"
+        ],
+        "reason": "Control is present, but evidence coverage is incomplete."
+      }
+    ],
+    "corpus_readiness": {
+      "pack_id": "pack_fdb7a15ab5c54536",
+      "item_count": 1,
+      "ready_count": 1,
+      "failed_count": 0,
+      "pending_count": 0,
+      "corpus_ready": true,
+      "statuses": {
+        "READY": 1
+      },
+      "failures": [],
+      "event": "CORPUS_READY"
+    }
+  },
+  "latest_execution": {
+    "run_id": "run_workflow_api_001",
+    "created_at": "2026-03-19T19:10:11.999161+00:00",
+    "input_payload": {
+      "run_id": "run_workflow_api_001",
+      "company_profile": {
+        "company_name": "Acme Fintech",
+        "industry": "fintech",
+        "primary_jurisdiction": "uk",
+        "additional_jurisdictions": [
+          "eu"
+        ],
+        "products": [
+          "payments"
+        ],
+        "entities": [
+          "Acme Fintech Ltd"
+        ]
+      },
+      "scope": {
+        "audit_id": "audit_001",
+        "audit_type": "aml_readiness_review",
+        "framework_ids": [
+          "UK_MLR",
+          "EU_AMLD6"
+        ],
+        "domain": "aml",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk",
+          "eu"
+        ],
+        "in_scope_entities": [
+          "Acme Fintech Ltd"
+        ],
+        "in_scope_products": [
+          "payments"
+        ],
+        "evaluation_date": "2026-03-18",
+        "historical_context_is_non_authoritative": true,
+        "deterministic_current_audit_truth_only": true
+      },
+      "controls": [
+        {
+          "control": {
+            "control_id": "GOV.RISK.001",
+            "regime_id": "INT_GOV.001",
+            "title": "Compliance governance ownership",
+            "description": "Planned from deterministic control library for INT_GOV.",
+            "test_procedure": "Deterministically test required evidence for GOV.RISK.001.",
+            "required_evidence_types": [
+              "governance_charter",
+              "owner_matrix"
+            ],
+            "severity_if_missing": "MEDIUM"
+          },
+          "provided_evidence": [],
+          "declared_control_present": true,
+          "declared_operating_effective": true,
+          "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+        },
+        {
+          "control": {
+            "control_id": "AML.KYC.002",
+            "regime_id": "UK_MLR.002",
+            "title": "CDD review evidence",
+            "description": "Planned from deterministic control library for UK_MLR.",
+            "test_procedure": "Deterministically test required evidence for AML.KYC.002.",
+            "required_evidence_types": [
+              "periodic_review_log",
+              "cdd_policy"
+            ],
+            "severity_if_missing": "HIGH"
+          },
+          "provided_evidence": [],
+          "declared_control_present": true,
+          "declared_operating_effective": true,
+          "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+        },
+        {
+          "control": {
+            "control_id": "AML.MONITORING.001",
+            "regime_id": "UK_MLR.001",
+            "title": "Transaction monitoring policy",
+            "description": "Planned from deterministic control library for UK_MLR.",
+            "test_procedure": "Deterministically test required evidence for AML.MONITORING.001.",
+            "required_evidence_types": [
+              "policy_document",
+              "monitoring_report"
+            ],
+            "severity_if_missing": "HIGH"
+          },
+          "provided_evidence": [
+            {
+              "evidence_id": "evidence_2133bff4d8bf1045",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+              "citation": "monitoring_policy.txt#L1-L1"
+            }
+          ],
+          "declared_control_present": true,
+          "declared_operating_effective": true,
+          "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+        }
+      ],
+      "default_remediation_owner": "compliance@acme.com",
+      "prior_historical_context": {},
+      "metadata": {
+        "evidence_pack_id": "pack_fdb7a15ab5c54536",
+        "evidence_pack_name": "Acme AML Pack",
+        "planned_control_count": 3,
+        "workflow_id": "wf_20d9a602f2064854",
+        "corpus_ready": true,
+        "ready_evidence_count": 1
+      }
+    },
+    "deterministic_audit_result": {
+      "run_id": "run_workflow_api_001",
+      "status": "COMPLETED",
+      "created_at": "2026-03-19T19:10:11.997533+00:00",
+      "completed_at": "2026-03-19T19:10:11.997588+00:00",
+      "company_profile": {
+        "company_name": "Acme Fintech",
+        "industry": "fintech",
+        "primary_jurisdiction": "uk",
+        "additional_jurisdictions": [
+          "eu"
+        ],
+        "products": [
+          "payments"
+        ],
+        "entities": [
+          "Acme Fintech Ltd"
+        ]
+      },
+      "scope": {
+        "audit_id": "audit_001",
+        "audit_type": "aml_readiness_review",
+        "framework_ids": [
+          "UK_MLR",
+          "EU_AMLD6"
+        ],
+        "domain": "aml",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk",
+          "eu"
+        ],
+        "in_scope_entities": [
+          "Acme Fintech Ltd"
+        ],
+        "in_scope_products": [
+          "payments"
+        ],
+        "evaluation_date": "2026-03-18",
+        "historical_context_is_non_authoritative": true,
+        "deterministic_current_audit_truth_only": true
+      },
+      "control_evaluations": [
+        {
+          "control_id": "GOV.RISK.001",
+          "regime_id": "INT_GOV.001",
+          "verdict": "MISSING",
+          "evidence_coverage_ratio": 0.0,
+          "evidence_refs": [],
+          "findings": [
+            {
+              "finding_id": "GOV.RISK.001::finding",
+              "control_id": "GOV.RISK.001",
+              "regime_id": "INT_GOV.001",
+              "title": "Gap in Compliance governance ownership",
+              "description": "Deterministic evaluation found verdict=MISSING for control GOV.RISK.001.",
+              "severity": "MEDIUM",
+              "status": "OPEN",
+              "verdict": "MISSING",
+              "missing_evidence_types": [
+                "governance_charter",
+                "owner_matrix"
+              ],
+              "evidence_refs": [],
+              "remediation_actions": [
+                "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+              ],
+              "rationale": "No required evidence types were satisfied."
+            }
+          ],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "control_id": "AML.KYC.002",
+          "regime_id": "UK_MLR.002",
+          "verdict": "MISSING",
+          "evidence_coverage_ratio": 0.0,
+          "evidence_refs": [],
+          "findings": [
+            {
+              "finding_id": "AML.KYC.002::finding",
+              "control_id": "AML.KYC.002",
+              "regime_id": "UK_MLR.002",
+              "title": "Gap in CDD review evidence",
+              "description": "Deterministic evaluation found verdict=MISSING for control AML.KYC.002.",
+              "severity": "HIGH",
+              "status": "OPEN",
+              "verdict": "MISSING",
+              "missing_evidence_types": [
+                "cdd_policy",
+                "periodic_review_log"
+              ],
+              "evidence_refs": [],
+              "remediation_actions": [
+                "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+              ],
+              "rationale": "No required evidence types were satisfied."
+            }
+          ],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "verdict": "PARTIAL",
+          "evidence_coverage_ratio": 0.5,
+          "evidence_refs": [
+            {
+              "evidence_id": "evidence_2133bff4d8bf1045",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+              "citation": "monitoring_policy.txt#L1-L1",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "findings": [
+            {
+              "finding_id": "AML.MONITORING.001::finding",
+              "control_id": "AML.MONITORING.001",
+              "regime_id": "UK_MLR.001",
+              "title": "Gap in Transaction monitoring policy",
+              "description": "Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.",
+              "severity": "HIGH",
+              "status": "OPEN",
+              "verdict": "PARTIAL",
+              "missing_evidence_types": [
+                "monitoring_report"
+              ],
+              "evidence_refs": [
+                {
+                  "evidence_id": "evidence_2133bff4d8bf1045",
+                  "title": "Monitoring Policy",
+                  "source_type": "policy_document",
+                  "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+                  "citation": "monitoring_policy.txt#L1-L1",
+                  "content_hash": null,
+                  "collected_at": null
+                }
+              ],
+              "remediation_actions": [
+                "Provide evidence covering missing evidence types: monitoring_report."
+              ],
+              "rationale": "Control present but evidence coverage is incomplete."
+            }
+          ],
+          "rationale": "Control present but evidence coverage is incomplete."
+        }
+      ],
+      "findings": [
+        {
+          "finding_id": "GOV.RISK.001::finding",
+          "control_id": "GOV.RISK.001",
+          "regime_id": "INT_GOV.001",
+          "title": "Gap in Compliance governance ownership",
+          "description": "Deterministic evaluation found verdict=MISSING for control GOV.RISK.001.",
+          "severity": "MEDIUM",
+          "status": "OPEN",
+          "verdict": "MISSING",
+          "missing_evidence_types": [
+            "governance_charter",
+            "owner_matrix"
+          ],
+          "evidence_refs": [],
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+          ],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "finding_id": "AML.KYC.002::finding",
+          "control_id": "AML.KYC.002",
+          "regime_id": "UK_MLR.002",
+          "title": "Gap in CDD review evidence",
+          "description": "Deterministic evaluation found verdict=MISSING for control AML.KYC.002.",
+          "severity": "HIGH",
+          "status": "OPEN",
+          "verdict": "MISSING",
+          "missing_evidence_types": [
+            "cdd_policy",
+            "periodic_review_log"
+          ],
+          "evidence_refs": [],
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+          ],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "finding_id": "AML.MONITORING.001::finding",
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "title": "Gap in Transaction monitoring policy",
+          "description": "Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.",
+          "severity": "HIGH",
+          "status": "OPEN",
+          "verdict": "PARTIAL",
+          "missing_evidence_types": [
+            "monitoring_report"
+          ],
+          "evidence_refs": [
+            {
+              "evidence_id": "evidence_2133bff4d8bf1045",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+              "citation": "monitoring_policy.txt#L1-L1",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: monitoring_report."
+          ],
+          "rationale": "Control present but evidence coverage is incomplete."
+        }
+      ],
+      "remediation_items": [
+        {
+          "remediation_id": "remediation::0001",
+          "finding_id": "GOV.RISK.001::finding",
+          "title": "Remediate GOV.RISK.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+        },
+        {
+          "remediation_id": "remediation::0002",
+          "finding_id": "AML.KYC.002::finding",
+          "title": "Remediate AML.KYC.002",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+        },
+        {
+          "remediation_id": "remediation::0003",
+          "finding_id": "AML.MONITORING.001::finding",
+          "title": "Remediate AML.MONITORING.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+        }
+      ],
+      "summary": {
+        "overall_posture": "AMBER",
+        "deployment_decision": "CONDITIONALLY_APPROVED",
+        "control_count": 3,
+        "passed_controls": 0,
+        "partial_controls": 1,
+        "failed_controls": 0,
+        "missing_evidence_controls": 2,
+        "critical_findings": 0,
+        "high_findings": 2,
+        "medium_findings": 1,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2."
+      },
+      "prior_historical_context": {},
+      "metadata": {
+        "evidence_pack_id": "pack_fdb7a15ab5c54536",
+        "evidence_pack_name": "Acme AML Pack",
+        "planned_control_count": 3,
+        "workflow_id": "wf_20d9a602f2064854",
+        "corpus_ready": true,
+        "ready_evidence_count": 1
+      }
+    },
+    "report_pack": {
+      "report_pack_version": "v1",
+      "generated_at": "2026-03-19T19:10:11.997633+00:00",
+      "run_id": "run_workflow_api_001",
+      "company_profile": {
+        "company_name": "Acme Fintech",
+        "industry": "fintech",
+        "primary_jurisdiction": "uk",
+        "additional_jurisdictions": [
+          "eu"
+        ],
+        "products": [
+          "payments"
+        ],
+        "entities": [
+          "Acme Fintech Ltd"
+        ]
+      },
+      "scope": {
+        "audit_id": "audit_001",
+        "audit_type": "aml_readiness_review",
+        "framework_ids": [
+          "UK_MLR",
+          "EU_AMLD6"
+        ],
+        "domain": "aml",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk",
+          "eu"
+        ],
+        "in_scope_entities": [
+          "Acme Fintech Ltd"
+        ],
+        "in_scope_products": [
+          "payments"
+        ],
+        "evaluation_date": "2026-03-18",
+        "historical_context_is_non_authoritative": true,
+        "deterministic_current_audit_truth_only": true
+      },
+      "summary": {
+        "overall_posture": "AMBER",
+        "deployment_decision": "CONDITIONALLY_APPROVED",
+        "control_count": 3,
+        "passed_controls": 0,
+        "partial_controls": 1,
+        "failed_controls": 0,
+        "missing_evidence_controls": 2,
+        "critical_findings": 0,
+        "high_findings": 2,
+        "medium_findings": 1,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2."
+      },
+      "controls": [
+        {
+          "control_id": "GOV.RISK.001",
+          "regime_id": "INT_GOV.001",
+          "verdict": "MISSING",
+          "evidence_coverage_ratio": 0.0,
+          "evidence_refs": [],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "control_id": "AML.KYC.002",
+          "regime_id": "UK_MLR.002",
+          "verdict": "MISSING",
+          "evidence_coverage_ratio": 0.0,
+          "evidence_refs": [],
+          "rationale": "No required evidence types were satisfied."
+        },
+        {
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "verdict": "PARTIAL",
+          "evidence_coverage_ratio": 0.5,
+          "evidence_refs": [
+            {
+              "evidence_id": "evidence_2133bff4d8bf1045",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+              "citation": "monitoring_policy.txt#L1-L1",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "rationale": "Control present but evidence coverage is incomplete."
+        }
+      ],
+      "findings": [
+        {
+          "finding_id": "GOV.RISK.001::finding",
+          "control_id": "GOV.RISK.001",
+          "regime_id": "INT_GOV.001",
+          "title": "Gap in Compliance governance ownership",
+          "severity": "MEDIUM",
+          "status": "OPEN",
+          "verdict": "MISSING",
+          "missing_evidence_types": [
+            "governance_charter",
+            "owner_matrix"
+          ],
+          "evidence_refs": [],
+          "rationale": "No required evidence types were satisfied.",
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+          ]
+        },
+        {
+          "finding_id": "AML.KYC.002::finding",
+          "control_id": "AML.KYC.002",
+          "regime_id": "UK_MLR.002",
+          "title": "Gap in CDD review evidence",
+          "severity": "HIGH",
+          "status": "OPEN",
+          "verdict": "MISSING",
+          "missing_evidence_types": [
+            "cdd_policy",
+            "periodic_review_log"
+          ],
+          "evidence_refs": [],
+          "rationale": "No required evidence types were satisfied.",
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+          ]
+        },
+        {
+          "finding_id": "AML.MONITORING.001::finding",
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "title": "Gap in Transaction monitoring policy",
+          "severity": "HIGH",
+          "status": "OPEN",
+          "verdict": "PARTIAL",
+          "missing_evidence_types": [
+            "monitoring_report"
+          ],
+          "evidence_refs": [
+            {
+              "evidence_id": "evidence_2133bff4d8bf1045",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "artifacts/evidence_blobs/pack_fdb7a15ab5c54536/2133bff4d8bf10456e6246f8be22327c934469e83c1683ad9fd4ba6f445002a6.txt",
+              "citation": "monitoring_policy.txt#L1-L1",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "rationale": "Control present but evidence coverage is incomplete.",
+          "remediation_actions": [
+            "Provide evidence covering missing evidence types: monitoring_report."
+          ]
+        }
+      ],
+      "remediation_items": [
+        {
+          "remediation_id": "remediation::0001",
+          "finding_id": "GOV.RISK.001::finding",
+          "title": "Remediate GOV.RISK.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+        },
+        {
+          "remediation_id": "remediation::0002",
+          "finding_id": "AML.KYC.002::finding",
+          "title": "Remediate AML.KYC.002",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+        },
+        {
+          "remediation_id": "remediation::0003",
+          "finding_id": "AML.MONITORING.001::finding",
+          "title": "Remediate AML.MONITORING.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+        }
+      ],
+      "prior_historical_context": {},
+      "metadata": {
+        "evidence_pack_id": "pack_fdb7a15ab5c54536",
+        "evidence_pack_name": "Acme AML Pack",
+        "planned_control_count": 3,
+        "workflow_id": "wf_20d9a602f2064854",
+        "corpus_ready": true,
+        "ready_evidence_count": 1
+      }
+    },
+    "report_bundle": {
+      "run_id": "run_workflow_api_001",
+      "markdown": "# Tenet Deterministic Audit Report: run_workflow_api_001\n\nGenerated: 2026-03-19T19:10:11.997478+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk, eu\n- Overall posture: AMBER\n- Deployment decision: CONDITIONALLY_APPROVED\n- Summary: Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### GOV.RISK.001 (INT_GOV.001)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.KYC.002 (UK_MLR.002)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: PARTIAL\n- Evidence coverage ratio: 0.5\n- Rationale: Control present but evidence coverage is incomplete.\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n\n## Findings\n\n### GOV.RISK.001::finding\n- Control: GOV.RISK.001\n- Regime: INT_GOV.001\n- Severity: MEDIUM\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control GOV.RISK.001.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: governance_charter, owner_matrix\n- Remediation actions:\n  - Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### AML.KYC.002::finding\n- Control: AML.KYC.002\n- Regime: UK_MLR.002\n- Severity: HIGH\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control AML.KYC.002.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: cdd_policy, periodic_review_log\n- Remediation actions:\n  - Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### AML.MONITORING.001::finding\n- Control: AML.MONITORING.001\n- Regime: UK_MLR.001\n- Severity: HIGH\n- Status: OPEN\n- Verdict: PARTIAL\n- Description: Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.\n- Rationale: Control present but evidence coverage is incomplete.\n- Missing evidence types: monitoring_report\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n- Remediation actions:\n  - Provide evidence covering missing evidence types: monitoring_report.\n\n## Remediation Plan\n\n### remediation::0001\n- Finding: GOV.RISK.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### remediation::0002\n- Finding: AML.KYC.002::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### remediation::0003\n- Finding: AML.MONITORING.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: monitoring_report.\n\n## Prior / Historical Context\n\n- None provided.\n\n## Readiness Statement\n\nThe system is not fully ready; remediation is required before clean approval.\n",
+      "deployment_decision": "CONDITIONALLY_APPROVED",
+      "overall_posture": "AMBER",
+      "finding_count": 3,
+      "remediation_count": 3
+    },
+    "snapshot": {
+      "run_id": "run_workflow_api_001",
+      "readiness_label": "REMEDIATION_REQUIRED",
+      "summary": {
+        "overall_posture": "AMBER",
+        "deployment_decision": "CONDITIONALLY_APPROVED",
+        "control_count": 3,
+        "passed_controls": 0,
+        "partial_controls": 1,
+        "failed_controls": 0,
+        "missing_evidence_controls": 2,
+        "critical_findings": 0,
+        "high_findings": 2,
+        "medium_findings": 1,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2."
+      },
+      "finding_counts": {
+        "CRITICAL": 0,
+        "HIGH": 2,
+        "MEDIUM": 1,
+        "LOW": 0
+      },
+      "remediation_items": [
+        {
+          "remediation_id": "remediation::0001",
+          "finding_id": "GOV.RISK.001::finding",
+          "title": "Remediate GOV.RISK.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix."
+        },
+        {
+          "remediation_id": "remediation::0002",
+          "finding_id": "AML.KYC.002::finding",
+          "title": "Remediate AML.KYC.002",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log."
+        },
+        {
+          "remediation_id": "remediation::0003",
+          "finding_id": "AML.MONITORING.001::finding",
+          "title": "Remediate AML.MONITORING.001",
+          "owner": "compliance@acme.com",
+          "due_date": null,
+          "status": "OPEN",
+          "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+        }
+      ]
+    },
+    "topline": {
+      "run_id": "run_workflow_api_001",
+      "overall_posture": "AMBER",
+      "deployment_decision": "CONDITIONALLY_APPROVED",
+      "control_count": 3,
+      "finding_count": 3,
+      "remediation_item_count": 3
+    },
+    "export_package": null,
+    "audit_context_pack": null
+  },
+  "latest_remediation_summary": {
+    "run_id": "run_workflow_api_001",
+    "item_count": 3,
+    "status_counts": {
+      "OPEN": 3
+    },
+    "items": [
+      {
+        "remediation_id": "remediation::0001",
+        "finding_id": "GOV.RISK.001::finding",
+        "title": "Remediate GOV.RISK.001",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix.",
+        "evidence_links": [],
+        "comment_history": [],
+        "created_at": "2026-03-19T19:10:12.000080+00:00",
+        "updated_at": "2026-03-19T19:10:12.000080+00:00",
+        "status_source": "deterministic_seed"
+      },
+      {
+        "remediation_id": "remediation::0002",
+        "finding_id": "AML.KYC.002::finding",
+        "title": "Remediate AML.KYC.002",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.",
+        "evidence_links": [],
+        "comment_history": [],
+        "created_at": "2026-03-19T19:10:12.000080+00:00",
+        "updated_at": "2026-03-19T19:10:12.000080+00:00",
+        "status_source": "deterministic_seed"
+      },
+      {
+        "remediation_id": "remediation::0003",
+        "finding_id": "AML.MONITORING.001::finding",
+        "title": "Remediate AML.MONITORING.001",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: monitoring_report.",
+        "evidence_links": [],
+        "comment_history": [],
+        "created_at": "2026-03-19T19:10:12.000080+00:00",
+        "updated_at": "2026-03-19T19:10:12.000080+00:00",
+        "status_source": "deterministic_seed"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "created_at": "2026-03-19T19:10:11.991184+00:00",
+      "event_type": "workflow_created",
+      "payload": {
+        "pack_id": "pack_fdb7a15ab5c54536",
+        "pack_name": "Acme AML Pack",
+        "created_by": "sami"
+      }
+    },
+    {
+      "created_at": "2026-03-19T19:10:11.993803+00:00",
+      "event_type": "readiness_refreshed",
+      "payload": {
+        "overall_status": "REMEDIATION_REQUIRED",
+        "corpus_ready": true,
+        "control_count": 3,
+        "requested_evidence_actions": 3
+      }
+    },
+    {
+      "created_at": "2026-03-19T19:10:12.000956+00:00",
+      "event_type": "audit_executed",
+      "payload": {
+        "run_id": "run_workflow_api_001",
+        "deployment_decision": "CONDITIONALLY_APPROVED",
+        "overall_posture": "AMBER",
+        "finding_count": 3
+      }
+    },
+    {
+      "created_at": "2026-03-19T19:10:12.004356+00:00",
+      "event_type": "remediation_refreshed",
+      "payload": {
+        "run_id": "run_workflow_api_001",
+        "item_count": 3,
+        "status_counts": {
+          "OPEN": 3
+        }
+      }
+    }
+  ]
+}
