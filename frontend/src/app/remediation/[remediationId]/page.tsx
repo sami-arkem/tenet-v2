@@ -11,7 +11,7 @@ import {
   applyVerificationResult,
 } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
@@ -29,29 +29,30 @@ const STATUS_TRANSITIONS: Record<string, string[]> = {
   NOT_APPLICABLE: ["OPEN"],
 };
 
+
 const INPUT_CLS =
-  "w-full px-3 py-2 border border-surface-border rounded bg-surface text-text text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-blue-500 transition-fast";
+  "w-full px-3 py-2 border border-neutral-200 rounded-base bg-white text-14 text-neutral-800 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors duration-base";
 
 function TimelineRow({ event }: { event: TimelineEvent }) {
   return (
-    <div className="flex items-start gap-3 py-3 border-b border-surface-border last:border-0">
-      <div className="w-2 h-2 rounded-full bg-surface-border-strong mt-2 flex-none" />
+    <div className="flex items-start gap-3 py-3 border-b border-neutral-200 last:border-0">
+      <div className="w-2 h-2 rounded-full bg-neutral-300 mt-2 flex-none" />
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-0.5">
-          <span className="text-xs font-medium text-text mono">
+          <span className="text-11 font-medium text-neutral-800 mono">
             {event.event_type}
           </span>
           {event.to_status && (
-            <StatusBadge status={event.to_status} size="sm" />
+            <Badge variant={event.to_status} />
           )}
-          <span className="text-xs text-text-muted">
+          <span className="text-12 text-neutral-400">
             {event.actor_user_id}
           </span>
         </div>
         {event.note && (
-          <p className="text-xs text-text-secondary">{event.note}</p>
+          <p className="text-12 text-neutral-500">{event.note}</p>
         )}
-        <div className="text-xs text-text-muted mt-1">
+        <div className="text-12 text-neutral-400 mt-1">
           {formatDate(event.created_at)}
         </div>
       </div>
@@ -213,36 +214,36 @@ export default function RemediationDetailPage() {
       <Card className="mb-6">
         <div className="flex flex-wrap items-center gap-6">
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Status</div>
-            <StatusBadge status={item.status} />
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Status</div>
+            <Badge variant={item.status} />
           </div>
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Severity</div>
-            <span className="text-sm text-text font-medium">{item.severity}</span>
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Severity</div>
+            <span className="text-14 text-neutral-800 font-medium">{item.severity}</span>
           </div>
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Owner</div>
-            <span className="text-sm mono text-text-secondary">
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Owner</div>
+            <span className="text-14 mono text-neutral-500">
               {item.owner_user_id ?? "Unassigned"}
             </span>
           </div>
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Due Date</div>
-            <span className="text-sm text-text-secondary">
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Due Date</div>
+            <span className="text-14 text-neutral-500">
               {item.due_date ? formatDateOnly(item.due_date) : "Not set"}
             </span>
           </div>
           {item.release_blocking && (
-            <div className="flex items-center gap-1.5 text-sm text-red-700">
+            <div className="flex items-center gap-1.5 text-sm text-danger-dark">
               <AlertTriangle size={13} />
               Release-blocking
             </div>
           )}
         </div>
 
-        <div className="mt-4 pt-4 border-t border-surface-border">
-          <div className="text-xs text-text-muted uppercase tracking-wide mb-2">Gap / Finding</div>
-          <p className="text-sm text-text-secondary">{item.gap_note}</p>
+        <div className="mt-4 pt-4 border-t border-neutral-200">
+          <div className="text-12 text-neutral-400 uppercase tracking-wide mb-2">Gap / Finding</div>
+          <p className="text-14 text-neutral-500">{item.gap_note}</p>
         </div>
       </Card>
 
@@ -256,7 +257,7 @@ export default function RemediationDetailPage() {
             />
             <form onSubmit={handleAssignOwner} className="space-y-3">
               <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                   <User size={11} className="inline mr-1" />
                   User ID
                 </label>
@@ -269,7 +270,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                   Note (min 10 chars)
                 </label>
                 <input
@@ -281,7 +282,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               {ownerError && (
-                <p className="text-xs text-red-600">{ownerError}</p>
+                <p className="text-12 text-danger-dark">{ownerError}</p>
               )}
               <Button type="submit" variant="secondary" size="sm" loading={ownerLoading}>
                 Assign Owner
@@ -294,7 +295,7 @@ export default function RemediationDetailPage() {
             <SectionHeader title="Set Due Date" />
             <form onSubmit={handleSetDueDate} className="space-y-3">
               <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                   <Clock size={11} className="inline mr-1" />
                   Due Date
                 </label>
@@ -306,7 +307,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                   Note (min 10 chars)
                 </label>
                 <input
@@ -318,7 +319,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               {dueDateError && (
-                <p className="text-xs text-red-600">{dueDateError}</p>
+                <p className="text-12 text-danger-dark">{dueDateError}</p>
               )}
               <Button type="submit" variant="secondary" size="sm" loading={dueDateLoading}>
                 Set Due Date
@@ -335,7 +336,7 @@ export default function RemediationDetailPage() {
               />
               <form onSubmit={handleStatusTransition} className="space-y-3">
                 <div>
-                  <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                  <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                     Transition To
                   </label>
                   <select
@@ -352,7 +353,7 @@ export default function RemediationDetailPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                  <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                     Note (min 10 chars)
                   </label>
                   <input
@@ -364,7 +365,7 @@ export default function RemediationDetailPage() {
                   />
                 </div>
                 {statusError && (
-                  <p className="text-xs text-red-600">{statusError}</p>
+                  <p className="text-12 text-danger-dark">{statusError}</p>
                 )}
                 <Button type="submit" variant="primary" size="sm" loading={statusLoading}>
                   Apply Transition
@@ -381,7 +382,7 @@ export default function RemediationDetailPage() {
             />
             <div className="space-y-3">
               <div>
-                <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                   Note (optional)
                 </label>
                 <input
@@ -393,7 +394,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               {verificationError && (
-                <p className="text-xs text-red-600">{verificationError}</p>
+                <p className="text-12 text-danger-dark">{verificationError}</p>
               )}
               <div className="flex items-center gap-2">
                 <Button
@@ -425,7 +426,7 @@ export default function RemediationDetailPage() {
               subtitle="All operator actions are permanently recorded."
             />
             {timeline.length === 0 ? (
-              <p className="text-sm text-text-muted">No events recorded yet.</p>
+              <p className="text-14 text-neutral-400">No events recorded yet.</p>
             ) : (
               <div>
                 {timeline.map((event) => (

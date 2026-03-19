@@ -58,15 +58,15 @@ export function ConfirmModal({
       {/* Panel */}
       <div
         ref={dialogRef}
-        className="relative z-10 bg-surface border border-surface-border rounded-lg shadow-md w-full max-w-sm mx-4 p-5"
+        className="relative z-10 bg-white border border-neutral-200 rounded-lg shadow-base w-full max-w-sm mx-4 p-5"
       >
         <div className="flex items-start justify-between gap-3 mb-3">
-          <h2 id="modal-title" className="text-sm font-semibold text-text">
+          <h2 id="modal-title" className="text-14 font-semibold text-neutral-900">
             {title}
           </h2>
           <button
             onClick={onCancel}
-            className="text-text-muted hover:text-text transition-fast flex-none"
+            className="text-neutral-400 hover:text-neutral-700 transition-colors duration-base flex-none"
             aria-label="Close"
           >
             <X size={14} />
@@ -74,7 +74,7 @@ export function ConfirmModal({
         </div>
 
         {description && (
-          <p className="text-sm text-text-secondary mb-4">{description}</p>
+          <p className="text-14 text-neutral-500 mb-4">{description}</p>
         )}
 
         {children && <div className="mb-4">{children}</div>}
@@ -83,8 +83,8 @@ export function ConfirmModal({
           <button
             onClick={onCancel}
             className="
-              px-3 py-1.5 text-sm text-text-secondary border border-surface-border
-              rounded hover:bg-surface-subtle transition-fast focus-ring
+              px-3 py-1.5 text-14 text-neutral-500 border border-neutral-200
+              rounded-base hover:bg-neutral-50 transition-colors duration-base
             "
           >
             {cancelLabel}
@@ -92,10 +92,10 @@ export function ConfirmModal({
           <button
             onClick={onConfirm}
             className={cn(
-              "px-3 py-1.5 text-sm rounded transition-fast focus-ring font-medium",
+              "px-3 py-1.5 text-14 rounded-base transition-colors duration-base font-medium",
               destructive
-                ? "bg-red-600 text-white hover:bg-red-700"
-                : "bg-text text-surface hover:bg-zinc-700",
+                ? "bg-danger-base text-white hover:bg-danger-dark"
+                : "bg-brand-500 text-white hover:bg-brand-600",
             )}
           >
             {confirmLabel}

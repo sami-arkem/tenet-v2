@@ -12,11 +12,11 @@ interface StatRowProps {
 }
 
 const VARIANT_CLASSES = {
-  default: "text-text",
-  success: "text-emerald-700",
-  error: "text-red-700",
-  warning: "text-amber-700",
-  muted: "text-text-muted",
+  default: "text-neutral-800",
+  success: "text-success-dark",
+  error: "text-danger-dark",
+  warning: "text-warning-dark",
+  muted: "text-neutral-400",
 };
 
 export function StatRow({ stats, className }: StatRowProps) {
@@ -26,13 +26,13 @@ export function StatRow({ stats, className }: StatRowProps) {
         <div key={i} className="flex items-baseline gap-1.5">
           <span
             className={cn(
-              "text-xl font-semibold tabular-nums",
+              "text-20 font-semibold tabular-nums",
               VARIANT_CLASSES[stat.variant ?? "default"],
             )}
           >
             {stat.value}
           </span>
-          <span className="text-xs text-text-muted">{stat.label}</span>
+          <span className="text-12 text-neutral-400">{stat.label}</span>
         </div>
       ))}
     </div>

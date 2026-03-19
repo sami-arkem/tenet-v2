@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { getRemediationDashboard } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { DataTable } from "@/components/ui/DataTable";
@@ -35,8 +35,8 @@ function RemediationTable({
           header: "Title",
           render: (row) => (
             <div>
-              <div className="font-medium text-text">{row.title}</div>
-              <div className="text-xs text-text-secondary mt-0.5 leading-relaxed line-clamp-2">
+              <div className="font-medium text-neutral-800">{row.title}</div>
+              <div className="text-12 text-neutral-500 mt-0.5 leading-relaxed line-clamp-2">
                 {row.gap_note}
               </div>
             </div>
@@ -46,37 +46,25 @@ function RemediationTable({
           key: "severity",
           header: "Severity",
           width: "90px",
-          render: (row) => {
-            const s = row.severity?.toUpperCase();
-            const cls =
-              s === "CRITICAL"
-                ? "text-red-700 bg-red-50 border-red-200"
-                : s === "HIGH"
-                  ? "text-orange-700 bg-orange-50 border-orange-200"
-                  : s === "MEDIUM"
-                    ? "text-amber-700 bg-amber-50 border-amber-200"
-                    : "text-gray-600 bg-gray-50 border-gray-200";
-            return (
-              <span
-                className={`inline-flex items-center border font-medium rounded uppercase tracking-wide px-2 py-0.5 text-[11px] ${cls}`}
-              >
-                {row.severity ?? "—"}
-              </span>
-            );
-          },
+          render: (row) =>
+            row.severity ? (
+              <Badge variant={row.severity} />
+            ) : (
+              <span className="text-neutral-400">—</span>
+            ),
         },
         {
           key: "status",
           header: "Status",
           width: "130px",
-          render: (row) => <StatusBadge status={row.status} />,
+          render: (row) => <Badge variant={row.status} />,
         },
         {
           key: "owner",
           header: "Owner",
           width: "120px",
           render: (row) => (
-            <span className="text-xs text-text-secondary mono">
+            <span className="text-12 text-neutral-500 mono">
               {row.owner_user_id ?? "Unassigned"}
             </span>
           ),
@@ -87,11 +75,11 @@ function RemediationTable({
           width: "100px",
           render: (row) =>
             row.due_date ? (
-              <span className="text-xs text-text-secondary">
+              <span className="text-12 text-neutral-500">
                 {formatDateOnly(row.due_date)}
               </span>
             ) : (
-              <span className="text-xs text-text-muted">—</span>
+              <span className="text-13 text-neutral-400">—</span>
             ),
         },
         {
@@ -100,11 +88,11 @@ function RemediationTable({
           width: "80px",
           render: (row) =>
             row.release_blocking ? (
-              <span className="text-[10px] text-red-700 bg-red-50 border border-red-200 rounded px-1.5 py-0.5 font-medium uppercase tracking-wide">
+              <span className="text-[10px] text-danger-dark bg-danger-light border border-danger-base/20 rounded px-1.5 py-0.5 font-medium uppercase tracking-wide">
                 Yes
               </span>
             ) : (
-              <span className="text-xs text-text-muted">—</span>
+              <span className="text-13 text-neutral-400">—</span>
             ),
         },
       ]}
@@ -203,8 +191,8 @@ export default function RemediationPage() {
       {/* Overdue */}
       {dashboard.overdue.length > 0 && (
         <Card className="mb-6" padding={false}>
-          <div className="px-5 py-4 border-b border-surface-border flex items-center gap-2">
-            <AlertTriangle size={14} className="text-red-600" />
+          <div className="px-5 py-4 border-b border-neutral-200 flex items-center gap-2">
+            <AlertTriangle size={14} className="text-danger-dark" />
             <SectionHeader title="Overdue" className="mb-0" />
           </div>
           <RemediationTable
@@ -217,8 +205,8 @@ export default function RemediationPage() {
       {/* Due Soon */}
       {dashboard.due_soon.length > 0 && (
         <Card className="mb-6" padding={false}>
-          <div className="px-5 py-4 border-b border-surface-border flex items-center gap-2">
-            <Clock size={14} className="text-amber-600" />
+          <div className="px-5 py-4 border-b border-neutral-200 flex items-center gap-2">
+            <Clock size={14} className="text-warning-dark" />
             <SectionHeader title="Due Soon (7 days)" className="mb-0" />
           </div>
           <RemediationTable
@@ -230,7 +218,7 @@ export default function RemediationPage() {
 
       {/* In Progress */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader title="In Progress" className="mb-0" />
         </div>
         <RemediationTable
@@ -242,7 +230,7 @@ export default function RemediationPage() {
 
       {/* Open */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader title="Open" className="mb-0" />
         </div>
         <RemediationTable
@@ -255,7 +243,7 @@ export default function RemediationPage() {
       {/* Resolved */}
       {dashboard.resolved.length > 0 && (
         <Card padding={false}>
-          <div className="px-5 py-4 border-b border-surface-border">
+          <div className="px-5 py-4 border-b border-neutral-200">
             <SectionHeader title="Resolved" className="mb-0" />
           </div>
           <RemediationTable

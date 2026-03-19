@@ -13,7 +13,7 @@ import {
   getAudit,
 } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { DataTable } from "@/components/ui/DataTable";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -30,6 +30,7 @@ import type {
   CreateUploadSessionRequest,
 } from "@/lib/types";
 import { Upload, Play, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const EVIDENCE_CATEGORIES = [
   "policy",
@@ -43,8 +44,14 @@ const EVIDENCE_CATEGORIES = [
   "other",
 ];
 
-const INPUT_CLS =
-  "w-full px-3 py-2 border border-surface-border rounded bg-surface text-text text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-blue-500 transition-fast";
+const INPUT_CLS = cn(
+  "w-full px-3 py-2 border border-neutral-200 rounded-base bg-white",
+  "text-14 text-neutral-800 placeholder:text-neutral-400",
+  "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500",
+  "transition-colors duration-base",
+);
+
+const LABEL_CLS = "block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5";
 
 function CreateSessionForm({
   auditId,
@@ -106,8 +113,8 @@ function CreateSessionForm({
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
-            Filename <span className="text-red-500">*</span>
+          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
+            Filename <span className="text-danger-base">*</span>
           </label>
           <input
             type="text"
@@ -118,7 +125,7 @@ function CreateSessionForm({
           />
         </div>
         <div>
-          <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
             Content Type
           </label>
           <select
@@ -137,8 +144,8 @@ function CreateSessionForm({
 
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-2">
-          <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
-            SHA-256 Hash <span className="text-red-500">*</span>
+          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
+            SHA-256 Hash <span className="text-danger-base">*</span>
           </label>
           <input
             type="text"
@@ -149,8 +156,8 @@ function CreateSessionForm({
           />
         </div>
         <div>
-          <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
-            Byte Size <span className="text-red-500">*</span>
+          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
+            Byte Size <span className="text-danger-base">*</span>
           </label>
           <input
             type="number"
@@ -166,7 +173,7 @@ function CreateSessionForm({
       </div>
 
       <div>
-        <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+        <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
           Evidence Category
         </label>
         <select
@@ -183,7 +190,7 @@ function CreateSessionForm({
       </div>
 
       {error && (
-        <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+        <p className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2">
           {error}
         </p>
       )}
@@ -313,7 +320,7 @@ export default function EvidenceIntakePage() {
 
       {/* Upload sessions table */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader
             title="Upload Sessions"
             subtitle="COMPLETED means the file is in blob storage. It does not mean evidence is processed or ready."
@@ -329,8 +336,8 @@ export default function EvidenceIntakePage() {
                 header: "Filename",
                 render: (row) => (
                   <div>
-                    <div className="text-text">{row.filename}</div>
-                    <div className="text-xs mono text-text-muted">{row.upload_session_id}</div>
+                    <div className="text-neutral-800">{row.filename}</div>
+                    <div className="text-12 mono text-neutral-400">{row.upload_session_id}</div>
                   </div>
                 ),
               },
@@ -339,7 +346,7 @@ export default function EvidenceIntakePage() {
                 header: "Category",
                 width: "140px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-secondary">
+                  <span className="mono text-12 text-neutral-500">
                     {row.evidence_category}
                   </span>
                 ),
@@ -349,7 +356,7 @@ export default function EvidenceIntakePage() {
                 header: "Size",
                 width: "80px",
                 render: (row) => (
-                  <span className="text-text-muted text-xs">
+                  <span className="text-neutral-400 text-xs">
                     {formatBytes(row.byte_size)}
                   </span>
                 ),
@@ -358,14 +365,14 @@ export default function EvidenceIntakePage() {
                 key: "status",
                 header: "Status",
                 width: "110px",
-                render: (row) => <StatusBadge status={row.status} />,
+                render: (row) => <Badge variant={row.status} />,
               },
               {
                 key: "evidence_id",
                 header: "Evidence ID",
                 width: "160px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-muted">
+                  <span className="mono text-13 text-neutral-400">
                     {row.evidence_id ?? "—"}
                   </span>
                 ),
@@ -375,7 +382,7 @@ export default function EvidenceIntakePage() {
                 header: "Updated",
                 width: "150px",
                 render: (row) => (
-                  <span className="text-xs text-text-muted">
+                  <span className="text-13 text-neutral-400">
                     {formatDate(row.updated_at)}
                   </span>
                 ),
@@ -391,7 +398,7 @@ export default function EvidenceIntakePage() {
                         e.stopPropagation();
                         setCancelId(row.upload_session_id);
                       }}
-                      className="text-text-muted hover:text-red-600 transition-fast"
+                      className="text-neutral-400 hover:text-danger-dark transition-colors duration-base"
                       title="Cancel session"
                     >
                       <X size={13} />
@@ -408,7 +415,7 @@ export default function EvidenceIntakePage() {
 
       {/* Evidence list */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <div className="flex items-start justify-between">
             <SectionHeader
               title="Evidence Items"
@@ -436,8 +443,8 @@ export default function EvidenceIntakePage() {
                 header: "Filename",
                 render: (row) => (
                   <div>
-                    <div className="text-text">{row.filename}</div>
-                    <div className="mono text-xs text-text-muted">
+                    <div className="text-neutral-800">{row.filename}</div>
+                    <div className="mono text-13 text-neutral-400">
                       {row.evidence_id}
                     </div>
                   </div>
@@ -448,7 +455,7 @@ export default function EvidenceIntakePage() {
                 header: "Category",
                 width: "140px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-secondary">
+                  <span className="mono text-12 text-neutral-500">
                     {row.evidence_category}
                   </span>
                 ),
@@ -458,7 +465,7 @@ export default function EvidenceIntakePage() {
                 header: "Size",
                 width: "80px",
                 render: (row) => (
-                  <span className="text-text-muted text-xs">
+                  <span className="text-neutral-400 text-xs">
                     {formatBytes(row.byte_size)}
                   </span>
                 ),
@@ -468,21 +475,21 @@ export default function EvidenceIntakePage() {
                 header: "Ver",
                 width: "50px",
                 render: (row) => (
-                  <span className="text-text-muted text-xs">v{row.version_number}</span>
+                  <span className="text-neutral-400 text-xs">v{row.version_number}</span>
                 ),
               },
               {
                 key: "status",
                 header: "Status",
                 width: "110px",
-                render: (row) => <StatusBadge status={row.status} />,
+                render: (row) => <Badge variant={row.status} />,
               },
               {
                 key: "updated_at",
                 header: "Updated",
                 width: "150px",
                 render: (row) => (
-                  <span className="text-xs text-text-muted">
+                  <span className="text-13 text-neutral-400">
                     {formatDate(row.updated_at)}
                   </span>
                 ),
@@ -498,7 +505,7 @@ export default function EvidenceIntakePage() {
       {/* Processing jobs */}
       {jobs && jobs.total_items > 0 && (
         <Card padding={false}>
-          <div className="px-5 py-4 border-b border-surface-border">
+          <div className="px-5 py-4 border-b border-neutral-200">
             <SectionHeader
               title="Processing Jobs"
               subtitle={`${jobs.total_queued} queued · ${jobs.total_processing} processing · ${jobs.total_failed} failed`}
@@ -510,7 +517,7 @@ export default function EvidenceIntakePage() {
                 key: "job_id",
                 header: "Job ID",
                 render: (row) => (
-                  <span className="mono text-xs text-text-muted">{row.job_id}</span>
+                  <span className="mono text-13 text-neutral-400">{row.job_id}</span>
                 ),
               },
               {
@@ -518,23 +525,23 @@ export default function EvidenceIntakePage() {
                 header: "Evidence ID",
                 width: "180px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-muted">{row.evidence_id}</span>
+                  <span className="mono text-13 text-neutral-400">{row.evidence_id}</span>
                 ),
               },
               {
                 key: "status",
                 header: "Status",
                 width: "110px",
-                render: (row) => <StatusBadge status={row.status as string} />,
+                render: (row) => <Badge variant={row.status as string} />,
               },
               {
                 key: "error",
                 header: "Error",
                 render: (row) =>
                   row.error_message ? (
-                    <span className="text-xs text-red-600">{String(row.error_message)}</span>
+                    <span className="text-xs text-danger-dark">{String(row.error_message)}</span>
                   ) : (
-                    <span className="text-text-muted">—</span>
+                    <span className="text-neutral-400">—</span>
                   ),
               },
               {
@@ -542,7 +549,7 @@ export default function EvidenceIntakePage() {
                 header: "Updated",
                 width: "150px",
                 render: (row) => (
-                  <span className="text-xs text-text-muted">
+                  <span className="text-13 text-neutral-400">
                     {formatDate(String(row.updated_at))}
                   </span>
                 ),

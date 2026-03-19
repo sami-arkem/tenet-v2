@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { getEvidence, submitOcrText } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
@@ -18,20 +18,20 @@ import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
 function MetaRow({ label, value, mono = false }: { label: string; value: string | number | boolean | null | undefined; mono?: boolean }) {
   const display = value == null ? "—" : typeof value === "boolean" ? (value ? "Yes" : "No") : String(value);
   return (
-    <div className="flex items-start py-2.5 border-b border-surface-border last:border-0 gap-4">
-      <div className="w-48 flex-none text-xs text-text-muted uppercase tracking-wide">
+    <div className="flex items-start py-2.5 border-b border-neutral-200 last:border-0 gap-4">
+      <div className="w-48 flex-none text-12 text-neutral-400 uppercase tracking-wide">
         {label}
       </div>
-      <div className={`text-sm text-text ${mono ? "mono" : ""}`}>{display}</div>
+      <div className={`text-sm text-neutral-800 ${mono ? "mono" : ""}`}>{display}</div>
     </div>
   );
 }
 
 function ReadinessIcon({ ready }: { ready: boolean }) {
   return ready ? (
-    <CheckCircle2 size={14} className="text-emerald-600" />
+    <CheckCircle2 size={14} className="text-success-base" />
   ) : (
-    <XCircle size={14} className="text-red-500" />
+    <XCircle size={14} className="text-danger-base" />
   );
 }
 
@@ -105,12 +105,12 @@ export default function EvidenceDetailPage() {
       <Card className="mb-6">
         <div className="flex items-center gap-6 mb-4">
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Status</div>
-            <StatusBadge status={evidence.status} />
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Status</div>
+            <Badge variant={evidence.status} />
           </div>
           <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Immutable</div>
-            <span className="text-sm text-text">
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1">Immutable</div>
+            <span className="text-14 text-neutral-800">
               {evidence.immutable_after_ready ? "Yes — locked after READY" : "No"}
             </span>
           </div>
@@ -119,20 +119,20 @@ export default function EvidenceDetailPage() {
         <div className="flex items-center gap-6 text-sm">
           <div className="flex items-center gap-2">
             <ReadinessIcon ready={evidence.extracted_text_ready} />
-            <span className="text-text-secondary">Extracted text ready</span>
+            <span className="text-neutral-500">Extracted text ready</span>
           </div>
           <div className="flex items-center gap-2">
             <ReadinessIcon ready={evidence.inventory_ready} />
-            <span className="text-text-secondary">Inventory ready</span>
+            <span className="text-neutral-500">Inventory ready</span>
           </div>
         </div>
 
         {evidence.processing_error && (
-          <div className="mt-4 pt-3 border-t border-surface-border">
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1.5">
+          <div className="mt-4 pt-3 border-t border-neutral-200">
+            <div className="text-12 text-neutral-400 uppercase tracking-wide mb-1.5">
               Processing Error
             </div>
-            <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded px-3 py-2 mono">
+            <div className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded px-3 py-2 mono">
               {evidence.processing_error}
             </div>
           </div>
@@ -167,18 +167,12 @@ export default function EvidenceDetailPage() {
 
           <form onSubmit={handleOcrSubmit} className="space-y-4">
             <div>
-              <label className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5">
+              <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
                 OCR Text
               </label>
               <textarea
                 rows={10}
-                className="
-                  w-full px-3 py-2 border border-surface-border rounded
-                  bg-surface text-text text-sm mono
-                  placeholder:text-text-muted
-                  focus:outline-none focus:ring-2 focus:ring-blue-500 transition-fast
-                  resize-y
-                "
+                className="w-full px-3 py-2 border border-neutral-200 rounded-base bg-white text-14 text-neutral-800 mono placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors duration-base resize-y"
                 placeholder="Paste the extracted text from the document…"
                 value={ocrText}
                 onChange={(e) => setOcrText(e.target.value)}
@@ -186,12 +180,12 @@ export default function EvidenceDetailPage() {
             </div>
 
             {ocrResult && (
-              <div className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-3 py-2">
+              <div className="text-14 text-success-dark bg-success-light border border-success-base/20 rounded px-3 py-2">
                 {ocrResult}
               </div>
             )}
             {ocrError && (
-              <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded px-3 py-2">
+              <div className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded px-3 py-2">
                 {ocrError}
               </div>
             )}
@@ -210,7 +204,7 @@ export default function EvidenceDetailPage() {
 
       {evidence.status === "READY" && (
         <Card>
-          <div className="flex items-center gap-2 text-sm text-emerald-700">
+          <div className="flex items-center gap-2 text-sm text-success-dark">
             <CheckCircle2 size={15} />
             This evidence item is READY and immutable. No further operator action is required.
           </div>

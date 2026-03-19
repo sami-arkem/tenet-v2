@@ -10,7 +10,7 @@ import {
   getAudit,
 } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { BlockingBanner } from "@/components/ui/BlockingBanner";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -34,30 +34,30 @@ function ChecklistItemRow({ item, auditId }: { item: EvidenceChecklistItem; audi
   const isReady = item.status === "READY";
 
   return (
-    <div className="flex items-start gap-3 py-3 border-b border-surface-border last:border-0">
+    <div className="flex items-start gap-3 py-3 border-b border-neutral-100 last:border-0">
       <div className="mt-0.5 flex-none">
         {isReady ? (
-          <CheckCircle2 size={15} className="text-emerald-600" />
+          <CheckCircle2 size={15} className="text-success-base" />
         ) : item.status === "MISSING" ? (
-          <FileQuestion size={15} className="text-gray-400" />
+          <FileQuestion size={15} className="text-neutral-400" />
         ) : item.status === "PROCESSING" || item.status === "UPLOADING" ? (
-          <Clock size={15} className="text-blue-500" />
+          <Clock size={15} className="text-info-base" />
         ) : (
-          <AlertCircle size={15} className="text-red-500" />
+          <AlertCircle size={15} className="text-danger-base" />
         )}
       </div>
 
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2.5 mb-0.5">
-          <span className="text-sm font-medium text-text">{item.label}</span>
-          <StatusBadge status={item.status} size="sm" />
-          <span className="text-xs text-text-muted mono">{item.required_category}</span>
+          <span className="text-14 font-medium text-neutral-800">{item.label}</span>
+          <Badge variant={item.status} />
+          <span className="text-12 text-neutral-400 font-mono">{item.required_category}</span>
         </div>
 
         {item.blocking_reasons.length > 0 && !isReady && (
           <ul className="mt-1 space-y-0.5">
             {item.blocking_reasons.map((r, i) => (
-              <li key={i} className="text-xs text-text-secondary">
+              <li key={i} className="text-13 text-neutral-500">
                 · {r}
               </li>
             ))}
@@ -70,7 +70,7 @@ function ChecklistItemRow({ item, auditId }: { item: EvidenceChecklistItem; audi
               <button
                 key={eid}
                 onClick={() => router.push(`/audits/${auditId}/evidence`)}
-                className="mono text-[10px] text-text-muted hover:text-blue-600 transition-fast"
+                className="font-mono text-12 text-neutral-400 hover:text-brand-600 transition-colors duration-base"
               >
                 {eid}
               </button>
@@ -79,7 +79,7 @@ function ChecklistItemRow({ item, auditId }: { item: EvidenceChecklistItem; audi
         )}
       </div>
 
-      <div className="flex-none text-text-muted">
+      <div className="flex-none text-neutral-400">
         <ChevronRight size={13} />
       </div>
     </div>
@@ -97,44 +97,44 @@ function ModelCallsSection({ auditId, userId }: { auditId: string; userId: strin
     <div>
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 text-sm text-text-secondary hover:text-text transition-fast"
+        className="flex items-center gap-2 text-14 text-neutral-500 hover:text-neutral-800 transition-colors duration-base"
       >
         <ChevronRight
           size={13}
-          className={`transition-fast ${open ? "rotate-90" : ""}`}
+          className={`transition-transform duration-base ${open ? "rotate-90" : ""}`}
         />
         Model Call Log
       </button>
 
       {open && (
-        <div className="mt-3 border border-surface-border rounded overflow-hidden">
+        <div className="mt-3 border border-neutral-200 rounded-base overflow-hidden">
           {error ? (
-            <p className="px-4 py-3 text-sm text-text-muted">Failed to load.</p>
+            <p className="px-4 py-3 text-14 text-neutral-400">Failed to load.</p>
           ) : !calls ? (
-            <p className="px-4 py-3 text-sm text-text-muted">Loading…</p>
+            <p className="px-4 py-3 text-14 text-neutral-400">Loading…</p>
           ) : calls.length === 0 ? (
-            <p className="px-4 py-3 text-sm text-text-muted">No model calls recorded.</p>
+            <p className="px-4 py-3 text-14 text-neutral-400">No model calls recorded.</p>
           ) : (
-            <table className="w-full text-xs">
-              <thead className="bg-surface-subtle border-b border-surface-border">
+            <table className="w-full text-13">
+              <thead className="bg-neutral-50 border-b border-neutral-200">
                 <tr>
-                  <th className="px-3 py-2 text-left text-text-muted font-medium">Surface</th>
-                  <th className="px-3 py-2 text-left text-text-muted font-medium">Action</th>
-                  <th className="px-3 py-2 text-left text-text-muted font-medium">Model</th>
-                  <th className="px-3 py-2 text-left text-text-muted font-medium">Status</th>
-                  <th className="px-3 py-2 text-left text-text-muted font-medium">Timestamp</th>
+                  {["Surface", "Action", "Model", "Status", "Timestamp"].map((h) => (
+                    <th key={h} className="px-3 py-2 text-left text-11 font-medium text-neutral-500 uppercase tracking-wider">
+                      {h}
+                    </th>
+                  ))}
                 </tr>
               </thead>
-              <tbody className="bg-surface divide-y divide-surface-border">
-                {calls.map((call) => (
+              <tbody className="bg-white divide-y divide-neutral-100">
+                {calls.map((call: ModelCallLogRow) => (
                   <tr key={call.call_id}>
-                    <td className="px-3 py-2 mono">{call.surface}</td>
-                    <td className="px-3 py-2 text-text-secondary">{call.action}</td>
-                    <td className="px-3 py-2 text-text-muted">{call.model_name}</td>
+                    <td className="px-3 py-2 font-mono text-neutral-700">{call.surface}</td>
+                    <td className="px-3 py-2 text-neutral-600">{call.action}</td>
+                    <td className="px-3 py-2 text-neutral-400">{call.model_name}</td>
                     <td className="px-3 py-2">
-                      <StatusBadge status={call.status} size="sm" />
+                      <Badge variant={call.status} />
                     </td>
-                    <td className="px-3 py-2 text-text-muted">
+                    <td className="px-3 py-2 text-neutral-400">
                       {formatDate(call.created_at)}
                     </td>
                   </tr>
@@ -218,7 +218,6 @@ export default function AuditPreparationPage() {
         }
       />
 
-      {/* Blocking banner — shown when preparation is not ready */}
       {isBlocked && (
         <BlockingBanner
           className="mb-6"
@@ -250,13 +249,13 @@ export default function AuditPreparationPage() {
               },
             ]}
           />
-          <StatusBadge status={summary.preparation_status} />
+          <Badge variant={summary.preparation_status} />
         </div>
       </Card>
 
       {/* Checklist */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader
             title="Evidence Requirements Checklist"
             subtitle="Each required category must have at least one READY evidence file."
@@ -264,11 +263,11 @@ export default function AuditPreparationPage() {
         </div>
         <div className="px-5">
           {summary.checklist.length === 0 ? (
-            <div className="py-8 text-center text-sm text-text-muted">
+            <div className="py-8 text-center text-14 text-neutral-400">
               No requirements configured.{" "}
               <button
                 onClick={handleEnsure}
-                className="text-blue-600 hover:underline"
+                className="text-brand-600 hover:underline"
               >
                 Initialize requirements
               </button>

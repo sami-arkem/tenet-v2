@@ -25,8 +25,8 @@ describe("Button", () => {
     expect(screen.getByRole("button")).toBeDisabled();
   });
 
-  it("renders danger variant with red classes", () => {
+  it("renders danger variant with danger classes", () => {
     render(<Button variant="danger">Delete</Button>);
-    expect(screen.getByRole("button").className).toContain("red");
+    expect(screen.getByRole("button").className).toContain("danger");
   });
 });

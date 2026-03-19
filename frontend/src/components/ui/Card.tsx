@@ -10,7 +10,7 @@ export function Card({ children, className, padding = true }: CardProps) {
   return (
     <div
       className={cn(
-        "bg-surface border border-surface-border rounded",
+        "bg-white border border-neutral-200 rounded-base",
         padding && "p-5",
         className,
       )}
@@ -33,7 +33,7 @@ export function CardSection({
 }: CardSectionProps) {
   return (
     <div
-      className={cn(bordered && "border-t border-surface-border pt-4 mt-4", className)}
+      className={cn(bordered && "border-t border-neutral-200 pt-4 mt-4", className)}
     >
       {children}
     </div>

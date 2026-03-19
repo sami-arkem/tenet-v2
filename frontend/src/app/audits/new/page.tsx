@@ -7,7 +7,9 @@ import { createAudit } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { Input } from "@/components/ui/Input";
 import type { CreateAuditRequest } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 const EMPTY: CreateAuditRequest = {
   audit_kind: "",
@@ -19,28 +21,22 @@ const EMPTY: CreateAuditRequest = {
   note: null,
 };
 
-function FieldLabel({
-  htmlFor,
-  label,
-  required,
-}: {
-  htmlFor: string;
-  label: string;
-  required?: boolean;
-}) {
-  return (
-    <label
-      htmlFor={htmlFor}
-      className="block text-xs font-medium text-text-secondary uppercase tracking-wide mb-1.5"
-    >
-      {label}
-      {required && <span className="ml-1 text-red-500">*</span>}
-    </label>
-  );
-}
+// Shared select/textarea styles matching the Input component
+const SELECT_CLASS = cn(
+  "w-full h-8 px-3 rounded-base border border-neutral-200 bg-white",
+  "text-14 text-neutral-800 placeholder:text-neutral-400",
+  "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500",
+  "transition-colors duration-base",
+);
 
-const INPUT =
-  "w-full px-3 py-2 border border-surface-border rounded bg-surface text-text text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-fast";
+const TEXTAREA_CLASS = cn(
+  "w-full px-3 py-2 rounded-base border border-neutral-200 bg-white",
+  "text-14 text-neutral-800 placeholder:text-neutral-400",
+  "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500",
+  "transition-colors duration-base resize-none",
+);
+
+const FIELD_LABEL = "block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5";
 
 export default function NewAuditPage() {
   const { userId } = useAuth();
@@ -102,36 +98,29 @@ export default function NewAuditPage() {
       <Card className="max-w-xl">
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <FieldLabel htmlFor="system_name" label="System Name" required />
-              <input
-                id="system_name"
-                type="text"
-                className={INPUT}
-                placeholder="e.g. Transaction Screening Engine"
-                value={form.system_name ?? ""}
-                onChange={field("system_name")}
-              />
-            </div>
-            <div>
-              <FieldLabel htmlFor="entity_id" label="Entity ID" required />
-              <input
-                id="entity_id"
-                type="text"
-                className={INPUT}
-                placeholder="e.g. entity_acme"
-                value={form.entity_id ?? ""}
-                onChange={field("entity_id")}
-              />
-            </div>
+            <Input
+              label="System Name"
+              placeholder="e.g. Transaction Screening Engine"
+              value={form.system_name ?? ""}
+              onChange={field("system_name")}
+              required
+            />
+            <Input
+              label="Entity ID"
+              placeholder="e.g. entity_acme"
+              value={form.entity_id ?? ""}
+              onChange={field("entity_id")}
+              required
+            />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <FieldLabel htmlFor="audit_kind" label="Audit Kind" required />
+              <label className={FIELD_LABEL}>
+                Audit Kind <span className="text-danger-base ml-0.5">*</span>
+              </label>
               <select
-                id="audit_kind"
-                className={INPUT}
+                className={SELECT_CLASS}
                 value={form.audit_kind ?? ""}
                 onChange={field("audit_kind")}
               >
@@ -144,53 +133,37 @@ export default function NewAuditPage() {
                 <option value="fraud_controls">Fraud Controls</option>
               </select>
             </div>
-            <div>
-              <FieldLabel htmlFor="framework" label="Framework" required />
-              <input
-                id="framework"
-                type="text"
-                className={INPUT}
-                placeholder="e.g. FCA, FinCEN, MAS"
-                value={form.framework ?? ""}
-                onChange={field("framework")}
-              />
-            </div>
-          </div>
-
-          <div>
-            <FieldLabel htmlFor="jurisdiction" label="Jurisdiction" required />
-            <input
-              id="jurisdiction"
-              type="text"
-              className={INPUT}
-              placeholder="e.g. UK, US, SG"
-              value={form.jurisdiction ?? ""}
-              onChange={field("jurisdiction")}
+            <Input
+              label="Framework"
+              placeholder="e.g. FCA, FinCEN, MAS"
+              value={form.framework ?? ""}
+              onChange={field("framework")}
+              required
             />
           </div>
 
+          <Input
+            label="Jurisdiction"
+            placeholder="e.g. UK, US, SG"
+            value={form.jurisdiction ?? ""}
+            onChange={field("jurisdiction")}
+            required
+          />
+
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <FieldLabel
-                htmlFor="scheduled_date"
-                label="Scheduled Date"
-              />
-              <input
-                id="scheduled_date"
-                type="date"
-                className={INPUT}
-                value={form.scheduled_date ?? ""}
-                onChange={field("scheduled_date")}
-              />
-            </div>
+            <Input
+              label="Scheduled Date"
+              type="date"
+              value={form.scheduled_date ?? ""}
+              onChange={field("scheduled_date")}
+            />
           </div>
 
           <div>
-            <FieldLabel htmlFor="note" label="Note" />
+            <label className={FIELD_LABEL}>Note</label>
             <textarea
-              id="note"
               rows={3}
-              className={INPUT}
+              className={TEXTAREA_CLASS}
               placeholder="Optional note for this audit."
               value={form.note ?? ""}
               onChange={field("note")}
@@ -198,7 +171,7 @@ export default function NewAuditPage() {
           </div>
 
           {error && (
-            <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+            <p className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2">
               {error}
             </p>
           )}

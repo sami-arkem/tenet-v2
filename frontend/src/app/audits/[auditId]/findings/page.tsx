@@ -43,7 +43,7 @@ function SeverityIcon({ severity }: { severity: string }) {
   const cls =
     s === "CRITICAL" ? "text-danger-base" :
     s === "HIGH"     ? "text-warning-base" :
-    s === "MEDIUM"   ? "text-amber-500" :
+    s === "MEDIUM"   ? "text-warning-base" :
                        "text-neutral-400";
   return <Icon className={cn("h-4 w-4", cls)} />;
 }

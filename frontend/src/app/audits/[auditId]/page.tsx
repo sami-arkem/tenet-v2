@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { getAudit, getLatestRun, triggerAuditRun } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { Card, CardSection } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { PageSkeleton } from "@/components/ui/LoadingSkeleton";
@@ -18,7 +18,6 @@ import {
   Upload,
   AlertTriangle,
   BarChart2,
-  CheckSquare,
   Play,
 } from "lucide-react";
 
@@ -52,7 +51,6 @@ const WORKFLOW_LINKS = (auditId: string) => [
 export default function AuditDetailPage() {
   const { auditId } = useParams<{ auditId: string }>();
   const { userId } = useAuth();
-  const router = useRouter();
   const [runLoading, setRunLoading] = useState(false);
   const [runError, setRunError] = useState<string | null>(null);
 
@@ -120,7 +118,7 @@ export default function AuditDetailPage() {
       />
 
       {runError && (
-        <div className="mb-6 text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+        <div className="mb-6 text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2">
           {runError}
         </div>
       )}
@@ -128,52 +126,41 @@ export default function AuditDetailPage() {
       {/* Status strip */}
       <Card className="mb-6">
         <div className="flex flex-wrap items-center gap-6">
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Status</div>
-            <StatusBadge status={audit.status} />
-          </div>
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Decision</div>
-            <StatusBadge status={audit.deployment_decision} />
-          </div>
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Release Ready</div>
-            <StatusBadge status={audit.release_ready ? "READY" : "BLOCKED"} />
-          </div>
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Report</div>
-            <StatusBadge status={audit.report_ready ? "READY" : "BLOCKED"} />
-          </div>
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Export</div>
-            <StatusBadge status={audit.export_ready ? "READY" : "BLOCKED"} />
-          </div>
-          <div>
-            <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Finalization</div>
-            <StatusBadge status={audit.finalization_ready ? "READY" : "BLOCKED"} />
-          </div>
+          {[
+            ["Status", <Badge key="status" variant={audit.status} />],
+            ["Decision", <Badge key="decision" variant={audit.deployment_decision} />],
+            ["Release Ready", <Badge key="release" variant={audit.release_ready ? "ready" : "blocked"} />],
+            ["Report", <Badge key="report" variant={audit.report_ready ? "ready" : "blocked"} />],
+            ["Export", <Badge key="export" variant={audit.export_ready ? "ready" : "blocked"} />],
+            ["Finalization", <Badge key="final" variant={audit.finalization_ready ? "ready" : "blocked"} />],
+          ].map(([label, badge]) => (
+            <div key={String(label)}>
+              <div className="text-11 text-neutral-400 uppercase tracking-wider mb-1">{label}</div>
+              {badge}
+            </div>
+          ))}
         </div>
 
         {latestRun && (
           <CardSection bordered>
-            <div className="flex flex-wrap gap-6 text-xs text-text-secondary">
+            <div className="flex flex-wrap gap-6 text-13 text-neutral-500">
               <span>
-                <span className="text-text-muted">Run ID </span>
-                <span className="mono">{latestRun.run_id}</span>
+                <span className="text-neutral-400">Run ID </span>
+                <span className="font-mono text-neutral-700">{latestRun.run_id}</span>
               </span>
-              <span>
-                <span className="text-text-muted">Run Status </span>
-                <StatusBadge status={latestRun.status} size="sm" />
+              <span className="flex items-center gap-1.5">
+                <span className="text-neutral-400">Run Status </span>
+                <Badge variant={latestRun.status} />
               </span>
               {latestRun.started_at && (
                 <span>
-                  <span className="text-text-muted">Started </span>
+                  <span className="text-neutral-400">Started </span>
                   {formatDate(latestRun.started_at)}
                 </span>
               )}
               {latestRun.completed_at && (
                 <span>
-                  <span className="text-text-muted">Completed </span>
+                  <span className="text-neutral-400">Completed </span>
                   {formatDate(latestRun.completed_at)}
                 </span>
               )}
@@ -184,7 +171,7 @@ export default function AuditDetailPage() {
 
       {/* Audit metadata */}
       <Card className="mb-6">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-14">
           {[
             ["Audit ID", audit.audit_id, true],
             ["Entity ID", audit.entity_id, false],
@@ -196,18 +183,18 @@ export default function AuditDetailPage() {
             ["Updated", formatDate(audit.updated_at), false],
           ].map(([label, value, mono]) => (
             <div key={String(label)}>
-              <div className="text-xs text-text-muted uppercase tracking-wide mb-0.5">
+              <div className="text-11 text-neutral-400 uppercase tracking-wider mb-0.5">
                 {label}
               </div>
-              <div className={mono ? "mono text-text" : "text-text"}>
+              <div className={`text-neutral-800 ${mono ? "font-mono text-13" : ""}`}>
                 {String(value)}
               </div>
             </div>
           ))}
           {audit.note && (
             <div className="col-span-2">
-              <div className="text-xs text-text-muted uppercase tracking-wide mb-0.5">Note</div>
-              <div className="text-text">{audit.note}</div>
+              <div className="text-11 text-neutral-400 uppercase tracking-wider mb-0.5">Note</div>
+              <div className="text-neutral-800">{audit.note}</div>
             </div>
           )}
         </div>
@@ -220,15 +207,15 @@ export default function AuditDetailPage() {
             key={href}
             href={href}
             className="
-              bg-surface border border-surface-border rounded p-4
+              bg-white border border-neutral-200 rounded-base p-4
               flex items-start gap-3
-              hover:bg-surface-subtle transition-fast
+              hover:bg-neutral-50 transition-colors duration-base
             "
           >
-            <Icon size={16} className="text-text-secondary mt-0.5 flex-none" />
+            <Icon size={16} className="text-neutral-500 mt-0.5 flex-none" />
             <div>
-              <div className="text-sm font-medium text-text">{label}</div>
-              <div className="text-xs text-text-muted mt-0.5">{description}</div>
+              <div className="text-14 font-medium text-neutral-800">{label}</div>
+              <div className="text-13 text-neutral-500 mt-0.5">{description}</div>
             </div>
           </Link>
         ))}

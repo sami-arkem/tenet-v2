@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { listEvidence } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { DataTable } from "@/components/ui/DataTable";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -80,7 +80,7 @@ export default function EvidenceReviewPage() {
 
       {/* Review queue */}
       <Card className="mb-6" padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader
             title="Review Queue"
             subtitle="Evidence requiring operator action before the audit can proceed."
@@ -101,8 +101,8 @@ export default function EvidenceReviewPage() {
                 header: "Filename",
                 render: (row) => (
                   <div>
-                    <div className="text-text font-medium">{row.filename}</div>
-                    <div className="mono text-xs text-text-muted">{row.evidence_id}</div>
+                    <div className="text-neutral-800 font-medium">{row.filename}</div>
+                    <div className="mono text-13 text-neutral-400">{row.evidence_id}</div>
                   </div>
                 ),
               },
@@ -111,7 +111,7 @@ export default function EvidenceReviewPage() {
                 header: "Audit ID",
                 width: "160px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-muted">{row.audit_id}</span>
+                  <span className="mono text-13 text-neutral-400">{row.audit_id}</span>
                 ),
               },
               {
@@ -119,7 +119,7 @@ export default function EvidenceReviewPage() {
                 header: "Category",
                 width: "140px",
                 render: (row) => (
-                  <span className="mono text-xs text-text-secondary">
+                  <span className="mono text-12 text-neutral-500">
                     {row.evidence_category}
                   </span>
                 ),
@@ -128,14 +128,14 @@ export default function EvidenceReviewPage() {
                 key: "status",
                 header: "Status",
                 width: "110px",
-                render: (row) => <StatusBadge status={row.status} />,
+                render: (row) => <Badge variant={row.status} />,
               },
               {
                 key: "updated_at",
                 header: "Updated",
                 width: "150px",
                 render: (row) => (
-                  <span className="text-xs text-text-muted">
+                  <span className="text-13 text-neutral-400">
                     {formatDate(row.updated_at)}
                   </span>
                 ),
@@ -169,7 +169,7 @@ export default function EvidenceReviewPage() {
 
       {/* All evidence section */}
       <Card padding={false}>
-        <div className="px-5 py-4 border-b border-surface-border">
+        <div className="px-5 py-4 border-b border-neutral-200">
           <SectionHeader title="All Evidence" subtitle="Across all audits." />
         </div>
         <DataTable<EvidenceSummary>
@@ -179,8 +179,8 @@ export default function EvidenceReviewPage() {
               header: "Filename",
               render: (row) => (
                 <div>
-                  <div className="text-text">{row.filename}</div>
-                  <div className="mono text-xs text-text-muted">
+                  <div className="text-neutral-800">{row.filename}</div>
+                  <div className="mono text-13 text-neutral-400">
                     {row.evidence_id}
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function EvidenceReviewPage() {
                     e.stopPropagation();
                     router.push(`/audits/${row.audit_id}/evidence`);
                   }}
-                  className="mono text-xs text-blue-600 hover:underline"
+                  className="mono text-12 text-brand-600 hover:underline"
                 >
                   {row.audit_id}
                 </button>
@@ -207,7 +207,7 @@ export default function EvidenceReviewPage() {
               header: "Category",
               width: "130px",
               render: (row) => (
-                <span className="mono text-xs text-text-secondary">
+                <span className="mono text-12 text-neutral-500">
                   {row.evidence_category}
                 </span>
               ),
@@ -216,14 +216,14 @@ export default function EvidenceReviewPage() {
               key: "status",
               header: "Status",
               width: "110px",
-              render: (row) => <StatusBadge status={row.status} />,
+              render: (row) => <Badge variant={row.status} />,
             },
             {
               key: "version",
               header: "Ver",
               width: "50px",
               render: (row) => (
-                <span className="text-xs text-text-muted">v{row.version_number}</span>
+                <span className="text-13 text-neutral-400">v{row.version_number}</span>
               ),
             },
             {
@@ -231,7 +231,7 @@ export default function EvidenceReviewPage() {
               header: "Updated",
               width: "150px",
               render: (row) => (
-                <span className="text-xs text-text-muted">
+                <span className="text-13 text-neutral-400">
                   {formatDate(row.updated_at)}
                 </span>
               ),

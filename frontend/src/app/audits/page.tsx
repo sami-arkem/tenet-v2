@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { listAudits } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { DataTable } from "@/components/ui/DataTable";
 import { Button } from "@/components/ui/Button";
 import { PageSkeleton } from "@/components/ui/LoadingSkeleton";
@@ -75,8 +75,8 @@ export default function AuditsPage() {
               header: "System",
               render: (row) => (
                 <div>
-                  <div className="font-medium text-text">{row.system_name}</div>
-                  <div className="text-xs text-text-muted mono">
+                  <div className="font-medium text-neutral-800">{row.system_name}</div>
+                  <div className="text-12 text-neutral-400 font-mono">
                     {row.audit_id}
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function AuditsPage() {
               header: "Kind",
               width: "120px",
               render: (row) => (
-                <span className="text-text-secondary">{row.audit_kind}</span>
+                <span className="text-neutral-500">{row.audit_kind}</span>
               ),
             },
             {
@@ -95,7 +95,7 @@ export default function AuditsPage() {
               header: "Framework / Jurisdiction",
               width: "180px",
               render: (row) => (
-                <span className="text-text-secondary">
+                <span className="text-neutral-500">
                   {row.framework} · {row.jurisdiction}
                 </span>
               ),
@@ -104,14 +104,14 @@ export default function AuditsPage() {
               key: "status",
               header: "Status",
               width: "110px",
-              render: (row) => <StatusBadge status={row.status} />,
+              render: (row) => <Badge variant={row.status} />,
             },
             {
               key: "decision",
               header: "Decision",
               width: "160px",
               render: (row) => (
-                <StatusBadge status={row.deployment_decision} />
+                <Badge variant={row.deployment_decision} />
               ),
             },
             {
@@ -119,7 +119,7 @@ export default function AuditsPage() {
               header: "Updated",
               width: "160px",
               render: (row) => (
-                <span className="text-text-muted text-xs">
+                <span className="text-neutral-400 text-13">
                   {formatDate(row.updated_at)}
                 </span>
               ),

@@ -18,7 +18,7 @@
   }
 
   body {
-    @apply bg-surface-subtle text-text font-sans text-sm;
+    @apply bg-neutral-50 text-neutral-800 font-sans text-sm;
     line-height: 1.5;
   }
 
@@ -31,25 +31,36 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-surface-border-strong rounded-full;
+    @apply bg-neutral-300 rounded-full;
   }
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-text-muted;
+    @apply bg-neutral-400;
+  }
+
+  /* Reduced motion — Bible §1.7 */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
 @layer utilities {
   .mono {
-    font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+    font-family: "JetBrains Mono", "Geist Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 0.8125rem;
   }
 
   /* Focus ring — keyboard-only */
   .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-1;
   }
 
-  /* Transition — max 250ms per Bible */
+  /* Transition — kept for backward compat, maps to base duration */
   .transition-fast {
     transition-duration: 150ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

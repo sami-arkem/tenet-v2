@@ -23,7 +23,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   ghost:
     "bg-transparent text-neutral-700 hover:bg-neutral-100 border border-transparent focus-visible:ring-brand-300",
   danger:
-    "bg-danger-light border border-danger-base text-danger-dark hover:bg-red-100 focus-visible:ring-red-300",
+    "bg-danger-light border border-danger-base text-danger-dark hover:bg-danger-base hover:text-white focus-visible:ring-danger-base",
   link: "bg-transparent text-brand-500 hover:underline p-0 h-auto border-none focus-visible:ring-brand-300",
 };
 

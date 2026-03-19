@@ -38,11 +38,11 @@ describe("BlockingBanner", () => {
     expect(screen.getByRole("alert")).toBeInTheDocument();
   });
 
-  it("warning variant renders amber styling", () => {
+  it("warning variant renders warning styling", () => {
     render(
       <BlockingBanner reasons={["something"]} variant="warning" />,
     );
     const el = screen.getByRole("alert");
-    expect(el.className).toContain("amber");
+    expect(el.className).toContain("warning");
   });
 });

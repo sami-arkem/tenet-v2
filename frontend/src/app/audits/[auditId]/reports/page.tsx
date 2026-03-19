@@ -10,7 +10,7 @@ import {
   getAudit,
 } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { StatusBadge } from "@/components/ui/StatusBadge";
+import { Badge } from "@/components/ui/Badge";
 import { BlockingBanner } from "@/components/ui/BlockingBanner";
 import { Card } from "@/components/ui/Card";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -29,16 +29,16 @@ function ReadinessRow({
   status?: string;
 }) {
   return (
-    <div className="flex items-center justify-between py-2.5 border-b border-surface-border last:border-0">
+    <div className="flex items-center justify-between py-2.5 border-b border-neutral-200 last:border-0">
       <div className="flex items-center gap-2.5">
         {ready ? (
-          <CheckCircle2 size={14} className="text-emerald-600 flex-none" />
+          <CheckCircle2 size={14} className="text-success-base flex-none" />
         ) : (
-          <XCircle size={14} className="text-red-500 flex-none" />
+          <XCircle size={14} className="text-danger-base flex-none" />
         )}
-        <span className="text-sm text-text">{label}</span>
+        <span className="text-14 text-neutral-800">{label}</span>
       </div>
-      {status && <StatusBadge status={status} size="sm" />}
+      {status && <Badge variant={status} />}
     </div>
   );
 }
@@ -149,14 +149,14 @@ export default function ReportsPage() {
                 />
               )}
               {report.run_id && (
-                <div className="mt-4 pt-3 border-t border-surface-border">
-                  <div className="text-xs text-text-muted uppercase tracking-wide mb-1">Run ID</div>
-                  <div className="mono text-xs text-text-secondary">{report.run_id}</div>
+                <div className="mt-4 pt-3 border-t border-neutral-200">
+                  <div className="text-13 text-neutral-400 uppercase tracking-wide mb-1">Run ID</div>
+                  <div className="mono text-12 text-neutral-500">{report.run_id}</div>
                 </div>
               )}
             </div>
           ) : (
-            <p className="text-sm text-text-muted">No report data available. Run the audit first.</p>
+            <p className="text-sm text-neutral-400">No report data available. Run the audit first.</p>
           )}
         </Card>
 
@@ -183,7 +183,7 @@ export default function ReportsPage() {
               )}
             </div>
           ) : (
-            <p className="text-sm text-text-muted">No release data. Complete the audit run.</p>
+            <p className="text-sm text-neutral-400">No release data. Complete the audit run.</p>
           )}
         </Card>
       </div>
@@ -203,39 +203,37 @@ export default function ReportsPage() {
         ) : manifest ? (
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Package size={15} className="text-text-secondary" />
+              <Package size={15} className="text-neutral-500" />
               <div>
-                <div className="text-sm text-text font-medium">
+                <div className="text-14 text-neutral-800 font-medium">
                   {manifest.package_status}
                 </div>
-                <div className="text-xs text-text-muted mono">{manifest.manifest_path}</div>
+                <div className="text-13 text-neutral-400 mono">{manifest.manifest_path}</div>
               </div>
-              <StatusBadge
-                status={manifest.package_ready ? "READY" : "BLOCKED"}
-              />
+              <Badge variant={manifest.package_ready ? "ready" : "blocked"} />
             </div>
 
             {manifest.included_files.length > 0 ? (
-              <div className="border border-surface-border rounded overflow-hidden">
+              <div className="border border-neutral-200 rounded overflow-hidden">
                 <table className="w-full text-xs">
-                  <thead className="bg-surface-subtle border-b border-surface-border">
+                  <thead className="bg-neutral-50 border-b border-neutral-200">
                     <tr>
-                      <th className="px-3 py-2 text-left text-text-muted font-medium">File</th>
-                      <th className="px-3 py-2 text-left text-text-muted font-medium w-24">Size</th>
-                      <th className="px-3 py-2 text-left text-text-muted font-medium w-48">SHA-256</th>
+                      <th className="px-3 py-2 text-left text-neutral-400 font-medium">File</th>
+                      <th className="px-3 py-2 text-left text-neutral-400 font-medium w-24">Size</th>
+                      <th className="px-3 py-2 text-left text-neutral-400 font-medium w-48">SHA-256</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-surface-border bg-surface">
+                  <tbody className="divide-y divide-neutral-100 bg-white">
                     {manifest.included_files.map((f, i) => (
                       <tr key={i}>
-                        <td className="px-3 py-2 mono text-text-secondary">
-                          <FileText size={12} className="inline mr-1.5 text-text-muted" />
+                        <td className="px-3 py-2 mono text-neutral-500">
+                          <FileText size={12} className="inline mr-1.5 text-neutral-400" />
                           {f.path}
                         </td>
-                        <td className="px-3 py-2 text-text-muted">
+                        <td className="px-3 py-2 text-neutral-400">
                           {f.size != null ? formatBytes(f.size) : "—"}
                         </td>
-                        <td className="px-3 py-2 mono text-text-muted">
+                        <td className="px-3 py-2 mono text-neutral-400">
                           {f.sha256 ? f.sha256.slice(0, 16) + "…" : "—"}
                         </td>
                       </tr>
@@ -244,11 +242,11 @@ export default function ReportsPage() {
                 </table>
               </div>
             ) : (
-              <p className="text-sm text-text-muted">No files in export package.</p>
+              <p className="text-sm text-neutral-400">No files in export package.</p>
             )}
           </div>
         ) : (
-          <p className="text-sm text-text-muted">No export manifest available.</p>
+          <p className="text-sm text-neutral-400">No export manifest available.</p>
         )}
       </Card>
     </>
