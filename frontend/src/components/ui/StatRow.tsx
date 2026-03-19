@@ -26,7 +26,7 @@ export function StatRow({ stats, className }: StatRowProps) {
         <div key={i} className="flex items-baseline gap-1.5">
           <span
             className={cn(
-              "text-20 font-semibold tabular-nums",
+              "text-20 font-medium tabular-nums",
               VARIANT_CLASSES[stat.variant ?? "default"],
             )}
           >

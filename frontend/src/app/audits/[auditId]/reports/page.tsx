@@ -156,7 +156,7 @@ export default function ReportsPage() {
               )}
             </div>
           ) : (
-            <p className="text-sm text-neutral-400">No report data available. Run the audit first.</p>
+            <p className="text-14 text-neutral-400">No report data available. Run the audit first.</p>
           )}
         </Card>
 
@@ -183,7 +183,7 @@ export default function ReportsPage() {
               )}
             </div>
           ) : (
-            <p className="text-sm text-neutral-400">No release data. Complete the audit run.</p>
+            <p className="text-14 text-neutral-400">No release data. Complete the audit run.</p>
           )}
         </Card>
       </div>
@@ -215,7 +215,7 @@ export default function ReportsPage() {
 
             {manifest.included_files.length > 0 ? (
               <div className="border border-neutral-200 rounded overflow-hidden">
-                <table className="w-full text-xs">
+                <table className="w-full text-12">
                   <thead className="bg-neutral-50 border-b border-neutral-200">
                     <tr>
                       <th className="px-3 py-2 text-left text-neutral-400 font-medium">File</th>
@@ -242,11 +242,11 @@ export default function ReportsPage() {
                 </table>
               </div>
             ) : (
-              <p className="text-sm text-neutral-400">No files in export package.</p>
+              <p className="text-14 text-neutral-400">No files in export package.</p>
             )}
           </div>
         ) : (
-          <p className="text-sm text-neutral-400">No export manifest available.</p>
+          <p className="text-14 text-neutral-400">No export manifest available.</p>
         )}
       </Card>
     </>

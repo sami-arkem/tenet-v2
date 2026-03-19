@@ -30,7 +30,7 @@ export function LoginGate() {
         <div className="mb-10 flex flex-col gap-1">
           <div className="flex items-center gap-2">
             <Shield size={18} className="text-brand-500" />
-            <span className="text-20 font-semibold tracking-tight text-neutral-900">
+            <span className="text-20 font-medium text-neutral-900">
               Tenet
             </span>
           </div>

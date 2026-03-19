@@ -150,7 +150,7 @@ export function TanstackTable<TData>({
 
   return (
     <div className="w-full">
-      <div className="rounded-md border border-neutral-200 overflow-hidden">
+      <div className="rounded-base border border-neutral-200 overflow-hidden">
         <table className="w-full">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -302,7 +302,7 @@ function TanstackTableSkeleton({
   density: "compact" | "default" | "relaxed";
 }) {
   return (
-    <div className="w-full rounded-md border border-neutral-200 overflow-hidden animate-pulse">
+    <div className="w-full rounded-base border border-neutral-200 overflow-hidden animate-pulse">
       <div className="bg-neutral-50 border-b border-neutral-200 h-10" />
       {Array.from({ length: rows }).map((_, i) => (
         <div

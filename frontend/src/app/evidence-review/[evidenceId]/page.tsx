@@ -22,7 +22,7 @@ function MetaRow({ label, value, mono = false }: { label: string; value: string 
       <div className="w-48 flex-none text-12 text-neutral-400 uppercase tracking-wide">
         {label}
       </div>
-      <div className={`text-sm text-neutral-800 ${mono ? "mono" : ""}`}>{display}</div>
+      <div className={`text-14 text-neutral-800 ${mono ? "mono" : ""}`}>{display}</div>
     </div>
   );
 }
@@ -116,7 +116,7 @@ export default function EvidenceDetailPage() {
           </div>
         </div>
 
-        <div className="flex items-center gap-6 text-sm">
+        <div className="flex items-center gap-6 text-14">
           <div className="flex items-center gap-2">
             <ReadinessIcon ready={evidence.extracted_text_ready} />
             <span className="text-neutral-500">Extracted text ready</span>
@@ -204,7 +204,7 @@ export default function EvidenceDetailPage() {
 
       {evidence.status === "READY" && (
         <Card>
-          <div className="flex items-center gap-2 text-sm text-success-dark">
+          <div className="flex items-center gap-2 text-14 text-success-dark">
             <CheckCircle2 size={15} />
             This evidence item is READY and immutable. No further operator action is required.
           </div>

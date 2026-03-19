@@ -187,7 +187,7 @@ export default function FindingsPage() {
           </div>
         </Card>
       ) : (
-        <div className="rounded-md border border-neutral-200 overflow-hidden">
+        <div className="rounded-base border border-neutral-200 overflow-hidden">
           <table className="w-full">
             <thead>
               <tr className="bg-neutral-50 border-b border-neutral-200">

@@ -61,7 +61,7 @@ export function ConfirmModal({
         className="relative z-10 bg-white border border-neutral-200 rounded-lg shadow-base w-full max-w-sm mx-4 p-5"
       >
         <div className="flex items-start justify-between gap-3 mb-3">
-          <h2 id="modal-title" className="text-14 font-semibold text-neutral-900">
+          <h2 id="modal-title" className="text-14 font-medium text-neutral-900">
             {title}
           </h2>
           <button

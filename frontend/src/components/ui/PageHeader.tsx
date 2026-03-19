@@ -38,7 +38,7 @@ export function PageHeader({
       )}
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <h1 className="text-22 font-semibold text-neutral-900 tracking-tight">
+          <h1 className="text-28 font-medium text-neutral-800">
             {title}
           </h1>
           {subtitle && (

@@ -109,8 +109,8 @@ const config: Config = {
         DEFAULT: "150",
       },
       maxWidth: {
-        content: "960px",
-        wide:    "1200px",
+        content: "1200px",
+        wide:    "1440px",
       },
     },
   },

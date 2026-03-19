@@ -90,7 +90,7 @@ function ToastItem({
       role="alert"
       aria-live="polite"
       className={cn(
-        "flex items-start gap-3 p-4 bg-white rounded-md shadow-md",
+        "flex items-start gap-3 p-4 bg-white rounded-base shadow-base",
         "border border-neutral-200",
         "animate-in slide-in-from-bottom-2 duration-base",
         "min-w-[300px] max-w-[400px]",

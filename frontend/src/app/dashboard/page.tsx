@@ -66,7 +66,7 @@ function PostureBanner({
   return (
     <div
       className={cn(
-        "flex items-center gap-3 px-5 py-4 rounded-md border mb-6",
+        "flex items-center gap-3 px-5 py-4 rounded-base border mb-6",
         bg,
       )}
     >
@@ -106,7 +106,7 @@ function StatCard({
     <div
       onClick={() => href && router.push(href)}
       className={cn(
-        "bg-white border border-neutral-200 rounded-md p-5",
+        "bg-white border border-neutral-200 rounded-base p-5",
         href && "cursor-pointer hover:border-neutral-300 transition-colors duration-base",
       )}
     >
@@ -122,7 +122,7 @@ function StatCard({
             <p className="text-13 text-neutral-400 mt-1.5">{sub}</p>
           )}
         </div>
-        <div className="p-2 bg-neutral-100 rounded-md">
+        <div className="p-2 bg-neutral-100 rounded-base">
           <Icon className="h-5 w-5 text-neutral-500" />
         </div>
       </div>
@@ -211,7 +211,7 @@ function QuickActions() {
 
   return (
     <Card>
-      <h3 className="text-14 font-medium text-neutral-700 mb-4 uppercase tracking-wider text-11">
+      <h3 className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-4">
         Quick Actions
       </h3>
       <div className="flex flex-col gap-2">
@@ -311,7 +311,7 @@ export default function DashboardPage() {
           {auditsLoading ? (
             <div className="space-y-2 animate-pulse">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="h-[52px] bg-neutral-100 rounded-md" />
+                <div key={i} className="h-[52px] bg-neutral-100 rounded-base" />
               ))}
             </div>
           ) : audits.length === 0 ? (

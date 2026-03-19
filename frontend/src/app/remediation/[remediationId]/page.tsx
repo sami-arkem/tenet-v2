@@ -234,7 +234,7 @@ export default function RemediationDetailPage() {
             </span>
           </div>
           {item.release_blocking && (
-            <div className="flex items-center gap-1.5 text-sm text-danger-dark">
+            <div className="flex items-center gap-1.5 text-14 text-danger-dark">
               <AlertTriangle size={13} />
               Release-blocking
             </div>

@@ -356,7 +356,7 @@ export default function EvidenceIntakePage() {
                 header: "Size",
                 width: "80px",
                 render: (row) => (
-                  <span className="text-neutral-400 text-xs">
+                  <span className="text-neutral-400 text-12">
                     {formatBytes(row.byte_size)}
                   </span>
                 ),
@@ -465,7 +465,7 @@ export default function EvidenceIntakePage() {
                 header: "Size",
                 width: "80px",
                 render: (row) => (
-                  <span className="text-neutral-400 text-xs">
+                  <span className="text-neutral-400 text-12">
                     {formatBytes(row.byte_size)}
                   </span>
                 ),
@@ -475,7 +475,7 @@ export default function EvidenceIntakePage() {
                 header: "Ver",
                 width: "50px",
                 render: (row) => (
-                  <span className="text-neutral-400 text-xs">v{row.version_number}</span>
+                  <span className="text-neutral-400 text-12">v{row.version_number}</span>
                 ),
               },
               {
@@ -539,7 +539,7 @@ export default function EvidenceIntakePage() {
                 header: "Error",
                 render: (row) =>
                   row.error_message ? (
-                    <span className="text-xs text-danger-dark">{String(row.error_message)}</span>
+                    <span className="text-12 text-danger-dark">{String(row.error_message)}</span>
                   ) : (
                     <span className="text-neutral-400">—</span>
                   ),
