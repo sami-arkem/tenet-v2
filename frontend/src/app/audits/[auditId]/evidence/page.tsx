@@ -401,7 +401,7 @@ export default function EvidenceIntakePage() {
             ]}
             rows={sessions?.rows ?? []}
             getKey={(row) => row.upload_session_id}
-            emptyMessage="No upload sessions for this audit."
+            emptyState="No upload sessions for this audit."
           />
         )}
       </Card>
@@ -490,7 +490,7 @@ export default function EvidenceIntakePage() {
             ]}
             rows={evidence?.rows ?? []}
             getKey={(row) => row.evidence_id}
-            emptyMessage="No evidence registered for this audit."
+            emptyState="No evidence registered for this audit."
           />
         )}
       </Card>

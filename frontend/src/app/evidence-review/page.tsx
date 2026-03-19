@@ -242,7 +242,7 @@ export default function EvidenceReviewPage() {
           onRowClick={(row) =>
             router.push(`/evidence-review/${row.evidence_id}`)
           }
-          emptyMessage="No evidence found."
+          emptyState="No evidence found."
         />
       </Card>
     </>

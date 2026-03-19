@@ -17,7 +17,7 @@ import type {
   ModelCallLogRow,
   EvidenceListResponse,
   EvidenceDetail,
-  EvidenceGateResponse,
+  AuditEvidenceGateResponse,
   UploadSessionListResponse,
   UploadSessionSummary,
   CreateUploadSessionRequest,
@@ -28,7 +28,6 @@ import type {
   RemediationItem,
   RemediationDashboard,
   RemediationDetail,
-  AuditEvidenceGateResponse,
 } from "./types";
 
 const BASE = "/api/proxy";

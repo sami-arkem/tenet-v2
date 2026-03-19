@@ -41,7 +41,7 @@ describe("DataTable", () => {
         columns={COLUMNS}
         rows={[]}
         getKey={(r) => r.id}
-        emptyMessage="Nothing here."
+        emptyState="Nothing here."
       />,
     );
     expect(screen.getByText("Nothing here.")).toBeInTheDocument();

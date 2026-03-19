@@ -21,11 +21,11 @@ import { CheckSquare, AlertTriangle, Clock } from "lucide-react";
 function RemediationTable({
   rows,
   onRowClick,
-  emptyMessage,
+  emptyState,
 }: {
   rows: RemediationItem[];
   onRowClick: (row: RemediationItem) => void;
-  emptyMessage?: string;
+  emptyState?: string;
 }) {
   return (
     <DataTable<RemediationItem>
@@ -111,7 +111,7 @@ function RemediationTable({
       rows={rows}
       getKey={(row) => row.remediation_id}
       onRowClick={onRowClick}
-      emptyMessage={emptyMessage}
+      emptyState={emptyState}
     />
   );
 }
@@ -236,7 +236,7 @@ export default function RemediationPage() {
         <RemediationTable
           rows={dashboard.in_progress}
           onRowClick={goToDetail}
-          emptyMessage="No items in progress."
+          emptyState="No items in progress."
         />
       </Card>
 
@@ -248,7 +248,7 @@ export default function RemediationPage() {
         <RemediationTable
           rows={dashboard.open}
           onRowClick={goToDetail}
-          emptyMessage="No open items."
+          emptyState="No open items."
         />
       </Card>
 

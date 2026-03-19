@@ -1,62 +1,106 @@
+// components/ui/Button.tsx — Bible §1.4.1
 import { cn } from "@/lib/utils";
-import { forwardRef } from "react";
+import { Loader2 } from "lucide-react";
+import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "danger" | "ghost";
-type ButtonSize = "sm" | "md";
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "link";
+export type ButtonSize = "sm" | "md" | "lg";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   loading?: boolean;
+  iconLeft?: ReactNode;
+  iconRight?: ReactNode;
+  fullWidth?: boolean;
 }
 
-const VARIANT_CLASSES: Record<ButtonVariant, string> = {
+const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-text text-surface hover:bg-zinc-700 border border-transparent",
+    "bg-brand-500 text-white hover:bg-brand-600 focus-visible:ring-brand-300 border border-transparent",
   secondary:
-    "bg-surface text-text border border-surface-border hover:bg-surface-subtle",
-  danger:
-    "bg-red-600 text-white border border-transparent hover:bg-red-700",
+    "bg-white border border-neutral-200 text-neutral-700 hover:bg-neutral-50 focus-visible:ring-brand-300",
   ghost:
-    "bg-transparent text-text-secondary border border-transparent hover:text-text hover:bg-surface-muted",
+    "bg-transparent text-neutral-700 hover:bg-neutral-100 border border-transparent focus-visible:ring-brand-300",
+  danger:
+    "bg-danger-light border border-danger-base text-danger-dark hover:bg-red-100 focus-visible:ring-red-300",
+  link: "bg-transparent text-brand-500 hover:underline p-0 h-auto border-none focus-visible:ring-brand-300",
 };
 
-const SIZE_CLASSES: Record<ButtonSize, string> = {
-  sm: "px-2.5 py-1.5 text-xs",
-  md: "px-3.5 py-2 text-sm",
+const sizeClasses: Record<ButtonSize, string> = {
+  sm: "h-7 px-2 text-13 gap-1.5",
+  md: "h-8 px-3 text-14 gap-2",
+  lg: "h-9 px-4 text-15 gap-2",
+};
+
+const iconSizeClasses: Record<ButtonSize, string> = {
+  sm: "h-3.5 w-3.5",
+  md: "h-4 w-4",
+  lg: "h-4 w-4",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
+  function Button(
     {
       variant = "primary",
       size = "md",
       loading = false,
+      iconLeft,
+      iconRight,
+      fullWidth = false,
       disabled,
-      className,
       children,
+      className,
       ...props
     },
     ref,
-  ) => {
+  ) {
+    const isDisabled = disabled || loading;
+
     return (
       <button
         ref={ref}
-        disabled={disabled || loading}
+        disabled={isDisabled}
+        aria-busy={loading}
         className={cn(
-          "inline-flex items-center justify-center gap-1.5 font-medium rounded transition-fast",
-          "focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1",
-          "disabled:opacity-50 disabled:cursor-not-allowed",
-          VARIANT_CLASSES[variant],
-          SIZE_CLASSES[size],
+          "inline-flex items-center justify-center font-medium rounded-base",
+          "transition-colors duration-base",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+          "disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
+          "whitespace-nowrap select-none",
+          variant !== "link" && sizeClasses[size],
+          variantClasses[variant],
+          fullWidth && "w-full",
           className,
         )}
         {...props}
       >
         {loading ? (
-          <span className="inline-block w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />
-        ) : null}
-        {children}
+          <Loader2
+            className={cn("animate-spin", iconSizeClasses[size])}
+            aria-hidden="true"
+          />
+        ) : (
+          <>
+            {iconLeft && (
+              <span
+                className={cn("shrink-0", iconSizeClasses[size])}
+                aria-hidden="true"
+              >
+                {iconLeft}
+              </span>
+            )}
+            {children}
+            {iconRight && (
+              <span
+                className={cn("shrink-0", iconSizeClasses[size])}
+                aria-hidden="true"
+              >
+                {iconRight}
+              </span>
+            )}
+          </>
+        )}
       </button>
     );
   },

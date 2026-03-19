@@ -87,7 +87,7 @@ export default function ReportsPage() {
     ...(manifest?.blocking_reasons ?? []),
     ...(release?.blocking_reasons ?? []),
   ];
-  const uniqueBlocking = [...new Set(allBlocking)];
+  const uniqueBlocking = allBlocking.filter((v, i, a) => a.indexOf(v) === i);
 
   return (
     <>

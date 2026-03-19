@@ -5,21 +5,26 @@ import { usePathname } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { cn } from "@/lib/utils";
 import {
-  LayoutList,
+  LayoutDashboard,
   ClipboardCheck,
   FileSearch,
-  AlertTriangle,
-  BarChart2,
-  CheckSquare,
+  Wrench,
   LogOut,
-  ShieldCheck,
+  Shield,
 } from "lucide-react";
 
 const NAV = [
   {
+    href: "/dashboard",
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    matchPrefix: "/dashboard",
+    exact: true,
+  },
+  {
     href: "/audits",
     label: "Audits",
-    icon: LayoutList,
+    icon: ClipboardCheck,
     matchPrefix: "/audits",
   },
   {
@@ -31,7 +36,7 @@ const NAV = [
   {
     href: "/remediation",
     label: "Remediation",
-    icon: CheckSquare,
+    icon: Wrench,
     matchPrefix: "/remediation",
   },
 ];
@@ -41,32 +46,36 @@ export function Sidebar() {
   const { userId, logout } = useAuth();
 
   return (
-    <aside className="w-56 flex-none flex flex-col border-r border-surface-border bg-surface h-full">
+    <aside className="w-56 flex-none flex flex-col border-r border-neutral-200 bg-white h-full">
       {/* Wordmark */}
-      <div className="px-5 py-5 border-b border-surface-border">
+      <div className="px-5 py-5 border-b border-neutral-200">
         <div className="flex items-center gap-2">
-          <ShieldCheck size={16} className="text-text-secondary" />
-          <span className="text-sm font-semibold tracking-tight">Tenet</span>
+          <Shield size={16} className="text-brand-500" />
+          <span className="text-14 font-medium tracking-tight text-neutral-800">
+            Tenet
+          </span>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 px-2 py-4 space-y-0.5">
-        {NAV.map(({ href, label, icon: Icon, matchPrefix }) => {
-          const active =
-            pathname === href || pathname.startsWith(matchPrefix + "/");
+      <nav className="flex-1 px-2 py-4 space-y-0.5" aria-label="Main navigation">
+        {NAV.map(({ href, label, icon: Icon, matchPrefix, exact }) => {
+          const active = exact
+            ? pathname === href
+            : pathname === href || pathname.startsWith(matchPrefix + "/");
           return (
             <Link
               key={href}
               href={href}
+              aria-current={active ? "page" : undefined}
               className={cn(
-                "flex items-center gap-2.5 px-3 py-2 rounded text-sm transition-fast",
+                "flex items-center gap-2.5 px-3 py-2 rounded-base text-14 transition-colors duration-base",
                 active
-                  ? "bg-surface-muted text-text font-medium"
-                  : "text-text-secondary hover:bg-surface-subtle hover:text-text",
+                  ? "bg-brand-50 text-brand-700 font-medium"
+                  : "text-neutral-600 hover:bg-neutral-100 hover:text-neutral-800",
               )}
             >
-              <Icon size={15} />
+              <Icon className="h-4 w-4 shrink-0" />
               {label}
             </Link>
           );
@@ -74,18 +83,18 @@ export function Sidebar() {
       </nav>
 
       {/* User / Sign-out */}
-      <div className="px-4 py-4 border-t border-surface-border">
-        <div className="text-xs text-text-muted mb-2 truncate mono">
+      <div className="px-4 py-4 border-t border-neutral-200">
+        <div className="text-12 text-neutral-400 mb-2 truncate font-mono">
           {userId}
         </div>
         <button
           onClick={logout}
-          className="
-            flex items-center gap-2 text-xs text-text-secondary
-            hover:text-text transition-fast
-          "
+          className={cn(
+            "flex items-center gap-2 text-13 text-neutral-500",
+            "hover:text-neutral-700 transition-colors duration-base",
+          )}
         >
-          <LogOut size={13} />
+          <LogOut className="h-3.5 w-3.5" />
           Sign out
         </button>
       </div>
