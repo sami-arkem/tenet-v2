@@ -1,0 +1,21 @@
+{
+  "deterministic_authoritative": true,
+  "question_count": 1,
+  "selected_chunk_count": 1,
+  "questions": [
+    {
+      "question": "What evidence supports AML.MONITORING.001?",
+      "matches": [
+        {
+          "chunk_id": "ev_001::chunk_0000",
+          "evidence_id": "ev_001",
+          "filename": "policy.txt",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "score": 2.5,
+          "excerpt": "transaction monitoring policy"
+        }
+      ]
+    }
+  ]
+}

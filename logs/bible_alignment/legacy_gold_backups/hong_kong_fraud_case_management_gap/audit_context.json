@@ -1,0 +1,35 @@
+{
+  "audit_id": "hong-kong-fraud-case-management-gap-001",
+  "entity_name": "Real Hong Kong Fraud Case Management Gap",
+  "audit_type": "fraud_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "HONG_KONG"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "api"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "domains": [
+    "fraud",
+    "governance",
+    "remediation_tracking"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud case management",
+    "fraud policy",
+    "fraud escalation",
+    "issue register",
+    "fraud governance"
+  ],
+  "top_k": 5
+}

@@ -1,0 +1,35 @@
+{
+  "audit_id": "fraud-us-monitoring-partial-001",
+  "entity_name": "Real Fraud US Monitoring Partial Case",
+  "audit_type": "fraud_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "merchant_acquiring"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "fraud",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud policy",
+    "fraud monitoring rules",
+    "fraud case management",
+    "fraud governance"
+  ],
+  "top_k": 5
+}

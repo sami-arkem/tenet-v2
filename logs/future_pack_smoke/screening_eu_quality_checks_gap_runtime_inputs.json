@@ -1,0 +1,53 @@
+{
+  "audit_type": "transaction_screening_review",
+  "jurisdictions": [
+    "EU"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "regimes": [
+    "EU_SANCTIONS"
+  ],
+  "controls": [
+    "AML-003",
+    "GOV-001",
+    "SAN-001"
+  ],
+  "evidence_categories": [
+    "screening_configuration",
+    "screening_alert_workflow",
+    "screening_thresholds",
+    "screening_governance",
+    "screening_quality_checks",
+    "sanctions_policy",
+    "screening_procedure",
+    "alert_disposition",
+    "false_positive_review",
+    "sanctions_governance",
+    "governance_framework",
+    "roles_and_responsibilities",
+    "committee_charter",
+    "escalation_matrix"
+  ],
+  "query_terms": [
+    "screening quality checks",
+    "screening governance",
+    "transaction screening",
+    "wallet",
+    "consumer",
+    "screening alert workflow",
+    "screening thresholds",
+    "sanctions policy",
+    "screening procedure",
+    "alert escalation workflow",
+    "false positive review",
+    "sanctions governance",
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix"
+  ]
+}

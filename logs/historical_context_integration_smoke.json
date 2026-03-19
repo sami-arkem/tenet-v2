@@ -1,0 +1,32 @@
+[
+  {
+    "entity_name": "Real AML Case 001",
+    "audit_type": "aml_readiness_review",
+    "has_history": false,
+    "prior_recurring_missing_controls": [],
+    "prior_recurring_findings": [],
+    "prior_decision_trajectory": {},
+    "prior_remediation_trajectory": {},
+    "query_terms_count": 18
+  },
+  {
+    "entity_name": "Real Canada Transaction Screening Governance Partial",
+    "audit_type": "transaction_screening_review",
+    "has_history": false,
+    "prior_recurring_missing_controls": [],
+    "prior_recurring_findings": [],
+    "prior_decision_trajectory": {},
+    "prior_remediation_trajectory": {},
+    "query_terms_count": 14
+  },
+  {
+    "entity_name": "Real Canada Remediation Issue Register Gap",
+    "audit_type": "remediation_tracking_review",
+    "has_history": false,
+    "prior_recurring_missing_controls": [],
+    "prior_recurring_findings": [],
+    "prior_decision_trajectory": {},
+    "prior_remediation_trajectory": {},
+    "query_terms_count": 9
+  }
+]

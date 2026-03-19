@@ -1,0 +1,11 @@
+{
+  "enable_model_reasoning": false,
+  "model_overlay_sections": [],
+  "fallback_to_deterministic_on_model_error": true,
+  "require_retrieved_chunks_for_model_reasoning": true,
+  "enable_report_generation": true,
+  "enable_export": true,
+  "enable_audit_memory": true,
+  "enable_remediation_memory": true,
+  "enable_trend_refresh": true
+}

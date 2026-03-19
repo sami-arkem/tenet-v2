@@ -1,0 +1,15 @@
+{
+  "customer_pack_target": 20,
+  "customer_packs": [],
+  "final_execution": {
+    "failing_gate_names": [
+      "final_execution_not_recorded"
+    ],
+    "last_run_epoch": 1773871464,
+    "last_run_ref": "bootstrap",
+    "suite_green": false
+  },
+  "gold_cases": [],
+  "gold_target": 100,
+  "version": "1.0"
+}

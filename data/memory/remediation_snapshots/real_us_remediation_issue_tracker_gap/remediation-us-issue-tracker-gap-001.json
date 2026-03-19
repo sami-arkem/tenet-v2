@@ -1,0 +1,48 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T16:29:57.301821+00:00",
+  "audit_id": "remediation-us-issue-tracker-gap-001",
+  "entity_name": "Real US Remediation Issue Tracker Gap",
+  "audit_type": "remediation_tracking_review",
+  "jurisdictions": [],
+  "domains": [
+    "vendor_risk",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": []
+  },
+  "remediation_status_by_control": {
+    "VEN-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "GOV-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    }
+  },
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [],
+    "near_term_30_90_days": [
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Vendor Due Diligence and Oversight"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

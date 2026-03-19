@@ -1,0 +1,34 @@
+{
+  "audit_id": "singapore-fraud-monitoring-governance-partial-001",
+  "entity_name": "Real Singapore Fraud Monitoring Governance Partial",
+  "audit_type": "fraud_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "SINGAPORE"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet",
+    "api"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "fraud",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud policy",
+    "fraud monitoring rules",
+    "fraud governance",
+    "fraud escalation",
+    "case management"
+  ],
+  "top_k": 5
+}

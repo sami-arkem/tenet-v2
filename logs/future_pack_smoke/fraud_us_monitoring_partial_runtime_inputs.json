@@ -1,0 +1,45 @@
+{
+  "audit_type": "fraud_readiness_review",
+  "jurisdictions": [
+    "US"
+  ],
+  "domains": [
+    "fraud",
+    "governance"
+  ],
+  "regimes": [
+    "BSA_AML",
+    "GOVERNANCE_BASELINE"
+  ],
+  "controls": [
+    "AML-002",
+    "AML-003",
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "fraud_policy",
+    "fraud_rules",
+    "case_management",
+    "fraud_governance",
+    "fraud_monitoring",
+    "governance_framework",
+    "roles_and_responsibilities",
+    "committee_charter",
+    "escalation_matrix"
+  ],
+  "query_terms": [
+    "fraud policy",
+    "fraud monitoring rules",
+    "fraud case management",
+    "fraud governance",
+    "wallet",
+    "merchant_acquiring",
+    "consumer",
+    "smb",
+    "fraud escalation",
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix"
+  ]
+}

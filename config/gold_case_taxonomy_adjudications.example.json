@@ -1,0 +1,15 @@
+{
+  "decisions": [
+    {
+      "case_dir": "evals/gold_cases/aml_australia_monitoring_escalation_gap",
+      "domains": ["aml"],
+      "jurisdictions": ["australia"],
+      "decided_by": "sami",
+      "rationale": "Folder name plus evidence snippets indicate AML monitoring scope in Australia.",
+      "evidence_refs": [
+        "evals/gold_cases/aml_australia_monitoring_escalation_gap/audit_context.json",
+        "evals/gold_cases/aml_australia_monitoring_escalation_gap/notes.md"
+      ]
+    }
+  ]
+}

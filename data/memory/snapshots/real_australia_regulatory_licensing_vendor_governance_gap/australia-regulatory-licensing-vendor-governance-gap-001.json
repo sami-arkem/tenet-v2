@@ -1,0 +1,50 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T15:22:56.390395+00:00",
+  "audit_id": "australia-regulatory-licensing-vendor-governance-gap-001",
+  "entity_name": "Real Australia Regulatory Licensing Vendor Governance Gap",
+  "audit_type": "regulatory_licensing_readiness_review",
+  "jurisdictions": [],
+  "domains": [
+    "vendor_risk",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": []
+  },
+  "findings_control_ids": [
+    "VEN-001",
+    "GOV-001"
+  ],
+  "missing_controls_control_ids": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "missing_evidence_refs": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [],
+    "near_term_30_90_days": [
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Vendor Due Diligence and Oversight"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

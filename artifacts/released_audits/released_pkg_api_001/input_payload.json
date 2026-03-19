@@ -1,0 +1,324 @@
+{
+  "run_id": "run_finalize_api_001",
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "controls": [
+    {
+      "control": {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "description": "Policy must exist.",
+        "test_procedure": "Check policy.",
+        "required_evidence_types": [
+          "policy_document"
+        ],
+        "severity_if_missing": "HIGH"
+      },
+      "provided_evidence": [
+        {
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L2"
+        }
+      ],
+      "declared_control_present": true,
+      "declared_operating_effective": true
+    }
+  ],
+  "default_remediation_owner": "compliance@acme.com",
+  "audit_context_pack": {
+    "deterministic_authoritative": true,
+    "question_count": 1,
+    "selected_chunk_count": 1,
+    "questions": [
+      {
+        "question": "What evidence supports AML.MONITORING.001?",
+        "matches": [
+          {
+            "chunk_id": "ev_001::chunk_0000",
+            "evidence_id": "ev_001",
+            "filename": "policy.txt",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "score": 2.5,
+            "excerpt": "transaction monitoring policy"
+          }
+        ]
+      }
+    ]
+  },
+  "composed_report_bundle": {
+    "run_id": "run_finalize_api_001",
+    "markdown": "# Composed Report\n\nAPI composed report.\n",
+    "deterministic_authoritative": true,
+    "model_augmentation_present": false,
+    "overall_posture": "GREEN",
+    "deployment_decision": "APPROVED",
+    "finding_count": 0,
+    "remediation_count": 0
+  },
+  "control_coverage_matrix": {
+    "run_id": "run_finalize_api_001",
+    "generated_at": "2026-03-19T17:59:46.522596+00:00",
+    "deterministic_authoritative": true,
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "summary": {
+      "control_count": 1,
+      "supported_controls": 1,
+      "partial_controls": 0,
+      "blocked_controls": 0
+    },
+    "controls": [
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "coverage_status": "SUPPORTED",
+        "declared_control_present": true,
+        "declared_operating_effective": true,
+        "required_evidence_types": [
+          "policy_document"
+        ],
+        "covered_evidence_types": [
+          "policy_document"
+        ],
+        "missing_required_evidence_types": [],
+        "direct_evidence": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L2"
+          }
+        ],
+        "context_matches": [
+          {
+            "question": "What evidence supports AML.MONITORING.001?",
+            "chunk_id": "ev_001::chunk_0000",
+            "evidence_id": "ev_001",
+            "filename": "policy.txt",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "score": 2.5,
+            "excerpt": "transaction monitoring policy"
+          }
+        ],
+        "rationale": "Required evidence is covered by direct evidence and/or retrieved context.",
+        "deterministic_authoritative": true
+      }
+    ]
+  },
+  "audit_dossier": {
+    "run_id": "run_finalize_api_001",
+    "deterministic_authoritative": true,
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "overall_posture": "GREEN",
+    "deployment_decision": "APPROVED",
+    "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.",
+    "control_count": 1,
+    "supported_controls": 1,
+    "partial_controls": 0,
+    "blocked_controls": 0,
+    "controls": [
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "coverage_status": "SUPPORTED",
+        "required_evidence_types": [
+          "policy_document"
+        ],
+        "covered_evidence_types": [
+          "policy_document"
+        ],
+        "missing_required_evidence_types": [],
+        "rationale": "Required evidence is covered by direct evidence and/or retrieved context.",
+        "deterministic_authoritative": true,
+        "evidence_citations": [
+          {
+            "citation_type": "direct_evidence",
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L2"
+          },
+          {
+            "citation_type": "retrieved_context",
+            "chunk_id": "ev_001::chunk_0000",
+            "evidence_id": "ev_001",
+            "filename": "policy.txt",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "score": 2.5,
+            "excerpt": "transaction monitoring policy",
+            "question": "What evidence supports AML.MONITORING.001?"
+          }
+        ],
+        "linked_findings": []
+      }
+    ]
+  },
+  "release_gate": {
+    "run_id": "run_finalize_api_001",
+    "deterministic_authoritative": true,
+    "release_status": "RELEASE_READY",
+    "release_ready": true,
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "overall_posture": "GREEN",
+    "deployment_decision": "APPROVED",
+    "control_summary": {
+      "control_count": 1,
+      "supported_controls": 1,
+      "partial_controls": 0,
+      "blocked_controls": 0
+    },
+    "review_summary": {
+      "present": true,
+      "status": "REVIEWED",
+      "latest_review_decision": "APPROVED",
+      "latest_review": {
+        "reviewed_at": "2026-03-19T17:59:46.530749+00:00",
+        "reviewer": "sami",
+        "decision": "APPROVED",
+        "rationale": "Approved for release.",
+        "conditions": [],
+        "evidence_refs": [
+          "report.md",
+          "audit_dossier.json"
+        ],
+        "note": null
+      }
+    },
+    "export_summary": {
+      "present": true,
+      "verified": true,
+      "all_ok": true,
+      "verification": {
+        "package_dir": "artifacts/audit_packages/initial_release_pkg_api",
+        "run_id": "run_finalize_api_001",
+        "all_ok": true,
+        "files": [
+          {
+            "path": "input_payload.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "audit_context_pack.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "control_coverage.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "audit_dossier.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "release_gate.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "composed_report_bundle.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "deterministic_audit_result.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "report_pack.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "report_bundle.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "snapshot.json",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          },
+          {
+            "path": "report.md",
+            "exists": true,
+            "sha_ok": true,
+            "size_ok": true,
+            "ok": true
+          }
+        ]
+      }
+    },
+    "reasons_blocking_release": []
+  }
+}

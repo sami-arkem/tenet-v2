@@ -1,0 +1,89 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1527 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Board Memo: Report Live Entity) Tj
+/F2 13 Tf
+1 0 0 1 50 754 Tm
+(Deployment Decision) Tj
+/F1 10 Tf
+1 0 0 1 50 734 Tm
+(? Status: BLOCKED) Tj
+/F1 10 Tf
+1 0 0 1 50 720 Tm
+(? Board Position: Deployment is blocked due to missing critical and high-severity controls or) Tj
+/F1 10 Tf
+1 0 0 1 50 706 Tm
+(insufficient confidence in the entity's AML readiness.) Tj
+/F2 13 Tf
+1 0 0 1 50 678 Tm
+(Top Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 658 Tm
+(? Transaction monitoring framework documented) Tj
+/F1 10 Tf
+1 0 0 1 50 644 Tm
+(? Sanctions screening program defined) Tj
+/F1 10 Tf
+1 0 0 1 50 630 Tm
+(? Enterprise AML policy approved and version controlled) Tj
+/F2 13 Tf
+1 0 0 1 50 602 Tm
+(Governance Actions) Tj
+/F1 10 Tf
+1 0 0 1 50 582 Tm
+(The Board requires immediate remediation and evidence of controls for the transaction) Tj
+/F1 10 Tf
+1 0 0 1 50 568 Tm
+(monitoring framework and sanctions screening program, both flagged as critical gaps.) Tj
+/F1 10 Tf
+1 0 0 1 50 554 Tm
+(High-priority remediation is also needed for the enterprise AML policy, customer risk rating) Tj
+/F1 10 Tf
+1 0 0 1 50 540 Tm
+(methodology, and beneficial ownership and business verification controls. Oversight should) Tj
+/F1 10 Tf
+1 0 0 1 50 526 Tm
+(ensure that compliance governance roles and escalation paths are clearly defined and supported) Tj
+/F1 10 Tf
+1 0 0 1 50 512 Tm
+(by documented evidence. Progress must be regularly reported to the Board to enable reassessment) Tj
+/F1 10 Tf
+1 0 0 1 50 498 Tm
+(of deployment readiness.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000001836 00000 n 
+0000001906 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1981
+%%EOF

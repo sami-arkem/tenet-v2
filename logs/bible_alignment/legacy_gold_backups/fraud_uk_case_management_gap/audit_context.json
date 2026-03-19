@@ -1,0 +1,31 @@
+{
+  "audit_id": "fraud-uk-case-management-gap-001",
+  "entity_name": "Real Fraud UK Case Management Gap",
+  "audit_type": "fraud_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "UK"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "api"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "fraud",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud case management",
+    "fraud escalation",
+    "fraud governance"
+  ],
+  "top_k": 5
+}

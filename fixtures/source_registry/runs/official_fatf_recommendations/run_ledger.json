@@ -1,0 +1,516 @@
+{
+  "entries": [
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T14:44:11.581051+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T144411.581051_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T144411.581051_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T14:44:18.059225+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T144418.059225_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T144418.059225_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:07:35.467783+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T170735.467783_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T170735.467783_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:08:30.360955+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T170830.360955_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T170830.360955_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:08:36.075004+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T170836.075004_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T170836.075004_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:14:36.964913+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T171436.964913_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T171436.964913_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:49:20.892539+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T174920.892539_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T174920.892539_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:49:37.046763+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T174937.046763_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T174937.046763_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:49:48.600098+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T174948.600098_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T174948.600098_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:50:01.204550+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T175001.204550_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T175001.204550_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T17:50:08.464452+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T175008.464452_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T175008.464452_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T18:35:07.035085+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T183507.035085_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T183507.035085_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T19:37:08.424259+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T193708.424259_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T193708.424259_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T20:13:57.986938+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T201357.986938_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T201357.986938_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T20:33:06.274234+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T203306.274234_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T203306.274234_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T21:10:48.272397+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T211048.272397_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T211048.272397_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T21:48:13.231964+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T214813.231964_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T214813.231964_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T22:04:33.754086+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T220433.754086_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T220433.754086_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T22:49:02.983728+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T224902.983728_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T224902.983728_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T22:55:00.096141+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T225500.096141_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T225500.096141_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-18T23:05:30.427768+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-18T230530.427768_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-18T230530.427768_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:06:23.779413+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T080623.779413_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T080623.779413_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:10:27.075202+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T081027.075202_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T081027.075202_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:19:31.966819+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T081931.966819_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T081931.966819_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:36:50.247750+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T083650.247750_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T083650.247750_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:39:40.818037+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T083940.818037_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T083940.818037_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T08:49:14.023206+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T084914.023206_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T084914.023206_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:12:47.758553+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T091247.758553_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T091247.758553_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:15:49.237380+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T091549.237380_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T091549.237380_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:25:43.521845+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T092543.521845_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T092543.521845_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:36:03.310636+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T093603.310636_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T093603.310636_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:44:50.587719+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T094450.587719_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T094450.587719_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:46:21.039283+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T094621.039283_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T094621.039283_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T09:56:57.426120+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T095657.426120_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T095657.426120_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T10:08:38.721056+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T100838.721056_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T100838.721056_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T10:18:12.673518+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T101812.673518_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T101812.673518_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T10:38:23.300157+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T103823.300157_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T103823.300157_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T10:53:37.670534+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T105337.670534_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T105337.670534_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T11:11:02.698718+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T111102.698718_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T111102.698718_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T11:32:09.278456+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T113209.278456_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T113209.278456_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T11:47:30.526894+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T114730.526894_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T114730.526894_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T12:05:42.887792+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T120542.887792_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T120542.887792_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T12:32:33.479852+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T123233.479852_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T123233.479852_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T12:58:52.735626+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T125852.735626_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T125852.735626_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T14:13:04.820892+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T141304.820892_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T141304.820892_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T14:55:46.482623+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T145546.482623_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T145546.482623_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T15:03:00.658014+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T150300.658014_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T150300.658014_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T15:04:34.454681+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T150434.454681_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T150434.454681_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T15:06:06.803569+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T150606.803569_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T150606.803569_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T15:06:42.919134+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T150642.919134_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T150642.919134_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    },
+    {
+      "source_id": "official_fatf_recommendations",
+      "dataset_id": "dataset_official_fatf_recommendations",
+      "fetched_at": "2026-03-19T17:59:46.140818+00:00",
+      "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+      "raw_size_bytes": 93,
+      "snapshot_id": "2026-03-19T175946.140818_0000_b1267b00680d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T175946.140818_0000_b1267b00680d",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+    }
+  ],
+  "entry_count": 51,
+  "latest_fetched_at": "2026-03-19T17:59:46.140818+00:00"
+}

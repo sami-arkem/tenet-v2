@@ -1,0 +1,33 @@
+{
+  "audit_id": "licensing-hong-kong-inventory-accountability-gap-001",
+  "entity_name": "Real Hong Kong Licensing Inventory Accountability Gap",
+  "audit_type": "regulatory_licensing_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "HONG_KONG"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "regulatory_licensing",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "licensing inventory",
+    "regulatory accountability",
+    "licensing governance",
+    "ownership and accountability",
+    "roles and responsibilities"
+  ],
+  "top_k": 5
+}

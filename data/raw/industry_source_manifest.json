@@ -1,0 +1,16 @@
+{
+  "industries": [
+    "adult",
+    "banking",
+    "fintech",
+    "crypto",
+    "insurance",
+    "healthcare",
+    "defense",
+    "energy",
+    "telecom",
+    "payments",
+    "gambling",
+    "gov_vendor"
+  ]
+}

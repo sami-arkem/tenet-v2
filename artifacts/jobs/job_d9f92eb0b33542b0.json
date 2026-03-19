@@ -1,0 +1,64 @@
+{
+  "job_id": "job_d9f92eb0b33542b0",
+  "job_type": "process_evidence_pack",
+  "queue_name": "evidence_processing",
+  "status": "SUCCEEDED",
+  "payload": {
+    "pack_id": "pack_ae6756bb4fb142ac"
+  },
+  "result": {
+    "pack_id": "pack_ae6756bb4fb142ac",
+    "processed_count": 1,
+    "failure_count": 0,
+    "readiness": {
+      "pack_id": "pack_ae6756bb4fb142ac",
+      "item_count": 1,
+      "ready_count": 1,
+      "failed_count": 0,
+      "pending_count": 0,
+      "corpus_ready": true,
+      "statuses": {
+        "READY": 1
+      },
+      "failures": [],
+      "event": "CORPUS_READY"
+    }
+  },
+  "error": null,
+  "retry_count": 0,
+  "max_retries": 3,
+  "time_limit_seconds": 300,
+  "created_at": "2026-03-19T08:19:31.256095+00:00",
+  "updated_at": "2026-03-19T08:19:31.261553+00:00",
+  "started_at": "2026-03-19T08:19:31.256778+00:00",
+  "finished_at": "2026-03-19T08:19:31.261545+00:00",
+  "timeline": [
+    {
+      "created_at": "2026-03-19T08:19:31.256095+00:00",
+      "event_type": "job_created",
+      "payload": {
+        "job_type": "process_evidence_pack",
+        "queue_name": "evidence_processing"
+      }
+    },
+    {
+      "created_at": "2026-03-19T08:19:31.256783+00:00",
+      "event_type": "job_started",
+      "payload": {
+        "job_type": "process_evidence_pack"
+      }
+    },
+    {
+      "created_at": "2026-03-19T08:19:31.261551+00:00",
+      "event_type": "job_succeeded",
+      "payload": {
+        "result_keys": [
+          "failure_count",
+          "pack_id",
+          "processed_count",
+          "readiness"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "comparison_version": "v1",
+  "compared_at_utc": "2026-03-17T15:22:56.444647+00:00",
+  "entity_name": "Real AML Strong Pass Case",
+  "prior_audit_id": "aml-us-uk-tm-gap-001",
+  "current_audit_id": "aml-us-strong-pass-001",
+  "prior_decision": "BLOCKED",
+  "current_decision": "BLOCKED",
+  "newly_introduced_gaps": [],
+  "closed_gaps": [],
+  "unchanged_gaps": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "KYB-001",
+    "KYC-001",
+    "SAN-001"
+  ],
+  "newly_introduced_findings": [],
+  "closed_findings": [],
+  "unchanged_findings": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "KYB-001",
+    "KYC-001",
+    "SAN-001"
+  ]
+}

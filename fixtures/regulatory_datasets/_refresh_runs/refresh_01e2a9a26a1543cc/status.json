@@ -1,0 +1,12 @@
+{
+  "run_id": "refresh_01e2a9a26a1543cc",
+  "status": "SUCCEEDED",
+  "deterministic_authoritative": true,
+  "started_at": "2026-03-18T21:48:11.876371+00:00",
+  "requested_limit": 10,
+  "candidate_count": 1,
+  "scheduled_count": 1,
+  "finished_at": "2026-03-18T21:48:11.876679+00:00",
+  "success_count": 1,
+  "failure_count": 0
+}

@@ -1,0 +1,11 @@
+URL SOURCE MANIFEST
+dataset_id: dataset_official_fca_handbook
+title: FCA Handbook of Rules and Guidance
+domain: governance
+dataset_type: law_text
+framework_ids: FCA_HANDBOOK
+jurisdictions: uk
+countries: GB
+source_url: https://www.fca.org.uk/about/how-we-regulate/handbook
+ingested_at: 2026-03-19T17:59:45.616453+00:00
+fetch_mode: metadata_only

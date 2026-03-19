@@ -1,0 +1,50 @@
+{
+  "audit_type": "regulatory_licensing_readiness_review",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "domains": [
+    "regulatory_licensing",
+    "vendor_risk",
+    "governance"
+  ],
+  "regimes": [
+    "UAE_GOVERNANCE_BASELINE"
+  ],
+  "controls": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "evidence_categories": [
+    "licensing_inventory",
+    "licensing_obligations",
+    "regulatory_mapping",
+    "ownership_and_accountability",
+    "licensing_governance",
+    "vendor_due_diligence",
+    "third_party_risk_assessment",
+    "outsourcing_governance",
+    "vendor_monitoring",
+    "governance_framework",
+    "roles_and_responsibilities",
+    "committee_charter",
+    "escalation_matrix"
+  ],
+  "query_terms": [
+    "licensing inventory",
+    "regulatory mapping",
+    "vendor due diligence procedure",
+    "licensing governance",
+    "api",
+    "enterprise",
+    "licensing obligations",
+    "regulatory accountability",
+    "third party risk assessment",
+    "outsourcing governance",
+    "vendor monitoring cadence",
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix"
+  ]
+}

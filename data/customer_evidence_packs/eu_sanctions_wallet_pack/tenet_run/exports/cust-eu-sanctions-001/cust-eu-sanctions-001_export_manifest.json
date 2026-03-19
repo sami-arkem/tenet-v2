@@ -1,0 +1,36 @@
+{
+  "audit_id": "cust-eu-sanctions-001",
+  "exported_at_utc": "2026-03-18T07:33:41.552572+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_board_memo.docx",
+      "sha256": "8666f6dd47b205e106385f612a655d050a91b878b704a981242cf154b212e2cf",
+      "size_bytes": 2369
+    },
+    "board_pdf": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_board_memo.pdf",
+      "sha256": "bf625b47e6e6f7cbfde22c33b2d8c464e520796dcee853f074879cea14efb80b",
+      "size_bytes": 1695
+    },
+    "client_docx": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_client_report.docx",
+      "sha256": "0d4445902819f4d369a9fa1d69d2e483c0a515d0edde665a72b7ed1fc4166976",
+      "size_bytes": 2433
+    },
+    "client_pdf": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_client_report.pdf",
+      "sha256": "ddd7f8d401ad80b30eecd09063c84021ae1db27420b2941ae25a2500f5b4e1f0",
+      "size_bytes": 2222
+    },
+    "regulator_docx": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_regulator_memo.docx",
+      "sha256": "2f4b8a94b6fcf4487021ac2ac90d5fc098d399c21521f58a167f5adfb2a055b1",
+      "size_bytes": 2312
+    },
+    "regulator_pdf": {
+      "path": "data/customer_evidence_packs/eu_sanctions_wallet_pack/tenet_run/exports/cust-eu-sanctions-001/cust-eu-sanctions-001_regulator_memo.pdf",
+      "sha256": "1c942222e7164088a00e2ae740a8150a61f737175ab68413dcad1ffe79632baa",
+      "size_bytes": 1547
+    }
+  }
+}

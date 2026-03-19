@@ -1,0 +1,36 @@
+{
+  "audit_id": "cust-canada-remediation-001",
+  "exported_at_utc": "2026-03-18T07:33:41.641755+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_board_memo.docx",
+      "sha256": "e4cc5ca1548bd3a4f44d71acaaa6f7a7ef7dd0ca4bd5a83826d52b97c478709d",
+      "size_bytes": 2330
+    },
+    "board_pdf": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_board_memo.pdf",
+      "sha256": "f84df356090029bbe04dee03448853f21685d89fd85d8fc532a74b95191e73ff",
+      "size_bytes": 1548
+    },
+    "client_docx": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_client_report.docx",
+      "sha256": "c9e5c007b058ad908e1bdc37aa1bd8c6449c403f6fdd2f8572de45f24f7e25fa",
+      "size_bytes": 2309
+    },
+    "client_pdf": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_client_report.pdf",
+      "sha256": "1e1a91963616557eeebed0591c0e5ce56b542ddccad498d6ecb45a87070a6130",
+      "size_bytes": 1567
+    },
+    "regulator_docx": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_regulator_memo.docx",
+      "sha256": "57816f4168849019eec467e6e9fe26142a64a02569c10dfb994b4d21cc7c5dbd",
+      "size_bytes": 2278
+    },
+    "regulator_pdf": {
+      "path": "data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_regulator_memo.pdf",
+      "sha256": "43f1a846eeae75eef0fd7604453ee8423d6a2d1d354c011eb808c3dbbafcf6eb",
+      "size_bytes": 1392
+    }
+  }
+}

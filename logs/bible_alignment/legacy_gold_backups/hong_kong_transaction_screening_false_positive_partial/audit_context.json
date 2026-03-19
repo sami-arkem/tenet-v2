@@ -1,0 +1,35 @@
+{
+  "audit_id": "hong-kong-transaction-screening-false-positive-partial-001",
+  "entity_name": "Real Hong Kong Transaction Screening False Positive Partial",
+  "audit_type": "transaction_screening_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "HONG_KONG"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "api",
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "false positive review",
+    "screening alert workflow",
+    "transaction screening",
+    "screening governance",
+    "alert disposition"
+  ],
+  "top_k": 5
+}

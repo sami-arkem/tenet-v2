@@ -1,0 +1,26 @@
+{
+  "dataset_id": "dataset_official_eurlex_aml_package",
+  "title": "EUR-Lex EU AML Package and AMLA Texts",
+  "domain": "aml",
+  "jurisdictions": [
+    "eu"
+  ],
+  "countries": [
+    "EU"
+  ],
+  "framework_ids": [
+    "EU_AMLA",
+    "EU_AMLR",
+    "EU_AMLD6"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "loader_kind": "url_manifest",
+  "retrieval_ready": true,
+  "normalized_text_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_aml_package/normalized_text.txt",
+  "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_aml_package/chunks.json",
+  "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_aml_package/retrieval_index.json",
+  "chunk_count": 1,
+  "ingested_at": "2026-03-19T17:59:45.585130+00:00"
+}

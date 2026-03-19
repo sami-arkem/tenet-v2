@@ -1,0 +1,35 @@
+{
+  "run_id": "run_aml_review_api_001",
+  "readiness_label": "REMEDIATION_REQUIRED",
+  "summary": {
+    "overall_posture": "AMBER",
+    "deployment_decision": "CONDITIONALLY_APPROVED",
+    "control_count": 1,
+    "passed_controls": 0,
+    "partial_controls": 1,
+    "failed_controls": 0,
+    "missing_evidence_controls": 0,
+    "critical_findings": 0,
+    "high_findings": 1,
+    "medium_findings": 0,
+    "low_findings": 0,
+    "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0."
+  },
+  "finding_counts": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "remediation_items": [
+    {
+      "remediation_id": "remediation::0001",
+      "finding_id": "AML.MONITORING.001::finding",
+      "title": "Remediate AML.MONITORING.001",
+      "owner": "compliance@acme.com",
+      "due_date": null,
+      "status": "OPEN",
+      "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+    }
+  ]
+}

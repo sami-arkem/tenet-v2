@@ -1,0 +1,34 @@
+{
+  "audit_id": "sanctions-uae-wallet-screening-partial-001",
+  "entity_name": "Real UAE Wallet Screening Partial",
+  "audit_type": "sanctions_readiness_review",
+  "industry": "crypto",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "sanctions",
+    "transaction_screening",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "sanctions policy",
+    "screening procedure",
+    "transaction screening",
+    "alert escalation workflow",
+    "screening governance"
+  ],
+  "top_k": 5
+}

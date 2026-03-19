@@ -1,0 +1,161 @@
+{
+  "workflow_id": "wf_fa5434d5cf4c4e8c",
+  "pack_id": "pack_963d3e0015664e28",
+  "pack_name": "Acme AML Pack",
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk",
+    "eu"
+  ],
+  "created_by": "sami",
+  "created_at": "2026-03-18T11:05:48.553668+00:00",
+  "updated_at": "2026-03-18T11:05:48.556489+00:00",
+  "status": "BLOCKED_BY_READINESS",
+  "latest_readiness": {
+    "pack_id": "pack_963d3e0015664e28",
+    "pack_name": "Acme AML Pack",
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "domain": "aml",
+    "jurisdictions": [
+      "uk",
+      "eu"
+    ],
+    "summary": {
+      "overall_status": "WAITING_FOR_CORPUS_AND_REMEDIATION",
+      "control_count": 3,
+      "ready_controls": 0,
+      "partial_controls": 0,
+      "missing_evidence_controls": 3,
+      "blocked_controls": 0,
+      "missing_evidence_by_type": {
+        "cdd_policy": 1,
+        "governance_charter": 1,
+        "monitoring_report": 1,
+        "owner_matrix": 1,
+        "periodic_review_log": 1,
+        "policy_document": 1
+      }
+    },
+    "controls": [
+      {
+        "control_id": "GOV.RISK.001",
+        "regime_id": "INT_GOV.001",
+        "title": "Compliance governance ownership",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "provided_evidence_types": [],
+        "missing_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "readiness_status": "MISSING_EVIDENCE",
+        "rationale": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.KYC.002",
+        "regime_id": "UK_MLR.002",
+        "title": "CDD review evidence",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "periodic_review_log",
+          "cdd_policy"
+        ],
+        "provided_evidence_types": [],
+        "missing_evidence_types": [
+          "cdd_policy",
+          "periodic_review_log"
+        ],
+        "readiness_status": "MISSING_EVIDENCE",
+        "rationale": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "policy_document",
+          "monitoring_report"
+        ],
+        "provided_evidence_types": [],
+        "missing_evidence_types": [
+          "monitoring_report",
+          "policy_document"
+        ],
+        "readiness_status": "MISSING_EVIDENCE",
+        "rationale": "No required evidence coverage is present."
+      }
+    ],
+    "requested_evidence_actions": [
+      {
+        "control_id": "GOV.RISK.001",
+        "regime_id": "INT_GOV.001",
+        "title": "Compliance governance ownership",
+        "request_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "reason": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.KYC.002",
+        "regime_id": "UK_MLR.002",
+        "title": "CDD review evidence",
+        "request_evidence_types": [
+          "cdd_policy",
+          "periodic_review_log"
+        ],
+        "reason": "No required evidence coverage is present."
+      },
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "request_evidence_types": [
+          "monitoring_report",
+          "policy_document"
+        ],
+        "reason": "No required evidence coverage is present."
+      }
+    ],
+    "corpus_readiness": {
+      "pack_id": "pack_963d3e0015664e28",
+      "item_count": 0,
+      "ready_count": 0,
+      "failed_count": 0,
+      "pending_count": 0,
+      "corpus_ready": false,
+      "statuses": {},
+      "failures": [],
+      "event": null
+    }
+  },
+  "latest_execution": null,
+  "latest_remediation_summary": null,
+  "timeline": [
+    {
+      "created_at": "2026-03-18T11:05:48.553674+00:00",
+      "event_type": "workflow_created",
+      "payload": {
+        "pack_id": "pack_963d3e0015664e28",
+        "pack_name": "Acme AML Pack",
+        "created_by": "sami"
+      }
+    },
+    {
+      "created_at": "2026-03-18T11:05:48.556483+00:00",
+      "event_type": "readiness_refreshed",
+      "payload": {
+        "overall_status": "WAITING_FOR_CORPUS_AND_REMEDIATION",
+        "control_count": 3,
+        "requested_evidence_actions": 3
+      }
+    }
+  ]
+}

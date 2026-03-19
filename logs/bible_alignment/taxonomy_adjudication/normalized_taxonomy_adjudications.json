@@ -1,0 +1,117 @@
+{
+  "decisions": [
+    {
+      "case_dir": "evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+      "domains": [
+        "kyb"
+      ],
+      "jurisdictions": [
+        "uk"
+      ],
+      "decided_by": "codex",
+      "rationale": "Folder name, audit_type `kyc_kyb_policy_and_control_review`, query terms focused on beneficial ownership and business onboarding, and the case title all indicate a KYB case in UK scope.",
+      "evidence_refs": [
+        "evals/gold_cases/kyb_uk_beneficial_ownership_partial/audit_context.json",
+        "evals/gold_cases/kyb_uk_beneficial_ownership_partial/case_notes.md",
+        "evals/gold_cases/kyb_uk_beneficial_ownership_partial/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/kyb_us_beneficial_ownership_gap",
+      "domains": [
+        "kyb"
+      ],
+      "jurisdictions": [
+        "us"
+      ],
+      "decided_by": "codex",
+      "rationale": "Folder name, beneficial ownership and business onboarding query terms, and expected control gaps centered on KYB/UBO checks make this an evidence-backed KYB case in US scope.",
+      "evidence_refs": [
+        "evals/gold_cases/kyb_us_beneficial_ownership_gap/audit_context.json",
+        "evals/gold_cases/kyb_us_beneficial_ownership_gap/case_notes.md",
+        "evals/gold_cases/kyb_us_beneficial_ownership_gap/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/kyb_us_partial_evidence",
+      "domains": [
+        "kyb"
+      ],
+      "jurisdictions": [
+        "us"
+      ],
+      "decided_by": "codex",
+      "rationale": "The case name, KYB-oriented query terms such as beneficial ownership and UBO verification, and the audit context all support a KYB classification in US scope.",
+      "evidence_refs": [
+        "evals/gold_cases/kyb_us_partial_evidence/audit_context.json",
+        "evals/gold_cases/kyb_us_partial_evidence/case_notes.md",
+        "evals/gold_cases/kyb_us_partial_evidence/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/kyc_us_consumer_onboarding_gap",
+      "domains": [
+        "kyc"
+      ],
+      "jurisdictions": [
+        "us"
+      ],
+      "decided_by": "codex",
+      "rationale": "Consumer onboarding, identity verification, and CIP-focused query terms, together with the folder name, support an explicit KYC classification in US scope.",
+      "evidence_refs": [
+        "evals/gold_cases/kyc_us_consumer_onboarding_gap/audit_context.json",
+        "evals/gold_cases/kyc_us_consumer_onboarding_gap/case_notes.md",
+        "evals/gold_cases/kyc_us_consumer_onboarding_gap/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_eu_outsourcing_gap",
+      "domains": [
+        "vendor_risk"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "decided_by": "codex",
+      "rationale": "The folder name, vendor_internal_compliance_readiness_review audit type, vendor_risk source family, and outsourcing governance query terms clearly support vendor_risk in EU scope.",
+      "evidence_refs": [
+        "evals/gold_cases/vendor_eu_outsourcing_gap/audit_context.json",
+        "evals/gold_cases/vendor_eu_outsourcing_gap/case_notes.md",
+        "evals/gold_cases/vendor_eu_outsourcing_gap/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_global_monitoring_partial",
+      "domains": [
+        "vendor_risk"
+      ],
+      "jurisdictions": [
+        "global"
+      ],
+      "decided_by": "codex",
+      "rationale": "The case is explicitly vendor-focused, uses vendor_risk source families and vendor monitoring query terms, and spans US, UK, and EU jurisdictions, which supports a global vendor_risk classification.",
+      "evidence_refs": [
+        "evals/gold_cases/vendor_global_monitoring_partial/audit_context.json",
+        "evals/gold_cases/vendor_global_monitoring_partial/case_notes.md",
+        "evals/gold_cases/vendor_global_monitoring_partial/expected_assertions.json"
+      ]
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_readiness_us_uk",
+      "domains": [
+        "vendor_risk"
+      ],
+      "jurisdictions": [
+        "uk",
+        "us"
+      ],
+      "decided_by": "codex",
+      "rationale": "The folder name, vendor_internal_compliance_readiness_review audit type, vendor_risk source family, and third-party risk query terms support vendor_risk across US and UK scope.",
+      "evidence_refs": [
+        "evals/gold_cases/vendor_readiness_us_uk/audit_context.json",
+        "evals/gold_cases/vendor_readiness_us_uk/case_notes.md",
+        "evals/gold_cases/vendor_readiness_us_uk/expected_assertions.json"
+      ]
+    }
+  ]
+}

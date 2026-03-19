@@ -1,0 +1,28 @@
+{
+  "pack_id": "domain_remediation_tracking_v1",
+  "domain": "remediation_tracking",
+  "label": "Remediation Tracking",
+  "supported_audit_types": [
+    "remediation_tracking_review",
+    "policy_governance_gap_analysis",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "evidence_categories": [
+    "issue_register",
+    "action_tracker",
+    "owner_assignment",
+    "closure_evidence",
+    "remediation_governance"
+  ],
+  "query_seeds": [
+    "issue register",
+    "action tracker",
+    "owner assignment",
+    "closure evidence",
+    "remediation governance"
+  ]
+}

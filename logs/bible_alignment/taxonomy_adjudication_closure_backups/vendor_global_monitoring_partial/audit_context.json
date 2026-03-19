@@ -1,0 +1,35 @@
+{
+  "audit_id": "vendor-global-monitoring-partial-001",
+  "entity_name": "Real Vendor Global Monitoring Partial Case",
+  "audit_type": "vendor_internal_compliance_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US",
+    "UK",
+    "EU"
+  ],
+  "entity_type": "vendor",
+  "products": [
+    "api",
+    "dashboard"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "source_families": [
+    "regulations",
+    "vendor_risk",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "vendor monitoring cadence",
+    "third party governance",
+    "outsourcing oversight",
+    "risk review committee",
+    "vendor escalation"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

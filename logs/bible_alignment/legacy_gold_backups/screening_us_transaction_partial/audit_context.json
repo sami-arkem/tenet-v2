@@ -1,0 +1,32 @@
+{
+  "audit_id": "screening-us-transaction-partial-001",
+  "entity_name": "Real US Transaction Screening Partial Case",
+  "audit_type": "transaction_screening_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "transaction screening",
+    "screening thresholds",
+    "screening alert workflow"
+  ],
+  "top_k": 5
+}

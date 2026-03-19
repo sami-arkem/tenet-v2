@@ -1,0 +1,41 @@
+{
+  "audit_type": "remediation_tracking_review",
+  "jurisdictions": [
+    "CANADA"
+  ],
+  "domains": [
+    "remediation_tracking",
+    "governance"
+  ],
+  "regimes": [
+    "CA_GOVERNANCE_BASELINE"
+  ],
+  "controls": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "evidence_categories": [
+    "issue_register",
+    "action_tracker",
+    "owner_assignment",
+    "closure_evidence",
+    "remediation_governance",
+    "governance_framework",
+    "roles_and_responsibilities",
+    "committee_charter",
+    "escalation_matrix"
+  ],
+  "query_terms": [
+    "closure evidence",
+    "issue register",
+    "remediation governance",
+    "api",
+    "enterprise",
+    "action tracker",
+    "owner assignment",
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix"
+  ]
+}

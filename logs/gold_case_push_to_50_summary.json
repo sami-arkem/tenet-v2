@@ -1,0 +1,313 @@
+[
+  {
+    "case_id": "aml_uae_policy_governance_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_AML_BASELINE",
+      "UAE_SANCTIONS_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "AML-003",
+      "KYC-001",
+      "SAN-001",
+      "AML-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 15
+  },
+  {
+    "case_id": "kyb_singapore_beneficial_ownership_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "SG_AML_BASELINE",
+      "SG_SANCTIONS_BASELINE",
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 9
+  },
+  {
+    "case_id": "sanctions_uae_wallet_screening_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_AML_BASELINE",
+      "UAE_SANCTIONS_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "SAN-001",
+      "AML-003"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "SAN-001",
+      "AML-003"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "governance_canada_committee_roles_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CA_AML_BASELINE",
+      "CA_SANCTIONS_BASELINE",
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "vendor_hong_kong_outsourcing_monitoring_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "HK_AML_BASELINE",
+      "HK_SANCTIONS_BASELINE",
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "fraud_uae_case_management_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_AML_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "AML-002",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "coverage": 9
+  },
+  {
+    "case_id": "screening_singapore_alert_workflow_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "SG_SANCTIONS_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "licensing_hong_kong_inventory_accountability_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "remediation_uae_closure_evidence_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "aml_australia_monitoring_escalation_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "AU_AML_BASELINE",
+      "AU_SANCTIONS_BASELINE",
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "AML-003",
+      "KYC-001",
+      "SAN-001",
+      "AML-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 15
+  },
+  {
+    "case_id": "kyc_canada_consumer_onboarding_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CA_AML_BASELINE",
+      "CA_SANCTIONS_BASELINE",
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 0
+  },
+  {
+    "case_id": "vendor_australia_licensing_vendor_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "AU_AML_BASELINE",
+      "AU_SANCTIONS_BASELINE",
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "cycle_date": "2026-02-15",
+  "executions": [
+    {
+      "execution_id": "tenant-a:aml_periodic:sched-001:2026-02-15",
+      "schedule_id": "sched-001",
+      "tenant_id": "tenant-a",
+      "audit_kind": "aml_periodic",
+      "due_date": "2026-02-15",
+      "execution_date": "2026-02-15",
+      "execution_key": "tenant-a:aml_periodic:sched-001:2026-02-15",
+      "source_policy_hash": "abc123"
+    }
+  ],
+  "reminder_events": [
+    {
+      "event_id": "tenant-a:aml_periodic:sched-001:AUDIT_REMINDER:2026-02-15",
+      "schedule_id": "sched-001",
+      "tenant_id": "tenant-a",
+      "audit_kind": "aml_periodic",
+      "event_kind": "AUDIT_REMINDER",
+      "target_date": "2026-02-15",
+      "payload_hash": "r1"
+    }
+  ],
+  "skip_events": [
+    {
+      "event_id": "tenant-b:sanctions_review:sched-002:SCHEDULE_STALE_EVIDENCE:2026-02-01",
+      "schedule_id": "sched-002",
+      "tenant_id": "tenant-b",
+      "audit_kind": "sanctions_review",
+      "event_kind": "SCHEDULE_STALE_EVIDENCE",
+      "target_date": "2026-02-01",
+      "payload_hash": "s1"
+    }
+  ],
+  "skipped": [
+    {
+      "schedule_id": "sched-002",
+      "tenant_id": "tenant-b",
+      "audit_kind": "sanctions_review",
+      "due_date": "2026-02-01",
+      "skip_reason": "STALE_EVIDENCE",
+      "stale_evidence": true
+    },
+    {
+      "schedule_id": "sched-004",
+      "tenant_id": "tenant-d",
+      "audit_kind": "disabled_review",
+      "due_date": "2026-02-01",
+      "skip_reason": "SCHEDULE_DISABLED",
+      "stale_evidence": false
+    }
+  ]
+}

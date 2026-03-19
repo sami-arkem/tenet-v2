@@ -1,0 +1,48 @@
+{
+  "default_reasoning_model": "gpt-5",
+  "default_intake_model": "gpt-5-mini",
+  "models": {
+    "gpt-5": {
+      "provider": "openai_compatible",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 12000,
+      "supports_json_mode": true,
+      "intended_use": [
+        "reasoning",
+        "structured_json"
+      ]
+    },
+    "gpt-5-mini": {
+      "provider": "openai_compatible",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 6000,
+      "supports_json_mode": true,
+      "intended_use": [
+        "intake",
+        "follow_up_questions"
+      ]
+    },
+    "gpt-5-nano": {
+      "provider": "openai_compatible",
+      "max_input_tokens": 200000,
+      "max_output_tokens": 4000,
+      "supports_json_mode": true,
+      "intended_use": [
+        "intake",
+        "cheap_reasoning",
+        "structured_json"
+      ]
+    },
+    "gpt-4.1-mini": {
+      "provider": "openai_compatible",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 32768,
+      "supports_json_mode": true,
+      "intended_use": [
+        "reasoning",
+        "structured_json",
+        "overlay_generation"
+      ]
+    }
+  }
+}

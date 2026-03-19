@@ -1,0 +1,69 @@
+{
+  "pack_id": "pack_f92d08fc346e4060",
+  "created_at": "2026-03-19T11:11:00.131127+00:00",
+  "updated_at": "2026-03-19T11:11:00.140886+00:00",
+  "items": [
+    {
+      "evidence_id": "evidence_03ed1e1b000fa0fa",
+      "filename": "policy.txt",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "detected_mime": "text/plain",
+      "size_bytes": 59,
+      "sha256": "03ed1e1b000fa0fa2729079781f2ce18523e4e82a30cfe9e84a668b09d5d5220",
+      "storage_path": "artifacts/evidence_blobs/pack_f92d08fc346e4060/03ed1e1b000fa0fa2729079781f2ce18523e4e82a30cfe9e84a668b09d5d5220.txt",
+      "citation": "policy.txt#L1-L1",
+      "processing_status": "READY",
+      "malware_scan_status": "NOT_RUN",
+      "ocr_status": "NOT_REQUIRED",
+      "created_at": "2026-03-19T11:11:00.131101+00:00",
+      "updated_at": "2026-03-19T11:11:00.131105+00:00",
+      "extracted_text_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_03ed1e1b000fa0fa.txt",
+      "classification": {
+        "evidence_id": "evidence_03ed1e1b000fa0fa",
+        "category": "monitoring_report",
+        "confidence": "HIGH",
+        "reason": "matched deterministic rule for monitoring_report"
+      },
+      "classification_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_03ed1e1b000fa0fa.classification.json",
+      "key_facts": {
+        "category": "monitoring_report",
+        "line_count": 1,
+        "char_count": 59,
+        "preview": "AML transaction monitoring policy and escalation procedure."
+      },
+      "key_facts_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_03ed1e1b000fa0fa.facts.json"
+    },
+    {
+      "evidence_id": "evidence_b55d780e8622bbea",
+      "filename": "screening.txt",
+      "title": "Screening Alerts",
+      "source_type": "screening_alert_log",
+      "detected_mime": "text/plain",
+      "size_bytes": 64,
+      "sha256": "b55d780e8622bbea089552f3cae90722f6c5c9ea1646a8aecd3bbd747da0f702",
+      "storage_path": "artifacts/evidence_blobs/pack_f92d08fc346e4060/b55d780e8622bbea089552f3cae90722f6c5c9ea1646a8aecd3bbd747da0f702.txt",
+      "citation": "screening.txt#L1-L1",
+      "processing_status": "READY",
+      "malware_scan_status": "NOT_RUN",
+      "ocr_status": "NOT_REQUIRED",
+      "created_at": "2026-03-19T11:11:00.140823+00:00",
+      "updated_at": "2026-03-19T11:11:00.140826+00:00",
+      "extracted_text_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_b55d780e8622bbea.txt",
+      "classification": {
+        "evidence_id": "evidence_b55d780e8622bbea",
+        "category": "screening_alert_log",
+        "confidence": "HIGH",
+        "reason": "matched deterministic rule for screening_alert_log"
+      },
+      "classification_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_b55d780e8622bbea.classification.json",
+      "key_facts": {
+        "category": "screening_alert_log",
+        "line_count": 1,
+        "char_count": 64,
+        "preview": "Sanctions screening alert handling and OFAC escalation workflow."
+      },
+      "key_facts_path": "artifacts/evidence_packs/pack_f92d08fc346e4060/processing/evidence_b55d780e8622bbea.facts.json"
+    }
+  ]
+}

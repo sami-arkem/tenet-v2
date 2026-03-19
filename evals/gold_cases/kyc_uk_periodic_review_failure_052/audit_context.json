@@ -3,12 +3,31 @@
   "entity_name": "Real KYC UK Periodic Review Failure 052",
   "audit_type": "kyc_kyb_policy_and_control_review",
   "industry": "fintech",
-  "jurisdictions": ["UK"],
+  "jurisdictions": [
+    "UK"
+  ],
   "entity_type": "payments_platform",
-  "products": ["wallet"],
-  "customer_types": ["consumer"],
-  "domains": ["kyc", "governance"],
-  "source_families": ["regulations", "kyc", "industry_fintech"],
-  "query_terms": ["periodic review", "identity verification", "customer risk scoring"],
-  "top_k": 5
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "kyc",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "kyc",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "periodic review",
+    "identity verification",
+    "customer risk scoring"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
 }

@@ -1,0 +1,36 @@
+{
+  "audit_id": "aml-uae-policy-governance-gap-001",
+  "entity_name": "Real UAE AML Policy Governance Gap",
+  "audit_type": "aml_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "domains": [
+    "aml",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "aml policy",
+    "policy approval",
+    "aml governance",
+    "roles and responsibilities",
+    "transaction monitoring"
+  ],
+  "top_k": 5
+}

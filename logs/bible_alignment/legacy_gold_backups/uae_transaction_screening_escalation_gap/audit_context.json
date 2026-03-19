@@ -1,0 +1,37 @@
+{
+  "audit_id": "uae-transaction-screening-escalation-gap-001",
+  "entity_name": "Real UAE Transaction Screening Escalation Gap",
+  "audit_type": "transaction_screening_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "cross_border_payments",
+    "wallet"
+  ],
+  "customer_types": [
+    "enterprise",
+    "consumer"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "transaction screening",
+    "screening alert workflow",
+    "screening escalation",
+    "screening governance",
+    "screening quality checks"
+  ],
+  "top_k": 5
+}

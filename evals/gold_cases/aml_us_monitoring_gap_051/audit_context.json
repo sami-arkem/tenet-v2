@@ -3,12 +3,31 @@
   "entity_name": "Real AML US Monitoring Gap 051",
   "audit_type": "aml_readiness_review",
   "industry": "fintech",
-  "jurisdictions": ["US"],
+  "jurisdictions": [
+    "US"
+  ],
   "entity_type": "payments_platform",
-  "products": ["wallet"],
-  "customer_types": ["consumer"],
-  "domains": ["aml", "governance"],
-  "source_families": ["regulations", "aml", "industry_fintech"],
-  "query_terms": ["aml policy", "transaction monitoring", "alert escalation"],
-  "top_k": 5
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "aml",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "aml policy",
+    "transaction monitoring",
+    "alert escalation"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
 }

@@ -1,0 +1,123 @@
+{
+  "run_id": "run_release_gate_api_001",
+  "deterministic_authoritative": true,
+  "release_status": "RELEASE_READY",
+  "release_ready": true,
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "overall_posture": "GREEN",
+  "deployment_decision": "APPROVED",
+  "control_summary": {
+    "control_count": 1,
+    "supported_controls": 1,
+    "partial_controls": 0,
+    "blocked_controls": 0
+  },
+  "review_summary": {
+    "present": true,
+    "status": "REVIEWED",
+    "latest_review_decision": "APPROVED",
+    "latest_review": {
+      "reviewed_at": "2026-03-19T17:59:46.565415+00:00",
+      "reviewer": "sami",
+      "decision": "APPROVED",
+      "rationale": "Deterministic package verified and approved.",
+      "conditions": [],
+      "evidence_refs": [
+        "report.md",
+        "audit_dossier.json"
+      ],
+      "note": null
+    }
+  },
+  "export_summary": {
+    "present": true,
+    "verified": true,
+    "all_ok": true,
+    "verification": {
+      "package_dir": "artifacts/audit_packages/pkg_release_gate_api_001",
+      "run_id": "run_release_gate_api_001",
+      "all_ok": true,
+      "files": [
+        {
+          "path": "input_payload.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "audit_context_pack.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "control_coverage.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "audit_dossier.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "release_gate.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "composed_report_bundle.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "deterministic_audit_result.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "report_pack.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "report_bundle.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "snapshot.json",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        },
+        {
+          "path": "report.md",
+          "exists": true,
+          "sha_ok": true,
+          "size_ok": true,
+          "ok": true
+        }
+      ]
+    }
+  },
+  "reasons_blocking_release": []
+}

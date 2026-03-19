@@ -1,0 +1,78 @@
+{
+  "package_version": "v1",
+  "run_id": "run_aml_review_api_001",
+  "generated_from_canonical_runtime": true,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true,
+  "deployment_decision": "CONDITIONALLY_APPROVED",
+  "overall_posture": "AMBER",
+  "finding_count": 1,
+  "remediation_item_count": 1,
+  "input_payload_sha256": "b41f59a83a3aa5090728f3443990b1e586c0977ebc28f215708a966fd1813005",
+  "audit_context_pack_present": false,
+  "control_coverage_present": false,
+  "audit_dossier_present": false,
+  "release_gate_present": false,
+  "composed_report_bundle_present": false,
+  "report_source": "deterministic_report_bundle",
+  "report_pack_sha256": "9885826cc05d20056adf726a00db8e1f52685d58d92d2f83b18b3fa2783954fa",
+  "report_bundle_sha256": "cf335ae500089878c14b1e852cc2f9b4688cacf784b567432d104ec7ccf45ce1",
+  "snapshot_sha256": "fdaf501619c3480755615f152e4d8b1474391d1f20fe7f4f5892b4324564c353",
+  "files": [
+    {
+      "path": "input_payload.json",
+      "sha256": "1025ec662308f08653b041049435b75ecfa8932614812c516a1cad30e1b5bbc2",
+      "size_bytes": 1712
+    },
+    {
+      "path": "audit_context_pack.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "control_coverage.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "audit_dossier.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "release_gate.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "composed_report_bundle.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "deterministic_audit_result.json",
+      "sha256": "e4f85992c6973fbbee6bbf0a659c2dfa9c15c469bded9a5f2ab1510e654d22af",
+      "size_bytes": 4557
+    },
+    {
+      "path": "report_pack.json",
+      "sha256": "31095766e981a7c2253f46bf15258cb7461d7d550b54b0cf8a8a4058091ae8a2",
+      "size_bytes": 3293
+    },
+    {
+      "path": "report_bundle.json",
+      "sha256": "2610ee84ec1e0bc9c16a18eb75d6cac8b581a58ae132d47c6bd078d4a8df21a9",
+      "size_bytes": 2091
+    },
+    {
+      "path": "snapshot.json",
+      "sha256": "2b30981d75698bacfe54d7556574c1da75be73370bd0b93e396406ab72ff0aa4",
+      "size_bytes": 1057
+    },
+    {
+      "path": "report.md",
+      "sha256": "37ed1dda86e857ae6727f861d823f0554da4dc1814170b00583da53e2f1aeb92",
+      "size_bytes": 1835
+    }
+  ]
+}

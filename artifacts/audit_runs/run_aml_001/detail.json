@@ -1,0 +1,414 @@
+{
+  "run_id": "run_aml_001",
+  "created_at": "2026-03-19T17:59:46.587433+00:00",
+  "input_payload": {
+    "run_id": "run_aml_001",
+    "company_profile": {
+      "company_name": "Acme Fintech",
+      "industry": "fintech",
+      "primary_jurisdiction": "uk",
+      "additional_jurisdictions": [
+        "eu"
+      ],
+      "products": [
+        "payments"
+      ],
+      "entities": [
+        "Acme Fintech Ltd"
+      ]
+    },
+    "scope": {
+      "audit_id": "audit_001",
+      "audit_type": "aml_readiness_review",
+      "framework_ids": [
+        "UK_MLR",
+        "EU_AMLD6"
+      ],
+      "domain": "aml",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "uk",
+        "eu"
+      ],
+      "in_scope_entities": [
+        "Acme Fintech Ltd"
+      ],
+      "in_scope_products": [
+        "payments"
+      ],
+      "evaluation_date": "2026-03-18",
+      "historical_context_is_non_authoritative": true,
+      "deterministic_current_audit_truth_only": true
+    },
+    "controls": [
+      {
+        "control": {
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "title": "Transaction monitoring policy",
+          "description": "A documented transaction monitoring control must exist.",
+          "test_procedure": "Check for policy and monitoring evidence.",
+          "required_evidence_types": [
+            "policy_document",
+            "monitoring_report"
+          ],
+          "severity_if_missing": "HIGH"
+        },
+        "provided_evidence": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L20"
+          }
+        ],
+        "declared_control_present": true,
+        "declared_operating_effective": true,
+        "notes": "Policy exists but monitoring evidence is incomplete."
+      }
+    ],
+    "default_remediation_owner": "compliance@acme.com",
+    "prior_historical_context": {
+      "prior_findings": 2
+    },
+    "metadata": {
+      "source": "unit_test"
+    }
+  },
+  "deterministic_audit_result": {
+    "run_id": "run_aml_001",
+    "status": "COMPLETED",
+    "created_at": "2026-03-19T17:59:46.586891+00:00",
+    "completed_at": "2026-03-19T17:59:46.586915+00:00",
+    "company_profile": {
+      "company_name": "Acme Fintech",
+      "industry": "fintech",
+      "primary_jurisdiction": "uk",
+      "additional_jurisdictions": [
+        "eu"
+      ],
+      "products": [
+        "payments"
+      ],
+      "entities": [
+        "Acme Fintech Ltd"
+      ]
+    },
+    "scope": {
+      "audit_id": "audit_001",
+      "audit_type": "aml_readiness_review",
+      "framework_ids": [
+        "UK_MLR",
+        "EU_AMLD6"
+      ],
+      "domain": "aml",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "uk",
+        "eu"
+      ],
+      "in_scope_entities": [
+        "Acme Fintech Ltd"
+      ],
+      "in_scope_products": [
+        "payments"
+      ],
+      "evaluation_date": "2026-03-18",
+      "historical_context_is_non_authoritative": true,
+      "deterministic_current_audit_truth_only": true
+    },
+    "control_evaluations": [
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "verdict": "PARTIAL",
+        "evidence_coverage_ratio": 0.5,
+        "evidence_refs": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L20",
+            "content_hash": null,
+            "collected_at": null
+          }
+        ],
+        "findings": [
+          {
+            "finding_id": "AML.MONITORING.001::finding",
+            "control_id": "AML.MONITORING.001",
+            "regime_id": "UK_MLR.001",
+            "title": "Gap in Transaction monitoring policy",
+            "description": "Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.",
+            "severity": "HIGH",
+            "status": "OPEN",
+            "verdict": "PARTIAL",
+            "missing_evidence_types": [
+              "monitoring_report"
+            ],
+            "evidence_refs": [
+              {
+                "evidence_id": "ev_001",
+                "title": "Monitoring Policy",
+                "source_type": "policy_document",
+                "file_path": "evidence/policy.pdf",
+                "citation": "policy.pdf#L1-L20",
+                "content_hash": null,
+                "collected_at": null
+              }
+            ],
+            "remediation_actions": [
+              "Provide evidence covering missing evidence types: monitoring_report."
+            ],
+            "rationale": "Control present but evidence coverage is incomplete."
+          }
+        ],
+        "rationale": "Control present but evidence coverage is incomplete."
+      }
+    ],
+    "findings": [
+      {
+        "finding_id": "AML.MONITORING.001::finding",
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Gap in Transaction monitoring policy",
+        "description": "Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.",
+        "severity": "HIGH",
+        "status": "OPEN",
+        "verdict": "PARTIAL",
+        "missing_evidence_types": [
+          "monitoring_report"
+        ],
+        "evidence_refs": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L20",
+            "content_hash": null,
+            "collected_at": null
+          }
+        ],
+        "remediation_actions": [
+          "Provide evidence covering missing evidence types: monitoring_report."
+        ],
+        "rationale": "Control present but evidence coverage is incomplete."
+      }
+    ],
+    "remediation_items": [
+      {
+        "remediation_id": "remediation::0001",
+        "finding_id": "AML.MONITORING.001::finding",
+        "title": "Remediate AML.MONITORING.001",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+      }
+    ],
+    "summary": {
+      "overall_posture": "AMBER",
+      "deployment_decision": "CONDITIONALLY_APPROVED",
+      "control_count": 1,
+      "passed_controls": 0,
+      "partial_controls": 1,
+      "failed_controls": 0,
+      "missing_evidence_controls": 0,
+      "critical_findings": 0,
+      "high_findings": 1,
+      "medium_findings": 0,
+      "low_findings": 0,
+      "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0."
+    },
+    "prior_historical_context": {
+      "prior_findings": 2
+    },
+    "metadata": {
+      "source": "unit_test"
+    }
+  },
+  "report_pack": {
+    "report_pack_version": "v1",
+    "generated_at": "2026-03-19T17:59:46.586936+00:00",
+    "run_id": "run_aml_001",
+    "company_profile": {
+      "company_name": "Acme Fintech",
+      "industry": "fintech",
+      "primary_jurisdiction": "uk",
+      "additional_jurisdictions": [
+        "eu"
+      ],
+      "products": [
+        "payments"
+      ],
+      "entities": [
+        "Acme Fintech Ltd"
+      ]
+    },
+    "scope": {
+      "audit_id": "audit_001",
+      "audit_type": "aml_readiness_review",
+      "framework_ids": [
+        "UK_MLR",
+        "EU_AMLD6"
+      ],
+      "domain": "aml",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "uk",
+        "eu"
+      ],
+      "in_scope_entities": [
+        "Acme Fintech Ltd"
+      ],
+      "in_scope_products": [
+        "payments"
+      ],
+      "evaluation_date": "2026-03-18",
+      "historical_context_is_non_authoritative": true,
+      "deterministic_current_audit_truth_only": true
+    },
+    "summary": {
+      "overall_posture": "AMBER",
+      "deployment_decision": "CONDITIONALLY_APPROVED",
+      "control_count": 1,
+      "passed_controls": 0,
+      "partial_controls": 1,
+      "failed_controls": 0,
+      "missing_evidence_controls": 0,
+      "critical_findings": 0,
+      "high_findings": 1,
+      "medium_findings": 0,
+      "low_findings": 0,
+      "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0."
+    },
+    "controls": [
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "verdict": "PARTIAL",
+        "evidence_coverage_ratio": 0.5,
+        "evidence_refs": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L20",
+            "content_hash": null,
+            "collected_at": null
+          }
+        ],
+        "rationale": "Control present but evidence coverage is incomplete."
+      }
+    ],
+    "findings": [
+      {
+        "finding_id": "AML.MONITORING.001::finding",
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Gap in Transaction monitoring policy",
+        "severity": "HIGH",
+        "status": "OPEN",
+        "verdict": "PARTIAL",
+        "missing_evidence_types": [
+          "monitoring_report"
+        ],
+        "evidence_refs": [
+          {
+            "evidence_id": "ev_001",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "file_path": "evidence/policy.pdf",
+            "citation": "policy.pdf#L1-L20",
+            "content_hash": null,
+            "collected_at": null
+          }
+        ],
+        "rationale": "Control present but evidence coverage is incomplete.",
+        "remediation_actions": [
+          "Provide evidence covering missing evidence types: monitoring_report."
+        ]
+      }
+    ],
+    "remediation_items": [
+      {
+        "remediation_id": "remediation::0001",
+        "finding_id": "AML.MONITORING.001::finding",
+        "title": "Remediate AML.MONITORING.001",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+      }
+    ],
+    "prior_historical_context": {
+      "prior_findings": 2
+    },
+    "metadata": {
+      "source": "unit_test"
+    }
+  },
+  "report_bundle": {
+    "run_id": "run_aml_001",
+    "markdown": "# Tenet Deterministic Audit Report: run_aml_001\n\nGenerated: 2026-03-19T17:59:46.586853+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk, eu\n- Overall posture: AMBER\n- Deployment decision: CONDITIONALLY_APPROVED\n- Summary: Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: PARTIAL\n- Evidence coverage ratio: 0.5\n- Rationale: Control present but evidence coverage is incomplete.\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L20\n\n## Findings\n\n### AML.MONITORING.001::finding\n- Control: AML.MONITORING.001\n- Regime: UK_MLR.001\n- Severity: HIGH\n- Status: OPEN\n- Verdict: PARTIAL\n- Description: Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.\n- Rationale: Control present but evidence coverage is incomplete.\n- Missing evidence types: monitoring_report\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L20\n- Remediation actions:\n  - Provide evidence covering missing evidence types: monitoring_report.\n\n## Remediation Plan\n\n### remediation::0001\n- Finding: AML.MONITORING.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: monitoring_report.\n\n## Prior / Historical Context\n\n- prior_findings: 2\n\n## Readiness Statement\n\nThe system is not fully ready; remediation is required before clean approval.\n",
+    "deployment_decision": "CONDITIONALLY_APPROVED",
+    "overall_posture": "AMBER",
+    "finding_count": 1,
+    "remediation_count": 1
+  },
+  "snapshot": {
+    "run_id": "run_aml_001",
+    "readiness_label": "REMEDIATION_REQUIRED",
+    "summary": {
+      "overall_posture": "AMBER",
+      "deployment_decision": "CONDITIONALLY_APPROVED",
+      "control_count": 1,
+      "passed_controls": 0,
+      "partial_controls": 1,
+      "failed_controls": 0,
+      "missing_evidence_controls": 0,
+      "critical_findings": 0,
+      "high_findings": 1,
+      "medium_findings": 0,
+      "low_findings": 0,
+      "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0."
+    },
+    "finding_counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "remediation_items": [
+      {
+        "remediation_id": "remediation::0001",
+        "finding_id": "AML.MONITORING.001::finding",
+        "title": "Remediate AML.MONITORING.001",
+        "owner": "compliance@acme.com",
+        "due_date": null,
+        "status": "OPEN",
+        "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+      }
+    ]
+  },
+  "topline": {
+    "run_id": "run_aml_001",
+    "overall_posture": "AMBER",
+    "deployment_decision": "CONDITIONALLY_APPROVED",
+    "control_count": 1,
+    "finding_count": 1,
+    "remediation_item_count": 1
+  },
+  "export_package": null,
+  "audit_context_pack": null
+}

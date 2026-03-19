@@ -1,0 +1,34 @@
+{
+  "audit_id": "licensing-uae-vendor-readiness-001",
+  "entity_name": "Real UAE Licensing Vendor Readiness",
+  "audit_type": "regulatory_licensing_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "vendor",
+  "products": [
+    "api"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "regulatory_licensing",
+    "vendor_risk",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "vendor_risk",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "licensing inventory",
+    "regulatory mapping",
+    "vendor due diligence procedure",
+    "licensing governance"
+  ],
+  "top_k": 5
+}

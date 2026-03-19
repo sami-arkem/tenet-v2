@@ -1,0 +1,25 @@
+{
+  "pack_id": "domain_screening_v1",
+  "domain": "screening",
+  "label": "Screening",
+  "supported_audit_types": [
+    "sanctions_readiness_review",
+    "vendor_internal_compliance_readiness_review",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "SAN-001"
+  ],
+  "evidence_categories": [
+    "screening_configuration",
+    "screening_alert_review",
+    "screening_escalation",
+    "screening_quality_checks"
+  ],
+  "query_seeds": [
+    "screening configuration",
+    "screening alert review",
+    "screening escalation",
+    "screening quality checks"
+  ]
+}

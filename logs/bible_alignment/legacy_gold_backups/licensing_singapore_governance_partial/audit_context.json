@@ -1,0 +1,31 @@
+{
+  "audit_id": "licensing-singapore-governance-partial-001",
+  "entity_name": "Real Singapore Licensing Governance Partial",
+  "audit_type": "regulatory_licensing_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "SINGAPORE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "regulatory_licensing",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "licensing obligations",
+    "regulatory accountability",
+    "licensing governance"
+  ],
+  "top_k": 5
+}

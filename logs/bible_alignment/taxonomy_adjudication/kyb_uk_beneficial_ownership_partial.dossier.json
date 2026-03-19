@@ -1,0 +1,125 @@
+{
+  "case_dir": "evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+  "case_name": "kyb_uk_beneficial_ownership_partial",
+  "issues": [
+    "domains must be a non-empty list"
+  ],
+  "audit_context_current": {
+    "audit_id": "kyb-uk-beneficial-ownership-partial-001",
+    "entity_name": "Real KYB UK BO Partial Case",
+    "audit_type": "kyc_kyb_policy_and_control_review",
+    "industry": "payments",
+    "jurisdictions": [
+      "UK"
+    ],
+    "entity_type": "payments_platform",
+    "products": [
+      "merchant_acquiring"
+    ],
+    "customer_types": [
+      "smb"
+    ],
+    "source_families": [
+      "regulations",
+      "aml",
+      "kyc",
+      "industry_fintech"
+    ],
+    "query_terms": [
+      "kyb policy",
+      "beneficial ownership procedure",
+      "business onboarding workflow",
+      "ubo verification",
+      "review cadence"
+    ],
+    "top_k": 5,
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "folder_name_hints": {
+    "domains": [
+      "kyb"
+    ],
+    "jurisdictions": [
+      "uk"
+    ]
+  },
+  "taxonomy_recovery_context": {
+    "case_dir": "evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+    "changed": false,
+    "blocked": true,
+    "domain_before": null,
+    "jurisdiction_before": [
+      "UK"
+    ],
+    "domain_after": null,
+    "jurisdiction_after": [
+      "UK"
+    ],
+    "reasons": [
+      "domain: ambiguous top candidates at same confidence: ['aml', 'kyc']"
+    ],
+    "backup_dir": null
+  },
+  "text_snippets": [
+    {
+      "path": "evals/gold_cases/kyb_uk_beneficial_ownership_partial/audit_context.json",
+      "snippet": "{\n  \"audit_id\": \"kyb-uk-beneficial-ownership-partial-001\",\n  \"entity_name\": \"Real KYB UK BO Partial Case\",\n  \"audit_type\": \"kyc_kyb_policy_and_control_review\",\n  \"industry\": \"payments\",\n  \"jurisdictions\": [\n    \"UK\"\n  ],\n  \"entity_type\": \"payments_platform\",\n  \"products\": [\n    \"merchant_acquiring\"\n  ],\n  \"customer_types\": [\n    \"smb\"\n  ],\n  \"source_families\": [\n    \"regulations\",\n    \"aml\",\n    \"kyc\",\n    \"industry_fintech\"\n  ],\n  \"query_terms\": [\n    \"kyb policy\",\n    \"beneficial ownership procedure\",\n    \"business onboarding workflow\",\n    \"ubo verification\",\n    \"review cadence\"\n  ],\n  \"top_k\": 5,\n  \"historical_context_is_non_authoritative\": true,\n  \"deterministic_current_audit_truth_only\": true\n}"
+    },
+    {
+      "path": "evals/gold_cases/kyb_uk_beneficial_ownership_partial/case_notes.md",
+      "snippet": "# kyb_uk_beneficial_ownership_partial\n\n## Scenario\nReal corpus-backed case for Tenet deterministic evaluation.\n\n## Audit context\n- audit_type: kyc_kyb_policy_and_control_review\n- industry: payments\n- jurisdictions: UK\n- entity_name: Real KYB UK BO Partial Case\n\n## Human adjudication\nExpected outcome is BLOCKED based on the current corpus-backed deterministic output.\n\n## Expected regimes\n- UK_MLR\n\n## Expected control position\n- missing_controls: AML-002, GOV-001, KYB-001, KYC-001\n- missing_evidence: AML-002, GOV-001, KYB-001, KYC-001\n- findings: KYB-001, KYC-001, AML-002, GOV-001\n- control_coverage_score minimum: 0\n\n## Reviewer rationale\nThis gold case is grounded in the currently observed deterministic engine behavior over the existing retrieval corpus."
+    },
+    {
+      "path": "evals/gold_cases/kyb_uk_beneficial_ownership_partial/expected_assertions.json",
+      "snippet": "{\n  \"case_id\": \"kyb_uk_beneficial_ownership_partial\",\n  \"expected\": {\n    \"equals\": {\n      \"deployment_decision.status\": \"BLOCKED\"\n    },\n    \"contains\": {\n      \"regulatory_applicability.primary_regimes\": [\n        \"UK_MLR\"\n      ],\n      \"missing_controls.control_id\": [\n        \"AML-002\",\n        \"GOV-001\",\n        \"KYB-001\",\n        \"KYC-001\"\n      ],\n      \"missing_evidence.control_id\": [\n        \"AML-002\",\n        \"GOV-001\",\n        \"KYB-001\",\n        \"KYC-001\"\n      ],\n      \"findings.control_id\": [\n        \"KYB-001\",\n        \"KYC-001\",\n        \"AML-002\",\n        \"GOV-001\"\n      ]\n    },\n    \"minimums\": {\n      \"control_assessment.control_coverage_score\": 0\n    }\n  },\n  \"rules\": {\n    \"no_invented_pass_outcome\": true,\n    \"deterministic_current_truth_only\": true,\n    \"historical_context_cannot_override_current_truth\": true\n  }\n}"
+    },
+    {
+      "path": "evals/gold_cases/kyb_uk_beneficial_ownership_partial/initial_run_output.json",
+      "snippet": "{\n  \"audit_meta\": {\n    \"audit_id\": \"kyb-uk-beneficial-ownership-partial-001\",\n    \"audit_version\": \"v1\",\n    \"timestamp_utc\": \"2026-03-17T15:09:11.569704+00:00\",\n    \"platform_version\": \"tenet-mvp\",\n    \"model_version\": \"deterministic-reasoner-v1\",\n    \"report_status\": \"draft\",\n    \"reasoning_mode\": \"deterministic\"\n  },\n  \"entity_profile\": {\n    \"legal_name\": \"Real KYB UK BO Partial Case\",\n    \"trade_name\": \"\",\n    \"industry\": \"payments\",\n    \"subindustry\": \"\",\n    \"business_model\": \"\",\n    \"products_services\": [\n      \"merchant_acquiring\"\n    ],\n    \"jurisdictions_of_operation\": [\n      \"UK\"\n    ],\n    \"customer_geographies\": [],\n    \"customer_types\": [\n      \"smb\"\n    ],\n    \"distribution_channels\": [],\n    \"payment_flows\": [],\n    \"data_categories_processed\": [],\n    \"high_risk_activities\": []\n  },\n  \"audit_scope\": {\n    \"audit_type\": \"kyc_kyb_policy_and_control_review\",\n    \"scope_statement\": \"kyc_kyb_policy_and_control_review for payments across UK\",\n    \"included_domains\": [\n      \"aml_governance\",\n      \"customer_identification\",\n      \"governance\",\n      \"kyb_beneficial_ownership\",\n      \"kyc_kyb\"\n    ],\n    \"excluded_domains\": [],\n    \"documents_reviewed\": [\n      \"AML CT"
+    }
+  ],
+  "decision_contract": {
+    "required_fields": [
+      "case_dir",
+      "domains",
+      "jurisdictions",
+      "decided_by",
+      "rationale",
+      "evidence_refs"
+    ],
+    "allowed_domains": [
+      "aml",
+      "fraud",
+      "governance",
+      "kyb",
+      "kyc",
+      "regulatory_licensing",
+      "regulatory_reporting",
+      "remediation_tracking",
+      "sanctions",
+      "third_party_risk",
+      "transaction_screening",
+      "vendor_risk"
+    ],
+    "allowed_jurisdictions": [
+      "australia",
+      "canada",
+      "eu",
+      "global",
+      "hong_kong",
+      "india",
+      "singapore",
+      "uae",
+      "uk",
+      "us"
+    ],
+    "rules": [
+      "do not guess",
+      "do not infer beyond available case evidence",
+      "do not invent outcomes",
+      "use only explicit adjudication decisions",
+      "domains and jurisdictions must be non-empty lists"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "generated_at_epoch": 1773782341,
+  "batch_label": "proof_batch_real_002",
+  "validation_step": {
+    "cmd": [
+      "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+      "/Users/samisayyed/tenet-v2/scripts/proof_intake_manager.py",
+      "validate",
+      "--plan-json",
+      "config/proof_batch_real_002.plan.json",
+      "--readiness-json",
+      "logs/proof_density/proof_batch_real_002.readiness.json",
+      "--readiness-md",
+      "logs/proof_density/execution/proof_batch_real_002/refreshed_readiness.md",
+      "--batch-manifest",
+      "logs/proof_density/execution/proof_batch_real_002/ready_only_manifest.json"
+    ],
+    "returncode": 0,
+    "passed": true,
+    "timed_out": false,
+    "duration_seconds": 0.099,
+    "stdout_tail": "{\n  \"batch_label\": \"proof_batch_real_002\",\n  \"readiness_json\": \"logs/proof_density/proof_batch_real_002.readiness.json\",\n  \"readiness_md\": \"logs/proof_density/execution/proof_batch_real_002/refreshed_readiness.md\",\n  \"batch_manifest\": \"logs/proof_density/execution/proof_batch_real_002/ready_only_manifest.json\",\n  \"total_items\": 11,\n  \"ready_items\": 0,\n  \"blocked_items\": 11,\n  \"ready_ids\": [],\n  \"blocked_ids\": [\n    \"aml_canada_case_001\",\n    \"aml_eu_case_001\",\n    \"aml_global_case_001\",\n    \"aml_hong_kong_case_001\",\n    \"aml_india_case_001\",\n    \"aml_singapore_case_001\",\n    \"fraud_canada_case_001\",\n    \"fraud_eu_case_001\",\n    \"aml_australia_pack_001\",\n    \"aml_canada_pack_001\",\n    \"aml_eu_pack_001\"\n  ]\n}\n",
+    "stderr_tail": ""
+  },
+  "operator_tasks_summary": {
+    "batch_label": "proof_batch_real_002",
+    "operator_task_dir": "logs/proof_density/execution/proof_batch_real_002/operator_tasks",
+    "task_file_count": 11,
+    "ready_count": 0,
+    "blocked_count": 11,
+    "task_files": [
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_canada_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_eu_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_global_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_hong_kong_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_india_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_singapore_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/fraud_canada_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/fraud_eu_case_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_australia_pack_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_canada_pack_001.md",
+      "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_eu_pack_001.md"
+    ]
+  },
+  "counts": {
+    "ready_items": 0,
+    "blocked_items": 11,
+    "shard_count": 0,
+    "imported_shards": 0,
+    "failed_shards": 0
+  },
+  "shards": [],
+  "observed_metrics": {
+    "gold_cases_actual": 52,
+    "gold_cases_target": 100,
+    "customer_packs_actual": 6,
+    "customer_packs_target": 20,
+    "proof_gate_green": true,
+    "final_execution_all_steps_passed": true,
+    "eval_case_count": 52,
+    "eval_failed_count": 0,
+    "eval_min_weighted_score": 1.0,
+    "customer_pack_successful_runs": 4
+  }
+}

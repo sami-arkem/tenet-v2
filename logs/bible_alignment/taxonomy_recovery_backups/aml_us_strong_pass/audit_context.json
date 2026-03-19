@@ -1,0 +1,35 @@
+{
+  "audit_id": "aml-us-strong-pass-001",
+  "entity_name": "Real AML Strong Pass Case",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "merchant_acquiring"
+  ],
+  "customer_types": [
+    "smb",
+    "consumer"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "enforcement",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "aml policy",
+    "customer risk scoring",
+    "transaction monitoring",
+    "alert handling",
+    "sanctions screening",
+    "governance"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

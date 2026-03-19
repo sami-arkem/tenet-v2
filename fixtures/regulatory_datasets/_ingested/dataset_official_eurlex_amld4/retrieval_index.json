@@ -1,0 +1,42 @@
+{
+  "dataset_id": "dataset_official_eurlex_amld4",
+  "chunk_count": 1,
+  "document_frequency": {
+    "/": 1,
+    "00:00": 1,
+    "2015/849": 1,
+    "2026-03-19t17:59:45.595344": 1,
+    "aml": 1,
+    "amld4": 1,
+    "countries:": 1,
+    "dataset_id:": 1,
+    "dataset_official_eurlex_amld4": 1,
+    "dataset_type:": 1,
+    "directive": 1,
+    "domain:": 1,
+    "eu": 1,
+    "eu_amld4": 1,
+    "eur-lex": 1,
+    "fetch_mode:": 1,
+    "framework_ids:": 1,
+    "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng": 1,
+    "ingested_at:": 1,
+    "jurisdictions:": 1,
+    "law_text": 1,
+    "manifest": 1,
+    "metadata_only": 1,
+    "source": 1,
+    "source_url:": 1,
+    "title:": 1,
+    "url": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 29,
+      "token_count": 29,
+      "text": "url source manifest dataset_id: dataset_official_eurlex_amld4 title: eur-lex amld4 / directive eu 2015/849 domain: aml dataset_type: law_text framework_ids: eu_amld4 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng ingested_at: 2026-03-19t17:59:45.595344 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

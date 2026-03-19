@@ -1,0 +1,34 @@
+{
+  "audit_id": "kyb-singapore-beneficial-ownership-gap-001",
+  "entity_name": "Real Singapore KYB Beneficial Ownership Gap",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "SINGAPORE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "merchant_acquiring"
+  ],
+  "customer_types": [
+    "smb"
+  ],
+  "domains": [
+    "kyc_kyb",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "kyc",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "kyb policy",
+    "beneficial ownership procedure",
+    "business onboarding workflow",
+    "ubo verification",
+    "customer risk scoring"
+  ],
+  "top_k": 5
+}

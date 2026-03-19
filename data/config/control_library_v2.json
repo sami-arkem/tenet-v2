@@ -1,0 +1,112 @@
+{
+  "controls": [
+    {
+      "control_id": "AML-001",
+      "control_name": "Enterprise AML Policy",
+      "category": "aml_governance",
+      "description": "Documented AML policy approved, version controlled, and periodically reviewed.",
+      "required_evidence": [
+        "AML policy",
+        "policy approval record",
+        "policy review cadence"
+      ],
+      "risk_if_missing": "Core AML governance absent",
+      "severity_if_missing": "high"
+    },
+    {
+      "control_id": "AML-002",
+      "control_name": "Customer Risk Rating",
+      "category": "aml_governance",
+      "description": "Risk-based customer risk scoring methodology and operational use.",
+      "required_evidence": [
+        "customer risk methodology",
+        "risk scoring procedure",
+        "sample risk assessments"
+      ],
+      "risk_if_missing": "Risk-based AML program weakened",
+      "severity_if_missing": "high"
+    },
+    {
+      "control_id": "AML-003",
+      "control_name": "Transaction Monitoring",
+      "category": "monitoring",
+      "description": "Transaction monitoring scenarios, thresholds, escalation, and review process.",
+      "required_evidence": [
+        "transaction monitoring procedure",
+        "alert workflow",
+        "threshold documentation",
+        "case review evidence"
+      ],
+      "risk_if_missing": "Suspicious activity may go undetected",
+      "severity_if_missing": "critical"
+    },
+    {
+      "control_id": "KYC-001",
+      "control_name": "Customer Identification Program",
+      "category": "customer_identification",
+      "description": "Customer identification controls at onboarding with verification standards.",
+      "required_evidence": [
+        "CIP policy",
+        "identity verification workflow",
+        "onboarding procedure"
+      ],
+      "risk_if_missing": "Customer identification obligations not met",
+      "severity_if_missing": "critical"
+    },
+    {
+      "control_id": "KYB-001",
+      "control_name": "Business Verification and Beneficial Ownership",
+      "category": "kyb_beneficial_ownership",
+      "description": "Business verification, beneficial ownership capture, and verification requirements.",
+      "required_evidence": [
+        "KYB policy",
+        "beneficial ownership procedure",
+        "business onboarding workflow"
+      ],
+      "risk_if_missing": "Entity onboarding risk not controlled",
+      "severity_if_missing": "critical"
+    },
+    {
+      "control_id": "SAN-001",
+      "control_name": "Sanctions Screening and Escalation",
+      "category": "sanctions",
+      "description": "Screening against sanctions lists, alert review, escalation, and disposition process.",
+      "required_evidence": [
+        "sanctions policy",
+        "screening procedure",
+        "alert escalation workflow",
+        "screening governance evidence"
+      ],
+      "risk_if_missing": "Sanctioned parties may not be identified",
+      "severity_if_missing": "critical"
+    },
+    {
+      "control_id": "GOV-001",
+      "control_name": "Governance Roles and Escalation",
+      "category": "governance",
+      "description": "Documented accountability, committees, ownership, and escalation structure.",
+      "required_evidence": [
+        "governance framework",
+        "roles and responsibilities",
+        "committee charter",
+        "escalation matrix"
+      ],
+      "risk_if_missing": "Oversight and accountability are weak",
+      "severity_if_missing": "high"
+    },
+    {
+      "control_id": "VEN-001",
+      "control_name": "Vendor Due Diligence and Oversight",
+      "category": "vendor_risk",
+      "description": "Third-party onboarding, diligence, approval, monitoring, and ongoing oversight.",
+      "required_evidence": [
+        "vendor due diligence procedure",
+        "third-party risk assessment",
+        "vendor monitoring cadence",
+        "outsourcing governance evidence"
+      ],
+      "risk_if_missing": "Third-party compliance dependency unmanaged",
+      "severity_if_missing": "high"
+    }
+  ]
+}

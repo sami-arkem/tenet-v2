@@ -1,0 +1,36 @@
+{
+  "audit_id": "demo-enterprise-pack-001",
+  "exported_at_utc": "2026-03-18T07:33:41.946815+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_board_memo.docx",
+      "sha256": "bebe47a17c6bab73119302197ee3dda7941a7779b0798592f500b7421708517a",
+      "size_bytes": 2421
+    },
+    "board_pdf": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_board_memo.pdf",
+      "sha256": "a871863a1e747d9af38426549a7544fdd6c8153fe895932a2450bf2370073f1e",
+      "size_bytes": 1898
+    },
+    "client_docx": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_client_report.docx",
+      "sha256": "8fd79b2905c2a85d04f7e348333d82109b959a23401eb4023c65e535a6b47c6d",
+      "size_bytes": 2573
+    },
+    "client_pdf": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_client_report.pdf",
+      "sha256": "5ed09dee2f7ff87ab4876d24b5986d19ae8f17997fdefffc8394ed5200d463b4",
+      "size_bytes": 3205
+    },
+    "regulator_docx": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_regulator_memo.docx",
+      "sha256": "3d6a257ad688c5894d7f3dec0b74e06d6da6ab8fa484431084978050a465852a",
+      "size_bytes": 2409
+    },
+    "regulator_pdf": {
+      "path": "data/customer_evidence_packs/demo_enterprise_pack/tenet_run/exports/demo-enterprise-pack-001/demo-enterprise-pack-001_regulator_memo.pdf",
+      "sha256": "0ca19eeab3c779350a3305eeae440d8ab6ae251679855b77c4ad142f04bf2b20",
+      "size_bytes": 1882
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source_id": "official_ofac_sanctions_list_service",
+  "source_manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/ofac_sanctions_list_service.json",
+  "fetched_at": "2026-03-18T17:49:37.149646+00:00",
+  "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists",
+  "raw_sha256": "cfb148535ab86ec618eed78adc1f1ba80222f05215028cc95f61f1e45286b973",
+  "raw_size_bytes": 62,
+  "normalized_text_chars": 62,
+  "fetch_meta": {
+    "status_code": 200,
+    "content_type": "text/plain",
+    "content_length_header": "12",
+    "final_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
+  },
+  "provenance_checks": {
+    "robots_ok": true,
+    "freshness_ok": true,
+    "license_ok": true,
+    "approved": true,
+    "retrieval_allowed": true
+  },
+  "dataset_manifest_path": "fixtures/regulatory_datasets/promoted/official_ofac_sanctions_list_service.json",
+  "dataset_id": "dataset_official_ofac_sanctions_list_service",
+  "deterministic_authoritative": true
+}

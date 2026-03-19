@@ -1,0 +1,19 @@
+{
+  "audit_id": "aml-uk-monitoring-gap-001",
+  "entity_name": "Real AML UK Monitoring Gap Case",
+  "audit_type": "aml_readiness_review",
+  "industry": "payments",
+  "jurisdictions": ["UK"],
+  "entity_type": "payments_platform",
+  "products": ["merchant_acquiring", "wallet"],
+  "customer_types": ["smb"],
+  "source_families": ["regulations", "aml", "enforcement", "industry_fintech"],
+  "query_terms": [
+    "uk aml policy",
+    "transaction monitoring",
+    "alert escalation",
+    "review cadence",
+    "risk scoring"
+  ],
+  "top_k": 5
+}

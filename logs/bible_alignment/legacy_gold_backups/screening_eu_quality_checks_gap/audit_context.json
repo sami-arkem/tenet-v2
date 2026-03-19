@@ -1,0 +1,32 @@
+{
+  "audit_id": "screening-eu-quality-checks-gap-001",
+  "entity_name": "Real EU Screening Quality Gap",
+  "audit_type": "transaction_screening_review",
+  "industry": "crypto",
+  "jurisdictions": [
+    "EU"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "screening quality checks",
+    "screening governance",
+    "transaction screening"
+  ],
+  "top_k": 5
+}

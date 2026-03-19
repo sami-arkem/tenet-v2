@@ -1,0 +1,44 @@
+{
+  "dataset_id": "dataset_official_eurlex_aml_package",
+  "chunk_count": 1,
+  "document_frequency": {
+    "00:00": 1,
+    "2026-03-19t17:59:45.584012": 1,
+    "aml": 1,
+    "amla": 1,
+    "and": 1,
+    "countries:": 1,
+    "dataset_id:": 1,
+    "dataset_official_eurlex_aml_package": 1,
+    "dataset_type:": 1,
+    "domain:": 1,
+    "eu": 1,
+    "eu_amla": 1,
+    "eu_amld6": 1,
+    "eu_amlr": 1,
+    "eur-lex": 1,
+    "fetch_mode:": 1,
+    "framework_ids:": 1,
+    "https://eur-lex.europa.eu/en/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html": 1,
+    "ingested_at:": 1,
+    "jurisdictions:": 1,
+    "law_text": 1,
+    "manifest": 1,
+    "metadata_only": 1,
+    "package": 1,
+    "source": 1,
+    "source_url:": 1,
+    "texts": 1,
+    "title:": 1,
+    "url": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 32,
+      "token_count": 32,
+      "text": "url source manifest dataset_id: dataset_official_eurlex_aml_package title: eur-lex eu aml package and amla texts domain: aml dataset_type: law_text framework_ids: eu_amla eu_amlr eu_amld6 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/en/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html ingested_at: 2026-03-19t17:59:45.584012 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

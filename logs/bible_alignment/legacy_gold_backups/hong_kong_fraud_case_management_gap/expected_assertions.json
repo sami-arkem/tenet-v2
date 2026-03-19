@@ -1,0 +1,35 @@
+{
+  "case_id": "hong_kong_fraud_case_management_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "HK_AML_BASELINE",
+        "HK_GOVERNANCE_BASELINE"
+      ],
+      "missing_controls.control_id": [
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "VEN-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "VEN-001"
+      ],
+      "findings.control_id": [
+        "AML-003",
+        "AML-002",
+        "GOV-001",
+        "VEN-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 9
+    }
+  }
+}

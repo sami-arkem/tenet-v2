@@ -1,0 +1,22 @@
+{
+  "source_id": "uk_fca_handbook_public",
+  "title": "UK FCA Handbook Public Source",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk"
+  ],
+  "countries": [
+    "GB"
+  ],
+  "source_class": "PUBLIC_OFFICIAL",
+  "acquisition_method": "PUBLIC_DOWNLOAD",
+  "license_status": "PUBLIC",
+  "owner": "tenet",
+  "source_url": "https://www.fca.org.uk/handbook",
+  "approved": true,
+  "retrieval_allowed": true,
+  "metadata": {
+    "freshness_check": "daily",
+    "last_check": "2026-03-19T17:59:46.950173Z"
+  }
+}

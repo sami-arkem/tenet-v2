@@ -1,0 +1,17 @@
+{
+  "audit_id": "customer-pack-001",
+  "entity_name": "Example Customer",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": ["US"],
+  "entity_type": "payments_platform",
+  "products": ["wallet"],
+  "customer_types": ["consumer"],
+  "source_families": ["regulations", "aml", "industry_fintech"],
+  "query_terms": [
+    "aml policy",
+    "transaction monitoring",
+    "alert workflow"
+  ],
+  "top_k": 5
+}

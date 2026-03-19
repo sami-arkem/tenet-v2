@@ -1,0 +1,516 @@
+{
+  "entries": [
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T14:44:11.588897+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T144411.588897_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T144411.588897_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T14:44:18.067009+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T144418.067009_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T144418.067009_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:07:35.478524+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T170735.478524_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T170735.478524_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:08:30.370157+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T170830.370157_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T170830.370157_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:08:36.084376+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T170836.084376_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T170836.084376_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:14:36.975813+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T171436.975813_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T171436.975813_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:49:20.903476+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T174920.903476_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T174920.903476_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:49:37.059964+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T174937.059964_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T174937.059964_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:49:48.612240+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T174948.612240_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T174948.612240_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:50:01.220153+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T175001.220153_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T175001.220153_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T17:50:08.478243+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T175008.478243_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T175008.478243_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T18:35:07.049401+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T183507.049401_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T183507.049401_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T19:37:08.445799+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T193708.445799_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T193708.445799_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T20:13:58.004000+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T201358.004000_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T201358.004000_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T20:33:06.290166+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T203306.290166_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T203306.290166_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T21:10:48.289819+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T211048.289819_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T211048.289819_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T21:48:13.248545+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T214813.248545_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T214813.248545_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T22:04:33.771843+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T220433.771843_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T220433.771843_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T22:49:03.000788+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T224903.000788_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T224903.000788_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T22:55:00.114365+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T225500.114365_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T225500.114365_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-18T23:05:30.447285+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-18T230530.447285_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-18T230530.447285_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:06:23.799886+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T080623.799886_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T080623.799886_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:10:27.094982+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T081027.094982_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T081027.094982_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:19:31.988586+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T081931.988586_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T081931.988586_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:36:50.269885+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T083650.269885_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T083650.269885_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:39:40.841178+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T083940.841178_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T083940.841178_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T08:49:14.045659+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T084914.045659_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T084914.045659_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:12:47.781713+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T091247.781713_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T091247.781713_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:15:49.261236+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T091549.261236_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T091549.261236_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:25:43.546400+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T092543.546400_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T092543.546400_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:36:03.335317+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T093603.335317_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T093603.335317_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:44:50.613519+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T094450.613519_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T094450.613519_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:46:21.067084+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T094621.067084_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T094621.067084_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T09:56:57.454157+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T095657.454157_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T095657.454157_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T10:08:38.748973+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T100838.748973_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T100838.748973_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T10:18:12.701573+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T101812.701573_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T101812.701573_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T10:38:23.328186+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T103823.328186_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T103823.328186_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T10:53:37.699792+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T105337.699792_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T105337.699792_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T11:11:02.728137+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T111102.728137_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T111102.728137_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T11:32:09.309658+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T113209.309658_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T113209.309658_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T11:47:30.558405+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T114730.558405_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T114730.558405_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T12:05:42.918415+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T120542.918415_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T120542.918415_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T12:32:33.511350+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T123233.511350_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T123233.511350_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T12:58:52.767289+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T125852.767289_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T125852.767289_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T14:13:04.852750+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T141304.852750_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T141304.852750_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T14:55:46.515378+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T145546.515378_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T145546.515378_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T15:03:00.695357+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T150300.695357_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T150300.695357_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T15:04:34.515568+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T150434.515568_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T150434.515568_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T15:06:06.839226+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T150606.839226_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T150606.839226_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T15:06:42.954177+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T150642.954177_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T150642.954177_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    },
+    {
+      "source_id": "official_fca_handbook",
+      "dataset_id": "dataset_official_fca_handbook",
+      "fetched_at": "2026-03-19T17:59:46.176726+00:00",
+      "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46",
+      "raw_size_bytes": 80,
+      "snapshot_id": "2026-03-19T175946.176726_0000_29798498777d",
+      "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T175946.176726_0000_29798498777d",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook"
+    }
+  ],
+  "entry_count": 51,
+  "latest_fetched_at": "2026-03-19T17:59:46.176726+00:00"
+}

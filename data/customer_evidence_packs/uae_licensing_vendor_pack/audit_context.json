@@ -1,0 +1,20 @@
+{
+  "audit_id": "cust-uae-licensing-001",
+  "entity_name": "Gulf Infra Vendor",
+  "audit_type": "regulatory_licensing_readiness_review",
+  "industry": "payments",
+  "jurisdictions": ["UAE"],
+  "entity_type": "vendor",
+  "products": ["api", "dashboard"],
+  "customer_types": ["enterprise"],
+  "domains": ["regulatory_licensing", "vendor_risk", "governance"],
+  "source_families": ["vendor_risk", "governance", "industry_fintech"],
+  "query_terms": [
+    "licensing inventory",
+    "regulatory mapping",
+    "vendor due diligence procedure",
+    "outsourcing governance",
+    "licensing governance"
+  ],
+  "top_k": 5
+}

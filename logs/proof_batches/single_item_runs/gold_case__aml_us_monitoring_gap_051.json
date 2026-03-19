@@ -1,0 +1,19 @@
+{
+  "kind": "gold_case",
+  "id": "aml_us_monitoring_gap_051",
+  "source_dir": "/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_monitoring_gap_051",
+  "target_dir": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_monitoring_gap_051",
+  "dry_run": false,
+  "validation": {
+    "domains": [
+      "aml",
+      "governance"
+    ],
+    "jurisdictions": [
+      "us"
+    ],
+    "title": "Real AML US Monitoring Gap 051"
+  },
+  "skip_gates": true,
+  "committed": true
+}

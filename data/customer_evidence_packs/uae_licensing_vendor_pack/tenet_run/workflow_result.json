@@ -1,0 +1,18 @@
+{
+  "pack_dir": "data/customer_evidence_packs/uae_licensing_vendor_pack",
+  "run_dir": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run",
+  "audit_output_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/audit_output.json",
+  "board_memo_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/board_memo.md",
+  "regulator_memo_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/regulator_memo.md",
+  "client_report_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/client_report.md",
+  "board_docx_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.docx",
+  "regulator_docx_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.docx",
+  "client_docx_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.docx",
+  "board_pdf_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.pdf",
+  "regulator_pdf_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.pdf",
+  "client_pdf_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.pdf",
+  "audit_memory_path": "data/memory/snapshots/gulf_infra_vendor/cust-uae-licensing-001.json",
+  "remediation_memory_path": "data/memory/remediation_snapshots/gulf_infra_vendor/cust-uae-licensing-001.json",
+  "trend_summary_path": "data/memory/trends/gulf_infra_vendor.json",
+  "workflow_result_path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/workflow_result.json"
+}

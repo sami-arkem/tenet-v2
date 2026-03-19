@@ -1,0 +1,32 @@
+{
+  "audit_id": "remediation-us-issue-tracker-gap-001",
+  "entity_name": "Real US Remediation Issue Tracker Gap",
+  "audit_type": "remediation_tracking_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "remediation_tracking",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "issue register",
+    "action tracker",
+    "owner assignment",
+    "remediation governance"
+  ],
+  "top_k": 5
+}

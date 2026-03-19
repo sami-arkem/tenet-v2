@@ -1,0 +1,10 @@
+{
+  "run_id": "run_finalize_api_001",
+  "markdown": "# Composed Report\n\nAPI composed report.\n",
+  "deterministic_authoritative": true,
+  "model_augmentation_present": false,
+  "overall_posture": "GREEN",
+  "deployment_decision": "APPROVED",
+  "finding_count": 0,
+  "remediation_count": 0
+}

@@ -1,0 +1,17 @@
+{
+  "call_id": "mc_8dcbf9047bbd4ffa",
+  "call_type": "gap_explanation",
+  "model_version": "claude-sonnet",
+  "fallback_used": false,
+  "success": true,
+  "created_at": "2026-03-19T09:36:02.655604+00:00",
+  "duration_ms": 0,
+  "system_prompt": "You explain a compliance gap using only supplied deterministic facts. You do not alter verdicts. Return JSON only with key: narrative.",
+  "user_prompt": "Explain compliance gap.\nRequirement: Control AML.MONITORING.001 under regime UK_MLR.001 must be supported by sufficient evidence and effective implementation.\nFinding JSON: {'finding_id': 'AML.MONITORING.001::finding', 'control_id': 'AML.MONITORING.001', 'regime_id': 'UK_MLR.001', 'title': 'Gap in Transaction monitoring policy', 'description': 'Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.', 'severity': 'HIGH', 'status': 'OPEN', 'verdict': 'PARTIAL', 'missing_evidence_types': ['monitoring_report'], 'evidence_refs': [{'evidence_id': 'ev_001', 'title': 'Monitoring Policy', 'source_type': 'policy_document', 'file_path': 'evidence/policy.pdf', 'citation': 'policy.pdf#L1-L20', 'content_hash': None, 'collected_at': None}], 'remediation_actions': ['Provide evidence covering missing evidence types: monitoring_report.'], 'rationale': 'Control present but evidence coverage is incomplete.'}\nWrite concise regulator-grade narrative from these deterministic facts only.",
+  "response": {
+    "narrative": "A compliance gap exists because required controls or evidence do not fully satisfy the mapped requirement."
+  },
+  "error": null,
+  "non_authoritative": true,
+  "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+}

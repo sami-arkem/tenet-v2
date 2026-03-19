@@ -1,0 +1,131 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2536 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Client Report) Tj
+/F1 10 Tf
+1 0 0 1 50 754 Tm
+(Entity: Northstar Pay US) Tj
+/F1 10 Tf
+1 0 0 1 50 740 Tm
+(Deployment Decision: BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 712 Tm
+(Summary) Tj
+/F1 10 Tf
+1 0 0 1 50 692 Tm
+(BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 664 Tm
+(Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 644 Tm
+(? Business Verification and Beneficial Ownership \(KYB-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 630 Tm
+(? Transaction Monitoring \(AML-003\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 616 Tm
+(? Customer Identification Program \(KYC-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 602 Tm
+(? Sanctions Screening and Escalation \(SAN-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 588 Tm
+(? Enterprise AML Policy \(AML-001\) [HIGH]) Tj
+/F2 13 Tf
+1 0 0 1 50 560 Tm
+(Immediate Actions) Tj
+/F1 10 Tf
+1 0 0 1 50 540 Tm
+(? {'control_id': 'AML-003', 'title': 'Transaction Monitoring', 'domain': 'monitoring',) Tj
+/F1 10 Tf
+1 0 0 1 50 526 Tm
+('priority': 'CRITICAL', 'action': 'Remediate and evidence control: Transaction Monitoring'}) Tj
+/F1 10 Tf
+1 0 0 1 50 512 Tm
+(? {'control_id': 'KYB-001', 'title': 'Business Verification and Beneficial Ownership',) Tj
+/F1 10 Tf
+1 0 0 1 50 498 Tm
+('domain': 'kyb_beneficial_ownership', 'priority': 'CRITICAL', 'action': 'Remediate and evidence) Tj
+/F1 10 Tf
+1 0 0 1 50 484 Tm
+(control: Business Verification and Beneficial Ownership'}) Tj
+/F1 10 Tf
+1 0 0 1 50 470 Tm
+(? {'control_id': 'KYC-001', 'title': 'Customer Identification Program', 'domain':) Tj
+/F1 10 Tf
+1 0 0 1 50 456 Tm
+('customer_identification', 'priority': 'CRITICAL', 'action': 'Remediate and evidence control:) Tj
+/F1 10 Tf
+1 0 0 1 50 442 Tm
+(Customer Identification Program'}) Tj
+/F1 10 Tf
+1 0 0 1 50 428 Tm
+(? {'control_id': 'SAN-001', 'title': 'Sanctions Screening and Escalation', 'domain':) Tj
+/F1 10 Tf
+1 0 0 1 50 414 Tm
+('sanctions', 'priority': 'CRITICAL', 'action': 'Remediate and evidence control: Sanctions) Tj
+/F1 10 Tf
+1 0 0 1 50 400 Tm
+(Screening and Escalation'}) Tj
+/F2 13 Tf
+1 0 0 1 50 372 Tm
+(Missing Controls) Tj
+/F1 10 Tf
+1 0 0 1 50 352 Tm
+(? AML-001: Enterprise AML Policy) Tj
+/F1 10 Tf
+1 0 0 1 50 338 Tm
+(? AML-002: Customer Risk Rating) Tj
+/F1 10 Tf
+1 0 0 1 50 324 Tm
+(? AML-003: Transaction Monitoring) Tj
+/F1 10 Tf
+1 0 0 1 50 310 Tm
+(? GOV-001: Governance Roles and Escalation) Tj
+/F1 10 Tf
+1 0 0 1 50 296 Tm
+(? KYB-001: Business Verification and Beneficial Ownership) Tj
+/F2 13 Tf
+1 0 0 1 50 268 Tm
+(Prior / Historical Context) Tj
+/F1 10 Tf
+1 0 0 1 50 248 Tm
+(? No prior historical context available.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000002845 00000 n 
+0000002915 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2990
+%%EOF

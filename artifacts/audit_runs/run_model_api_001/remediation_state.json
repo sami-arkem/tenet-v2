@@ -1,0 +1,21 @@
+{
+  "run_id": "run_model_api_001",
+  "generated_at": "2026-03-19T17:59:45.293426+00:00",
+  "updated_at": "2026-03-19T17:59:45.293426+00:00",
+  "items": [
+    {
+      "remediation_id": "remediation::0001",
+      "finding_id": "AML.MONITORING.001::finding",
+      "title": "Remediate AML.MONITORING.001",
+      "owner": "compliance@acme.com",
+      "due_date": null,
+      "status": "OPEN",
+      "action_required": "Provide evidence covering missing evidence types: monitoring_report.",
+      "evidence_links": [],
+      "comment_history": [],
+      "created_at": "2026-03-19T17:59:45.293426+00:00",
+      "updated_at": "2026-03-19T17:59:45.293426+00:00",
+      "status_source": "deterministic_seed"
+    }
+  ]
+}

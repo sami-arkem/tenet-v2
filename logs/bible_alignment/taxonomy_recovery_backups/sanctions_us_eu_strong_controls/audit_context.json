@@ -1,0 +1,37 @@
+{
+  "audit_id": "sanctions-us-eu-strong-controls-001",
+  "entity_name": "Real Sanctions Strong Controls Case",
+  "audit_type": "sanctions_readiness_review",
+  "industry": "crypto",
+  "jurisdictions": [
+    "US",
+    "EU"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet",
+    "cross_border_payments",
+    "blockchain_screening"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "enforcement",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "sanctions policy",
+    "ofac screening",
+    "eu sanctions screening",
+    "match escalation",
+    "alert handling",
+    "sanctions governance"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

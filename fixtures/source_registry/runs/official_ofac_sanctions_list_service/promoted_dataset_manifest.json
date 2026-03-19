@@ -1,0 +1,37 @@
+{
+  "dataset_id": "dataset_official_ofac_sanctions_list_service",
+  "title": "OFAC Sanctions List Service",
+  "domain": "sanctions",
+  "jurisdictions": [
+    "us"
+  ],
+  "countries": [
+    "US"
+  ],
+  "framework_ids": [
+    "OFAC"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "AD_HOC",
+  "loader": {
+    "kind": "file_manifest",
+    "content_path": "official_ofac_sanctions_list_service.txt"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded_by": "official_corpus_bootstrap",
+    "priority": "critical",
+    "dataset_goal": "sanctions_screening",
+    "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/ofac_sanctions_list_service.json",
+    "promoted_from_source_id": "official_ofac_sanctions_list_service",
+    "promotion_acquisition_method": "PUBLIC_DOWNLOAD",
+    "promotion_owner": "tenet-platform"
+  }
+}

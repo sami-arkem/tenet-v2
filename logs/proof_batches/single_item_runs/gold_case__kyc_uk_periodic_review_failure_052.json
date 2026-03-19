@@ -1,0 +1,19 @@
+{
+  "kind": "gold_case",
+  "id": "kyc_uk_periodic_review_failure_052",
+  "source_dir": "/Users/samisayyed/tenet-v2/intake/proof_batch/kyc_uk_periodic_review_failure_052",
+  "target_dir": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_uk_periodic_review_failure_052",
+  "dry_run": false,
+  "validation": {
+    "domains": [
+      "kyc",
+      "governance"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "title": "Real KYC UK Periodic Review Failure 052"
+  },
+  "skip_gates": true,
+  "committed": true
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "sanctions_us_eu_escalation_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "CONDITIONALLY_APPROVED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "OFAC",
+        "EU_SANCTIONS"
+      ],
+      "missing_controls.control_id": [
+        "GOV-001",
+        "SAN-001"
+      ],
+      "missing_evidence.control_id": [
+        "GOV-001",
+        "SAN-001"
+      ],
+      "findings.control_id": [
+        "SAN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 35
+    }
+  }
+}

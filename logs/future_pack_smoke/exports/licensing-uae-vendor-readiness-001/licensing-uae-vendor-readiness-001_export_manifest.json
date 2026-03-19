@@ -1,0 +1,36 @@
+{
+  "audit_id": "licensing-uae-vendor-readiness-001",
+  "exported_at_utc": "2026-03-17T15:06:29.994955+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_board_memo.docx",
+      "sha256": "fdd50fc88df69ec8bf01f6858fe7e16d9bf92cc5820aaf9f34699fc396d57403",
+      "size_bytes": 2299
+    },
+    "board_pdf": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_board_memo.pdf",
+      "sha256": "7a295f8ca205dbe21b9d259c260b6ab5cc04212d306dbf5ecb24b097fa1048e2",
+      "size_bytes": 1431
+    },
+    "client_docx": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_client_report.docx",
+      "sha256": "bccd2cecf66988e2e56af73ae1a9ab019fc7fed93042cac06dba1e29cdb2272d",
+      "size_bytes": 2276
+    },
+    "client_pdf": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_client_report.pdf",
+      "sha256": "65d5c7934db1e8c4330f5f73bdc703faf7002214e47ebdd22b13fa5818095a2f",
+      "size_bytes": 1450
+    },
+    "regulator_docx": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_regulator_memo.docx",
+      "sha256": "96c280e4cd78f3f6a47635dffe2bc59d17a11caa358ca5b18d8f61cc232e936f",
+      "size_bytes": 2244
+    },
+    "regulator_pdf": {
+      "path": "logs/future_pack_smoke/exports/licensing-uae-vendor-readiness-001/licensing-uae-vendor-readiness-001_regulator_memo.pdf",
+      "sha256": "fcf065b110d2a0557a6d5a3808a563ca2cd49052b50b53674eacfd10f39744a2",
+      "size_bytes": 1275
+    }
+  }
+}

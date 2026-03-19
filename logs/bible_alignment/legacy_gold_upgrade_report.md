@@ -1,0 +1,819 @@
+# Legacy Gold Case Upgrade Report
+
+- generated_at_epoch: `1773806736`
+- mode: `write`
+- case_count: `52`
+- changed_count: `52`
+- blocked_count: `18`
+- clean_count: `0`
+
+## Summary
+
+- created rules object: `52`
+- set deterministic_current_audit_truth_only=true: `52`
+- set historical_context_is_non_authoritative=true: `52`
+- set rules.deterministic_current_truth_only=true: `52`
+- set rules.historical_context_cannot_override_current_truth=true: `52`
+- set rules.no_invented_pass_outcome=true: `52`
+- missing non-empty domains list; left unchanged: `18`
+
+## Cases
+
+### evals/gold_cases/aml_australia_monitoring_escalation_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_australia_monitoring_escalation_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_australia_monitoring_escalation_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/aml_australia_monitoring_escalation_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_uae_policy_governance_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_uae_policy_governance_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_uae_policy_governance_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/aml_uae_policy_governance_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_uk_monitoring_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_uk_monitoring_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_uk_monitoring_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/aml_uk_monitoring_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_us_alerting_partial
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_us_alerting_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_us_alerting_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/aml_us_alerting_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_us_monitoring_gap_051
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_us_monitoring_gap_051`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_us_monitoring_gap_051/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/aml_us_monitoring_gap_051/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_us_policy_only
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_us_policy_only`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_us_policy_only/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/aml_us_policy_only/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_us_strong_pass
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_us_strong_pass`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_us_strong_pass/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/aml_us_strong_pass/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/aml_us_uk_tm_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/aml_us_uk_tm_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/aml_us_uk_tm_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/aml_us_uk_tm_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/australia_fraud_remediation_heavy
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/australia_fraud_remediation_heavy`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/australia_fraud_remediation_heavy/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/australia_fraud_remediation_heavy/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/australia_regulatory_licensing_vendor_governance_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/australia_regulatory_licensing_vendor_governance_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/australia_regulatory_licensing_vendor_governance_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/australia_regulatory_licensing_vendor_governance_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/canada_remediation_issue_register_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/canada_remediation_issue_register_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/canada_remediation_issue_register_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/canada_remediation_issue_register_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/canada_transaction_screening_governance_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/canada_transaction_screening_governance_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/canada_transaction_screening_governance_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/canada_transaction_screening_governance_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/fraud_australia_governance_heavy
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/fraud_australia_governance_heavy`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/fraud_australia_governance_heavy/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/fraud_australia_governance_heavy/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/fraud_uae_case_management_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/fraud_uae_case_management_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/fraud_uae_case_management_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/fraud_uae_case_management_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/fraud_uk_case_management_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/fraud_uk_case_management_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/fraud_uk_case_management_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/fraud_uk_case_management_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/fraud_us_monitoring_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/fraud_us_monitoring_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/fraud_us_monitoring_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/fraud_us_monitoring_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/governance_canada_committee_roles_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/governance_canada_committee_roles_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/governance_canada_committee_roles_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/governance_canada_committee_roles_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/governance_gap_eu
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/governance_gap_eu`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/governance_gap_eu/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/governance_gap_eu/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/governance_us_roles_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/governance_us_roles_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/governance_us_roles_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/governance_us_roles_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/hong_kong_fraud_case_management_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/hong_kong_fraud_case_management_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/hong_kong_fraud_case_management_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/hong_kong_fraud_case_management_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/hong_kong_transaction_screening_false_positive_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/hong_kong_transaction_screening_false_positive_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/hong_kong_transaction_screening_false_positive_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/hong_kong_transaction_screening_false_positive_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyb_singapore_beneficial_ownership_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyb_singapore_beneficial_ownership_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyb_singapore_beneficial_ownership_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/kyb_singapore_beneficial_ownership_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyb_uk_beneficial_ownership_partial
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyb_uk_beneficial_ownership_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyb_uk_beneficial_ownership_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/kyb_uk_beneficial_ownership_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyb_us_beneficial_ownership_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyb_us_beneficial_ownership_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyb_us_beneficial_ownership_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/kyb_us_beneficial_ownership_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyb_us_partial_evidence
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyb_us_partial_evidence`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyb_us_partial_evidence/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/kyb_us_partial_evidence/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyc_canada_consumer_onboarding_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyc_canada_consumer_onboarding_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyc_canada_consumer_onboarding_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/kyc_canada_consumer_onboarding_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyc_uk_periodic_review_failure_052
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyc_uk_periodic_review_failure_052`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyc_uk_periodic_review_failure_052/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/kyc_uk_periodic_review_failure_052/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/kyc_us_consumer_onboarding_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/kyc_us_consumer_onboarding_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/kyc_us_consumer_onboarding_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/kyc_us_consumer_onboarding_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/licensing_hong_kong_inventory_accountability_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/licensing_hong_kong_inventory_accountability_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/licensing_hong_kong_inventory_accountability_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/licensing_hong_kong_inventory_accountability_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/licensing_singapore_governance_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/licensing_singapore_governance_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/licensing_singapore_governance_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/licensing_singapore_governance_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/licensing_uae_vendor_readiness
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/licensing_uae_vendor_readiness`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/licensing_uae_vendor_readiness/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/licensing_uae_vendor_readiness/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/remediation_canada_closure_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/remediation_canada_closure_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/remediation_canada_closure_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/remediation_canada_closure_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/remediation_uae_closure_evidence_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/remediation_uae_closure_evidence_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/remediation_uae_closure_evidence_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/remediation_uae_closure_evidence_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/remediation_us_issue_tracker_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/remediation_us_issue_tracker_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/remediation_us_issue_tracker_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/remediation_us_issue_tracker_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/sanctions_eu_wallet_partial
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/sanctions_eu_wallet_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/sanctions_eu_wallet_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/sanctions_eu_wallet_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/sanctions_uae_wallet_screening_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/sanctions_uae_wallet_screening_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/sanctions_uae_wallet_screening_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/sanctions_uae_wallet_screening_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/sanctions_us_eu_escalation_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/sanctions_us_eu_escalation_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/sanctions_us_eu_escalation_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/sanctions_us_eu_escalation_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/sanctions_us_eu_strong_controls
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/sanctions_us_eu_strong_controls`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/sanctions_us_eu_strong_controls/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/sanctions_us_eu_strong_controls/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/sanctions_us_false_positive_review
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/sanctions_us_false_positive_review`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/sanctions_us_false_positive_review/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/sanctions_us_false_positive_review/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/screening_eu_quality_checks_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/screening_eu_quality_checks_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/screening_eu_quality_checks_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/screening_eu_quality_checks_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/screening_hk_false_positive_review
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/screening_hk_false_positive_review`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/screening_hk_false_positive_review/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/screening_hk_false_positive_review/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/screening_singapore_alert_workflow_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/screening_singapore_alert_workflow_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/screening_singapore_alert_workflow_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/screening_singapore_alert_workflow_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/screening_us_transaction_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/screening_us_transaction_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/screening_us_transaction_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/screening_us_transaction_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/singapore_fraud_monitoring_governance_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/singapore_fraud_monitoring_governance_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/singapore_fraud_monitoring_governance_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/singapore_fraud_monitoring_governance_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/singapore_remediation_closure_evidence_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/singapore_remediation_closure_evidence_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/singapore_remediation_closure_evidence_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/singapore_remediation_closure_evidence_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/uae_regulatory_licensing_accountability_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/uae_regulatory_licensing_accountability_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/uae_regulatory_licensing_accountability_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/uae_regulatory_licensing_accountability_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/uae_transaction_screening_escalation_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/uae_transaction_screening_escalation_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/uae_transaction_screening_escalation_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/uae_transaction_screening_escalation_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/vendor_australia_licensing_vendor_partial
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/vendor_australia_licensing_vendor_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/vendor_australia_licensing_vendor_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/vendor_australia_licensing_vendor_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/vendor_eu_outsourcing_gap
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/vendor_eu_outsourcing_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/vendor_eu_outsourcing_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/vendor_eu_outsourcing_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/vendor_global_monitoring_partial
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/vendor_global_monitoring_partial`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/vendor_global_monitoring_partial/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/vendor_global_monitoring_partial/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/vendor_hong_kong_outsourcing_monitoring_gap
+- changed: `True`
+- blocked: `False`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/vendor_hong_kong_outsourcing_monitoring_gap`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/vendor_hong_kong_outsourcing_monitoring_gap/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true`
+  - `evals/gold_cases/vendor_hong_kong_outsourcing_monitoring_gap/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+
+### evals/gold_cases/vendor_readiness_us_uk
+- changed: `True`
+- blocked: `True`
+- backup_dir: `logs/bible_alignment/legacy_gold_backups/vendor_readiness_us_uk`
+- reasons:
+  - set historical_context_is_non_authoritative=true
+  - set deterministic_current_audit_truth_only=true
+  - missing non-empty domains list; left unchanged
+  - created rules object
+  - set rules.no_invented_pass_outcome=true
+  - set rules.deterministic_current_truth_only=true
+  - set rules.historical_context_cannot_override_current_truth=true
+- changed_files:
+  - `evals/gold_cases/vendor_readiness_us_uk/audit_context.json` changed=`True` reason=`set historical_context_is_non_authoritative=true; set deterministic_current_audit_truth_only=true; missing non-empty domains list; left unchanged`
+  - `evals/gold_cases/vendor_readiness_us_uk/expected_assertions.json` changed=`True` reason=`created rules object; set rules.no_invented_pass_outcome=true; set rules.deterministic_current_truth_only=true; set rules.historical_context_cannot_override_current_truth=true`
+

@@ -1,0 +1,11 @@
+URL SOURCE MANIFEST
+dataset_id: dataset_official_fatf_recommendations
+title: FATF Recommendations and Standards Updates
+domain: aml
+dataset_type: law_text
+framework_ids: FATF
+jurisdictions: global
+countries: GLOBAL
+source_url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html
+ingested_at: 2026-03-19T17:59:45.605802+00:00
+fetch_mode: metadata_only

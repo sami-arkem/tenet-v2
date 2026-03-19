@@ -1,0 +1,90 @@
+{
+  "pack_id": "pack_79e6ed633d124ce1",
+  "chunk_token_target": 40,
+  "chunk_overlap": 10,
+  "document_count": 2,
+  "chunk_count": 2,
+  "documents": [
+    {
+      "evidence_id": "evidence_03ed1e1b000fa0fa",
+      "filename": "policy.txt",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "chunk_count": 1,
+      "classification": {
+        "evidence_id": "evidence_03ed1e1b000fa0fa",
+        "category": "monitoring_report",
+        "confidence": "HIGH",
+        "reason": "matched deterministic rule for monitoring_report"
+      },
+      "key_facts": {
+        "category": "monitoring_report",
+        "line_count": 1,
+        "char_count": 59,
+        "preview": "AML transaction monitoring policy and escalation procedure."
+      }
+    },
+    {
+      "evidence_id": "evidence_b55d780e8622bbea",
+      "filename": "screening.txt",
+      "title": "Screening Alerts",
+      "source_type": "screening_alert_log",
+      "chunk_count": 1,
+      "classification": {
+        "evidence_id": "evidence_b55d780e8622bbea",
+        "category": "screening_alert_log",
+        "confidence": "HIGH",
+        "reason": "matched deterministic rule for screening_alert_log"
+      },
+      "key_facts": {
+        "category": "screening_alert_log",
+        "line_count": 1,
+        "char_count": 64,
+        "preview": "Sanctions screening alert handling and OFAC escalation workflow."
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "evidence_03ed1e1b000fa0fa::chunk_0000",
+      "evidence_id": "evidence_03ed1e1b000fa0fa",
+      "filename": "policy.txt",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "text": "aml transaction monitoring policy and escalation procedure.",
+      "token_count": 7,
+      "metadata": {
+        "token_start": 0,
+        "token_end": 7
+      }
+    },
+    {
+      "chunk_id": "evidence_b55d780e8622bbea::chunk_0000",
+      "evidence_id": "evidence_b55d780e8622bbea",
+      "filename": "screening.txt",
+      "title": "Screening Alerts",
+      "source_type": "screening_alert_log",
+      "text": "sanctions screening alert handling and ofac escalation workflow.",
+      "token_count": 8,
+      "metadata": {
+        "token_start": 0,
+        "token_end": 8
+      }
+    }
+  ],
+  "document_frequency": {
+    "alert": 1,
+    "aml": 1,
+    "and": 2,
+    "escalation": 2,
+    "handling": 1,
+    "monitoring": 1,
+    "ofac": 1,
+    "policy": 1,
+    "procedure.": 1,
+    "sanctions": 1,
+    "screening": 1,
+    "transaction": 1,
+    "workflow.": 1
+  }
+}

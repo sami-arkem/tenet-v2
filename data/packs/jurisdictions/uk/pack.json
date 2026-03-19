@@ -1,0 +1,31 @@
+{
+  "pack_id": "jurisdiction_uk_v1",
+  "jurisdiction": "UK",
+  "label": "United Kingdom",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "UK_MLR"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

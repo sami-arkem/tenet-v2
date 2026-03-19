@@ -1,0 +1,516 @@
+{
+  "entries": [
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T14:44:11.560309+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T144411.560309_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T144411.560309_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T14:44:18.036275+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T144418.036275_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T144418.036275_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:07:35.440840+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T170735.440840_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T170735.440840_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:08:30.327567+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T170830.327567_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T170830.327567_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:08:36.045099+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T170836.045099_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T170836.045099_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:14:36.933592+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T171436.933592_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T171436.933592_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:49:20.859218+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T174920.859218_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T174920.859218_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:49:37.008729+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T174937.008729_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T174937.008729_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:49:48.563185+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T174948.563185_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T174948.563185_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:50:01.160723+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T175001.160723_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T175001.160723_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T17:50:08.423688+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T175008.423688_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T175008.423688_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T18:35:06.993090+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T183506.993090_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T183506.993090_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T19:37:08.360454+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T193708.360454_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T193708.360454_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T20:13:57.928976+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T201357.928976_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T201357.928976_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T20:33:06.229113+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T203306.229113_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T203306.229113_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T21:10:48.225127+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T211048.225127_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T211048.225127_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T21:48:13.183060+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T214813.183060_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T214813.183060_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T22:04:33.702524+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T220433.702524_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T220433.702524_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T22:49:02.929482+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T224902.929482_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T224902.929482_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T22:55:00.041637+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T225500.041637_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T225500.041637_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-18T23:05:30.370572+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-18T230530.370572_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-18T230530.370572_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:06:23.714714+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T080623.714714_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T080623.714714_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:10:27.016855+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T081027.016855_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T081027.016855_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:19:31.905884+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T081931.905884_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T081931.905884_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:36:50.185674+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T083650.185674_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T083650.185674_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:39:40.752693+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T083940.752693_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T083940.752693_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T08:49:13.957860+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T084913.957860_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T084913.957860_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:12:47.688028+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T091247.688028_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T091247.688028_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:15:49.165319+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T091549.165319_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T091549.165319_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:25:43.450356+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T092543.450356_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T092543.450356_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:36:03.235920+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T093603.235920_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T093603.235920_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:44:50.513358+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T094450.513358_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T094450.513358_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:46:20.958353+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T094620.958353_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T094620.958353_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T09:56:57.344019+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T095657.344019_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T095657.344019_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T10:08:38.635202+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T100838.635202_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T100838.635202_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T10:18:12.589971+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T101812.589971_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T101812.589971_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T10:38:23.213679+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T103823.213679_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T103823.213679_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T10:53:37.585459+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T105337.585459_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T105337.585459_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T11:11:02.597341+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T111102.597341_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T111102.597341_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T11:32:09.186318+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T113209.186318_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T113209.186318_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T11:47:30.431430+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T114730.431430_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T114730.431430_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T12:05:42.794891+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T120542.794891_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T120542.794891_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T12:32:33.381494+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T123233.381494_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T123233.381494_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T12:58:52.639613+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T125852.639613_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T125852.639613_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T14:13:04.711513+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T141304.711513_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T141304.711513_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T14:55:46.381818+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T145546.381818_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T145546.381818_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T15:03:00.557447+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T150300.557447_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T150300.557447_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T15:04:34.351825+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T150434.351825_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T150434.351825_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T15:06:06.699261+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T150606.699261_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T150606.699261_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T15:06:42.811507+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T150642.811507_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T150642.811507_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T17:59:46.033003+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T175946.033003_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T175946.033003_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    }
+  ],
+  "entry_count": 51,
+  "latest_fetched_at": "2026-03-19T17:59:46.033003+00:00"
+}

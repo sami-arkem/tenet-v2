@@ -1,0 +1,35 @@
+{
+  "audit_id": "fraud-uae-case-management-partial-001",
+  "entity_name": "Real UAE Fraud Case Management Partial",
+  "audit_type": "fraud_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "api"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "domains": [
+    "fraud",
+    "governance",
+    "remediation_tracking"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud case management",
+    "fraud policy",
+    "fraud monitoring rules",
+    "issue register",
+    "fraud governance"
+  ],
+  "top_k": 5
+}

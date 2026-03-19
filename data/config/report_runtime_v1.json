@@ -1,0 +1,14 @@
+{
+  "enable_model_reporting": true,
+  "report_model_name": "claude",
+  "report_sections": [
+    "title_page",
+    "executive_summary",
+    "deployment_decision",
+    "financial_exposure",
+    "framework_readiness",
+    "findings",
+    "remediation_roadmap",
+    "evidence_appendix"
+  ]
+}

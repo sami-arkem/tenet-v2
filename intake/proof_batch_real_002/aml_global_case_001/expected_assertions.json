@@ -1,0 +1,13 @@
+{
+  "case_id": "aml_global_case_001",
+  "expected": {
+    "equals": {},
+    "contains": {},
+    "minimums": {}
+  },
+  "rules": {
+    "no_invented_pass_outcome": true,
+    "deterministic_current_truth_only": true,
+    "historical_context_cannot_override_current_truth": true
+  }
+}

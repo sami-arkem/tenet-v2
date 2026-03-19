@@ -1,0 +1,19 @@
+{
+  "evidence_id": "evidence_00f5ab4ed51a58b5",
+  "filename": "policy.txt",
+  "title": "Monitoring Policy",
+  "non_authoritative": true,
+  "classification": {
+    "category": "policy_document",
+    "confidence": "HIGH",
+    "reason": "matched policy/procedure tokens",
+    "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+  },
+  "key_facts": {
+    "facts": {
+      "preview": "Extract key facts.\nCategory: policy_document\nText excerpt:\nAML policy and procedure for transaction monitoring.",
+      "length": 111
+    },
+    "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+  }
+}

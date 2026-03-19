@@ -1,0 +1,33 @@
+{
+  "pack_id": "jurisdiction_hong_kong_v1",
+  "jurisdiction": "HONG_KONG",
+  "label": "Hong Kong",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "HK_AML_BASELINE",
+    "HK_SANCTIONS_BASELINE",
+    "HK_GOVERNANCE_BASELINE"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "audit_id": "governance-canada-committee-roles-gap-001",
+  "entity_name": "Real Canada Governance Committee Roles Gap",
+  "audit_type": "policy_governance_gap_analysis",
+  "industry": "fintech",
+  "jurisdictions": [
+    "CANADA"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "governance",
+    "remediation_tracking"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "governance framework",
+    "committee charter",
+    "roles and responsibilities",
+    "escalation matrix",
+    "issue register"
+  ],
+  "top_k": 5
+}

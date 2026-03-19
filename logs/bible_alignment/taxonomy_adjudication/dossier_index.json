@@ -1,0 +1,41 @@
+{
+  "generated_at_epoch": 1773816180,
+  "dossier_count": 7,
+  "dossiers": [
+    {
+      "case_dir": "evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/kyb_uk_beneficial_ownership_partial.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/kyb_uk_beneficial_ownership_partial.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/kyb_us_beneficial_ownership_gap",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/kyb_us_beneficial_ownership_gap.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/kyb_us_beneficial_ownership_gap.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/kyb_us_partial_evidence",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/kyb_us_partial_evidence.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/kyb_us_partial_evidence.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/kyc_us_consumer_onboarding_gap",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/kyc_us_consumer_onboarding_gap.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/kyc_us_consumer_onboarding_gap.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_eu_outsourcing_gap",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/vendor_eu_outsourcing_gap.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/vendor_eu_outsourcing_gap.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_global_monitoring_partial",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/vendor_global_monitoring_partial.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/vendor_global_monitoring_partial.dossier.md"
+    },
+    {
+      "case_dir": "evals/gold_cases/vendor_readiness_us_uk",
+      "dossier_json": "logs/bible_alignment/taxonomy_adjudication/vendor_readiness_us_uk.dossier.json",
+      "dossier_md": "logs/bible_alignment/taxonomy_adjudication/vendor_readiness_us_uk.dossier.md"
+    }
+  ]
+}

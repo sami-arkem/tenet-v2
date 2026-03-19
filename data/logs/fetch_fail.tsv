@@ -1,0 +1,34 @@
+source_family	source_name	document_name	url	status
+aml	FATF	FATF Digital Identity	https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-on-Digital-Identity.html	bad_or_blocked
+aml	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html	bad_or_blocked
+corporate	MCA_INDIA	MCA Company Registration	https://www.mca.gov.in/content/mca/global/en/company-llp-registration.html	bad_or_blocked
+licensing	NMLS	NMLS Consumer Access	https://www.nmlsconsumeraccess.org/	bad_or_blocked
+licensing	UK_FCA	FCA Register	https://register.fca.org.uk/s/	bad_or_blocked
+licensing	CANADA	Canada Financial Institutions	https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/financial-institutions.html	fetch_failed
+licensing	ASIC	ASIC Connect	https://connectonline.asic.gov.au/	fetch_failed
+enforcement	DOJ	DOJ Corporate Compliance	https://www.justice.gov/criminal/criminal-fraud/evaluation-corporate-compliance-programs	bad_or_blocked
+enforcement	EU	EU Restrictive Measures	https://finance.ec.europa.eu/financial-crime/eu-restrictive-measures_en	bad_or_blocked
+enforcement	FINCEN	FinCEN News Releases	https://www.fincen.gov/news/news-releases	bad_or_blocked
+regulations	US_FTC	FTC Safeguards Rule	https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314	bad_or_blocked
+regulations	BRAZIL	LGPD Planalto	https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2018/08/sancionada-lei-geral-de-protecao-de-dados-pessoais	bad_or_blocked
+industry_gov_vendor	EU	EU AI Act Official	https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng	bad_or_blocked
+industry_gov_vendor	CMMC	CMMC	https://dodcio.defense.gov/CMMC/	bad_or_blocked
+industry_healthcare	HHS	HIPAA Security Overview	https://www.hhs.gov/hipaa/for-professionals/security/index.html	bad_or_blocked
+industry_healthcare	HHS	HIPAA Security Rule	https://www.hhs.gov/ocr/privacy/hipaa/administrative/securityrule/index.html	bad_or_blocked
+industry_healthcare	CMS	CMS HIPAA	https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/health-insurance-portability-and-accountability-act-hipaa	bad_or_blocked
+industry_healthcare	FDA	FDA Device Cybersecurity FAQ	https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions	bad_or_blocked
+industry_healthcare	FDA	FDA AI ML Medical Devices	https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-and-machine-learning-ail-ml-enabled-medical-devices	bad_or_blocked
+industry_payments	US	Regulation E	https://www.ecfr.gov/current/title-12/chapter-X/part-1005	bad_or_blocked
+industry_payments	EU	PSD2 Payments	https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services-psd-2_en	bad_or_blocked
+industry_crypto	EU	MiCA Official	https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng	bad_or_blocked
+industry_crypto	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html	bad_or_blocked
+industry_insurance	APRA	APRA CPS 234	https://www.apra.gov.au/cps-234-information-security	bad_or_blocked
+industry_insurance	IAIS	IAIS Standards	https://www.iaisweb.org/activities-topics/standards/	bad_or_blocked
+industry_insurance	NYDFS	NYDFS Cybersecurity	https://www.dfs.ny.gov/industry_guidance/cybersecurity	bad_or_blocked
+industry_telecom	CISA	Communications Hardening	https://www.cisa.gov/resources-tools/resources/enhanced-visibility-and-hardening-guidance-communications-infrastructure	bad_or_blocked
+industry_defense	CMMC	CMMC	https://dodcio.defense.gov/CMMC/	bad_or_blocked
+industry_defense	NIST	NIST 800-171	https://csrc.nist.gov/pubs/sp/800/171/r3/final	bad_or_blocked
+industry_gambling	UKGC	UK Gambling AML	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/anti-money-laundering	bad_or_blocked
+industry_gambling	UKGC	LCCP	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/licence-conditions-and-codes-of-practice	bad_or_blocked
+industry_gambling	AUSTRAC	AUSTRAC Gambling	https://www.austrac.gov.au/business/industry-specific-guidance/gambling-industry	fetch_failed
+industry_energy	CISA	Industrial Control Systems	https://www.cisa.gov/topics/industrial-control-systems	bad_or_blocked

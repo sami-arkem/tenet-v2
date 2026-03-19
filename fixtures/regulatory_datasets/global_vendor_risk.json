@@ -1,0 +1,32 @@
+{
+  "dataset_id": "dataset_global_vendor_risk_standard",
+  "title": "Global Vendor Risk Standard Corpus",
+  "domain": "vendor_risk",
+  "jurisdictions": [
+    "global"
+  ],
+  "countries": [
+    "GLOBAL"
+  ],
+  "framework_ids": [
+    "TPRM"
+  ],
+  "dataset_type": "vendor_risk_standard",
+  "license_type": "INTERNAL_USE_ONLY",
+  "status": "ACTIVE",
+  "update_cadence": "QUARTERLY",
+  "loader": {
+    "kind": "file_manifest",
+    "content_path": "global_vendor_risk_corpus.md"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded": true,
+    "priority": "medium"
+  }
+}

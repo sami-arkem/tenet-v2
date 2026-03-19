@@ -1,0 +1,27 @@
+{
+  "pack_id": "domain_sanctions_v1",
+  "domain": "sanctions",
+  "label": "Sanctions",
+  "supported_audit_types": [
+    "sanctions_readiness_review",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "SAN-001",
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "sanctions_policy",
+    "screening_procedure",
+    "alert_disposition",
+    "false_positive_review",
+    "sanctions_governance"
+  ],
+  "query_seeds": [
+    "sanctions policy",
+    "screening procedure",
+    "alert escalation workflow",
+    "false positive review",
+    "sanctions governance"
+  ]
+}

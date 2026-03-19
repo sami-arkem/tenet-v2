@@ -1,0 +1,464 @@
+{
+  "audit_meta": {
+    "audit_id": "fraud-uae-case-management-partial-001",
+    "audit_version": "v1",
+    "timestamp_utc": "2026-03-17T17:27:35.035392+00:00",
+    "platform_version": "tenet-mvp",
+    "model_version": "deterministic-reasoner-v1",
+    "report_status": "draft",
+    "reasoning_mode": "deterministic"
+  },
+  "entity_profile": {
+    "legal_name": "Real UAE Fraud Case Management Partial",
+    "trade_name": "",
+    "industry": "fintech",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [
+      "wallet",
+      "api"
+    ],
+    "jurisdictions_of_operation": [
+      "UAE"
+    ],
+    "customer_geographies": [],
+    "customer_types": [
+      "consumer",
+      "enterprise"
+    ],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "fraud_readiness_review",
+    "scope_statement": "fraud_readiness_review for fintech across UAE",
+    "included_domains": [
+      "aml_governance",
+      "governance",
+      "monitoring",
+      "fraud",
+      "remediation_tracking"
+    ],
+    "excluded_domains": [],
+    "documents_reviewed": [
+      "EBA AML CFT",
+      "FINRA AML"
+    ],
+    "evidence_received": [
+      "EBA AML CFT",
+      "FINRA AML"
+    ],
+    "evidence_missing_at_start": [
+      "Customer Risk Rating",
+      "Transaction Monitoring",
+      "Governance Roles and Escalation",
+      "Vendor Due Diligence and Oversight"
+    ]
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      "UAE_AML_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "secondary_regimes": [],
+    "frameworks": [
+      "UAE_AML_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [
+      "aml_governance",
+      "governance",
+      "monitoring",
+      "vendor_risk"
+    ],
+    "regulatory_classification": {
+      "entity_type": "payments_platform",
+      "risk_tier": "HIGH",
+      "obligation_intensity": "HIGH",
+      "cross_border_complexity": "MODERATE"
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "Real UAE Fraud Case Management Partial",
+    "overall_readiness": "BLOCKED",
+    "top_issues": [
+      "Transaction Monitoring",
+      "Customer Risk Rating",
+      "Governance Roles and Escalation"
+    ],
+    "decision_summary": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "board_message": "Tenet evaluated 4 required controls across 2 primary regimes. Current decision: BLOCKED."
+  },
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Transaction Monitoring"
+    ],
+    "conditions_precedent": [
+      "Customer Risk Rating",
+      "Transaction Monitoring",
+      "Governance Roles and Escalation",
+      "Vendor Due Diligence and Oversight"
+    ],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "HIGH",
+    "exposure_band": "HIGH",
+    "drivers": [
+      "aml_governance",
+      "governance",
+      "monitoring",
+      "vendor_risk"
+    ],
+    "assumptions": [
+      "Exposure band is inferred from control severity, status, and evidence sufficiency",
+      "Human review is required before external reliance"
+    ],
+    "confidence_note": "Derived from average control confidence score of 0.25"
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "severity_if_missing": "critical",
+        "status": "unknown",
+        "evidence_status": "partial",
+        "confidence": 0.4,
+        "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+        "matched_chunk_ids": [
+          12
+        ],
+        "citations": [
+          {
+            "chunk_id": 12,
+            "document_name": "EBA AML CFT",
+            "source_name": "EBA",
+            "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism"
+          }
+        ]
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "control_coverage_score": 9,
+    "evidence_coverage_score": 12
+  },
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "title": "Transaction Monitoring",
+      "domain": "monitoring",
+      "severity": "CRITICAL",
+      "status": "UNKNOWN",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+      "citations": [
+        {
+          "chunk_id": 12,
+          "document_name": "EBA AML CFT",
+          "source_name": "EBA",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism"
+        }
+      ],
+      "control_id": "AML-003"
+    },
+    {
+      "finding_id": "F-002",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-002"
+    },
+    {
+      "finding_id": "F-003",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "GOV-001"
+    },
+    {
+      "finding_id": "F-004",
+      "title": "Vendor Due Diligence and Oversight",
+      "domain": "vendor_risk",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "VEN-001"
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "R-001",
+      "risk_title": "Customer Risk Rating",
+      "category": "aml_governance",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-002",
+      "risk_title": "Transaction Monitoring",
+      "category": "monitoring",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-003",
+      "risk_title": "Governance Roles and Escalation",
+      "category": "governance",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-004",
+      "risk_title": "Vendor Due Diligence and Oversight",
+      "category": "vendor_risk",
+      "description": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "high",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction Monitoring",
+      "domain": "monitoring",
+      "severity": "critical",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "high",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "VEN-001",
+      "title": "Vendor Due Diligence and Oversight",
+      "domain": "vendor_risk",
+      "severity": "high",
+      "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "missing_evidence": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction Monitoring",
+      "needed_evidence_status": "partial",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "needed_evidence_status": "missing",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "VEN-001",
+      "title": "Vendor Due Diligence and Oversight",
+      "needed_evidence_status": "missing",
+      "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Vendor Due Diligence and Oversight"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "Tenet evaluated 4 required controls across 2 primary regimes. Current decision: BLOCKED.",
+    "regulator_ready_summary": "Applicable regimes: UAE_AML_BASELINE, UAE_GOVERNANCE_BASELINE. Decision: BLOCKED. Missing controls: 4. Missing evidence items: 4.",
+    "client_facing_summary": "The current review outcome is BLOCKED. 4 findings were identified and require human-reviewed remediation tracking."
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 28,
+    "confidence_level": "LOW",
+    "confidence_drivers": [
+      "4 required controls evaluated",
+      "5 relevant chunks retrieved"
+    ],
+    "limiting_factors": [
+      "Human review remains mandatory for client-facing output",
+      "Evidence sufficiency remains incomplete for one or more controls",
+      "One or more required controls are not yet fully demonstrated"
+    ],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "chunk_id": 12,
+      "document_name": "EBA AML CFT",
+      "source_name": "EBA",
+      "source_family": "aml",
+      "jurisdiction": "eu",
+      "industry": "cross_industry",
+      "audit_domain": "aml",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism",
+      "score": 72,
+      "quality_status": "ok",
+      "excerpt": "Download document 16 December 2022 AML/CFT Newsletter - Issue 9 Download document 2 September 2022 AML/CFT Newsletter - Issue 8 Download document 3 May 2022 AML/CFT Newsletter - Issue 7 Download document 21 December 2021 AML/CFT Newsletter - Issue 6 Download document 26 July 2021 AML/CFT Newsletter - Issue 5 Download document 7 May 2021 AML/CFT Newsletter - Issue 4 Download document 18 December 2020 AML/CFT Newsletter - Issue 3 Download document 22 September 2020 AML/CFT Newsletter - Issue 2 Dow"
+    },
+    {
+      "chunk_id": 11,
+      "document_name": "EBA AML CFT",
+      "source_name": "EBA",
+      "source_family": "aml",
+      "jurisdiction": "eu",
+      "industry": "cross_industry",
+      "audit_domain": "aml",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism",
+      "score": 70,
+      "quality_status": "ok",
+      "excerpt": "7 April 2022 EBA statement on financial inclusion in relation to Ukraine.pdf EBA statement on financial inclusion in the context of the invasion of Ukraine Download document View press release 19 August 2020 EBA response to the consultation on the Commission's AMLCFT action plan final for publication.pdf EBA response to the European Commission public consultation on AML/CFT action plan and establishment of an EU-level AML/CFT supervisor Download document View press release 5 February 2020 AML CF"
+    },
+    {
+      "chunk_id": 9,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 67,
+      "quality_status": "ok",
+      "excerpt": "from FINRA\u2019s ongoing regulatory operations, including (1) regulatory obligations, (2) findings and effective practices, and (3) additional resources. January 28, 2025 Podcast Special Investigations Unit: Combating Money Laundering and Fraud in the Securities Industry In the securities world today, there is little daylight between money laundering and fraud. On this episode, we learn how FINRA\u2019s Special Investigations Unit works to detect and investigate cases of illicit finance and market abuse,"
+    },
+    {
+      "chunk_id": 3,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 60,
+      "quality_status": "ok",
+      "excerpt": "of data, specifically the ability to save data views and create and manage a Bond Watchlist. Login For Industry Professionals FINPRO GATEWAY Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks. Login For Member Firms FINRA GATEWAY Firm compliance professionals can access filings and requests, run reports and submit support tickets. Login For Case Participants DR PORTAL Arbitration and mediation case participa"
+    },
+    {
+      "chunk_id": 7,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 56,
+      "quality_status": "ok",
+      "excerpt": "rs 06-07 SEC Approves Amendments to Anti-Money Laundering Compliance Program Rule and Adoption of Interpretive Material 02/10/2006 Notice to Members 03-34 Treasury and SEC Issue Final Rule Regarding Customer Identification Programs for Broker/Dealers 06/20/2003 Notice to Members 02-80 Development Regarding Treasury Information Requests Under Section 314 of the PATRIOT Act 12/02/2002 Notice to Members 02-78 NASD Adopts Amendments to Rule 3011 to Require Members to Provide to NASD Contact Informat"
+    }
+  ]
+}

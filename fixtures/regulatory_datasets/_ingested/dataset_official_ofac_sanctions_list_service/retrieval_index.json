@@ -1,0 +1,39 @@
+{
+  "dataset_id": "dataset_official_ofac_sanctions_list_service",
+  "chunk_count": 1,
+  "document_frequency": {
+    "00:00": 1,
+    "2026-03-19t17:59:45.627510": 1,
+    "countries:": 1,
+    "dataset_id:": 1,
+    "dataset_official_ofac_sanctions_list_service": 1,
+    "dataset_type:": 1,
+    "domain:": 1,
+    "fetch_mode:": 1,
+    "framework_ids:": 1,
+    "https://ofac.treasury.gov/ofac-sanctions-lists": 1,
+    "ingested_at:": 1,
+    "jurisdictions:": 1,
+    "law_text": 1,
+    "list": 1,
+    "manifest": 1,
+    "metadata_only": 1,
+    "ofac": 1,
+    "sanctions": 1,
+    "service": 1,
+    "source": 1,
+    "source_url:": 1,
+    "title:": 1,
+    "url": 1,
+    "us": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 27,
+      "token_count": 27,
+      "text": "url source manifest dataset_id: dataset_official_ofac_sanctions_list_service title: ofac sanctions list service domain: sanctions dataset_type: law_text framework_ids: ofac jurisdictions: us countries: us source_url: https://ofac.treasury.gov/ofac-sanctions-lists ingested_at: 2026-03-19t17:59:45.627510 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

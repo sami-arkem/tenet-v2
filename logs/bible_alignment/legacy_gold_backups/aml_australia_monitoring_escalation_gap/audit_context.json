@@ -1,0 +1,35 @@
+{
+  "audit_id": "aml-australia-monitoring-escalation-gap-001",
+  "entity_name": "Real Australia AML Monitoring Escalation Gap",
+  "audit_type": "aml_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "AUSTRALIA"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "merchant_acquiring",
+    "wallet"
+  ],
+  "customer_types": [
+    "smb"
+  ],
+  "domains": [
+    "aml",
+    "governance",
+    "regulatory_reporting"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "transaction monitoring",
+    "alert escalation",
+    "reporting procedure",
+    "aml governance",
+    "customer risk scoring"
+  ],
+  "top_k": 5
+}

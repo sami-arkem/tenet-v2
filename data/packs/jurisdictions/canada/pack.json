@@ -1,0 +1,33 @@
+{
+  "pack_id": "jurisdiction_canada_v1",
+  "jurisdiction": "CANADA",
+  "label": "Canada",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "CA_AML_BASELINE",
+    "CA_SANCTIONS_BASELINE",
+    "CA_GOVERNANCE_BASELINE"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

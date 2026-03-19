@@ -1,0 +1,89 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1224 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Regulator Memo) Tj
+/F1 10 Tf
+1 0 0 1 50 754 Tm
+(Entity: Demo Enterprise Pack Entity) Tj
+/F1 10 Tf
+1 0 0 1 50 740 Tm
+(Deployment Decision: BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 712 Tm
+(Key Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 692 Tm
+(? Business Verification and Beneficial Ownership \(KYB-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 678 Tm
+(? Transaction Monitoring \(AML-003\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 664 Tm
+(? Customer Identification Program \(KYC-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 650 Tm
+(? Sanctions Screening and Escalation \(SAN-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 636 Tm
+(? Enterprise AML Policy \(AML-001\) [HIGH]) Tj
+/F2 13 Tf
+1 0 0 1 50 608 Tm
+(Missing Controls) Tj
+/F1 10 Tf
+1 0 0 1 50 588 Tm
+(? AML-001: Enterprise AML Policy) Tj
+/F1 10 Tf
+1 0 0 1 50 574 Tm
+(? AML-002: Customer Risk Rating) Tj
+/F1 10 Tf
+1 0 0 1 50 560 Tm
+(? AML-003: Transaction Monitoring) Tj
+/F1 10 Tf
+1 0 0 1 50 546 Tm
+(? GOV-001: Governance Roles and Escalation) Tj
+/F1 10 Tf
+1 0 0 1 50 532 Tm
+(? KYB-001: Business Verification and Beneficial Ownership) Tj
+/F2 13 Tf
+1 0 0 1 50 504 Tm
+(Prior / Historical Context) Tj
+/F1 10 Tf
+1 0 0 1 50 484 Tm
+(? No prior historical context available.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000001533 00000 n 
+0000001603 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1678
+%%EOF

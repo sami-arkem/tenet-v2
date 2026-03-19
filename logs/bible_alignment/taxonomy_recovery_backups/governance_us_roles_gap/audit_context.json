@@ -1,0 +1,32 @@
+{
+  "audit_id": "governance-us-roles-gap-001",
+  "entity_name": "Real Governance US Roles Gap Case",
+  "audit_type": "policy_governance_gap_analysis",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "source_families": [
+    "regulations",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix",
+    "accountability"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

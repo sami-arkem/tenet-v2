@@ -1,0 +1,52 @@
+{
+  "run_id": "run_release_gate_api_001",
+  "deterministic_authoritative": true,
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "overall_posture": "GREEN",
+  "deployment_decision": "APPROVED",
+  "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.",
+  "control_count": 1,
+  "supported_controls": 1,
+  "partial_controls": 0,
+  "blocked_controls": 0,
+  "controls": [
+    {
+      "control_id": "AML.MONITORING.001",
+      "regime_id": "UK_MLR.001",
+      "title": "Transaction monitoring policy",
+      "coverage_status": "SUPPORTED",
+      "required_evidence_types": [
+        "policy_document"
+      ],
+      "covered_evidence_types": [
+        "policy_document"
+      ],
+      "missing_required_evidence_types": [],
+      "rationale": "Required evidence is covered by direct evidence and/or retrieved context.",
+      "deterministic_authoritative": true,
+      "evidence_citations": [
+        {
+          "citation_type": "direct_evidence",
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L2"
+        },
+        {
+          "citation_type": "retrieved_context",
+          "chunk_id": "ev_001::chunk_0000",
+          "evidence_id": "ev_001",
+          "filename": "policy.txt",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "score": 2.5,
+          "excerpt": "transaction monitoring policy",
+          "question": "What evidence supports AML.MONITORING.001?"
+        }
+      ],
+      "linked_findings": []
+    }
+  ]
+}

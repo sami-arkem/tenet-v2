@@ -1,0 +1,78 @@
+{
+  "report_pack_version": "v1",
+  "generated_at": "2026-03-19T17:59:46.572926+00:00",
+  "run_id": "run_release_gate_001",
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "summary": {
+    "overall_posture": "GREEN",
+    "deployment_decision": "APPROVED",
+    "control_count": 1,
+    "passed_controls": 1,
+    "partial_controls": 0,
+    "failed_controls": 0,
+    "missing_evidence_controls": 0,
+    "critical_findings": 0,
+    "high_findings": 0,
+    "medium_findings": 0,
+    "low_findings": 0,
+    "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0."
+  },
+  "controls": [
+    {
+      "control_id": "AML.MONITORING.001",
+      "regime_id": "UK_MLR.001",
+      "verdict": "SATISFIED",
+      "evidence_coverage_ratio": 1.0,
+      "evidence_refs": [
+        {
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L2",
+          "content_hash": null,
+          "collected_at": null
+        }
+      ],
+      "rationale": "Required evidence types are covered and control is declared effective."
+    }
+  ],
+  "findings": [],
+  "remediation_items": [],
+  "prior_historical_context": {},
+  "metadata": {}
+}

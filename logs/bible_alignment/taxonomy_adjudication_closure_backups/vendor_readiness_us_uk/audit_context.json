@@ -1,0 +1,33 @@
+{
+  "audit_id": "vendor-readiness-us-uk-001",
+  "entity_name": "Real Vendor Readiness Case",
+  "audit_type": "vendor_internal_compliance_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "US",
+    "UK"
+  ],
+  "entity_type": "vendor",
+  "products": [
+    "api"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "source_families": [
+    "regulations",
+    "vendor_risk",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "vendor due diligence",
+    "third party risk",
+    "vendor monitoring",
+    "outsourcing governance",
+    "compliance oversight"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

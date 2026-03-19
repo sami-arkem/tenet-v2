@@ -1,0 +1,88 @@
+source_family	source_name	document_name	url
+aml	FINCEN	FinCEN Guidance	https://www.fincen.gov/guidance
+aml	EBA	EBA AML CFT	https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism
+aml	FCA	FCA Money Laundering Regulations	https://www.fca.org.uk/firms/financial-crime/money-laundering-regulations
+aml	FATF	FATF Digital Identity	https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-on-Digital-Identity.html
+aml	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html
+corporate	SEC	SEC Company Search	https://www.sec.gov/edgar/searchedgar/companysearch
+corporate	UK_COMPANIES_HOUSE	Companies House	https://find-and-update.company-information.service.gov.uk/
+corporate	CANADA_CORPORATIONS	Corporations Canada	https://ised-isde.canada.ca/site/corporations-canada/en
+corporate	ASIC	ASIC Registers	https://asic.gov.au/for-business/registers/
+corporate	MCA_INDIA	MCA Company Registration	https://www.mca.gov.in/content/mca/global/en/company-llp-registration.html
+corporate	ACRA	ACRA Company Registration	https://www.acra.gov.sg/how-to-guides/browse-topics/company-registration
+licensing	NMLS	NMLS Consumer Access	https://www.nmlsconsumeraccess.org/
+licensing	UK_FCA	FCA Register	https://register.fca.org.uk/s/
+licensing	CANADA	Canada Financial Institutions	https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/financial-institutions.html
+licensing	ASIC	ASIC Connect	https://connectonline.asic.gov.au/
+licensing	RBI	RBI Digital Lending	https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12194
+enforcement	SEC	SEC Litigation Releases	https://www.sec.gov/enforcement-litigation/litigation-releases
+enforcement	DOJ	DOJ Corporate Compliance	https://www.justice.gov/criminal/criminal-fraud/evaluation-corporate-compliance-programs
+enforcement	UK_OFSI	OFSI General Guidance	https://www.gov.uk/government/publications/financial-sanctions-general-guidance
+enforcement	EU	EU Restrictive Measures	https://finance.ec.europa.eu/financial-crime/eu-restrictive-measures_en
+enforcement	FINCEN	FinCEN News Releases	https://www.fincen.gov/news/news-releases
+frameworks	OECD	OECD AI Principles	https://oecd.ai/en/ai-principles
+frameworks	OECD	OECD AI Classification	https://oecd.ai/en/classification
+frameworks	WHO	WHO Health Data Governance	https://www.who.int/teams/digital-health-and-innovation/health-data-governance
+frameworks	CISA	CISA Cybersecurity Performance Goals	https://www.cisa.gov/cross-sector-cybersecurity-performance-goals
+frameworks	ICO	ICO Accountability Governance	https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/
+regulations	US_FTC	FTC Safeguards Rule	https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314
+regulations	US_FTC	GLBA	https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act
+regulations	UK	UK MLR 2017	https://www.legislation.gov.uk/uksi/2017/692/contents/made
+regulations	UK_ICO	ICO AI Guidance	https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/
+regulations	EU	GDPR Official	https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+regulations	EDPB	EDPB DSA GDPR Guidelines	https://www.edpb.europa.eu/our-work-tools/documents/public-consultations/2025/guidelines-32025-interplay-between-dsa-and-gdpr_bg
+regulations	CANADA	PCMLTFA	https://laws-lois.justice.gc.ca/eng/acts/P-8.6/
+regulations	CANADA	PIPEDA	https://laws-lois.justice.gc.ca/eng/acts/P-21/
+regulations	AUSTRALIA_OAIC	Privacy Act	https://www.oaic.gov.au/privacy/the-privacy-act
+regulations	AUSTRALIA	AML CTF Act	https://www.legislation.gov.au/Latest/C2018C00295
+regulations	NEW_ZEALAND	Privacy Act 2020	https://www.privacy.org.nz/privacy-act-2020/
+regulations	SOUTH_AFRICA	POPIA	https://popia.co.za/act/
+regulations	BRAZIL	LGPD Planalto	https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2018/08/sancionada-lei-geral-de-protecao-de-dados-pessoais
+industry_fintech	CFPB	CFPB Supervision	https://www.consumerfinance.gov/compliance/supervision-examinations/
+industry_fintech	CFPB	CFPB Compliance Resources	https://www.consumerfinance.gov/compliance/compliance-resources/
+industry_fintech	FCA	FCA Innovation	https://www.fca.org.uk/firms/innovation
+industry_fintech	SEC	SEC FinHub	https://www.sec.gov/finhub
+industry_gov_vendor	FAR	FAR	https://www.acquisition.gov/far
+industry_gov_vendor	FAR	FAR Part 52	https://www.acquisition.gov/far-part-52
+industry_gov_vendor	EU	EU AI Act Official	https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+industry_gov_vendor	FEDRAMP	FedRAMP	https://www.fedramp.gov/
+industry_gov_vendor	CMMC	CMMC	https://dodcio.defense.gov/CMMC/
+industry_healthcare	HHS	HIPAA Security Overview	https://www.hhs.gov/hipaa/for-professionals/security/index.html
+industry_healthcare	HHS	HIPAA Security Rule	https://www.hhs.gov/ocr/privacy/hipaa/administrative/securityrule/index.html
+industry_healthcare	CMS	CMS HIPAA	https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/health-insurance-portability-and-accountability-act-hipaa
+industry_healthcare	FDA	FDA Device Cybersecurity FAQ	https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions
+industry_healthcare	FDA	FDA AI ML Medical Devices	https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-and-machine-learning-ail-ml-enabled-medical-devices
+industry_healthcare	WHO	WHO Health Data Governance	https://www.who.int/teams/digital-health-and-innovation/health-data-governance
+industry_payments	US	Regulation E	https://www.ecfr.gov/current/title-12/chapter-X/part-1005
+industry_payments	CFPB	CFPB Compliance Resources	https://www.consumerfinance.gov/compliance/compliance-resources/
+industry_payments	FTC	GLBA	https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act
+industry_payments	EU	PSD2 Payments	https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services-psd-2_en
+industry_crypto	EU	MiCA Official	https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng
+industry_crypto	FINCEN	FinCEN Guidance	https://www.fincen.gov/guidance
+industry_crypto	FINRA	FINRA AML	https://www.finra.org/rules-guidance/key-topics/aml
+industry_crypto	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html
+industry_crypto	SEC	SEC FinHub	https://www.sec.gov/finhub
+industry_banking	FFIEC	FFIEC BSA AML Manual	https://bsaaml.ffiec.gov/manual
+industry_banking	OCC	OCC Comptroller Handbook	https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/index-comptrollers-handbook.html
+industry_banking	BCBS	Operational Resilience	https://www.bis.org/bcbs/publ/d550.htm
+industry_banking	FDIC	FDIC BSA AML	https://www.fdic.gov/banker-resource-center/bank-secrecy-act-anti-money-laundering-bsaaml
+industry_insurance	APRA	APRA CPS 234	https://www.apra.gov.au/cps-234-information-security
+industry_insurance	APRA	APRA Information Security	https://www.apra.gov.au/information-security
+industry_insurance	IAIS	IAIS Standards	https://www.iaisweb.org/activities-topics/standards/
+industry_insurance	NAIC	NAIC Cybersecurity	https://content.naic.org/cipr-topics/cybersecurity
+industry_insurance	NYDFS	NYDFS Cybersecurity	https://www.dfs.ny.gov/industry_guidance/cybersecurity
+industry_telecom	CISA	Communications Resiliency	https://www.cisa.gov/communications-resiliency
+industry_telecom	CISA	Communications Hardening	https://www.cisa.gov/resources-tools/resources/enhanced-visibility-and-hardening-guidance-communications-infrastructure
+industry_telecom	CISA	Mobile Communications Guidance	https://www.cisa.gov/resources-tools/resources/mobile-communications-best-practice-guidance
+industry_defense	CMMC	CMMC	https://dodcio.defense.gov/CMMC/
+industry_defense	NIST	NIST 800-171	https://csrc.nist.gov/pubs/sp/800/171/r3/final
+industry_defense	DFARS	DFARS	https://www.acquisition.gov/dfars
+industry_gambling	UKGC	UK Gambling AML	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/anti-money-laundering
+industry_gambling	UKGC	LCCP	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/licence-conditions-and-codes-of-practice
+industry_gambling	AUSTRAC	AUSTRAC Gambling	https://www.austrac.gov.au/business/industry-specific-guidance/gambling-industry
+industry_energy	NERC	NERC CIP Standards	https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx
+industry_energy	DOE	CESER	https://www.energy.gov/ceser/office-cybersecurity-energy-security-and-emergency-response
+industry_energy	CISA	Industrial Control Systems	https://www.cisa.gov/topics/industrial-control-systems
+industry_adult	DOJ	DOJ Obscenity Law	https://www.justice.gov/criminal/criminal-ceos/obscenity
+industry_adult	DOJ	DOJ Human Trafficking	https://www.justice.gov/humantrafficking
+industry_adult	FTC	FTC Privacy Security	https://www.ftc.gov/business-guidance/privacy-security

@@ -1,0 +1,24 @@
+{
+  "dataset_id": "dataset_official_fca_handbook",
+  "title": "FCA Handbook of Rules and Guidance",
+  "domain": "governance",
+  "jurisdictions": [
+    "uk"
+  ],
+  "countries": [
+    "GB"
+  ],
+  "framework_ids": [
+    "FCA_HANDBOOK"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "loader_kind": "url_manifest",
+  "retrieval_ready": true,
+  "normalized_text_path": "fixtures/regulatory_datasets/_ingested/dataset_official_fca_handbook/normalized_text.txt",
+  "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_fca_handbook/chunks.json",
+  "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_fca_handbook/retrieval_index.json",
+  "chunk_count": 1,
+  "ingested_at": "2026-03-19T17:59:45.617298+00:00"
+}

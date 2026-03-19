@@ -1,0 +1,19 @@
+{
+  "audit_id": "aml-us-alerting-partial-001",
+  "entity_name": "Real AML US Alerting Partial Case",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": ["US"],
+  "entity_type": "payments_platform",
+  "products": ["cross_border_payments"],
+  "customer_types": ["smb", "consumer"],
+  "source_families": ["regulations", "aml", "enforcement", "industry_fintech"],
+  "query_terms": [
+    "transaction monitoring",
+    "alert workflow",
+    "case review evidence",
+    "threshold documentation",
+    "aml governance"
+  ],
+  "top_k": 5
+}

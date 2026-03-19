@@ -1,0 +1,33 @@
+{
+  "audit_id": "sanctions-us-false-positive-review-001",
+  "entity_name": "Real US False Positive Review Case",
+  "audit_type": "sanctions_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "api",
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "enforcement",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "ofac screening",
+    "false positive review",
+    "alert disposition",
+    "sanctions policy",
+    "screening governance"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

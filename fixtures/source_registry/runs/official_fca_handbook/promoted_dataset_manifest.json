@@ -1,0 +1,37 @@
+{
+  "dataset_id": "dataset_official_fca_handbook",
+  "title": "FCA Handbook of Rules and Guidance",
+  "domain": "governance",
+  "jurisdictions": [
+    "uk"
+  ],
+  "countries": [
+    "GB"
+  ],
+  "framework_ids": [
+    "INT_GOV"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "AD_HOC",
+  "loader": {
+    "kind": "file_manifest",
+    "content_path": "official_fca_handbook.txt"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded_by": "official_corpus_bootstrap",
+    "priority": "high",
+    "dataset_goal": "uk_regulatory_rules",
+    "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/fca_handbook.json",
+    "promoted_from_source_id": "official_fca_handbook",
+    "promotion_acquisition_method": "PUBLIC_DOWNLOAD",
+    "promotion_owner": "tenet-platform"
+  }
+}

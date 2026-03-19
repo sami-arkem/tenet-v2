@@ -1,0 +1,89 @@
+{
+  "run_id": "run_dossier_api_001",
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [
+      "eu"
+    ],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "controls": [
+    {
+      "control": {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "description": "A documented transaction monitoring control must exist.",
+        "test_procedure": "Check for policy and monitoring evidence.",
+        "required_evidence_types": [
+          "policy_document",
+          "monitoring_report"
+        ],
+        "severity_if_missing": "HIGH"
+      },
+      "provided_evidence": [
+        {
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L20"
+        }
+      ],
+      "declared_control_present": true,
+      "declared_operating_effective": true
+    }
+  ],
+  "default_remediation_owner": "compliance@acme.com",
+  "audit_context_pack": {
+    "deterministic_authoritative": true,
+    "question_count": 1,
+    "selected_chunk_count": 1,
+    "questions": [
+      {
+        "question": "What evidence supports AML.MONITORING.001?",
+        "matches": [
+          {
+            "chunk_id": "ev_001::chunk_0000",
+            "evidence_id": "ev_001",
+            "filename": "policy.txt",
+            "title": "Monitoring Policy",
+            "source_type": "policy_document",
+            "score": 3.2,
+            "excerpt": "AML transaction monitoring policy"
+          }
+        ]
+      }
+    ]
+  }
+}

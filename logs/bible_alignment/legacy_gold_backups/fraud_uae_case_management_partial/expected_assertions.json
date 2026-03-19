@@ -1,0 +1,35 @@
+{
+  "case_id": "fraud_uae_case_management_partial",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "UAE_AML_BASELINE",
+        "UAE_GOVERNANCE_BASELINE"
+      ],
+      "missing_controls.control_id": [
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "VEN-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "VEN-001"
+      ],
+      "findings.control_id": [
+        "AML-003",
+        "AML-002",
+        "GOV-001",
+        "VEN-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 9
+    }
+  }
+}

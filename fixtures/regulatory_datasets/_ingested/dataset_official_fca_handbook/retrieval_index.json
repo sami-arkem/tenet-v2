@@ -1,0 +1,44 @@
+{
+  "dataset_id": "dataset_official_fca_handbook",
+  "chunk_count": 1,
+  "document_frequency": {
+    "00:00": 1,
+    "2026-03-19t17:59:45.616453": 1,
+    "and": 1,
+    "countries:": 1,
+    "dataset_id:": 1,
+    "dataset_official_fca_handbook": 1,
+    "dataset_type:": 1,
+    "domain:": 1,
+    "fca": 1,
+    "fca_handbook": 1,
+    "fetch_mode:": 1,
+    "framework_ids:": 1,
+    "gb": 1,
+    "governance": 1,
+    "guidance": 1,
+    "handbook": 1,
+    "https://www.fca.org.uk/about/how-we-regulate/handbook": 1,
+    "ingested_at:": 1,
+    "jurisdictions:": 1,
+    "law_text": 1,
+    "manifest": 1,
+    "metadata_only": 1,
+    "of": 1,
+    "rules": 1,
+    "source": 1,
+    "source_url:": 1,
+    "title:": 1,
+    "uk": 1,
+    "url": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 29,
+      "token_count": 29,
+      "text": "url source manifest dataset_id: dataset_official_fca_handbook title: fca handbook of rules and guidance domain: governance dataset_type: law_text framework_ids: fca_handbook jurisdictions: uk countries: gb source_url: https://www.fca.org.uk/about/how-we-regulate/handbook ingested_at: 2026-03-19t17:59:45.616453 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

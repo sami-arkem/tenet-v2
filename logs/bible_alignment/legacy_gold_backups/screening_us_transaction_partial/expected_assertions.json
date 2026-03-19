@@ -1,0 +1,32 @@
+{
+  "case_id": "screening_us_transaction_partial",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "OFAC",
+        "BSA_AML"
+      ],
+      "missing_controls.control_id": [
+        "AML-003",
+        "GOV-001",
+        "SAN-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-003",
+        "GOV-001",
+        "SAN-001"
+      ],
+      "findings.control_id": [
+        "AML-003",
+        "SAN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 23
+    }
+  }
+}

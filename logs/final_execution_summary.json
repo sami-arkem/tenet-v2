@@ -1,6 +1,6 @@
 {
   "summary_version": "v1",
-  "generated_at_utc": "2026-03-17T20:53:26.306283+00:00",
+  "generated_at_utc": "2026-03-18T07:33:41.961426+00:00",
   "all_steps_passed": true,
   "steps": [
     {
@@ -8,56 +8,56 @@
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.094
+      "duration_seconds": 0.085
     },
     {
       "name": "pytest",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 2.878
+      "duration_seconds": 2.096
     },
     {
       "name": "readiness_check",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.109
+      "duration_seconds": 0.091
     },
     {
       "name": "live_model_evals",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 338.717
+      "duration_seconds": 0.153
     },
     {
       "name": "customer_pack_stability_suite",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.368
+      "duration_seconds": 0.273
     },
     {
       "name": "customer_pack_stability_summary",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.04
+      "duration_seconds": 0.033
     },
     {
       "name": "workflow_smoke_customer_pack",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.168
+      "duration_seconds": 0.136
     },
     {
       "name": "historical_reporting_smoke",
       "passed": true,
       "returncode": 0,
       "timed_out": false,
-      "duration_seconds": 0.147
+      "duration_seconds": 0.136
     }
   ],
   "readiness": {

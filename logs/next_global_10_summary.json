@@ -1,0 +1,229 @@
+[
+  {
+    "case_id": "uae_transaction_screening_escalation_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_SANCTIONS_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "singapore_fraud_monitoring_governance_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "SG_AML_BASELINE",
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "AML-003",
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "AML-003",
+      "GOV-001"
+    ],
+    "findings": [
+      "AML-003",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 12
+  },
+  {
+    "case_id": "hong_kong_transaction_screening_false_positive_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "HK_SANCTIONS_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "canada_remediation_issue_register_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "australia_regulatory_licensing_vendor_governance_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "uae_regulatory_licensing_accountability_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "singapore_remediation_closure_evidence_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "hong_kong_fraud_case_management_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "HK_AML_BASELINE",
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "AML-002",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "coverage": 9
+  },
+  {
+    "case_id": "canada_transaction_screening_governance_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CA_SANCTIONS_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-003",
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "australia_fraud_remediation_heavy",
+    "decision": "BLOCKED",
+    "regimes": [
+      "AU_AML_BASELINE",
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "AML-002",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "coverage": 9
+  }
+]

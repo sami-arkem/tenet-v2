@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "kind": "gold_case",
+      "id": "aml_us_monitoring_gap_051",
+      "title": "AML US monitoring escalation gap",
+      "source_dir": "intake/proof_batch/aml_us_monitoring_gap_051",
+      "domains": ["aml", "governance"],
+      "jurisdictions": ["us"]
+    },
+    {
+      "kind": "gold_case",
+      "id": "kyc_uk_periodic_review_failure_052",
+      "title": "KYC UK periodic review failure",
+      "source_dir": "intake/proof_batch/kyc_uk_periodic_review_failure_052",
+      "domains": ["kyc", "governance"],
+      "jurisdictions": ["uk"]
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_us_pack_006",
+      "title": "AML US customer evidence pack 006",
+      "source_dir": "intake/proof_batch/aml_us_pack_006",
+      "domains": ["aml", "governance"],
+      "jurisdictions": ["us"]
+    }
+  ]
+}

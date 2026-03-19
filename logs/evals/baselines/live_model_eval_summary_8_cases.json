@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "aml_us_strong_pass",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "aml_us_uk_tm_gap",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "governance_gap_eu",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "kyb_us_beneficial_ownership_gap",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "kyb_us_partial_evidence",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "sanctions_us_eu_escalation_gap",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "sanctions_us_eu_strong_controls",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  },
+  {
+    "case_id": "vendor_readiness_us_uk",
+    "passed": true,
+    "weighted_score": 1.0,
+    "failures": []
+  }
+]

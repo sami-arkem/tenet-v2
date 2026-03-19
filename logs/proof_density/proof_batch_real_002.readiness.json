@@ -1,0 +1,513 @@
+{
+  "version": "v1",
+  "generated_at_epoch": 1773782341,
+  "batch_label": "proof_batch_real_002",
+  "counts": {
+    "total_items": 11,
+    "ready_items": 0,
+    "blocked_items": 11,
+    "ready_ratio": 0.0
+  },
+  "items": [
+    {
+      "kind": "gold_case",
+      "id": "aml_canada_case_001",
+      "title": "AML Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_eu_case_001",
+      "title": "AML EU case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_global_case_001",
+      "title": "AML Global case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_global_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "global"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_hong_kong_case_001",
+      "title": "AML Hong Kong case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_hong_kong_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "hong_kong"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_india_case_001",
+      "title": "AML India case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_india_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "india"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_singapore_case_001",
+      "title": "AML Singapore case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_singapore_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "singapore"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_canada_case_001",
+      "title": "Fraud Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_canada_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_eu_case_001",
+      "title": "Fraud EU case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_eu_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "expected_assertions.json": true,
+        "case_notes.md": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms",
+        "expected_assertions.json::no_meaningful_expected_values"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "case_notes.md::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_australia_pack_001",
+      "title": "AML Australia pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_australia_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_canada_pack_001",
+      "title": "AML Canada pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_eu_pack_001",
+      "title": "AML EU pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "optional_files": [
+        "evidence_index.json",
+        "source_manifest.json",
+        "notes.md"
+      ],
+      "file_presence": {
+        "audit_context.json": true,
+        "evidence_index.json": false,
+        "source_manifest.json": false,
+        "notes.md": true
+      },
+      "missing_required": [],
+      "validation_errors": [
+        "audit_context.json::empty_audit_type",
+        "audit_context.json::empty_industry",
+        "audit_context.json::missing_source_families",
+        "audit_context.json::missing_query_terms"
+      ],
+      "placeholder_findings": [
+        "README.md::placeholder",
+        "audit_context.json::placeholder",
+        "notes.md::placeholder"
+      ],
+      "readiness_score": 0.6,
+      "ready": false
+    }
+  ],
+  "ready_batch_manifest_path": "logs/proof_density/execution/proof_batch_real_002/ready_only_manifest.json"
+}

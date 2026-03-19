@@ -1,0 +1,6 @@
+{
+  "evidence_id": "evidence_b62e065c961cb1ba",
+  "category": "monitoring_report",
+  "confidence": "HIGH",
+  "reason": "matched deterministic rule for monitoring_report"
+}

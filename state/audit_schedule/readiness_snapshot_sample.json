@@ -1,0 +1,15 @@
+{
+  "blocking_reasons": [
+    "stale_evidence:1",
+    "schedule_disabled:1"
+  ],
+  "cycle_date": "2026-02-15",
+  "invalid_configuration_alerts": 0,
+  "readiness_blocked": true,
+  "schedule_disabled_alerts": 1,
+  "schema_version": "1.0",
+  "stale_evidence_alerts": 1,
+  "total_alerts": 2,
+  "total_executions": 2,
+  "total_notifications": 2
+}

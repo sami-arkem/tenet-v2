@@ -1,0 +1,163 @@
+{
+  "version": "v1",
+  "generated_at_epoch": 1773781456,
+  "batch_label": "proof_batch_real_002",
+  "status_source": "/Users/samisayyed/tenet-v2/logs/proof_density/proof_density_status.json",
+  "rules": {
+    "real_corpus_only": true,
+    "no_placeholder_content": true,
+    "no_invented_expected_outcomes": true,
+    "historical_context_not_authoritative": true,
+    "deterministic_core_authoritative": true
+  },
+  "counts": {
+    "gold_cases_planned": 8,
+    "customer_packs_planned": 3,
+    "total_items_planned": 11
+  },
+  "items": [
+    {
+      "kind": "gold_case",
+      "id": "aml_canada_case_001",
+      "title": "AML Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_eu_case_001",
+      "title": "AML EU case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_global_case_001",
+      "title": "AML Global case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_global_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "global"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_hong_kong_case_001",
+      "title": "AML Hong Kong case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_hong_kong_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "hong_kong"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_india_case_001",
+      "title": "AML India case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_india_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "india"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_singapore_case_001",
+      "title": "AML Singapore case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_singapore_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "singapore"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_canada_case_001",
+      "title": "Fraud Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_canada_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_eu_case_001",
+      "title": "Fraud EU case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_eu_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_australia_pack_001",
+      "title": "AML Australia pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_australia_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_canada_pack_001",
+      "title": "AML Canada pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage"
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_eu_pack_001",
+      "title": "AML EU pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage"
+    }
+  ]
+}

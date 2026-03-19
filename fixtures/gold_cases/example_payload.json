@@ -1,0 +1,42 @@
+{
+  "run_id": "gold_example_001",
+  "company_profile": {
+    "company_name": "Example Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [
+      "eu"
+    ],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Example Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_example_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "in_scope_entities": [
+      "Example Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "controls": [],
+  "default_remediation_owner": "compliance@example.com"
+}

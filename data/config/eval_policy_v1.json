@@ -1,0 +1,20 @@
+{
+  "strict_fields": [
+    "deployment_decision.status"
+  ],
+  "contains_fields": [
+    "regulatory_applicability.primary_regimes",
+    "missing_controls.control_id",
+    "missing_evidence.control_id",
+    "findings.control_id"
+  ],
+  "scoring_weights": {
+    "deployment_decision.status": 0.30,
+    "regulatory_applicability.primary_regimes": 0.20,
+    "missing_controls.control_id": 0.20,
+    "missing_evidence.control_id": 0.15,
+    "findings.control_id": 0.10,
+    "control_assessment.control_coverage_score": 0.05
+  },
+  "pass_threshold": 0.85
+}

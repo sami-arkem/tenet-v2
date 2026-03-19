@@ -1,0 +1,37 @@
+{
+  "dataset_id": "dataset_official_fatf_recommendations",
+  "title": "FATF Recommendations and Standards Updates",
+  "domain": "aml",
+  "jurisdictions": [
+    "global"
+  ],
+  "countries": [
+    "GLOBAL"
+  ],
+  "framework_ids": [
+    "UK_MLR"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "AD_HOC",
+  "loader": {
+    "kind": "file_manifest",
+    "content_path": "official_fatf_recommendations.txt"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded_by": "official_corpus_bootstrap",
+    "priority": "critical",
+    "dataset_goal": "global_aml_baseline",
+    "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/fatf_recommendations.json",
+    "promoted_from_source_id": "official_fatf_recommendations",
+    "promotion_acquisition_method": "PUBLIC_DOWNLOAD",
+    "promotion_owner": "tenet-platform"
+  }
+}

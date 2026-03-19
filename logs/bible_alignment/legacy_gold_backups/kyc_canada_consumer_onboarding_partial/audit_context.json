@@ -1,0 +1,34 @@
+{
+  "audit_id": "kyc-canada-consumer-onboarding-partial-001",
+  "entity_name": "Real Canada Consumer Onboarding Partial",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "CANADA"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "domains": [
+    "kyc_kyb",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "kyc",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "cip policy",
+    "identity verification workflow",
+    "consumer onboarding",
+    "customer risk scoring",
+    "governance framework"
+  ],
+  "top_k": 5
+}

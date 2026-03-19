@@ -1,0 +1,44 @@
+{
+  "version": "v1",
+  "paths": {
+    "gold_cases_root": "evals/gold_cases",
+    "customer_packs_root": "data/customer_evidence_packs",
+    "batch_output_root": "logs/proof_batches"
+  },
+  "allowed_domains": [
+    "aml",
+    "kyc",
+    "kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "third_party_risk",
+    "fraud",
+    "transaction_screening",
+    "regulatory_reporting",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "allowed_jurisdictions": [
+    "global",
+    "eu",
+    "uk",
+    "us",
+    "uae",
+    "canada",
+    "australia",
+    "singapore",
+    "india",
+    "hong_kong"
+  ],
+  "gate_commands": [
+    {
+      "name": "final_execution_discipline",
+      "argv": [
+        "scripts/final_execution_discipline.py"
+      ],
+      "enabled": true,
+      "timeout_seconds": 2400
+    }
+  ]
+}

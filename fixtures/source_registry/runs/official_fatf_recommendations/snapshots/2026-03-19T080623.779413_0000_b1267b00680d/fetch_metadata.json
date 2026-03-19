@@ -1,0 +1,25 @@
+{
+  "source_id": "official_fatf_recommendations",
+  "source_manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/fatf_recommendations.json",
+  "fetched_at": "2026-03-19T08:06:23.779413+00:00",
+  "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html",
+  "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b",
+  "raw_size_bytes": 93,
+  "normalized_text_chars": 93,
+  "fetch_meta": {
+    "status_code": 200,
+    "content_type": "text/plain",
+    "content_length_header": "20",
+    "final_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html"
+  },
+  "provenance_checks": {
+    "robots_ok": true,
+    "freshness_ok": true,
+    "license_ok": true,
+    "approved": true,
+    "retrieval_allowed": true
+  },
+  "dataset_manifest_path": "fixtures/regulatory_datasets/promoted/official_fatf_recommendations.json",
+  "dataset_id": "dataset_official_fatf_recommendations",
+  "deterministic_authoritative": true
+}

@@ -1,0 +1,101 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1564 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Client Report) Tj
+/F1 10 Tf
+1 0 0 1 50 754 Tm
+(Entity: Continental Wallet EU) Tj
+/F1 10 Tf
+1 0 0 1 50 740 Tm
+(Deployment Decision: BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 712 Tm
+(Summary) Tj
+/F1 10 Tf
+1 0 0 1 50 692 Tm
+(BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 664 Tm
+(Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 644 Tm
+(? Transaction Monitoring \(AML-003\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 630 Tm
+(? Sanctions Screening and Escalation \(SAN-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 616 Tm
+(? Governance Roles and Escalation \(GOV-001\) [HIGH]) Tj
+/F2 13 Tf
+1 0 0 1 50 588 Tm
+(Immediate Actions) Tj
+/F1 10 Tf
+1 0 0 1 50 568 Tm
+(? {'control_id': 'SAN-001', 'title': 'Sanctions Screening and Escalation', 'domain':) Tj
+/F1 10 Tf
+1 0 0 1 50 554 Tm
+('sanctions', 'priority': 'CRITICAL', 'action': 'Remediate and evidence control: Sanctions) Tj
+/F1 10 Tf
+1 0 0 1 50 540 Tm
+(Screening and Escalation'}) Tj
+/F1 10 Tf
+1 0 0 1 50 526 Tm
+(? {'control_id': 'AML-003', 'title': 'Transaction Monitoring', 'domain': 'monitoring',) Tj
+/F1 10 Tf
+1 0 0 1 50 512 Tm
+('priority': 'CRITICAL', 'action': 'Remediate and evidence control: Transaction Monitoring'}) Tj
+/F2 13 Tf
+1 0 0 1 50 484 Tm
+(Missing Controls) Tj
+/F1 10 Tf
+1 0 0 1 50 464 Tm
+(? GOV-001: Governance Roles and Escalation) Tj
+/F1 10 Tf
+1 0 0 1 50 450 Tm
+(? SAN-001: Sanctions Screening and Escalation) Tj
+/F1 10 Tf
+1 0 0 1 50 436 Tm
+(? AML-003: Transaction Monitoring) Tj
+/F2 13 Tf
+1 0 0 1 50 408 Tm
+(Prior / Historical Context) Tj
+/F1 10 Tf
+1 0 0 1 50 388 Tm
+(? No prior historical context available.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000001873 00000 n 
+0000001943 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2018
+%%EOF
