@@ -19,10 +19,10 @@
       "retrieval_allowed": false,
       "metadata": {
         "freshness_check": "daily",
-        "last_check": "2026-03-19T19:11:00.106158Z",
+        "last_check": "2026-03-19T19:27:51.375828Z",
         "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/blocked/blocked_scraped_prohibited.json"
       },
-      "_checksum": "16e1d4e68e360ce8ffa97fb48a39c084dcf280792b555e81900d4d99cf554090"
+      "_checksum": "ef524fa72bf1f9c25322b97bb37399c8e321582cb58f5c0134f007a056d4e30c"
     },
     "customer_uploaded_authorized": {
       "source_id": "customer_uploaded_authorized",
@@ -43,10 +43,10 @@
       "retrieval_allowed": true,
       "metadata": {
         "freshness_check": "static",
-        "last_check": "2026-03-19T19:11:00.106158Z",
+        "last_check": "2026-03-19T19:27:51.375828Z",
         "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/compliance_docs/customer_uploaded_authorized.json"
       },
-      "_checksum": "47cf7904b76507e6f90c09c4e3dcb8bb2dd4317cd0f9f3e82f3a7961cb1f6842"
+      "_checksum": "f9e940be07bdca882ab14b5822b57b766f2eaa72d79a6bb87bc6edf96975c430"
     },
     "licensed_vendor_feed": {
       "source_id": "licensed_vendor_feed",
@@ -67,10 +67,10 @@
       "retrieval_allowed": true,
       "metadata": {
         "freshness_check": "weekly",
-        "last_check": "2026-03-19T19:11:00.106158Z",
+        "last_check": "2026-03-19T19:27:51.375828Z",
         "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/licensed_vendor_feed.json"
       },
-      "_checksum": "a474605a1069a8dd69f5a6d03e10e51fe6ae64d4145dea46753a8bc8d1d30de3"
+      "_checksum": "e025503878575248fd2017d231c0276e503035b43d0cec291f47234458135a79"
     },
     "official_eurlex_aml_package": {
       "source_id": "official_eurlex_aml_package",
@@ -216,12 +216,12 @@
       "retrieval_allowed": true,
       "metadata": {
         "freshness_check": "daily",
-        "last_check": "2026-03-19T19:11:00.106158Z",
+        "last_check": "2026-03-19T19:27:51.375828Z",
         "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/uk_fca_handbook_public.json"
       },
-      "_checksum": "2be1468493d01dece607f42b79cdd4e8597f43320a393f8e88827cd54f473fed"
+      "_checksum": "95ebc61682f49659541f89f19de4a83d94ad6dd69995fa07e28f4f915061dc71"
     }
   },
   "count": 9,
-  "built_at": "2026-03-19T19:11:00.168921+00:00"
+  "built_at": "2026-03-19T19:27:51.414758+00:00"
 }

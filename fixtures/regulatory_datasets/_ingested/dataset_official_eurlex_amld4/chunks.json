@@ -6,7 +6,7 @@
       "token_start": 0,
       "token_end": 29,
       "token_count": 29,
-      "text": "url source manifest dataset_id: dataset_official_eurlex_amld4 title: eur-lex amld4 / directive eu 2015/849 domain: aml dataset_type: law_text framework_ids: eu_amld4 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng ingested_at: 2026-03-19t19:10:58.607066 00:00 fetch_mode: metadata_only"
+      "text": "url source manifest dataset_id: dataset_official_eurlex_amld4 title: eur-lex amld4 / directive eu 2015/849 domain: aml dataset_type: law_text framework_ids: eu_amld4 jurisdictions: eu countries: eu source_url: https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng ingested_at: 2026-03-19t19:27:49.710023 00:00 fetch_mode: metadata_only"
     }
   ]
 }

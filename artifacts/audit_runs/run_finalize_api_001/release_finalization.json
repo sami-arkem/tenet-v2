@@ -30,20 +30,20 @@
       "overall_posture": "GREEN",
       "finding_count": 0,
       "remediation_item_count": 0,
-      "input_payload_sha256": "f05fa285c471545a8072775627d0416057676cf495dd530c3982324af9f013ca",
+      "input_payload_sha256": "0beb4ccd8e5204b209ad17751a02342a62b82a333e4edefd83e15ab187cbb978",
       "audit_context_pack_present": true,
       "control_coverage_present": true,
       "audit_dossier_present": true,
       "release_gate_present": true,
       "composed_report_bundle_present": true,
       "report_source": "composed_report_bundle",
-      "report_pack_sha256": "446d1debeacbd0672093f2d8b8acb39e4f4dbb806b7ac2a56645c14a172b2efe",
+      "report_pack_sha256": "ed52da2fba9bd344d59c0754ebf0605a11f00cd3913883a7720e7c9f3efcc6fa",
       "report_bundle_sha256": "82187a99bf0c6db293584f84e1df730243735e65816bdb7e47884ac95cec0644",
       "snapshot_sha256": "1152695703493ac1f90e01c79f062e515c296c9c01eb3d39cbfb5db257ededb5",
       "files": [
         {
           "path": "input_payload.json",
-          "sha256": "943f491f09a47365a13dba26d71089159051b649b93e0c7a0f1c89bea30b3b12",
+          "sha256": "4a91fcea7806acfa8918fa0aa0bef3d034483ebb0d66fa5961cd24637b187ec7",
           "size_bytes": 9279
         },
         {
@@ -53,7 +53,7 @@
         },
         {
           "path": "control_coverage.json",
-          "sha256": "ca7e658e21c26732fde07b2e7e2d90b6a8554c77293148b1e5e7be845b1a35d3",
+          "sha256": "bb4e106772bcf3aa439c5a92186723be00f82689865817660f53be8974e06782",
           "size_bytes": 1594
         },
         {
@@ -63,7 +63,7 @@
         },
         {
           "path": "release_gate.json",
-          "sha256": "31f1fe9f9f8b67562fe4b3d03ec42cc82fa0f4454c62cacc5b34c1e338c2eefb",
+          "sha256": "f5a2b1d6fd01ce874b391dd0fccc5c42f21af150e5f13706e70333f7f68b1e39",
           "size_bytes": 2939
         },
         {
@@ -73,12 +73,12 @@
         },
         {
           "path": "deterministic_audit_result.json",
-          "sha256": "ddd7a9a9728042b77fba2d783c871d39d7150cc502371c5000c5af096e16a4cd",
+          "sha256": "2482b49e228ff9eec1e402ca456990fcdeaa938bdb39a741bb1fe8f57dcab751",
           "size_bytes": 2112
         },
         {
           "path": "report_pack.json",
-          "sha256": "2b8486f6fdef44a43f7fbc790aedd7dee8eccda92d3fe40a24984c6b474f717d",
+          "sha256": "b65a692d109ea91d8ed3de82f40ba011bbd46202733733a07f018d4879538cdb",
           "size_bytes": 2033
         },
         {
@@ -211,7 +211,7 @@
       "status": "REVIEWED",
       "latest_review_decision": "APPROVED",
       "latest_review": {
-        "reviewed_at": "2026-03-19T19:10:59.625639+00:00",
+        "reviewed_at": "2026-03-19T19:27:50.910317+00:00",
         "reviewer": "sami",
         "decision": "APPROVED",
         "rationale": "Approved for release.",
@@ -407,20 +407,20 @@
       "overall_posture": "GREEN",
       "finding_count": 0,
       "remediation_item_count": 0,
-      "input_payload_sha256": "f05fa285c471545a8072775627d0416057676cf495dd530c3982324af9f013ca",
+      "input_payload_sha256": "0beb4ccd8e5204b209ad17751a02342a62b82a333e4edefd83e15ab187cbb978",
       "audit_context_pack_present": true,
       "control_coverage_present": true,
       "audit_dossier_present": true,
       "release_gate_present": true,
       "composed_report_bundle_present": true,
       "report_source": "composed_report_bundle",
-      "report_pack_sha256": "446d1debeacbd0672093f2d8b8acb39e4f4dbb806b7ac2a56645c14a172b2efe",
+      "report_pack_sha256": "ed52da2fba9bd344d59c0754ebf0605a11f00cd3913883a7720e7c9f3efcc6fa",
       "report_bundle_sha256": "82187a99bf0c6db293584f84e1df730243735e65816bdb7e47884ac95cec0644",
       "snapshot_sha256": "1152695703493ac1f90e01c79f062e515c296c9c01eb3d39cbfb5db257ededb5",
       "files": [
         {
           "path": "input_payload.json",
-          "sha256": "943f491f09a47365a13dba26d71089159051b649b93e0c7a0f1c89bea30b3b12",
+          "sha256": "4a91fcea7806acfa8918fa0aa0bef3d034483ebb0d66fa5961cd24637b187ec7",
           "size_bytes": 9279
         },
         {
@@ -430,7 +430,7 @@
         },
         {
           "path": "control_coverage.json",
-          "sha256": "ca7e658e21c26732fde07b2e7e2d90b6a8554c77293148b1e5e7be845b1a35d3",
+          "sha256": "bb4e106772bcf3aa439c5a92186723be00f82689865817660f53be8974e06782",
           "size_bytes": 1594
         },
         {
@@ -440,7 +440,7 @@
         },
         {
           "path": "release_gate.json",
-          "sha256": "31f1fe9f9f8b67562fe4b3d03ec42cc82fa0f4454c62cacc5b34c1e338c2eefb",
+          "sha256": "f5a2b1d6fd01ce874b391dd0fccc5c42f21af150e5f13706e70333f7f68b1e39",
           "size_bytes": 2939
         },
         {
@@ -450,12 +450,12 @@
         },
         {
           "path": "deterministic_audit_result.json",
-          "sha256": "ddd7a9a9728042b77fba2d783c871d39d7150cc502371c5000c5af096e16a4cd",
+          "sha256": "2482b49e228ff9eec1e402ca456990fcdeaa938bdb39a741bb1fe8f57dcab751",
           "size_bytes": 2112
         },
         {
           "path": "report_pack.json",
-          "sha256": "2b8486f6fdef44a43f7fbc790aedd7dee8eccda92d3fe40a24984c6b474f717d",
+          "sha256": "b65a692d109ea91d8ed3de82f40ba011bbd46202733733a07f018d4879538cdb",
           "size_bytes": 2033
         },
         {

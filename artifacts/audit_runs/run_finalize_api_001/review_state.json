@@ -1,7 +1,7 @@
 {
   "run_id": "run_finalize_api_001",
-  "created_at": "2026-03-19T19:10:59.625224+00:00",
-  "updated_at": "2026-03-19T19:10:59.625639+00:00",
+  "created_at": "2026-03-19T19:27:50.909945+00:00",
+  "updated_at": "2026-03-19T19:27:50.910317+00:00",
   "status": "REVIEWED",
   "baseline": {
     "company_name": "Acme Fintech",
@@ -45,7 +45,7 @@
       "release_gate_present": false,
       "composed_report_bundle_present": true,
       "report_source": "composed_report_bundle",
-      "report_pack_sha256": "c4826f763574d77b653cb32631a6de35cae3fa0f5ff87f398bff9f672f30fee2",
+      "report_pack_sha256": "cdc1adf97aa8ba7e5af4952afa03e442293622de01d838086630ad3913d30763",
       "report_bundle_sha256": "82187a99bf0c6db293584f84e1df730243735e65816bdb7e47884ac95cec0644",
       "snapshot_sha256": "1152695703493ac1f90e01c79f062e515c296c9c01eb3d39cbfb5db257ededb5",
       "files": [
@@ -81,12 +81,12 @@
         },
         {
           "path": "deterministic_audit_result.json",
-          "sha256": "9f6540104956e84c2d4c6ca2ba57b3d0544d49ebaa63699db8da7ddb7c639e93",
+          "sha256": "500f72d21acb37b8cf43b53689fbe0b8bce59089ce4aa46e72d4f687529c36b9",
           "size_bytes": 2112
         },
         {
           "path": "report_pack.json",
-          "sha256": "b8811724fdcd1dd062bd6c3977932fa1d5ade928dab4b49bc33ad6e536fb1098",
+          "sha256": "e9061e8e9fa0fe7bf87163c88e888c75f814be9468060e5251cf42b606500d44",
           "size_bytes": 2033
         },
         {
@@ -192,7 +192,7 @@
     }
   },
   "latest_review": {
-    "reviewed_at": "2026-03-19T19:10:59.625639+00:00",
+    "reviewed_at": "2026-03-19T19:27:50.910317+00:00",
     "reviewer": "sami",
     "decision": "APPROVED",
     "rationale": "Approved for release.",
@@ -205,7 +205,7 @@
   },
   "review_history": [
     {
-      "reviewed_at": "2026-03-19T19:10:59.625639+00:00",
+      "reviewed_at": "2026-03-19T19:27:50.910317+00:00",
       "reviewer": "sami",
       "decision": "APPROVED",
       "rationale": "Approved for release.",

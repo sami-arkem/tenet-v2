@@ -20,5 +20,5 @@
   "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_amld4/chunks.json",
   "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_amld4/retrieval_index.json",
   "chunk_count": 1,
-  "ingested_at": "2026-03-19T19:10:58.608022+00:00"
+  "ingested_at": "2026-03-19T19:27:49.711051+00:00"
 }

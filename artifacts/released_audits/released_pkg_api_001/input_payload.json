@@ -95,7 +95,7 @@
   },
   "control_coverage_matrix": {
     "run_id": "run_finalize_api_001",
-    "generated_at": "2026-03-19T19:10:59.616979+00:00",
+    "generated_at": "2026-03-19T19:27:50.900826+00:00",
     "deterministic_authoritative": true,
     "company_name": "Acme Fintech",
     "audit_type": "aml_readiness_review",
@@ -218,7 +218,7 @@
       "status": "REVIEWED",
       "latest_review_decision": "APPROVED",
       "latest_review": {
-        "reviewed_at": "2026-03-19T19:10:59.625639+00:00",
+        "reviewed_at": "2026-03-19T19:27:50.910317+00:00",
         "reviewer": "sami",
         "decision": "APPROVED",
         "rationale": "Approved for release.",

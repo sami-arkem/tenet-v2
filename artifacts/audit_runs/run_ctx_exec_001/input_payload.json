@@ -94,7 +94,7 @@
           "evidence_id": "evidence_03ed1e1b000fa0fa",
           "title": "Monitoring Policy",
           "source_type": "policy_document",
-          "file_path": "/private/var/folders/_3/_mn031bx0r93tnmtx1w8jn0r0000gn/T/pytest-of-samisayyed/pytest-274/test_execute_pack_via_context_0/blobs/pack_6261f87beaa848fb/03ed1e1b000fa0fa2729079781f2ce18523e4e82a30cfe9e84a668b09d5d5220.txt",
+          "file_path": "/private/var/folders/_3/_mn031bx0r93tnmtx1w8jn0r0000gn/T/pytest-of-samisayyed/pytest-276/test_execute_pack_via_context_0/blobs/pack_8ec6aa287bde438c/03ed1e1b000fa0fa2729079781f2ce18523e4e82a30cfe9e84a668b09d5d5220.txt",
           "citation": "policy.txt#L1-L1"
         }
       ],
@@ -109,7 +109,7 @@
   },
   "metadata": {
     "source": "unit_test",
-    "evidence_pack_id": "pack_6261f87beaa848fb",
+    "evidence_pack_id": "pack_8ec6aa287bde438c",
     "evidence_pack_name": "Acme AML Pack",
     "planned_control_count": 3,
     "context_gated_execution": true,
@@ -118,9 +118,9 @@
     "context_selected_chunk_count": 2
   },
   "audit_context_pack": {
-    "pack_id": "pack_6261f87beaa848fb",
+    "pack_id": "pack_8ec6aa287bde438c",
     "pack_name": "Acme AML Pack",
-    "generated_at": "2026-03-19T19:10:57.042281+00:00",
+    "generated_at": "2026-03-19T19:27:48.166488+00:00",
     "deterministic_authoritative": true,
     "company_profile": {
       "company_name": "Acme Fintech",
@@ -181,7 +181,7 @@
       }
     },
     "corpus_readiness": {
-      "pack_id": "pack_6261f87beaa848fb",
+      "pack_id": "pack_8ec6aa287bde438c",
       "item_count": 2,
       "ready_count": 2,
       "failed_count": 0,

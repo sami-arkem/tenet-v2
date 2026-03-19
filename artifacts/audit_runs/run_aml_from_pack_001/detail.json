@@ -1,6 +1,6 @@
 {
   "run_id": "run_aml_from_pack_001",
-  "created_at": "2026-03-19T19:10:57.543234+00:00",
+  "created_at": "2026-03-19T19:27:48.639298+00:00",
   "input_payload": {
     "run_id": "run_aml_from_pack_001",
     "company_profile": {
@@ -97,7 +97,7 @@
             "evidence_id": "evidence_b62e065c961cb1ba",
             "title": "Monitoring Policy",
             "source_type": "policy_document",
-            "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+            "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
             "citation": "monitoring_policy.txt#L1-L1"
           }
         ],
@@ -112,7 +112,7 @@
     },
     "metadata": {
       "source": "unit_test",
-      "evidence_pack_id": "pack_405ce490469b4ce3",
+      "evidence_pack_id": "pack_f7699655f9514158",
       "evidence_pack_name": "Acme AML Pack",
       "planned_control_count": 3,
       "executed_from": "api_test",
@@ -123,8 +123,8 @@
   "deterministic_audit_result": {
     "run_id": "run_aml_from_pack_001",
     "status": "COMPLETED",
-    "created_at": "2026-03-19T19:10:57.542335+00:00",
-    "completed_at": "2026-03-19T19:10:57.542385+00:00",
+    "created_at": "2026-03-19T19:27:48.638445+00:00",
+    "completed_at": "2026-03-19T19:27:48.638493+00:00",
     "company_profile": {
       "company_name": "Acme Fintech",
       "industry": "fintech",
@@ -233,7 +233,7 @@
             "evidence_id": "evidence_b62e065c961cb1ba",
             "title": "Monitoring Policy",
             "source_type": "policy_document",
-            "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+            "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
             "citation": "monitoring_policy.txt#L1-L1",
             "content_hash": null,
             "collected_at": null
@@ -257,7 +257,7 @@
                 "evidence_id": "evidence_b62e065c961cb1ba",
                 "title": "Monitoring Policy",
                 "source_type": "policy_document",
-                "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+                "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
                 "citation": "monitoring_policy.txt#L1-L1",
                 "content_hash": null,
                 "collected_at": null
@@ -328,7 +328,7 @@
             "evidence_id": "evidence_b62e065c961cb1ba",
             "title": "Monitoring Policy",
             "source_type": "policy_document",
-            "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+            "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
             "citation": "monitoring_policy.txt#L1-L1",
             "content_hash": null,
             "collected_at": null
@@ -388,7 +388,7 @@
     },
     "metadata": {
       "source": "unit_test",
-      "evidence_pack_id": "pack_405ce490469b4ce3",
+      "evidence_pack_id": "pack_f7699655f9514158",
       "evidence_pack_name": "Acme AML Pack",
       "planned_control_count": 3,
       "executed_from": "api_test",
@@ -398,7 +398,7 @@
   },
   "report_pack": {
     "report_pack_version": "v1",
-    "generated_at": "2026-03-19T19:10:57.542415+00:00",
+    "generated_at": "2026-03-19T19:27:48.638520+00:00",
     "run_id": "run_aml_from_pack_001",
     "company_profile": {
       "company_name": "Acme Fintech",
@@ -480,7 +480,7 @@
             "evidence_id": "evidence_b62e065c961cb1ba",
             "title": "Monitoring Policy",
             "source_type": "policy_document",
-            "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+            "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
             "citation": "monitoring_policy.txt#L1-L1",
             "content_hash": null,
             "collected_at": null
@@ -542,7 +542,7 @@
             "evidence_id": "evidence_b62e065c961cb1ba",
             "title": "Monitoring Policy",
             "source_type": "policy_document",
-            "file_path": "artifacts/evidence_blobs/pack_405ce490469b4ce3/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+            "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
             "citation": "monitoring_policy.txt#L1-L1",
             "content_hash": null,
             "collected_at": null
@@ -588,7 +588,7 @@
     },
     "metadata": {
       "source": "unit_test",
-      "evidence_pack_id": "pack_405ce490469b4ce3",
+      "evidence_pack_id": "pack_f7699655f9514158",
       "evidence_pack_name": "Acme AML Pack",
       "planned_control_count": 3,
       "executed_from": "api_test",
@@ -598,7 +598,7 @@
   },
   "report_bundle": {
     "run_id": "run_aml_from_pack_001",
-    "markdown": "# Tenet Deterministic Audit Report: run_aml_from_pack_001\n\nGenerated: 2026-03-19T19:10:57.542280+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk, eu\n- Overall posture: AMBER\n- Deployment decision: CONDITIONALLY_APPROVED\n- Summary: Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### GOV.RISK.001 (INT_GOV.001)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.KYC.002 (UK_MLR.002)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: PARTIAL\n- Evidence coverage ratio: 0.5\n- Rationale: Control present but evidence coverage is incomplete.\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n\n## Findings\n\n### GOV.RISK.001::finding\n- Control: GOV.RISK.001\n- Regime: INT_GOV.001\n- Severity: MEDIUM\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control GOV.RISK.001.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: governance_charter, owner_matrix\n- Remediation actions:\n  - Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### AML.KYC.002::finding\n- Control: AML.KYC.002\n- Regime: UK_MLR.002\n- Severity: HIGH\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control AML.KYC.002.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: cdd_policy, periodic_review_log\n- Remediation actions:\n  - Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### AML.MONITORING.001::finding\n- Control: AML.MONITORING.001\n- Regime: UK_MLR.001\n- Severity: HIGH\n- Status: OPEN\n- Verdict: PARTIAL\n- Description: Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.\n- Rationale: Control present but evidence coverage is incomplete.\n- Missing evidence types: monitoring_report\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n- Remediation actions:\n  - Provide evidence covering missing evidence types: monitoring_report.\n\n## Remediation Plan\n\n### remediation::0001\n- Finding: GOV.RISK.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### remediation::0002\n- Finding: AML.KYC.002::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### remediation::0003\n- Finding: AML.MONITORING.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: monitoring_report.\n\n## Prior / Historical Context\n\n- prior_findings: 2\n\n## Readiness Statement\n\nThe system is not fully ready; remediation is required before clean approval.\n",
+    "markdown": "# Tenet Deterministic Audit Report: run_aml_from_pack_001\n\nGenerated: 2026-03-19T19:27:48.638393+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk, eu\n- Overall posture: AMBER\n- Deployment decision: CONDITIONALLY_APPROVED\n- Summary: Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=3, passed=0, partial=1, failed=0, missing_evidence=2.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### GOV.RISK.001 (INT_GOV.001)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.KYC.002 (UK_MLR.002)\n- Verdict: MISSING\n- Evidence coverage ratio: 0.0\n- Rationale: No required evidence types were satisfied.\n- Evidence refs: none\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: PARTIAL\n- Evidence coverage ratio: 0.5\n- Rationale: Control present but evidence coverage is incomplete.\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n\n## Findings\n\n### GOV.RISK.001::finding\n- Control: GOV.RISK.001\n- Regime: INT_GOV.001\n- Severity: MEDIUM\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control GOV.RISK.001.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: governance_charter, owner_matrix\n- Remediation actions:\n  - Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### AML.KYC.002::finding\n- Control: AML.KYC.002\n- Regime: UK_MLR.002\n- Severity: HIGH\n- Status: OPEN\n- Verdict: MISSING\n- Description: Deterministic evaluation found verdict=MISSING for control AML.KYC.002.\n- Rationale: No required evidence types were satisfied.\n- Missing evidence types: cdd_policy, periodic_review_log\n- Remediation actions:\n  - Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### AML.MONITORING.001::finding\n- Control: AML.MONITORING.001\n- Regime: UK_MLR.001\n- Severity: HIGH\n- Status: OPEN\n- Verdict: PARTIAL\n- Description: Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.\n- Rationale: Control present but evidence coverage is incomplete.\n- Missing evidence types: monitoring_report\n- Evidence refs:\n  - Monitoring Policy \u2014 monitoring_policy.txt#L1-L1\n- Remediation actions:\n  - Provide evidence covering missing evidence types: monitoring_report.\n\n## Remediation Plan\n\n### remediation::0001\n- Finding: GOV.RISK.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: governance_charter, owner_matrix.\n\n### remediation::0002\n- Finding: AML.KYC.002::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.\n\n### remediation::0003\n- Finding: AML.MONITORING.001::finding\n- Owner: compliance@acme.com\n- Status: OPEN\n- Action required: Provide evidence covering missing evidence types: monitoring_report.\n\n## Prior / Historical Context\n\n- prior_findings: 2\n\n## Readiness Statement\n\nThe system is not fully ready; remediation is required before clean approval.\n",
     "deployment_decision": "CONDITIONALLY_APPROVED",
     "overall_posture": "AMBER",
     "finding_count": 3,

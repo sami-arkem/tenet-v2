@@ -1,8 +1,8 @@
 {
   "run_id": "run_release_gate_api_001",
   "status": "COMPLETED",
-  "created_at": "2026-03-19T19:10:59.645342+00:00",
-  "completed_at": "2026-03-19T19:10:59.645354+00:00",
+  "created_at": "2026-03-19T19:27:50.931445+00:00",
+  "completed_at": "2026-03-19T19:27:50.931457+00:00",
   "company_profile": {
     "company_name": "Acme Fintech",
     "industry": "fintech",

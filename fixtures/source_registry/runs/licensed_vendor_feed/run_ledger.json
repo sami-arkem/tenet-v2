@@ -529,8 +529,28 @@
       "snapshot_id": "2026-03-19T191059.097011_0000_653355e82e74",
       "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T191059.097011_0000_653355e82e74",
       "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T19:14:16.632908+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T191416.632908_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T191416.632908_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
+    },
+    {
+      "source_id": "licensed_vendor_feed",
+      "dataset_id": "dataset_licensed_vendor_feed",
+      "fetched_at": "2026-03-19T19:27:50.206765+00:00",
+      "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+      "raw_size_bytes": 60,
+      "snapshot_id": "2026-03-19T192750.206765_0000_653355e82e74",
+      "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T192750.206765_0000_653355e82e74",
+      "source_url": "https://licensed.example.com/feed"
     }
   ],
-  "entry_count": 53,
-  "latest_fetched_at": "2026-03-19T19:10:59.097011+00:00"
+  "entry_count": 55,
+  "latest_fetched_at": "2026-03-19T19:27:50.206765+00:00"
 }

@@ -1069,8 +1069,48 @@
       "snapshot_id": "2026-03-19T191059.308356_0000_b33bab166a74",
       "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T191059.308356_0000_b33bab166a74",
       "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
+    },
+    {
+      "source_id": "official_ofac_sanctions_list_service",
+      "dataset_id": "dataset_official_ofac_sanctions_list_service",
+      "fetched_at": "2026-03-19T19:14:16.540447+00:00",
+      "raw_sha256": "b33bab166a7488e3a93a69e45dafed57d2d7f1e41b99888abb9b5c2c2d506171",
+      "raw_size_bytes": 73,
+      "snapshot_id": "2026-03-19T191416.540447_0000_b33bab166a74",
+      "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T191416.540447_0000_b33bab166a74",
+      "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
+    },
+    {
+      "source_id": "official_ofac_sanctions_list_service",
+      "dataset_id": "dataset_official_ofac_sanctions_list_service",
+      "fetched_at": "2026-03-19T19:14:16.905499+00:00",
+      "raw_sha256": "b33bab166a7488e3a93a69e45dafed57d2d7f1e41b99888abb9b5c2c2d506171",
+      "raw_size_bytes": 73,
+      "snapshot_id": "2026-03-19T191416.905499_0000_b33bab166a74",
+      "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T191416.905499_0000_b33bab166a74",
+      "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
+    },
+    {
+      "source_id": "official_ofac_sanctions_list_service",
+      "dataset_id": "dataset_official_ofac_sanctions_list_service",
+      "fetched_at": "2026-03-19T19:27:50.120357+00:00",
+      "raw_sha256": "b33bab166a7488e3a93a69e45dafed57d2d7f1e41b99888abb9b5c2c2d506171",
+      "raw_size_bytes": 73,
+      "snapshot_id": "2026-03-19T192750.120357_0000_b33bab166a74",
+      "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.120357_0000_b33bab166a74",
+      "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
+    },
+    {
+      "source_id": "official_ofac_sanctions_list_service",
+      "dataset_id": "dataset_official_ofac_sanctions_list_service",
+      "fetched_at": "2026-03-19T19:27:50.595559+00:00",
+      "raw_sha256": "b33bab166a7488e3a93a69e45dafed57d2d7f1e41b99888abb9b5c2c2d506171",
+      "raw_size_bytes": 73,
+      "snapshot_id": "2026-03-19T192750.595559_0000_b33bab166a74",
+      "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.595559_0000_b33bab166a74",
+      "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists"
     }
   ],
-  "entry_count": 107,
-  "latest_fetched_at": "2026-03-19T19:10:59.308356+00:00"
+  "entry_count": 111,
+  "latest_fetched_at": "2026-03-19T19:27:50.595559+00:00"
 }

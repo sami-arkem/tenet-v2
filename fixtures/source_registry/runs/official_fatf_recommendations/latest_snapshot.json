@@ -1,10 +1,10 @@
 {
   "source_id": "official_fatf_recommendations",
-  "snapshot_id": "2026-03-19T191059.223285_0000_b1267b00680d",
-  "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191059.223285_0000_b1267b00680d",
-  "raw_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191059.223285_0000_b1267b00680d/raw_source.bin",
-  "normalized_text_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191059.223285_0000_b1267b00680d/normalized_text.txt",
-  "metadata_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T191059.223285_0000_b1267b00680d/fetch_metadata.json",
-  "fetched_at": "2026-03-19T19:10:59.223285+00:00",
+  "snapshot_id": "2026-03-19T192750.509919_0000_b1267b00680d",
+  "snapshot_root": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T192750.509919_0000_b1267b00680d",
+  "raw_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T192750.509919_0000_b1267b00680d/raw_source.bin",
+  "normalized_text_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T192750.509919_0000_b1267b00680d/normalized_text.txt",
+  "metadata_path": "fixtures/source_registry/runs/official_fatf_recommendations/snapshots/2026-03-19T192750.509919_0000_b1267b00680d/fetch_metadata.json",
+  "fetched_at": "2026-03-19T19:27:50.509919+00:00",
   "raw_sha256": "b1267b00680d1cb13d4470a27dd387c05e169bf499017a290bd524737772440b"
 }

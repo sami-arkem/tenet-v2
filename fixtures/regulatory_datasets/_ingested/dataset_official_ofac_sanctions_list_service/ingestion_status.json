@@ -20,5 +20,5 @@
   "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_ofac_sanctions_list_service/chunks.json",
   "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_ofac_sanctions_list_service/retrieval_index.json",
   "chunk_count": 1,
-  "ingested_at": "2026-03-19T19:10:58.644023+00:00"
+  "ingested_at": "2026-03-19T19:27:49.746775+00:00"
 }
