@@ -167,7 +167,7 @@ export default function EvidenceDetailPage() {
 
           <form onSubmit={handleOcrSubmit} className="space-y-4">
             <div>
-              <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+              <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                 OCR Text
               </label>
               <textarea

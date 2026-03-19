@@ -257,7 +257,7 @@ export default function RemediationDetailPage() {
             />
             <form onSubmit={handleAssignOwner} className="space-y-3">
               <div>
-                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                   <User size={11} className="inline mr-1" />
                   User ID
                 </label>
@@ -270,7 +270,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               <div>
-                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                   Note (min 10 chars)
                 </label>
                 <input
@@ -295,7 +295,7 @@ export default function RemediationDetailPage() {
             <SectionHeader title="Set Due Date" />
             <form onSubmit={handleSetDueDate} className="space-y-3">
               <div>
-                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                   <Clock size={11} className="inline mr-1" />
                   Due Date
                 </label>
@@ -307,7 +307,7 @@ export default function RemediationDetailPage() {
                 />
               </div>
               <div>
-                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                   Note (min 10 chars)
                 </label>
                 <input
@@ -336,7 +336,7 @@ export default function RemediationDetailPage() {
               />
               <form onSubmit={handleStatusTransition} className="space-y-3">
                 <div>
-                  <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                  <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                     Transition To
                   </label>
                   <select
@@ -353,7 +353,7 @@ export default function RemediationDetailPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                  <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                     Note (min 10 chars)
                   </label>
                   <input
@@ -382,7 +382,7 @@ export default function RemediationDetailPage() {
             />
             <div className="space-y-3">
               <div>
-                <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wide mb-1.5">
+                <label className="block text-13 font-medium text-neutral-600 mb-1.5">
                   Note (optional)
                 </label>
                 <input
