@@ -21,22 +21,23 @@ const EMPTY: CreateAuditRequest = {
   note: null,
 };
 
-// Shared select/textarea styles matching the Input component
+// Select and textarea styles — match the Input component tokens exactly
 const SELECT_CLASS = cn(
-  "w-full h-8 px-3 rounded-base border border-neutral-200 bg-white",
-  "text-14 text-neutral-800 placeholder:text-neutral-400",
+  "w-full h-9 px-3 rounded-base border border-neutral-200 bg-white",
+  "text-14 text-neutral-800",
   "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500",
-  "transition-colors duration-base",
+  "hover:border-neutral-300 transition-colors duration-base",
 );
 
 const TEXTAREA_CLASS = cn(
   "w-full px-3 py-2 rounded-base border border-neutral-200 bg-white",
   "text-14 text-neutral-800 placeholder:text-neutral-400",
   "focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500",
-  "transition-colors duration-base resize-none",
+  "hover:border-neutral-300 transition-colors duration-base resize-none",
 );
 
-const FIELD_LABEL = "block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5";
+// Label style consistent with Input component (§1.8)
+const FIELD_LABEL = "block text-13 font-medium text-neutral-600 mb-1.5";
 
 export default function NewAuditPage() {
   const { userId } = useAuth();
@@ -63,7 +64,7 @@ export default function NewAuditPage() {
       !form.jurisdiction ||
       !form.framework
     ) {
-      setError("All required fields must be filled.");
+      setError("All required fields must be filled in before continuing.");
       return;
     }
     setLoading(true);
@@ -95,52 +96,52 @@ export default function NewAuditPage() {
         breadcrumbs={[{ label: "Audits", href: "/audits" }, { label: "New" }]}
       />
 
-      <Card className="max-w-xl">
+      {/* Bible §1.8: max form width 480px, single column always */}
+      <Card className="max-w-[480px]">
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div className="grid grid-cols-2 gap-4">
-            <Input
-              label="System Name"
-              placeholder="e.g. Transaction Screening Engine"
-              value={form.system_name ?? ""}
-              onChange={field("system_name")}
-              required
-            />
-            <Input
-              label="Entity ID"
-              placeholder="e.g. entity_acme"
-              value={form.entity_id ?? ""}
-              onChange={field("entity_id")}
-              required
-            />
+          <Input
+            label="System Name"
+            placeholder="e.g. Transaction Screening Engine"
+            value={form.system_name ?? ""}
+            onChange={field("system_name")}
+            required
+          />
+
+          <Input
+            label="Entity ID"
+            placeholder="e.g. entity_acme"
+            value={form.entity_id ?? ""}
+            onChange={field("entity_id")}
+            required
+          />
+
+          <div>
+            <label className={FIELD_LABEL}>
+              Audit Kind <span className="text-danger-base ml-0.5" aria-hidden="true">*</span>
+            </label>
+            <select
+              className={SELECT_CLASS}
+              value={form.audit_kind ?? ""}
+              onChange={field("audit_kind")}
+              aria-required="true"
+            >
+              <option value="">Select…</option>
+              <option value="aml_periodic">AML Periodic</option>
+              <option value="kyc_periodic">KYC Periodic</option>
+              <option value="sanctions_screening">Sanctions Screening</option>
+              <option value="governance_review">Governance Review</option>
+              <option value="vendor_risk">Vendor Risk</option>
+              <option value="fraud_controls">Fraud Controls</option>
+            </select>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className={FIELD_LABEL}>
-                Audit Kind <span className="text-danger-base ml-0.5">*</span>
-              </label>
-              <select
-                className={SELECT_CLASS}
-                value={form.audit_kind ?? ""}
-                onChange={field("audit_kind")}
-              >
-                <option value="">Select…</option>
-                <option value="aml_periodic">AML Periodic</option>
-                <option value="kyc_periodic">KYC Periodic</option>
-                <option value="sanctions_screening">Sanctions Screening</option>
-                <option value="governance_review">Governance Review</option>
-                <option value="vendor_risk">Vendor Risk</option>
-                <option value="fraud_controls">Fraud Controls</option>
-              </select>
-            </div>
-            <Input
-              label="Framework"
-              placeholder="e.g. FCA, FinCEN, MAS"
-              value={form.framework ?? ""}
-              onChange={field("framework")}
-              required
-            />
-          </div>
+          <Input
+            label="Framework"
+            placeholder="e.g. FCA, FinCEN, MAS"
+            value={form.framework ?? ""}
+            onChange={field("framework")}
+            required
+          />
 
           <Input
             label="Jurisdiction"
@@ -150,14 +151,12 @@ export default function NewAuditPage() {
             required
           />
 
-          <div className="grid grid-cols-2 gap-4">
-            <Input
-              label="Scheduled Date"
-              type="date"
-              value={form.scheduled_date ?? ""}
-              onChange={field("scheduled_date")}
-            />
-          </div>
+          <Input
+            label="Scheduled Date"
+            type="date"
+            value={form.scheduled_date ?? ""}
+            onChange={field("scheduled_date")}
+          />
 
           <div>
             <label className={FIELD_LABEL}>Note</label>
@@ -171,7 +170,10 @@ export default function NewAuditPage() {
           </div>
 
           {error && (
-            <p className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2">
+            <p
+              role="alert"
+              className="text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2"
+            >
               {error}
             </p>
           )}

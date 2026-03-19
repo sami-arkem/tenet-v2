@@ -26,7 +26,7 @@ const SEVERITY_ORDER: Record<string, number> = {
 const SEVERITY_LEFT_BORDER: Record<string, string> = {
   CRITICAL: "border-l-[3px] border-l-danger-base",
   HIGH:     "border-l-[2px] border-l-warning-base",
-  MEDIUM:   "border-l-[2px] border-l-amber-400",
+  MEDIUM:   "border-l-[2px] border-l-warning-base",
   LOW:      "border-l border-l-neutral-200",
 };
 

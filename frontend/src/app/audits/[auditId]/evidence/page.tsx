@@ -51,7 +51,7 @@ const INPUT_CLS = cn(
   "transition-colors duration-base",
 );
 
-const LABEL_CLS = "block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5";
+const LABEL_CLS = "block text-13 font-medium text-neutral-600 mb-1.5";
 
 function CreateSessionForm({
   auditId,
@@ -111,71 +111,69 @@ function CreateSessionForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
-            Filename <span className="text-danger-base">*</span>
-          </label>
-          <input
-            type="text"
-            className={INPUT_CLS}
-            placeholder="aml_policy_2024.pdf"
-            value={form.filename}
-            onChange={(e) => setForm((f) => ({ ...f, filename: e.target.value }))}
-          />
-        </div>
-        <div>
-          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
-            Content Type
-          </label>
-          <select
-            className={INPUT_CLS}
-            value={form.content_type}
-            onChange={(e) => setForm((f) => ({ ...f, content_type: e.target.value }))}
-          >
-            <option value="application/pdf">PDF</option>
-            <option value="application/vnd.openxmlformats-officedocument.wordprocessingml.document">DOCX</option>
-            <option value="application/json">JSON</option>
-            <option value="text/csv">CSV</option>
-            <option value="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">XLSX</option>
-          </select>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-2">
-          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
-            SHA-256 Hash <span className="text-danger-base">*</span>
-          </label>
-          <input
-            type="text"
-            className={`${INPUT_CLS} mono`}
-            placeholder="Hex hash of the file contents"
-            value={form.sha256}
-            onChange={(e) => setForm((f) => ({ ...f, sha256: e.target.value }))}
-          />
-        </div>
-        <div>
-          <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
-            Byte Size <span className="text-danger-base">*</span>
-          </label>
-          <input
-            type="number"
-            className={INPUT_CLS}
-            placeholder="Bytes"
-            min={1}
-            value={form.byte_size || ""}
-            onChange={(e) =>
-              setForm((f) => ({ ...f, byte_size: parseInt(e.target.value, 10) || 0 }))
-            }
-          />
-        </div>
+      {/* Bible §1.8: single column always */}
+      <div>
+        <label className={LABEL_CLS}>
+          Filename <span className="text-danger-base" aria-hidden="true">*</span>
+        </label>
+        <input
+          type="text"
+          className={INPUT_CLS}
+          placeholder="aml_policy_2024.pdf"
+          value={form.filename}
+          onChange={(e) => setForm((f) => ({ ...f, filename: e.target.value }))}
+          aria-required="true"
+        />
       </div>
 
       <div>
-        <label className="block text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1.5">
-          Evidence Category
+        <label className={LABEL_CLS}>Content Type</label>
+        <select
+          className={INPUT_CLS}
+          value={form.content_type}
+          onChange={(e) => setForm((f) => ({ ...f, content_type: e.target.value }))}
+        >
+          <option value="application/pdf">PDF</option>
+          <option value="application/vnd.openxmlformats-officedocument.wordprocessingml.document">DOCX</option>
+          <option value="application/json">JSON</option>
+          <option value="text/csv">CSV</option>
+          <option value="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">XLSX</option>
+        </select>
+      </div>
+
+      <div>
+        <label className={LABEL_CLS}>
+          SHA-256 Hash <span className="text-danger-base" aria-hidden="true">*</span>
         </label>
+        <input
+          type="text"
+          className={cn(INPUT_CLS, "mono")}
+          placeholder="Hex hash of the file contents"
+          value={form.sha256}
+          onChange={(e) => setForm((f) => ({ ...f, sha256: e.target.value }))}
+          aria-required="true"
+        />
+      </div>
+
+      <div>
+        <label className={LABEL_CLS}>
+          Byte Size <span className="text-danger-base" aria-hidden="true">*</span>
+        </label>
+        <input
+          type="number"
+          className={INPUT_CLS}
+          placeholder="Bytes"
+          min={1}
+          value={form.byte_size || ""}
+          onChange={(e) =>
+            setForm((f) => ({ ...f, byte_size: parseInt(e.target.value, 10) || 0 }))
+          }
+          aria-required="true"
+        />
+      </div>
+
+      <div>
+        <label className={LABEL_CLS}>Evidence Category</label>
         <select
           className={INPUT_CLS}
           value={form.evidence_category}
