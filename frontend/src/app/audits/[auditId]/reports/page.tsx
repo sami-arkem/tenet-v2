@@ -150,7 +150,7 @@ export default function ReportsPage() {
               )}
               {report.run_id && (
                 <div className="mt-4 pt-3 border-t border-neutral-200">
-                  <div className="text-13 text-neutral-400 uppercase tracking-wide mb-1">Run ID</div>
+                  <div className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1">Run ID</div>
                   <div className="mono text-12 text-neutral-500">{report.run_id}</div>
                 </div>
               )}
@@ -214,7 +214,7 @@ export default function ReportsPage() {
             </div>
 
             {manifest.included_files.length > 0 ? (
-              <div className="border border-neutral-200 rounded overflow-hidden">
+              <div className="border border-neutral-200 rounded-base overflow-hidden">
                 <table className="w-full text-12">
                   <thead className="bg-neutral-50 border-b border-neutral-200">
                     <tr>
