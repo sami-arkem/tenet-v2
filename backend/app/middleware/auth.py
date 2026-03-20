@@ -23,6 +23,7 @@ PUBLIC_ROUTES: frozenset[str] = frozenset({
     "/v1/auth/verify-email",
     "/v1/auth/forgot-password",
     "/v1/auth/reset-password",
+    "/v1/jurisdiction-packs",  # List all packs
     "/health",
     "/metrics",
     "/docs",
@@ -31,7 +32,7 @@ PUBLIC_ROUTES: frozenset[str] = frozenset({
 
 # Paths that are public (reference data, not tenant-specific)
 PUBLIC_PATH_PREFIXES: tuple[str, ...] = (
-    "/v1/jurisdiction-packs",  # Jurisdiction packs are global reference data
+    "/v1/jurisdiction-packs/",  # Jurisdiction pack details and controls
 )
 
 _UNAUTHORIZED = JSONResponse(
@@ -55,7 +56,12 @@ _SUSPENDED = JSONResponse(
 
 class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next: Any) -> Any:
+        # Check exact public routes first
         if request.url.path in PUBLIC_ROUTES:
+            return await call_next(request)
+
+        # Special handling for jurisdiction packs (all endpoints including list and details)
+        if request.url.path.startswith("/v1/jurisdiction-packs"):
             return await call_next(request)
 
         # Check public path prefixes
