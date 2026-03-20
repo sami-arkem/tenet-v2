@@ -16,7 +16,7 @@ from fastapi.responses import JSONResponse
 from app.config import settings
 from app.middleware.auth import AuthMiddleware
 from app.middleware.tenant import TenantMiddleware
-from app.routers import audits, auth, calendar, dashboard, entities, evidence, findings, monitoring, remediation, reports
+from app.routers import audits, auth, calendar, dashboard, entities, evidence, findings, jurisdiction_packs, monitoring, remediation, reports
 from app.schemas.response import ApiResponse
 
 
@@ -120,16 +120,17 @@ async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONR
 
 # ─── Routers ──────────────────────────────────────────────────────────────────
 
-app.include_router(auth.router,        prefix="/v1/auth",        tags=["auth"])
-app.include_router(audits.router,      prefix="/v1/audits",      tags=["audits"])
-app.include_router(findings.router,    prefix="/v1/findings",    tags=["findings"])
-app.include_router(remediation.router, prefix="/v1/remediation", tags=["remediation"])
-app.include_router(dashboard.router,   prefix="/v1/dashboard",   tags=["dashboard"])
-app.include_router(evidence.router,    prefix="/v1/evidence",    tags=["evidence"])
-app.include_router(reports.router,     prefix="/v1/reports",     tags=["reports"])
-app.include_router(monitoring.router,  prefix="/v1/monitoring",  tags=["monitoring"])
-app.include_router(calendar.router,    prefix="/v1/calendar",    tags=["calendar"])
-app.include_router(entities.router,    prefix="/v1/entities",    tags=["entities"])
+app.include_router(auth.router,               prefix="/v1/auth",                tags=["auth"])
+app.include_router(audits.router,             prefix="/v1/audits",              tags=["audits"])
+app.include_router(findings.router,           prefix="/v1/findings",            tags=["findings"])
+app.include_router(remediation.router,        prefix="/v1/remediation",         tags=["remediation"])
+app.include_router(dashboard.router,          prefix="/v1/dashboard",           tags=["dashboard"])
+app.include_router(evidence.router,           prefix="/v1/evidence",            tags=["evidence"])
+app.include_router(reports.router,            prefix="/v1/reports",             tags=["reports"])
+app.include_router(monitoring.router,         prefix="/v1/monitoring",          tags=["monitoring"])
+app.include_router(calendar.router,           prefix="/v1/calendar",            tags=["calendar"])
+app.include_router(entities.router,           prefix="/v1/entities",            tags=["entities"])
+app.include_router(jurisdiction_packs.router, prefix="/v1/jurisdiction-packs",  tags=["jurisdiction-packs"])
 
 
 # ─── Health ───────────────────────────────────────────────────────────────────

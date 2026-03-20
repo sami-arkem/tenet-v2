@@ -29,6 +29,11 @@ PUBLIC_ROUTES: frozenset[str] = frozenset({
     "/openapi.json",
 })
 
+# Paths that are public (reference data, not tenant-specific)
+PUBLIC_PATH_PREFIXES: tuple[str, ...] = (
+    "/v1/jurisdiction-packs",  # Jurisdiction packs are global reference data
+)
+
 _UNAUTHORIZED = JSONResponse(
     status_code=401,
     content={
@@ -51,6 +56,10 @@ _SUSPENDED = JSONResponse(
 class AuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next: Any) -> Any:
         if request.url.path in PUBLIC_ROUTES:
+            return await call_next(request)
+
+        # Check public path prefixes
+        if any(request.url.path.startswith(prefix) for prefix in PUBLIC_PATH_PREFIXES):
             return await call_next(request)
 
         auth_header = request.headers.get("Authorization")

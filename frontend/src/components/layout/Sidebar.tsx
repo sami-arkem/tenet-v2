@@ -15,6 +15,7 @@ import {
   FileText,
   LogOut,
   Shield,
+  Globe,
 } from "lucide-react";
 
 const NAV = [
@@ -66,6 +67,12 @@ const NAV = [
     label: "Reports",
     icon: FileText,
     matchPrefix: "/reports",
+  },
+  {
+    href: "/jurisdictions",
+    label: "Jurisdictions",
+    icon: Globe,
+    matchPrefix: "/jurisdictions",
   },
 ];
 
