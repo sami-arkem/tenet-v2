@@ -1,7 +1,7 @@
 /**
  * Tenet API client
  * All requests go through /api/proxy/* (Next.js rewrite → backend).
- * Auth is X-User-ID header only — the backend uses an actor directory.
+ * Auth: JWT Bearer token (preferred) or X-User-ID (dev fallback).
  * No fake data. No invented states. Every function maps to a real route.
  */
 
@@ -43,14 +43,23 @@ class ApiError extends Error {
   }
 }
 
-async function request<T>(
+function getToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return sessionStorage.getItem("tenet:access_token");
+}
+
+async function _request<T>(
   path: string,
   init: RequestInit = {},
   userId: string,
 ): Promise<T> {
+  const token = getToken();
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    "X-User-ID": userId,
+    // JWT preferred; fall back to X-User-ID dev header
+    ...(token && !token.startsWith("dev:")
+      ? { Authorization: `Bearer ${token}` }
+      : { "X-User-ID": userId }),
     ...(init.headers as Record<string, string>),
   };
 
@@ -75,14 +84,14 @@ async function request<T>(
 // ─── Audits ──────────────────────────────────────────────────────────────────
 
 export function listAudits(userId: string): Promise<AuditSummary[]> {
-  return request<AuditSummary[]>("/v1/audits", {}, userId);
+  return _request<AuditSummary[]>("/v1/audits", {}, userId);
 }
 
 export function createAudit(
   userId: string,
   body: CreateAuditRequest,
 ): Promise<AuditSummary> {
-  return request<AuditSummary>(
+  return _request<AuditSummary>(
     "/v1/audits",
     { method: "POST", body: JSON.stringify(body) },
     userId,
@@ -90,21 +99,21 @@ export function createAudit(
 }
 
 export function getAudit(userId: string, auditId: string): Promise<AuditDetail> {
-  return request<AuditDetail>(`/v1/audits/${auditId}`, {}, userId);
+  return _request<AuditDetail>(`/v1/audits/${auditId}`, {}, userId);
 }
 
 export function triggerAuditRun(
   userId: string,
   auditId: string,
 ): Promise<{ audit_id: string; run_id: string; queue_status: string; message: string }> {
-  return request(`/v1/audits/${auditId}/run`, { method: "POST" }, userId);
+  return _request(`/v1/audits/${auditId}/run`, { method: "POST" }, userId);
 }
 
 export function getLatestRun(
   userId: string,
   auditId: string,
 ): Promise<AuditRunSummary> {
-  return request<AuditRunSummary>(
+  return _request<AuditRunSummary>(
     `/v1/audits/${auditId}/runs/latest`,
     {},
     userId,
@@ -115,7 +124,7 @@ export function syncFindings(
   userId: string,
   auditId: string,
 ): Promise<FindingsSummary> {
-  return request<FindingsSummary>(
+  return _request<FindingsSummary>(
     `/v1/audits/${auditId}/findings/sync`,
     { method: "POST" },
     userId,
@@ -126,7 +135,7 @@ export function getReleaseSummary(
   userId: string,
   auditId: string,
 ): Promise<ReleaseSummary> {
-  return request<ReleaseSummary>(`/v1/audits/${auditId}/release`, {}, userId);
+  return _request<ReleaseSummary>(`/v1/audits/${auditId}/release`, {}, userId);
 }
 
 // ─── Audit Preparation ───────────────────────────────────────────────────────
@@ -135,7 +144,7 @@ export function getPreparationSummary(
   userId: string,
   auditId: string,
 ): Promise<AuditPreparationSummary> {
-  return request<AuditPreparationSummary>(
+  return _request<AuditPreparationSummary>(
     `/v1/audit-preparation/${auditId}`,
     {},
     userId,
@@ -146,7 +155,7 @@ export function ensureRequirements(
   userId: string,
   auditId: string,
 ): Promise<{ audit_id: string; requirements: unknown[] }> {
-  return request(
+  return _request(
     `/v1/audit-preparation/${auditId}/requirements/ensure`,
     { method: "POST" },
     userId,
@@ -157,7 +166,7 @@ export function listModelCalls(
   userId: string,
   auditId: string,
 ): Promise<ModelCallLogRow[]> {
-  return request<ModelCallLogRow[]>(
+  return _request<ModelCallLogRow[]>(
     `/v1/audit-preparation/${auditId}/model-calls`,
     {},
     userId,
@@ -171,21 +180,21 @@ export function listEvidence(
   auditId?: string,
 ): Promise<EvidenceListResponse> {
   const qs = auditId ? `?audit_id=${encodeURIComponent(auditId)}` : "";
-  return request<EvidenceListResponse>(`/v1/evidence${qs}`, {}, userId);
+  return _request<EvidenceListResponse>(`/v1/evidence${qs}`, {}, userId);
 }
 
 export function getEvidence(
   userId: string,
   evidenceId: string,
 ): Promise<EvidenceDetail> {
-  return request<EvidenceDetail>(`/v1/evidence/${evidenceId}`, {}, userId);
+  return _request<EvidenceDetail>(`/v1/evidence/${evidenceId}`, {}, userId);
 }
 
 export function recomputeGate(
   userId: string,
   auditId: string,
 ): Promise<AuditEvidenceGateResponse> {
-  return request<AuditEvidenceGateResponse>(
+  return _request<AuditEvidenceGateResponse>(
     `/v1/evidence/audits/${auditId}/gate/recompute`,
     { method: "POST" },
     userId,
@@ -197,7 +206,7 @@ export function submitOcrText(
   evidenceId: string,
   ocrText: string,
 ): Promise<{ evidence_id: string; stored_path: string; message: string }> {
-  return request(
+  return _request(
     `/v1/ocr-submissions/${evidenceId}`,
     { method: "POST", body: JSON.stringify({ ocr_text: ocrText }) },
     userId,
@@ -211,7 +220,7 @@ export function listUploadSessions(
   auditId?: string,
 ): Promise<UploadSessionListResponse> {
   const qs = auditId ? `?audit_id=${encodeURIComponent(auditId)}` : "";
-  return request<UploadSessionListResponse>(
+  return _request<UploadSessionListResponse>(
     `/v1/upload-sessions${qs}`,
     {},
     userId,
@@ -222,7 +231,7 @@ export function createUploadSession(
   userId: string,
   body: CreateUploadSessionRequest,
 ): Promise<UploadSessionSummary> {
-  return request<UploadSessionSummary>(
+  return _request<UploadSessionSummary>(
     "/v1/upload-sessions",
     { method: "POST", body: JSON.stringify(body) },
     userId,
@@ -234,7 +243,7 @@ export function finalizeUploadSession(
   sessionId: string,
   tempFilePath: string,
 ): Promise<UploadSessionSummary> {
-  return request<UploadSessionSummary>(
+  return _request<UploadSessionSummary>(
     `/v1/upload-sessions/${sessionId}/finalize`,
     {
       method: "POST",
@@ -249,7 +258,7 @@ export function failUploadSession(
   sessionId: string,
   errorMessage: string,
 ): Promise<UploadSessionSummary> {
-  return request<UploadSessionSummary>(
+  return _request<UploadSessionSummary>(
     `/v1/upload-sessions/${sessionId}/fail`,
     {
       method: "POST",
@@ -263,7 +272,7 @@ export function cancelUploadSession(
   userId: string,
   sessionId: string,
 ): Promise<UploadSessionSummary> {
-  return request<UploadSessionSummary>(
+  return _request<UploadSessionSummary>(
     `/v1/upload-sessions/${sessionId}/cancel`,
     { method: "POST", body: JSON.stringify({}) },
     userId,
@@ -277,13 +286,13 @@ export function listEvidenceJobs(
   status?: string,
 ): Promise<EvidenceJobListResponse> {
   const qs = status ? `?status=${encodeURIComponent(status)}` : "";
-  return request<EvidenceJobListResponse>(`/v1/evidence-jobs${qs}`, {}, userId);
+  return _request<EvidenceJobListResponse>(`/v1/evidence-jobs${qs}`, {}, userId);
 }
 
 export function runNextJob(
   userId: string,
 ): Promise<{ status: string } | Record<string, unknown>> {
-  return request(`/v1/evidence-jobs/run-next`, { method: "POST" }, userId);
+  return _request(`/v1/evidence-jobs/run-next`, { method: "POST" }, userId);
 }
 
 // ─── Findings ────────────────────────────────────────────────────────────────
@@ -292,7 +301,7 @@ export function listFindings(
   userId: string,
   auditId: string,
 ): Promise<FindingListResponse> {
-  return request<FindingListResponse>(
+  return _request<FindingListResponse>(
     `/v1/findings/audit/${auditId}`,
     {},
     userId,
@@ -305,7 +314,7 @@ export function getReportSummary(
   userId: string,
   auditId: string,
 ): Promise<ReportSummaryResponse> {
-  return request<ReportSummaryResponse>(
+  return _request<ReportSummaryResponse>(
     `/v1/reports/${auditId}/summary`,
     {},
     userId,
@@ -316,7 +325,7 @@ export function getExportManifest(
   userId: string,
   auditId: string,
 ): Promise<ExportManifestSummaryResponse> {
-  return request<ExportManifestSummaryResponse>(
+  return _request<ExportManifestSummaryResponse>(
     `/v1/reports/${auditId}/export-manifest`,
     {},
     userId,
@@ -330,7 +339,7 @@ export function getRemediationDashboard(
   today?: string,
 ): Promise<RemediationDashboard> {
   const qs = today ? `?today=${encodeURIComponent(today)}` : "";
-  return request<RemediationDashboard>(
+  return _request<RemediationDashboard>(
     `/v1/remediation/dashboard${qs}`,
     {},
     userId,
@@ -340,14 +349,14 @@ export function getRemediationDashboard(
 export function listRemediations(
   userId: string,
 ): Promise<RemediationItem[]> {
-  return request<RemediationItem[]>("/v1/remediation", {}, userId);
+  return _request<RemediationItem[]>("/v1/remediation", {}, userId);
 }
 
 export function getRemediationDetail(
   userId: string,
   remediationId: string,
 ): Promise<RemediationDetail> {
-  return request<RemediationDetail>(
+  return _request<RemediationDetail>(
     `/v1/remediation/${remediationId}`,
     {},
     userId,
@@ -360,7 +369,7 @@ export function assignRemediationOwner(
   ownerUserId: string,
   note: string,
 ): Promise<unknown> {
-  return request(
+  return _request(
     `/v1/remediation/${remediationId}/assign-owner`,
     {
       method: "POST",
@@ -376,7 +385,7 @@ export function setRemediationDueDate(
   dueDate: string,
   note: string,
 ): Promise<unknown> {
-  return request(
+  return _request(
     `/v1/remediation/${remediationId}/due-date`,
     {
       method: "POST",
@@ -393,7 +402,7 @@ export function transitionRemediationStatus(
   note: string,
   evidenceFiles: unknown[] = [],
 ): Promise<unknown> {
-  return request(
+  return _request(
     `/v1/remediation/${remediationId}/status`,
     {
       method: "POST",
@@ -413,7 +422,7 @@ export function applyVerificationResult(
   verificationPassed: boolean,
   updatedGapNote?: string,
 ): Promise<unknown> {
-  return request(
+  return _request(
     `/v1/remediation/${remediationId}/verification-result`,
     {
       method: "POST",
@@ -424,6 +433,20 @@ export function applyVerificationResult(
     },
     userId,
   );
+}
+
+/**
+ * Generic exported request helper — reads auth from session storage automatically.
+ * Used by pages/components that need to call arbitrary API paths.
+ */
+export async function request<T = unknown>(
+  path: string,
+  init: RequestInit = {},
+): Promise<T> {
+  const token = getToken();
+  // For dev: tokens, extract userId from token string; for JWT tokens, userId is not needed
+  const userId = token?.startsWith("dev:") ? token.slice(4) : "";
+  return _request<T>(path, init, userId);
 }
 
 export { ApiError };

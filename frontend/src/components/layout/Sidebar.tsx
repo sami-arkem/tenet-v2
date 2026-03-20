@@ -9,6 +9,10 @@ import {
   ClipboardCheck,
   FileSearch,
   Wrench,
+  AlertTriangle,
+  Bell,
+  Calendar,
+  FileText,
   LogOut,
   Shield,
 } from "lucide-react";
@@ -28,6 +32,12 @@ const NAV = [
     matchPrefix: "/audits",
   },
   {
+    href: "/findings",
+    label: "Findings",
+    icon: AlertTriangle,
+    matchPrefix: "/findings",
+  },
+  {
     href: "/evidence-review",
     label: "Evidence Review",
     icon: FileSearch,
@@ -38,6 +48,24 @@ const NAV = [
     label: "Remediation",
     icon: Wrench,
     matchPrefix: "/remediation",
+  },
+  {
+    href: "/monitoring",
+    label: "Monitoring",
+    icon: Bell,
+    matchPrefix: "/monitoring",
+  },
+  {
+    href: "/calendar",
+    label: "Calendar",
+    icon: Calendar,
+    matchPrefix: "/calendar",
+  },
+  {
+    href: "/reports",
+    label: "Reports",
+    icon: FileText,
+    matchPrefix: "/reports",
   },
 ];
 
