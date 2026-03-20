@@ -917,11 +917,20 @@ US_PACK_V1 = JurisdictionPack(
 
 def get_jurisdiction_pack(jurisdiction: JurisdictionCode, version: str = "latest") -> Optional[JurisdictionPack]:
     """Load a jurisdiction pack by code and version."""
+    from app.agents.packs import (
+        US_PACK_V1, UAE_PACK_V1, EU_PACK_V1, SG_PACK_V1,
+        HK_PACK_V1, AU_PACK_V1, CA_PACK_V1, IN_PACK_V1,
+    )
+
     packs = {
-        JurisdictionCode.US: {
-            "1.0": US_PACK_V1,
-            "latest": US_PACK_V1,
-        },
+        JurisdictionCode.US: {"1.0": US_PACK_V1, "latest": US_PACK_V1},
+        JurisdictionCode.UAE: {"1.0": UAE_PACK_V1, "latest": UAE_PACK_V1},
+        JurisdictionCode.EU: {"1.0": EU_PACK_V1, "latest": EU_PACK_V1},
+        JurisdictionCode.SG: {"1.0": SG_PACK_V1, "latest": SG_PACK_V1},
+        JurisdictionCode.HK: {"1.0": HK_PACK_V1, "latest": HK_PACK_V1},
+        JurisdictionCode.AU: {"1.0": AU_PACK_V1, "latest": AU_PACK_V1},
+        JurisdictionCode.CA: {"1.0": CA_PACK_V1, "latest": CA_PACK_V1},
+        JurisdictionCode.IN: {"1.0": IN_PACK_V1, "latest": IN_PACK_V1},
     }
     if jurisdiction in packs and version in packs[jurisdiction]:
         return packs[jurisdiction][version]
@@ -930,8 +939,20 @@ def get_jurisdiction_pack(jurisdiction: JurisdictionCode, version: str = "latest
 
 def list_jurisdiction_packs() -> list[JurisdictionPackMetadata]:
     """List all available jurisdiction packs."""
+    from app.agents.packs import (
+        US_PACK_V1, UAE_PACK_V1, EU_PACK_V1, SG_PACK_V1,
+        HK_PACK_V1, AU_PACK_V1, CA_PACK_V1, IN_PACK_V1,
+    )
+
     return [
         US_PACK_V1.metadata,
+        UAE_PACK_V1.metadata,
+        EU_PACK_V1.metadata,
+        SG_PACK_V1.metadata,
+        HK_PACK_V1.metadata,
+        AU_PACK_V1.metadata,
+        CA_PACK_V1.metadata,
+        IN_PACK_V1.metadata,
     ]
 
 
