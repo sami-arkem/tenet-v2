@@ -39,7 +39,7 @@ interface ControlDetail {
 
 export default function JurisdictionsPage() {
   const [packs, setPacks] = useState<PackSummary[]>([]);
-  const [selectedJurisdiction, setSelectedJurisdiction] = useState<string>('US');
+  const [selectedJurisdiction, setSelectedJurisdiction] = useState<string | null>(null);
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [pack, setPack] = useState<PackDetail | null>(null);
   const [loading, setLoading] = useState(false);
@@ -113,127 +113,145 @@ export default function JurisdictionsPage() {
         </Card>
       )}
 
-      <div className="grid gap-4 md:grid-cols-2">
-        <Card>
-          <div>
-            <h2 className="text-lg font-semibold mb-2">Select Jurisdiction</h2>
-            <p className="text-sm text-gray-600 mb-4">Choose a jurisdiction pack to explore</p>
-          </div>
-          <select
-            value={selectedJurisdiction}
-            onChange={(e) => setSelectedJurisdiction(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
+      {/* Jurisdiction Packs Grid */}
+      {!selectedJurisdiction && (
+        <div>
+          <h2 className="text-xl font-semibold mb-4">Available Jurisdiction Packs ({packs.length})</h2>
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
             {packs.map(p => (
-              <option key={p.pack_id} value={p.jurisdiction}>
-                {p.jurisdiction} ({p.control_count} controls)
-              </option>
-            ))}
-          </select>
-        </Card>
-
-        {pack && (
-          <Card>
-            <div>
-              <h2 className="text-lg font-semibold">{pack.metadata.jurisdiction} Pack</h2>
-              <p className="text-sm text-gray-600 mb-4">
-                Version {pack.metadata.version} • {pack.controls.length} controls
-              </p>
-            </div>
-            <CardSection>
-              <div>
-                <p className="text-sm font-medium mb-2">Regulators</p>
-                <div className="flex flex-wrap gap-1">
-                  {pack.metadata.regulators.slice(0, 3).map(r => (
-                    <Badge key={r} variant="default" label={r} className="text-xs" />
-                  ))}
-                  {pack.metadata.regulators.length > 3 && (
-                    <Badge variant="default" label={`+${pack.metadata.regulators.length - 3}`} className="text-xs" />
-                  )}
-                </div>
-              </div>
-              {pack.metadata.effective_date && (
-                <div className="mt-3">
-                  <p className="text-sm font-medium mb-1">Effective Date</p>
-                  <p className="text-sm text-gray-600">{pack.metadata.effective_date}</p>
-                </div>
-              )}
-            </CardSection>
-          </Card>
-        )}
-      </div>
-
-      {pack && (
-        <>
-          <Card>
-            <h2 className="text-lg font-semibold mb-4">Filter by Domain</h2>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSelectedDomain('all')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition ${
-                  selectedDomain === 'all'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+              <Card
+                key={p.pack_id}
+                className="cursor-pointer hover:shadow-lg transition-shadow"
+                onClick={() => setSelectedJurisdiction(p.jurisdiction)}
               >
-                All Domains ({pack.controls.length})
-              </button>
-              {Array.from(domains).map(domain => {
-                const count = pack.controls.filter(c => c.domain === domain).length;
-                return (
+                <div className="space-y-3">
+                  <div>
+                    <h3 className="text-lg font-bold">{p.jurisdiction}</h3>
+                    <p className="text-sm text-gray-600 mt-1">{p.pack_id}</p>
+                  </div>
+                  <div className="border-t pt-3">
+                    <p className="text-sm">
+                      <span className="font-medium text-lg">{p.control_count}</span>
+                      <span className="text-gray-600 ml-1">controls</span>
+                    </p>
+                    <p className="text-xs text-gray-500 mt-1">{p.domains.length} domains covered</p>
+                  </div>
+                  <div className="text-xs text-blue-600 font-medium">View Details →</div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Selected Pack Details */}
+      {selectedJurisdiction && pack && (
+        <div>
+          <button
+            onClick={() => setSelectedJurisdiction(null)}
+            className="mb-4 px-3 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline"
+          >
+            ← Back to All Packs
+          </button>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            <Card className="md:col-span-1">
+              <div>
+                <h2 className="text-lg font-semibold">{pack.metadata.jurisdiction} Pack</h2>
+                <p className="text-sm text-gray-600 mb-4">
+                  Version {pack.metadata.version}
+                </p>
+              </div>
+              <CardSection>
+                <div>
+                  <p className="text-sm font-medium mb-2">Regulators</p>
+                  <div className="space-y-1">
+                    {pack.metadata.regulators.map(r => (
+                      <p key={r} className="text-sm text-gray-700">{r}</p>
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <p className="text-sm font-medium mb-2">Coverage</p>
+                  <p className="text-sm text-gray-600">{pack.controls.length} controls</p>
+                  <p className="text-sm text-gray-600">{pack.metadata.domains.length} domains</p>
+                </div>
+                {pack.metadata.effective_date && (
+                  <div className="mt-4">
+                    <p className="text-sm font-medium mb-1">Effective Date</p>
+                    <p className="text-sm text-gray-600">{pack.metadata.effective_date}</p>
+                  </div>
+                )}
+              </CardSection>
+            </Card>
+
+            <div className="md:col-span-2 space-y-4">
+              {/* Domain Filter */}
+              <Card>
+                <h3 className="text-lg font-semibold mb-3">Filter by Domain</h3>
+                <div className="flex flex-wrap gap-2">
                   <button
-                    key={domain}
-                    onClick={() => setSelectedDomain(domain)}
+                    onClick={() => setSelectedDomain('all')}
                     className={`px-3 py-1 rounded-md text-sm font-medium transition ${
-                      selectedDomain === domain
+                      selectedDomain === 'all'
                         ? 'bg-blue-600 text-white'
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                     }`}
                   >
-                    {domain} ({count})
+                    All ({pack.controls.length})
                   </button>
-                );
-              })}
-            </div>
-          </Card>
-
-          <div className="space-y-3">
-            <h2 className="text-lg font-semibold flex items-center gap-2">
-              <BookOpen className="h-5 w-5" />
-              Controls
-            </h2>
-
-            {loading ? (
-              <Card>
-                <div>Loading...</div>
-              </Card>
-            ) : filteredControls.length === 0 ? (
-              <Card>
-                <div className="text-center text-gray-600">
-                  No controls found for this domain.
+                  {Array.from(domains).map(domain => {
+                    const count = pack.controls.filter(c => c.domain === domain).length;
+                    return (
+                      <button
+                        key={domain}
+                        onClick={() => setSelectedDomain(domain)}
+                        className={`px-3 py-1 rounded-md text-sm font-medium transition ${
+                          selectedDomain === domain
+                            ? 'bg-blue-600 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        }`}
+                      >
+                        {domain} ({count})
+                      </button>
+                    );
+                  })}
                 </div>
               </Card>
-            ) : (
+
+              {/* Controls List */}
               <div className="space-y-3">
-                {filteredControls.map(control => (
-                  <Card key={control.control_id} className="hover:shadow-md transition">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1 space-y-1">
-                        <p className="font-mono text-sm font-bold text-gray-600">{control.control_id}</p>
-                        <p className="font-medium">{control.control_name}</p>
-                        <div className="flex gap-2 mt-2">
-                          <Badge variant={getSeverityBadgeVariant(control.severity)} label={control.severity} />
-                          <Badge variant="default" label={control.domain} />
+                <h3 className="text-lg font-semibold flex items-center gap-2">
+                  <BookOpen className="h-5 w-5" />
+                  Controls
+                </h3>
+
+                {loading ? (
+                  <Card><div>Loading controls...</div></Card>
+                ) : filteredControls.length === 0 ? (
+                  <Card><div className="text-center text-gray-600">No controls found for this domain.</div></Card>
+                ) : (
+                  <div className="space-y-2 max-h-96 overflow-y-auto">
+                    {filteredControls.map(control => (
+                      <Card key={control.control_id} className="hover:shadow-md transition p-3">
+                        <div className="space-y-1">
+                          <p className="font-mono text-sm font-bold text-gray-600">{control.control_id}</p>
+                          <p className="font-medium text-sm">{control.control_name}</p>
+                          <div className="flex gap-2 mt-2">
+                            <Badge variant={getSeverityBadgeVariant(control.severity)} label={control.severity} />
+                            <Badge variant="default" label={control.domain} />
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
+                      </Card>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
-        </>
+        </div>
       )}
+
     </div>
   );
 }
