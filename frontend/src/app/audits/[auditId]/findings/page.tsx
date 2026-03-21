@@ -53,25 +53,25 @@ function FindingDetail({ finding }: { finding: FindingRow }) {
     <div className="p-6 space-y-6">
       <div className="flex items-center gap-2 flex-wrap">
         <Badge variant={finding.severity.toLowerCase()} />
-        <Badge variant={finding.finding_type.toLowerCase()} />
+        <Badge variant={finding.regime.toLowerCase()} />
       </div>
       <div>
         <p className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1">Finding ID</p>
-        <p className="text-13 font-mono text-neutral-600">{finding.finding_id}</p>
+        <p className="text-13 font-mono text-neutral-600">{finding.id}</p>
       </div>
       <div>
         <p className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1">Title</p>
-        <p className="text-14 text-neutral-800 font-medium">{finding.title}</p>
+        <p className="text-14 text-neutral-800 font-medium">{finding.control_name}</p>
       </div>
-      {finding.detail && (
+      {finding.finding && (
         <div>
           <p className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1">Gap / Detail</p>
-          <p className="text-14 text-neutral-700 leading-relaxed">{finding.detail}</p>
+          <p className="text-14 text-neutral-700 leading-relaxed">{finding.finding}</p>
         </div>
       )}
       <div>
         <p className="text-11 font-medium text-neutral-500 uppercase tracking-wider mb-1">Type</p>
-        <p className="text-13 font-mono text-neutral-600">{finding.finding_type}</p>
+        <p className="text-13 font-mono text-neutral-600">{finding.regime}</p>
       </div>
       <div className="mt-8 pt-4 border-t border-neutral-100">
         <p className="text-12 text-neutral-400">
@@ -129,7 +129,7 @@ export default function FindingsPage() {
   if (isLoading) return <PageSkeleton />;
   if (error) return <ErrorMessage message={error.message} onRetry={() => mutate()} />;
 
-  const rows = [...(findings?.rows ?? [])].sort(
+  const rows = [...(findings?.items ?? [])].sort(
     (a, b) =>
       (SEVERITY_ORDER[a.severity.toUpperCase()] ?? 9) -
       (SEVERITY_ORDER[b.severity.toUpperCase()] ?? 9),
@@ -137,7 +137,7 @@ export default function FindingsPage() {
 
   const criticalCount = rows.filter((r) => r.severity.toUpperCase() === "CRITICAL").length;
   const highCount     = rows.filter((r) => r.severity.toUpperCase() === "HIGH").length;
-  const totalFindings = findings?.total_findings ?? 0;
+  const totalFindings = findings?.total ?? 0;
 
   return (
     <>
@@ -203,11 +203,11 @@ export default function FindingsPage() {
             </thead>
             <tbody className="divide-y divide-neutral-100 bg-white">
               {rows.map((row) => {
-                const isSelected = panelOpen && selectedFinding?.finding_id === row.finding_id;
+                const isSelected = panelOpen && selectedFinding?.id === row.id;
                 const borderCls = SEVERITY_LEFT_BORDER[row.severity.toUpperCase()] ?? "border-l border-l-neutral-200";
                 return (
                   <tr
-                    key={row.finding_id}
+                    key={row.id}
                     onClick={() => handleRowClick(row)}
                     className={cn(
                       "h-[52px] cursor-pointer transition-colors duration-base",
@@ -223,16 +223,16 @@ export default function FindingsPage() {
                       </div>
                     </td>
                     <td className="px-4 py-0 w-40">
-                      <span className="text-12 font-mono text-neutral-500">{row.finding_type}</span>
+                      <span className="text-12 font-mono text-neutral-500">{row.regime}</span>
                     </td>
                     <td className="px-4 py-0">
-                      <div className="text-14 font-medium text-neutral-800">{row.title}</div>
-                      {row.detail && (
-                        <div className="text-12 text-neutral-400 mt-0.5 truncate max-w-md">{row.detail}</div>
+                      <div className="text-14 font-medium text-neutral-800">{row.control_name}</div>
+                      {row.finding && (
+                        <div className="text-12 text-neutral-400 mt-0.5 truncate max-w-md">{row.finding}</div>
                       )}
                     </td>
                     <td className="px-4 py-0 w-48">
-                      <span className="text-12 font-mono text-neutral-400">{row.finding_id}</span>
+                      <span className="text-12 font-mono text-neutral-400">{row.id}</span>
                     </td>
                   </tr>
                 );
@@ -245,8 +245,8 @@ export default function FindingsPage() {
       <DetailPanel
         isOpen={panelOpen}
         onClose={closePanel}
-        title={selectedFinding?.title ?? "Finding Detail"}
-        subtitle={selectedFinding?.finding_id}
+        title={selectedFinding?.control_name ?? "Finding Detail"}
+        subtitle={selectedFinding?.id}
         width={480}
       >
         {selectedFinding && <FindingDetail finding={selectedFinding} />}

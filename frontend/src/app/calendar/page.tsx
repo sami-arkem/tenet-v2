@@ -270,8 +270,35 @@ export default function CalendarPage() {
       const from = new Date(today.getFullYear(), today.getMonth() - 1, 1).toISOString().split("T")[0];
       const to = new Date(today.getFullYear(), today.getMonth() + 3, 0).toISOString().split("T")[0];
       const res = await request<{ events?: CalendarEvent[] } | CalendarEvent[]>(`/v1/calendar/events?from=${from}&to=${to}`);
-      const apiEvents = Array.isArray(res) ? res : (res as any)?.events ?? [];
-      if (apiEvents.length > 0) setEvents(apiEvents);
+      const rawEvents = Array.isArray(res) ? res : (res as any)?.events ?? [];
+      if (rawEvents.length > 0) {
+        // Map backend fields to frontend CalendarEvent shape
+        const urgencyToSeverity = (urgency: string): EventSeverity => {
+          const u = (urgency ?? '').toLowerCase();
+          if (u === 'critical') return 'critical';
+          if (u === 'high') return 'high';
+          if (u === 'medium' || u === 'brand') return 'medium';
+          return 'low';
+        };
+        const verdictToSeverity = (verdict: string): EventSeverity => {
+          const v = (verdict ?? '').toUpperCase();
+          if (v === 'FAIL' || v === 'BLOCKED') return 'high';
+          if (v === 'PARTIAL' || v === 'CONDITIONAL') return 'medium';
+          return 'low';
+        };
+        const VALID_TYPES: EventType[] = ['audit', 'filing', 'obligation', 'review'];
+        const mappedEvents: CalendarEvent[] = rawEvents.map((e: any) => ({
+          id: e.id ?? crypto.randomUUID(),
+          date: e.date ?? new Date().toISOString().split('T')[0],
+          title: e.title ?? 'Compliance Event',
+          type: VALID_TYPES.includes(e.type) ? e.type as EventType : 'audit',
+          severity: e.severity ?? (e.urgency ? urgencyToSeverity(e.urgency) : verdictToSeverity(e.verdict)),
+          regime: e.regime ?? (e.title?.split('—')[1]?.trim()?.split(',')[0]?.trim() ?? 'COMPLIANCE'),
+          jurisdiction: e.jurisdiction ?? 'GB',
+          isOverdue: e.isOverdue ?? false,
+        }));
+        setEvents(mappedEvents);
+      }
     } catch {
       // keep mock data
     }

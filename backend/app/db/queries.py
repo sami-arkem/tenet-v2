@@ -200,8 +200,12 @@ async def update_audit_run_status(
     row = started_at_raw.first()
     duration = None
     if row and completed_at:
-        diff = completed_at - row[0].replace(tzinfo=timezone.utc)
-        duration = int(diff.total_seconds())
+        started = row[0]
+        if started and hasattr(started, 'replace'):
+            if started.tzinfo is None:
+                started = started.replace(tzinfo=timezone.utc)
+        diff = completed_at - started if started else None
+        duration = int(diff.total_seconds()) if diff else None
 
     await db.execute(
         text(
@@ -436,22 +440,22 @@ async def insert_findings_from_verdicts(
             text(
                 """
                 INSERT INTO findings (
-                    tenant_id, entity_id, audit_run_id, control_verdict_id,
+                    tenant_id, audit_run_id,
                     control_id, control_name, regime, jurisdiction, verdict, severity,
-                    finding, requirement, gap, risk, recommended_action, regulatory_reference
+                    finding, requirement, gap, risk, recommended_action, regulatory_reference,
+                    status
                 ) VALUES (
-                    :tenant_id, :entity_id, :audit_run_id, :control_verdict_id,
+                    :tenant_id, :audit_run_id,
                     :control_id, :control_name, :regime, :jurisdiction, :verdict, :severity,
-                    :finding, :requirement, :gap, :risk, :recommended_action, :regulatory_reference
+                    :finding, :requirement, :gap, :risk, :recommended_action, :regulatory_reference,
+                    'OPEN'
                 )
                 ON CONFLICT DO NOTHING
                 """
             ),
             {
                 "tenant_id": tenant_id,
-                "entity_id": entity_id,
                 "audit_run_id": audit_run_id,
-                "control_verdict_id": str(v.get("id")) if v.get("id") else None,
                 "control_id": v.get("control_id", ""),
                 "control_name": v.get("control_name", ""),
                 "regime": v.get("regime", ""),
@@ -714,17 +718,18 @@ async def list_remediation_items(
     result = await db.execute(
         text(
             """
-            SELECT r.id, r.finding_id, r.title, r.description, r.severity,
-                   r.status, r.priority, r.assignee, r.due_date,
-                   r.resolved_at, r.created_at, r.updated_at,
+            SELECT r.id, r.finding_id, r.audit_id, r.title, r.gap_note,
+                   r.status, r.priority, r.assigned_to, r.due_date,
+                   r.closed_at, r.notes, r.release_blocking,
+                   r.created_at, r.updated_at,
+                   COALESCE(f.severity, 'medium') AS severity,
                    f.control_id, f.control_name, f.regime,
                    f.finding AS finding_description
             FROM remediation_items r
             LEFT JOIN findings f ON f.id = r.finding_id
             WHERE r.tenant_id = :tenant_id
             ORDER BY
-                r.priority ASC,
-                CASE r.severity
+                CASE COALESCE(f.severity, 'medium')
                     WHEN 'critical' THEN 1 WHEN 'high' THEN 2
                     WHEN 'medium' THEN 3 WHEN 'low' THEN 4
                     ELSE 5
@@ -735,8 +740,6 @@ async def list_remediation_items(
         {"tenant_id": tenant_id},
     )
     return [dict(row) for row in result.mappings().all()]
-
-
 async def get_remediation_item(
     db: AsyncSession, *, item_id: str, tenant_id: str
 ) -> dict[str, Any] | None:

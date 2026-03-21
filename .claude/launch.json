@@ -4,13 +4,19 @@
     {
       "name": "frontend",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd /Users/samisayyed/tenet-v2/frontend && npm run dev"],
+      "runtimeArgs": [
+        "-c",
+        "cd \"/Users/samisayyed/tenet-v2 6.33.11 PM/frontend\" && npm run dev"
+      ],
       "port": 3000
     },
     {
       "name": "backend",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd /Users/samisayyed/tenet-v2/backend && .venv/bin/uvicorn app.main:app --reload --port 8000"],
+      "runtimeArgs": [
+        "-c",
+        "cd \"/Users/samisayyed/tenet-v2 6.33.11 PM/backend\" && .venv/bin/python3.14 -m uvicorn app.main:app --reload --port 8000 --log-level info"
+      ],
       "port": 8000
     }
   ]

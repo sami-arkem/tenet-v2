@@ -8,10 +8,12 @@ import time
 import uuid
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.responses import JSONResponse
+
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import settings
 from app.middleware.auth import AuthMiddleware
@@ -131,6 +133,18 @@ app.include_router(monitoring.router,         prefix="/v1/monitoring",          
 app.include_router(calendar.router,           prefix="/v1/calendar",            tags=["calendar"])
 app.include_router(entities.router,           prefix="/v1/entities",            tags=["entities"])
 app.include_router(jurisdiction_packs.router, prefix="/v1/jurisdiction-packs",  tags=["jurisdiction-packs"])
+
+# Audit preparation — mounted at /v1/audit-preparation for legacy frontend compat
+from app.db import get_db  # noqa: E402
+from fastapi import APIRouter as _PrepRouter
+_prep = _PrepRouter()
+
+@_prep.get("/{audit_id}")
+async def _prep_fwd(audit_id: str, request: Request, db: AsyncSession = Depends(get_db)):
+    from app.routers.audits import get_audit_preparation
+    return await get_audit_preparation(audit_id, request, db)
+
+app.include_router(_prep, prefix="/v1/audit-preparation", tags=["audit-preparation"])
 
 
 # ─── Health ───────────────────────────────────────────────────────────────────

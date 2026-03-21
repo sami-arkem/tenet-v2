@@ -263,19 +263,31 @@ export interface EvidenceJobListResponse {
 // ─── Findings ────────────────────────────────────────────────────────────────
 
 export interface FindingRow {
-  finding_id: string;
-  audit_id: string;
+  id: string;
+  audit_run_id: string;
   tenant_id: string;
-  finding_type: string;
-  title: string;
-  detail: string;
+  control_id: string;
+  control_name: string;
+  regime: string;
+  jurisdiction: string;
+  verdict: string;
   severity: string;
+  status: string;
+  finding: string;
+  requirement?: string | null;
+  gap?: string | null;
+  risk?: string | null;
+  recommended_action?: string | null;
+  assigned_to?: string | null;
+  due_date?: string | null;
+  notes?: string | null;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface FindingListResponse {
-  audit_id: string;
-  total_findings: number;
-  rows: FindingRow[];
+  items: FindingRow[];
+  total: number;
 }
 
 export interface FindingsSummary {

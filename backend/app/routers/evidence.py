@@ -90,10 +90,11 @@ async def upload_evidence(
         text("""
             INSERT INTO evidence_items
               (id, tenant_id, entity_id, audit_run_id, original_name,
-               file_hash, file_size_bytes, mime_type, storage_path, status)
+               file_name, file_hash, file_size_bytes, mime_type, storage_path, status)
             VALUES
               (:id, current_setting('app.current_tenant_id', TRUE)::uuid, :entity_id, :audit_run_id,
-               :original_name, :file_hash, :file_size, :mime_type, :storage_path, 'PROCESSING')
+               :original_name, :original_name,
+               :file_hash, :file_size, :mime_type, :storage_path, 'PROCESSING')
         """),
         {
             "id": item_id,
@@ -116,10 +117,10 @@ async def upload_evidence(
     await db.execute(
         text("""
             UPDATE evidence_items
-            SET status = CASE WHEN :is_empty THEN 'EMPTY' ELSE 'READY' END,
+            SET status = CASE WHEN :is_empty THEN 'FAILED' ELSE 'READY' END,
                 document_type = :doc_type,
                 classification_confidence = :confidence,
-                extracted_text = :extracted_text
+                ocr_text = :ocr_text
             WHERE id = :id
         """),
         {
@@ -127,7 +128,7 @@ async def upload_evidence(
             "is_empty": clf.is_empty,
             "doc_type": clf.document_type.value,
             "confidence": clf.confidence_score,
-            "extracted_text": clf.extracted_text,
+            "ocr_text": clf.ocr_text,
         },
     )
     await db.commit()
@@ -138,7 +139,7 @@ async def upload_evidence(
             "original_name": file.filename,
             "file_hash": file_hash,
             "file_size_bytes": file_size,
-            "status": "EMPTY" if clf.is_empty else "READY",
+            "status": "FAILED" if clf.is_empty else "READY",
             "document_type": clf.document_type.value,
             "classification_confidence": clf.confidence.value,
             "word_count": clf.word_count,
@@ -281,7 +282,7 @@ async def delete_evidence_item(
 ) -> dict:
     row = await db.execute(
         text("""
-            UPDATE evidence_items SET status='DELETED'
+            UPDATE evidence_items SET status='REJECTED'
             WHERE id = :id
               AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
             RETURNING id

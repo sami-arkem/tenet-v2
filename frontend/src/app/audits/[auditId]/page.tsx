@@ -87,13 +87,13 @@ export default function AuditDetailPage() {
   const runBlocked =
     runLoading ||
     audit?.status === "RUNNING" ||
-    !preparation ||
-    preparation.preparation_status !== "READY";
+    audit?.status === "COMPLETED" ||
+    (preparation !== null && preparation !== undefined && preparation.preparation_status === "NOT_READY");
 
   async function handleRun() {
-    if (!preparation || preparation.preparation_status !== "READY") {
+    if (preparation && preparation.preparation_status === "NOT_READY") {
       setRunError(
-        preparationBlockingReasons[0] ?? "Audit preparation is incomplete. Complete evidence intake before running the audit.",
+        preparationBlockingReasons[0] ?? "Audit preparation is incomplete.",
       );
       return;
     }

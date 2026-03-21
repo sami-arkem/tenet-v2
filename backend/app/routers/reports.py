@@ -30,6 +30,8 @@ router = APIRouter()
 class GenerateReportRequest(BaseModel):
     audit_run_id: str
     formats: list[str] = ["pdf", "docx", "json"]
+    format: str = "json"  # single format alias
+    report_type: str = "full_audit"
     include_evidence_inventory: bool = True
     include_reasoning_trace: bool = True
 
@@ -63,7 +65,7 @@ async def generate_report(
             detail={"code": "NOT_FOUND", "message": "Audit run not found"},
         )
 
-    if audit["status"] not in ("COMPLETE", "PARTIAL"):
+    if audit["status"] not in ("COMPLETE", "COMPLETED", "PARTIAL", "BLOCKED"):
         raise HTTPException(
             status_code=422,
             detail={"code": "AUDIT_NOT_COMPLETE", "message": "Report can only be generated for completed audits"},
@@ -73,7 +75,10 @@ async def generate_report(
     verdicts_row = await db.execute(
         text("""
             SELECT control_id, control_name, regime, verdict, severity,
-                   gap_description, risk_description, recommended_action,
+                   COALESCE(gap_description, gap) as gap_description,
+                   COALESCE(risk_description, risk) as risk_description,
+                   finding,
+                   recommended_action,
                    regulatory_reference
             FROM control_verdicts
             WHERE audit_run_id = :run_id
@@ -86,8 +91,9 @@ async def generate_report(
     # Load evidence inventory
     evidence_row = await db.execute(
         text("""
-            SELECT id, original_name, file_hash, file_size_bytes, mime_type,
-                   document_type, status, created_at
+            SELECT id, COALESCE(original_name, file_name, 'Unknown') as original_name,
+                   file_hash, file_size_bytes, mime_type,
+                   COALESCE(document_type, 'UNKNOWN') as document_type, status, created_at
             FROM evidence_items
             WHERE audit_run_id = :run_id
         """),
@@ -104,11 +110,11 @@ async def generate_report(
         "audit_run_id": body.audit_run_id,
         "tenant_id": tenant_id,
         "generated_at": now,
-        "model_version": audit["model_version"],
+        "model_version": audit.get("model_version") or "claude-sonnet-4-6",
         "executive_summary": {
             "overall_verdict": audit["overall_verdict"],
             "jurisdiction": audit["jurisdiction"],
-            "regime_scope": audit["regime_scope"],
+            "regime_scope": [r.strip() for r in (audit.get("regime_scope") or "").split(",") if r.strip()] or [audit.get("jurisdiction", "Unknown")],
             "control_count": audit["control_count"],
             "pass_count": audit["pass_count"],
             "partial_count": audit["partial_count"],
@@ -156,19 +162,20 @@ async def generate_report(
     await db.execute(
         text("""
             INSERT INTO generated_documents
-              (id, tenant_id, audit_run_id, document_type, format,
-               storage_path, file_hash, file_size_bytes)
+              (id, tenant_id, audit_run_id, doc_type, format,
+               file_name, storage_path, file_size_bytes, metadata)
             VALUES
               (:id, :tenant_id, :audit_run_id, 'AUDIT_REPORT', 'JSON',
-               :storage_path, :file_hash, :file_size)
+               :file_name, :storage_path, :file_size, CAST(:metadata AS JSONB))
         """),
         {
             "id": report_id,
             "tenant_id": tenant_id,
             "audit_run_id": body.audit_run_id,
+            "file_name": f"tenet_report_{report_id[:8]}.json",
             "storage_path": report_dir,
-            "file_hash": json_hash,
             "file_size": os.path.getsize(json_path),
+            "metadata": json.dumps({"file_hash": json_hash, "formats": ["json", "text"]}),
         },
     )
     await db.commit()
@@ -197,7 +204,7 @@ async def list_reports(
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     await set_tenant_context(db, request.state.tenant_id)
-    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
+    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"]
     params: dict = {"limit": limit, "offset": offset}
 
     if audit_run_id:
@@ -207,7 +214,7 @@ async def list_reports(
     where = " AND ".join(conditions)
     rows = await db.execute(
         text(f"""
-            SELECT id, audit_run_id, document_type, format, created_at, file_size_bytes
+            SELECT id, audit_run_id, doc_type as document_type, format, created_at, file_size_bytes
             FROM generated_documents
             WHERE {where}
             ORDER BY created_at DESC
@@ -228,8 +235,8 @@ async def get_report(
     await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
-            SELECT id, audit_run_id, document_type, format, storage_path,
-                   file_hash, file_size_bytes, created_at
+            SELECT id, audit_run_id, doc_type as document_type, format, storage_path,
+                   file_size_bytes, created_at
             FROM generated_documents
             WHERE id = :id
               AND tenant_id = current_setting('app.current_tenant_id', TRUE)
@@ -262,10 +269,10 @@ async def download_report(
     await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
-            SELECT storage_path, audit_run_id
+            SELECT storage_path, audit_run_id::text as audit_run_id
             FROM generated_documents
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
         """),
         {"id": report_id},
     )
@@ -321,8 +328,9 @@ def _render_text_report(data: dict) -> str:
         lines += [
             f"[{v['verdict']}] {v['control_id']} — {v['control_name']}",
         ]
-        if v.get("gap_description"):
-            lines.append(f"  Gap: {v['gap_description']}")
+        gap = v.get("gap_description") or v.get("gap") or ""
+        if gap:
+            lines.append(f"  Gap: {gap}")
         if v.get("recommended_action"):
             lines.append(f"  Action: {v['recommended_action']}")
         lines.append("")

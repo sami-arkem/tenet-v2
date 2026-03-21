@@ -74,7 +74,7 @@ async def create_entity(
               (:id, current_setting('app.current_tenant_id', TRUE)::uuid,
                :name, :entity_type, :jurisdiction,
                :description, :industry_sector, :company_size,
-               :regulatory_regimes, :metadata::jsonb)
+               CAST(:regulatory_regimes AS TEXT[]), CAST(:metadata AS JSONB))
         """),
         {
             "id": entity_id,
@@ -178,7 +178,7 @@ async def update_entity(
     data = body.model_dump(exclude_none=True)
     for field, value in data.items():
         if field == "metadata":
-            updates.append("metadata = :metadata::jsonb")
+            updates.append("metadata = CAST(:metadata AS JSONB)")
             params["metadata"] = _json.dumps(value)
         elif field == "regulatory_regimes":
             updates.append(f"regulatory_regimes = :{field}")

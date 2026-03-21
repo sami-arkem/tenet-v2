@@ -145,7 +145,7 @@ export function getPreparationSummary(
   auditId: string,
 ): Promise<AuditPreparationSummary> {
   return _request<AuditPreparationSummary>(
-    `/v1/audit-preparation/${auditId}`,
+    `/v1/audits/${auditId}/preparation`,
     {},
     userId,
   );
@@ -156,7 +156,7 @@ export function ensureRequirements(
   auditId: string,
 ): Promise<{ audit_id: string; requirements: unknown[] }> {
   return _request(
-    `/v1/audit-preparation/${auditId}/requirements/ensure`,
+    `/v1/audits/${auditId}/preparation/requirements/ensure`,
     { method: "POST" },
     userId,
   );
@@ -167,7 +167,7 @@ export function listModelCalls(
   auditId: string,
 ): Promise<ModelCallLogRow[]> {
   return _request<ModelCallLogRow[]>(
-    `/v1/audit-preparation/${auditId}/model-calls`,
+    `/v1/audits/${auditId}/preparation/model-calls`,
     {},
     userId,
   );
@@ -302,7 +302,7 @@ export function listFindings(
   auditId: string,
 ): Promise<FindingListResponse> {
   return _request<FindingListResponse>(
-    `/v1/findings/audit/${auditId}`,
+    `/v1/findings?audit_run_id=${auditId}`,
     {},
     userId,
   );

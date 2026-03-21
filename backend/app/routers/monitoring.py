@@ -1,14 +1,9 @@
 """
 Monitoring router — Bible §12.
-GET /v1/monitoring/alerts          → regulatory alerts for tenant
-GET /v1/monitoring/alerts/{id}     → single alert
-PATCH /v1/monitoring/alerts/{id}   → mark read / dismiss
-GET /v1/monitoring/obligations     → compliance obligations
-GET /v1/monitoring/config          → monitoring configuration
-PATCH /v1/monitoring/config        → update monitoring config
 """
 from __future__ import annotations
 
+import json as _json
 from typing import Optional
 from uuid import uuid4
 
@@ -25,14 +20,12 @@ router = APIRouter()
 
 class AlertPatch(BaseModel):
     is_read: Optional[bool] = None
-    is_dismissed: Optional[bool] = None
 
 
 class MonitoringConfigPatch(BaseModel):
-    jurisdictions: Optional[list[str]] = None
-    regime_scope: Optional[list[str]] = None
-    alert_email: Optional[str] = None
-    is_active: Optional[bool] = None
+    config_key: Optional[str] = None
+    config_value: Optional[dict] = None
+    enabled: Optional[bool] = None
 
 
 @router.get("/alerts")
@@ -45,7 +38,7 @@ async def list_alerts(
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     await set_tenant_context(db, request.state.tenant_id)
-    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
+    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"]
     params: dict = {"limit": limit, "offset": offset}
 
     if is_read is not None:
@@ -58,8 +51,10 @@ async def list_alerts(
     where = " AND ".join(conditions)
     rows = await db.execute(
         text(f"""
-            SELECT id, severity, title, summary, jurisdiction, regime,
-                   source_url, effective_date, is_read, created_at
+            SELECT id, severity, title,
+                   COALESCE(body, '') as summary,
+                   jurisdiction, regime, url,
+                   effective_date, is_read, source, created_at
             FROM regulatory_alerts
             WHERE {where}
             ORDER BY created_at DESC
@@ -67,16 +62,15 @@ async def list_alerts(
         """),
         params,
     )
-
     count_row = await db.execute(
         text(f"SELECT COUNT(*) FROM regulatory_alerts WHERE {where}"),
         params,
     )
     total = count_row.scalar() or 0
     items = [dict(r) for r in rows.mappings()]
-
     return ApiResponse.success(
-        data={"items": items, "total": total, "unread_count": sum(1 for i in items if not i["is_read"])}
+        data={"items": items, "total": total,
+              "unread_count": sum(1 for i in items if not i.get("is_read"))}
     ).model_dump()
 
 
@@ -89,16 +83,18 @@ async def get_alert(
     await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
-            SELECT * FROM regulatory_alerts
+            SELECT id, title, COALESCE(body, '') as body, severity,
+                   jurisdiction, regime, url as source_url,
+                   is_read, effective_date, created_at
+            FROM regulatory_alerts
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
         """),
         {"id": alert_id},
     )
     alert = row.mappings().fetchone()
     if not alert:
         raise HTTPException(status_code=404, detail={"code": "NOT_FOUND", "message": "Alert not found"})
-
     return ApiResponse.success(data=dict(alert)).model_dump()
 
 
@@ -110,7 +106,7 @@ async def patch_alert(
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     await set_tenant_context(db, request.state.tenant_id)
-    updates = {}
+    updates: dict = {}
     if body.is_read is not None:
         updates["is_read"] = body.is_read
     if not updates:
@@ -118,19 +114,18 @@ async def patch_alert(
 
     set_clause = ", ".join(f"{k} = :{k}" for k in updates)
     updates["id"] = alert_id
-
     row = await db.execute(
         text(f"""
-            UPDATE regulatory_alerts SET {set_clause}
+            UPDATE regulatory_alerts
+            SET {set_clause}, updated_at = NOW()
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
             RETURNING id
         """),
         updates,
     )
     if not row.fetchone():
         raise HTTPException(status_code=404, detail={"code": "NOT_FOUND", "message": "Alert not found"})
-
     await db.commit()
     return ApiResponse.success(data={"updated": True}).model_dump()
 
@@ -144,7 +139,7 @@ async def list_obligations(
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     await set_tenant_context(db, request.state.tenant_id)
-    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
+    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"]
     params: dict = {"limit": limit, "offset": offset}
 
     if status:
@@ -154,26 +149,23 @@ async def list_obligations(
     where = " AND ".join(conditions)
     rows = await db.execute(
         text(f"""
-            SELECT id, title, description, jurisdiction, regime, frequency,
-                   next_due_date, last_filed_date, status, is_overdue, filing_url
+            SELECT id, title, description, jurisdiction, regime,
+                   recurrence, due_date, status,
+                   assigned_to, created_at, updated_at
             FROM compliance_obligations
             WHERE {where}
-            ORDER BY next_due_date ASC NULLS LAST
+            ORDER BY due_date ASC NULLS LAST
             LIMIT :limit OFFSET :offset
         """),
         params,
     )
-
     count_row = await db.execute(
         text(f"SELECT COUNT(*) FROM compliance_obligations WHERE {where}"),
         params,
     )
     total = count_row.scalar() or 0
     items = [dict(r) for r in rows.mappings()]
-
-    return ApiResponse.success(
-        data={"items": items, "total": total}
-    ).model_dump()
+    return ApiResponse.success(data={"items": items, "total": total}).model_dump()
 
 
 @router.get("/config")
@@ -184,16 +176,15 @@ async def get_monitoring_config(
     await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
-            SELECT id, jurisdictions, regime_scope, alert_email, is_active, created_at, updated_at
+            SELECT id, config_key, config_value, enabled, created_at, updated_at
             FROM monitoring_config
-            WHERE tenant_id = current_setting('app.current_tenant_id', TRUE)
+            WHERE tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
             LIMIT 1
         """),
     )
     config = row.mappings().fetchone()
     if not config:
         return ApiResponse.success(data={"configured": False}).model_dump()
-
     return ApiResponse.success(data=dict(config)).model_dump()
 
 
@@ -204,28 +195,39 @@ async def update_monitoring_config(
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     await set_tenant_context(db, request.state.tenant_id)
-    updates = {k: v for k, v in body.model_dump().items() if v is not None}
-    if not updates:
+    data = body.model_dump(exclude_none=True)
+    if not data:
         raise HTTPException(status_code=422, detail={"code": "NO_UPDATES", "message": "No fields to update"})
 
-    # Upsert monitoring config
     existing = await db.execute(
-        text("SELECT id FROM monitoring_config WHERE tenant_id = current_setting('app.current_tenant_id', TRUE) LIMIT 1")
+        text("SELECT id FROM monitoring_config WHERE tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid LIMIT 1")
     )
+    cv = _json.dumps(data.get("config_value", {})) if "config_value" in data else "{}"
+    ck = data.get("config_key", "default")
+    en = data.get("enabled", True)
+
     if existing.fetchone():
-        set_clause = ", ".join(f"{k} = :{k}" for k in updates)
+        set_parts = ["updated_at = NOW()"]
+        if "config_key" in data:
+            set_parts.append("config_key = :ck")
+        if "config_value" in data:
+            set_parts.append("config_value = CAST(:cv AS JSONB)")
+        if "enabled" in data:
+            set_parts.append("enabled = :en")
         await db.execute(
-            text(f"UPDATE monitoring_config SET {set_clause} WHERE tenant_id = current_setting('app.current_tenant_id', TRUE)"),
-            updates,
+            text("UPDATE monitoring_config SET " + ", ".join(set_parts) +
+                 " WHERE tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"),
+            {"ck": ck, "cv": cv, "en": en},
         )
     else:
         config_id = str(uuid4())
-        cols = ", ".join(["id", "tenant_id"] + list(updates.keys()))
-        placeholders = ", ".join([":id", "current_setting('app.current_tenant_id', TRUE)"] + [f":{k}" for k in updates])
         await db.execute(
-            text(f"INSERT INTO monitoring_config ({cols}) VALUES ({placeholders})"),
-            {"id": config_id, **updates},
+            text("""
+                INSERT INTO monitoring_config (id, tenant_id, config_key, config_value, enabled)
+                VALUES (:id, current_setting('app.current_tenant_id', TRUE)::uuid,
+                        :ck, CAST(:cv AS JSONB), :en)
+            """),
+            {"id": config_id, "ck": ck, "cv": cv, "en": en},
         )
-
     await db.commit()
     return ApiResponse.success(data={"updated": True}).model_dump()
