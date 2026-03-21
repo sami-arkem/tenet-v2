@@ -178,9 +178,35 @@ export default function ReportsPage() {
   if (error)
     return <ErrorMessage message={error.message} onRetry={() => mutate()} />;
 
-  const audits = Array.isArray(data) ? data : (data as any)?.items ?? [];
+  function hasAuditIdentity(
+    value: unknown,
+  ): value is AuditSummary & { latest_run_id?: string | null } {
+    if (!value || typeof value !== "object") {
+      return false;
+    }
+
+    const candidate = value as Record<string, unknown>;
+    return typeof candidate.audit_id === "string" && typeof candidate.status === "string";
+  }
+
+  const auditItems: unknown[] = (() => {
+    if (Array.isArray(data)) {
+      return data;
+    }
+
+    if (typeof data === "object" && data !== null && "items" in data) {
+      const candidate = (data as { items?: unknown }).items;
+      return Array.isArray(candidate) ? candidate : [];
+    }
+
+    return [];
+  })();
+
+  const audits: Array<AuditSummary & { latest_run_id?: string | null }> =
+    auditItems.filter(hasAuditIdentity);
+
   const completedAudits = audits.filter(
-    (a) => a.status === "COMPLETED" || a.status === "BLOCKED",
+    (audit) => audit.status === "COMPLETED" || audit.status === "BLOCKED",
   );
 
   return (
