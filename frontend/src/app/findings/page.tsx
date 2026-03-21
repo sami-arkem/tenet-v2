@@ -99,6 +99,20 @@ type Filters = {
   type: string;
 };
 
+type AuditListItem = {
+  audit_id: string;
+  status: string;
+};
+
+function isAuditListItem(value: unknown): value is AuditListItem {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
+  const candidate = value as Record<string, unknown>;
+  return typeof candidate.audit_id === "string" && typeof candidate.status === "string";
+}
+
 export default function FindingsPage() {
   const { userId } = useAuth();
   const router = useRouter();
@@ -109,11 +123,25 @@ export default function FindingsPage() {
     userId ? ["audits-findings", userId] : null,
     ([, uid]) => listAudits(uid!),
   );
-  const audits = Array.isArray(auditsResponse) ? auditsResponse : (auditsResponse as any)?.items ?? [];
+
+  const auditItems: unknown[] = (() => {
+    if (Array.isArray(auditsResponse)) {
+      return auditsResponse;
+    }
+
+    if (typeof auditsResponse === "object" && auditsResponse !== null && "items" in auditsResponse) {
+      const candidate = (auditsResponse as { items?: unknown }).items;
+      return Array.isArray(candidate) ? candidate : [];
+    }
+
+    return [];
+  })();
+
+  const audits: AuditListItem[] = auditItems.filter(isAuditListItem);
 
   // Collect findings across all completed audits
-  const completedAudits = audits.filter((a) =>
-    ["COMPLETE", "COMPLETED", "BLOCKED"].includes(a.status),
+  const completedAudits = audits.filter((audit) =>
+    ["COMPLETE", "COMPLETED", "BLOCKED"].includes(audit.status),
   );
 
   const { data: findingsData, isLoading: findingsLoading, error } = useSWR(
