@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
-import { AppShell } from "@/components/layout/AppShell";
 import { ToastProvider } from "@/components/ui/Toast";
+import { ConditionalShell } from "./ConditionalShell";
 
 export const metadata: Metadata = {
-  title: "Tenet — Compliance Operating System",
-  description: "Deterministic compliance audit platform",
+  title: "Tenet — Compliance Intelligence Platform",
+  description: "The operating system for modern compliance. Deterministic, evidence-grounded, enterprise-grade.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <AuthProvider>
           <ToastProvider>
-            <AppShell>{children}</AppShell>
+            <ConditionalShell>{children}</ConditionalShell>
           </ToastProvider>
         </AuthProvider>
       </body>

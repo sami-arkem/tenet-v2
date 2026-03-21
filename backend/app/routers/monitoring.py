@@ -12,12 +12,12 @@ from __future__ import annotations
 from typing import Optional
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db import get_db
+from app.db import get_db, set_tenant_context
 from app.schemas.response import ApiResponse
 
 router = APIRouter()
@@ -37,12 +37,14 @@ class MonitoringConfigPatch(BaseModel):
 
 @router.get("/alerts")
 async def list_alerts(
+    request: Request,
     is_read: Optional[bool] = None,
     severity: Optional[str] = None,
     limit: int = 50,
     offset: int = 0,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
     params: dict = {"limit": limit, "offset": offset}
 
@@ -80,9 +82,11 @@ async def list_alerts(
 
 @router.get("/alerts/{alert_id}")
 async def get_alert(
+    request: Request,
     alert_id: str,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT * FROM regulatory_alerts
@@ -100,10 +104,12 @@ async def get_alert(
 
 @router.patch("/alerts/{alert_id}")
 async def patch_alert(
+    request: Request,
     alert_id: str,
     body: AlertPatch,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     updates = {}
     if body.is_read is not None:
         updates["is_read"] = body.is_read
@@ -131,11 +137,13 @@ async def patch_alert(
 
 @router.get("/obligations")
 async def list_obligations(
+    request: Request,
     status: Optional[str] = None,
     limit: int = 50,
     offset: int = 0,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
     params: dict = {"limit": limit, "offset": offset}
 
@@ -170,8 +178,10 @@ async def list_obligations(
 
 @router.get("/config")
 async def get_monitoring_config(
+    request: Request,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT id, jurisdictions, regime_scope, alert_email, is_active, created_at, updated_at
@@ -189,9 +199,11 @@ async def get_monitoring_config(
 
 @router.patch("/config")
 async def update_monitoring_config(
+    request: Request,
     body: MonitoringConfigPatch,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     updates = {k: v for k, v in body.model_dump().items() if v is not None}
     if not updates:
         raise HTTPException(status_code=422, detail={"code": "NO_UPDATES", "message": "No fields to update"})

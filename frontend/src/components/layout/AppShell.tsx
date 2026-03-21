@@ -13,8 +13,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   const checkEntities = useCallback(async () => {
     try {
-      const data = await request("/v1/entities?limit=1") as { data?: { total?: number } };
-      setOnboardingDone((data?.data?.total ?? 0) > 0);
+      const data = await request<{ items?: unknown[]; total?: number }>("/v1/entities?limit=1");
+      setOnboardingDone((data?.total ?? data?.items?.length ?? 0) > 0);
     } catch {
       // On error (e.g. auth failure before entity check), skip onboarding
       setOnboardingDone(true);

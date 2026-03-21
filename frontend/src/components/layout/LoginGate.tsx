@@ -113,17 +113,46 @@ export function LoginGate() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
-      <div className="w-full max-w-sm">
-        {/* Wordmark */}
-        <div className="mb-10 flex flex-col gap-1">
-          <div className="flex items-center gap-2">
-            <Shield size={18} className="text-brand-500" />
-            <span className="text-20 font-medium text-neutral-900">Tenet</span>
+    <div className="min-h-screen bg-neutral-50 flex">
+      {/* Left panel — branding */}
+      <div className="hidden lg:flex lg:w-[480px] bg-neutral-900 flex-col justify-between p-10">
+        <div className="flex items-center gap-2.5">
+          <div className="flex items-center justify-center w-8 h-8 rounded-md bg-brand-600">
+            <Shield size={16} className="text-white" />
           </div>
-          <p className="text-14 text-neutral-500 pl-7">
+          <span className="text-18 font-semibold text-white tracking-tight">Tenet</span>
+        </div>
+        <div>
+          <h1 className="text-28 font-semibold text-white leading-tight mb-3">
+            AI Compliance<br />Operating System
+          </h1>
+          <p className="text-15 text-neutral-400 max-w-xs leading-relaxed">
+            Automated regulatory audits, real-time monitoring, and deployment governance for AI systems.
+          </p>
+        </div>
+        <p className="text-12 text-neutral-600">
+          Multi-jurisdiction compliance coverage
+        </p>
+      </div>
+      {/* Right panel — form */}
+      <div className="flex-1 flex items-center justify-center px-6">
+      <div className="w-full max-w-sm">
+        {/* Mobile-only wordmark */}
+        <div className="mb-10 lg:hidden flex flex-col gap-1">
+          <div className="flex items-center gap-2.5">
+            <div className="flex items-center justify-center w-7 h-7 rounded-md bg-brand-600">
+              <Shield size={14} className="text-white" />
+            </div>
+            <span className="text-20 font-semibold text-neutral-900 tracking-tight">Tenet</span>
+          </div>
+          <p className="text-14 text-neutral-500 pl-[38px]">
             Compliance operating system
           </p>
+        </div>
+        {/* Desktop heading */}
+        <div className="hidden lg:block mb-8">
+          <h2 className="text-22 font-semibold text-neutral-900">Welcome back</h2>
+          <p className="text-14 text-neutral-500 mt-1">Sign in to your compliance workspace</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -204,6 +233,7 @@ export function LoginGate() {
             </>
           )}
         </p>
+      </div>
       </div>
     </div>
   );

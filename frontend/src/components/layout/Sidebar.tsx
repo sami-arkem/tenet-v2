@@ -83,12 +83,19 @@ export function Sidebar() {
   return (
     <aside className="w-56 flex-none flex flex-col border-r border-neutral-200 bg-white h-full">
       {/* Wordmark */}
-      <div className="px-5 py-5 border-b border-neutral-200">
-        <div className="flex items-center gap-2">
-          <Shield size={16} className="text-brand-500" />
-          <span className="text-14 font-medium tracking-tight text-neutral-800">
-            Tenet
-          </span>
+      <div className="px-5 py-4 bg-neutral-900">
+        <div className="flex items-center gap-2.5">
+          <div className="flex items-center justify-center w-7 h-7 rounded-md bg-brand-600">
+            <Shield size={14} className="text-white" />
+          </div>
+          <div>
+            <span className="text-15 font-semibold tracking-tight text-white">
+              Tenet
+            </span>
+            <span className="block text-10 text-neutral-400 -mt-0.5 tracking-wide uppercase">
+              Compliance OS
+            </span>
+          </div>
         </div>
       </div>
 

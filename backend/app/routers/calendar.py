@@ -8,11 +8,11 @@ from __future__ import annotations
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Request
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db import get_db
+from app.db import get_db, set_tenant_context
 from app.schemas.response import ApiResponse
 
 router = APIRouter()
@@ -20,6 +20,7 @@ router = APIRouter()
 
 @router.get("/events")
 async def get_calendar_events(
+    request: Request,
     start: Optional[str] = None,
     end: Optional[str] = None,
     event_type: Optional[str] = None,
@@ -28,6 +29,7 @@ async def get_calendar_events(
     """
     Returns compliance events from obligations, audit history, and scheduled audits.
     """
+    await set_tenant_context(db, request.state.tenant_id)
     now = datetime.now(timezone.utc)
     start_dt = datetime.fromisoformat(start) if start else now.replace(day=1)
     end_dt = datetime.fromisoformat(end) if end else (now + timedelta(days=90))
@@ -117,10 +119,12 @@ async def get_calendar_events(
 
 @router.get("/upcoming")
 async def get_upcoming_events(
+    request: Request,
     days: int = 30,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     """Returns next N days of compliance events, grouped by day."""
+    await set_tenant_context(db, request.state.tenant_id)
     now = datetime.now(timezone.utc)
     end = now + timedelta(days=days)
 

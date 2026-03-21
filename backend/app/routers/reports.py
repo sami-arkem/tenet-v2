@@ -14,14 +14,14 @@ from datetime import datetime, timezone
 from typing import Optional
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import settings
-from app.db import get_db
+from app.db import get_db, set_tenant_context
 from app.schemas.response import ApiResponse
 
 router = APIRouter()
@@ -36,14 +36,13 @@ class GenerateReportRequest(BaseModel):
 
 @router.post("/generate", status_code=202)
 async def generate_report(
+    request: Request,
     body: GenerateReportRequest,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
     """Trigger async report generation. Returns report_id to poll."""
-    tenant_id_row = await db.execute(
-        text("SELECT current_setting('app.current_tenant_id', TRUE) AS tid")
-    )
-    tenant_id = (tenant_id_row.mappings().fetchone() or {}).get("tid", "")
+    tenant_id: str = request.state.tenant_id
+    await set_tenant_context(db, tenant_id)
 
     # Verify audit run belongs to tenant
     audit_row = await db.execute(
@@ -191,11 +190,13 @@ async def generate_report(
 
 @router.get("")
 async def list_reports(
+    request: Request,
     audit_run_id: Optional[str] = None,
     limit: int = 20,
     offset: int = 0,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
     params: dict = {"limit": limit, "offset": offset}
 
@@ -220,9 +221,11 @@ async def list_reports(
 
 @router.get("/{report_id}")
 async def get_report(
+    request: Request,
     report_id: str,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT id, audit_run_id, document_type, format, storage_path,
@@ -248,6 +251,7 @@ async def get_report(
 
 @router.get("/{report_id}/download/{fmt}")
 async def download_report(
+    request: Request,
     report_id: str,
     fmt: str,
     db: AsyncSession = Depends(get_db),
@@ -255,6 +259,7 @@ async def download_report(
     if fmt not in ("json", "text", "manifest"):
         raise HTTPException(status_code=400, detail={"code": "INVALID_FORMAT", "message": "Format must be json, text, or manifest"})
 
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT storage_path, audit_run_id

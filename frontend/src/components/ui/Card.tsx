@@ -4,9 +4,10 @@ interface CardProps {
   children: React.ReactNode;
   className?: string;
   padding?: boolean;
+  onClick?: () => void;
 }
 
-export function Card({ children, className, padding = true }: CardProps) {
+export function Card({ children, className, padding = true, onClick }: CardProps) {
   return (
     <div
       className={cn(
@@ -14,6 +15,7 @@ export function Card({ children, className, padding = true }: CardProps) {
         padding && "p-6",
         className,
       )}
+      onClick={onClick}
     >
       {children}
     </div>

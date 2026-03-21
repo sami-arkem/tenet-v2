@@ -230,11 +230,11 @@ export default function MonitoringPage() {
   const load = useCallback(async () => {
     try {
       const [alertsRes, obRes] = await Promise.all([
-        request("/v1/monitoring/alerts") as Promise<{ data?: { items?: RegulatoryAlert[] } }>,
-        request("/v1/monitoring/obligations") as Promise<{ data?: { items?: ComplianceObligation[] } }>,
+        request<RegulatoryAlert[]>("/v1/monitoring/alerts"),
+        request<ComplianceObligation[]>("/v1/monitoring/obligations"),
       ]);
-      const apiAlerts = alertsRes?.data?.items ?? [];
-      const apiObs = obRes?.data?.items ?? [];
+      const apiAlerts = Array.isArray(alertsRes) ? alertsRes : [];
+      const apiObs = Array.isArray(obRes) ? obRes : [];
       setAlerts(apiAlerts.length > 0 ? apiAlerts : MOCK_ALERTS);
       setObligations(apiObs.length > 0 ? apiObs : MOCK_OBLIGATIONS);
     } catch {

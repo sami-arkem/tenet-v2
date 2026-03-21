@@ -32,7 +32,9 @@ async def get_audit_run(
                    overall_verdict, posture, control_count, pass_count, partial_count,
                    fail_count, missing_count, na_count, started_by, started_at,
                    completed_at, duration_seconds, gold_case_version, model_version,
-                   error_message, created_at, updated_at
+                   error_message, created_at, updated_at,
+                   system_name, audit_kind, framework, deployment_decision,
+                   release_ready, note
             FROM audit_runs
             WHERE id = :run_id AND tenant_id = :tenant_id
             """
@@ -70,10 +72,12 @@ async def list_audit_runs(
             SELECT id, tenant_id, entity_id, status, jurisdiction, regime_scope,
                    overall_verdict, posture, control_count, pass_count, partial_count,
                    fail_count, missing_count, na_count, started_at, completed_at,
-                   duration_seconds, model_version, created_at, updated_at
+                   duration_seconds, model_version, created_at, updated_at,
+                   system_name, audit_kind, framework, deployment_decision,
+                   release_ready, note
             FROM audit_runs
             WHERE {where}
-            ORDER BY started_at DESC
+            ORDER BY created_at DESC NULLS LAST
             LIMIT :limit OFFSET :offset
             """
         ),
@@ -123,27 +127,31 @@ async def create_audit_run(
     *,
     tenant_id: str,
     entity_id: str | None,
+    system_name: str = "Untitled System",
+    audit_kind: str = "compliance_audit",
+    framework: str = "",
     jurisdiction: str,
     regime_scope: list[str],
     company_profile: dict,
     evidence_ids: list[str],
     started_by: str,
+    note: str | None = None,
     gold_case_version: str | None = None,
     model_version: str = "claude-sonnet-4-6",
 ) -> dict[str, Any]:
-    from datetime import date
-
-    run_id = f"TEN-{date.today().strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
+    run_id = str(uuid.uuid4())
 
     await db.execute(
         text(
             """
             INSERT INTO audit_runs (
                 id, tenant_id, entity_id, status, jurisdiction, regime_scope,
-                company_profile, evidence_ids, started_by, gold_case_version, model_version
+                company_profile, evidence_ids, started_by, gold_case_version, model_version,
+                system_name, audit_kind, framework, note, started_at
             ) VALUES (
-                :id, :tenant_id, :entity_id, 'PENDING', :jurisdiction, :regime_scope,
-                :company_profile, :evidence_ids, :started_by, :gold_case_version, :model_version
+                :id, :tenant_id, :entity_id, 'CREATED', :jurisdiction, :regime_scope,
+                :company_profile, :evidence_ids, :started_by, :gold_case_version, :model_version,
+                :system_name, :audit_kind, :framework, :note, NOW()
             )
             """
         ),
@@ -152,12 +160,16 @@ async def create_audit_run(
             "tenant_id": tenant_id,
             "entity_id": entity_id,
             "jurisdiction": jurisdiction,
-            "regime_scope": regime_scope,
+            "regime_scope": ",".join(regime_scope) if regime_scope else "",
             "company_profile": __import__("json").dumps(company_profile),
             "evidence_ids": [str(e) for e in evidence_ids],
             "started_by": started_by,
             "gold_case_version": gold_case_version,
             "model_version": model_version,
+            "system_name": system_name,
+            "audit_kind": audit_kind,
+            "framework": framework,
+            "note": note,
         },
     )
     return await get_audit_run(db, run_id=run_id, tenant_id=tenant_id)  # type: ignore[return-value]
@@ -569,7 +581,7 @@ async def write_audit_log(
                 ip_address, user_agent, request_id, changes, metadata
             ) VALUES (
                 :tenant_id, :user_id, :action, :resource_type, :resource_id,
-                :ip_address::inet, :user_agent, :request_id, :changes, :metadata
+                CAST(:ip_address AS inet), :user_agent, :request_id, :changes, :metadata
             )
             """
         ),
@@ -593,28 +605,106 @@ async def write_audit_log(
 async def get_remediation_dashboard(
     db: AsyncSession, *, tenant_id: str
 ) -> dict[str, Any]:
+    """
+    Return remediation items grouped by status bucket, plus summary counts.
+    Frontend RemediationDashboard expects: tenant_id, actor_user_id, today,
+    overdue, due_soon, in_progress, open, resolved, not_applicable arrays
+    (each item matching RemediationItem type) and total_items,
+    release_blocking_count, overdue_count.
+    """
+    # Fetch all remediation items for this tenant
     result = await db.execute(
         text(
             """
-            SELECT
-                COUNT(*) FILTER (WHERE status = 'OPEN') AS open_count,
-                COUNT(*) FILTER (WHERE status = 'IN_PROGRESS') AS in_progress_count,
-                COUNT(*) FILTER (WHERE status NOT IN ('CLOSED', 'DISMISSED')
-                                   AND due_date < CURRENT_DATE) AS overdue_count,
-                COUNT(*) FILTER (WHERE status = 'CLOSED'
-                                   AND DATE_TRUNC('month', closed_at) = DATE_TRUNC('month', NOW())) AS closed_this_month
-            FROM remediation_items
-            WHERE tenant_id = :tenant_id
+            SELECT r.id, r.finding_id, r.audit_id, r.tenant_id, r.title,
+                   COALESCE(r.gap_note, '') AS gap_note,
+                   COALESCE(f.severity, 'medium') AS severity,
+                   r.status,
+                   COALESCE(r.release_blocking, false) AS release_blocking,
+                   r.assigned_to AS owner_user_id,
+                   r.due_date, r.created_at, r.updated_at,
+                CASE
+                    WHEN r.status NOT IN ('resolved', 'not_applicable')
+                         AND r.due_date IS NOT NULL
+                         AND r.due_date < CURRENT_DATE THEN 'overdue'
+                    WHEN r.status NOT IN ('resolved', 'not_applicable')
+                         AND r.due_date IS NOT NULL
+                         AND r.due_date >= CURRENT_DATE
+                         AND r.due_date < CURRENT_DATE + INTERVAL '7 days' THEN 'due_soon'
+                    ELSE r.status
+                END AS bucket
+            FROM remediation_items r
+            LEFT JOIN findings f ON f.id = r.finding_id
+            WHERE r.tenant_id = :tenant_id
+            ORDER BY
+                CASE COALESCE(f.severity, 'medium')
+                    WHEN 'critical' THEN 1 WHEN 'high' THEN 2
+                    WHEN 'medium' THEN 3 WHEN 'low' THEN 4
+                    ELSE 5
+                END,
+                r.due_date ASC NULLS LAST
             """
         ),
         {"tenant_id": tenant_id},
     )
-    row = result.mappings().first() or {}
+    rows = result.mappings().all()
+
+    # Build item dicts matching frontend RemediationItem type
+    item_keys = [
+        "id", "finding_id", "audit_id", "tenant_id", "title", "gap_note",
+        "severity", "status", "release_blocking", "owner_user_id",
+        "due_date", "created_at", "updated_at",
+    ]
+
+    buckets: dict[str, list[dict[str, Any]]] = {
+        "overdue": [],
+        "due_soon": [],
+        "in_progress": [],
+        "open": [],
+        "resolved": [],
+        "not_applicable": [],
+    }
+
+    release_blocking_count = 0
+    overdue_count = 0
+
+    for row in rows:
+        # Map to frontend RemediationItem shape
+        item = {}
+        for k in item_keys:
+            val = row.get(k)
+            item[k] = str(val) if val is not None and k in ("id", "finding_id", "audit_id", "tenant_id") else val
+        # Frontend expects remediation_id not id
+        item["remediation_id"] = item.pop("id")
+
+        bucket = row["bucket"]
+
+        if bucket == "overdue":
+            buckets["overdue"].append(item)
+            overdue_count += 1
+        elif bucket == "due_soon":
+            buckets["due_soon"].append(item)
+        elif bucket in buckets:
+            buckets[bucket].append(item)
+        else:
+            buckets["open"].append(item)
+
+        # Release-blocking: critical/high severity items that are not resolved
+        sev = (row.get("severity") or "medium").lower()
+        if sev in ("critical", "high") and row["status"] not in (
+            "resolved", "not_applicable"
+        ):
+            release_blocking_count += 1
+
+    from datetime import date as date_type
     return {
-        "open": int(row.get("open_count") or 0),
-        "in_progress": int(row.get("in_progress_count") or 0),
-        "overdue": int(row.get("overdue_count") or 0),
-        "closed_this_month": int(row.get("closed_this_month") or 0),
+        "tenant_id": tenant_id,
+        "actor_user_id": "",
+        "today": date_type.today().isoformat(),
+        **buckets,
+        "total_items": len(rows),
+        "release_blocking_count": release_blocking_count,
+        "overdue_count": overdue_count,
     }
 
 
@@ -624,15 +714,21 @@ async def list_remediation_items(
     result = await db.execute(
         text(
             """
-            SELECT r.id, r.finding_id, r.title, r.status, r.priority,
-                   r.assigned_to, r.due_date, r.closed_at, r.created_at, r.updated_at,
-                   f.control_id, f.control_name, f.regime, f.severity AS finding_severity,
+            SELECT r.id, r.finding_id, r.title, r.description, r.severity,
+                   r.status, r.priority, r.assignee, r.due_date,
+                   r.resolved_at, r.created_at, r.updated_at,
+                   f.control_id, f.control_name, f.regime,
                    f.finding AS finding_description
             FROM remediation_items r
             LEFT JOIN findings f ON f.id = r.finding_id
             WHERE r.tenant_id = :tenant_id
             ORDER BY
-                CASE r.priority WHEN 'CRITICAL' THEN 1 WHEN 'HIGH' THEN 2 WHEN 'MEDIUM' THEN 3 WHEN 'LOW' THEN 4 END,
+                r.priority ASC,
+                CASE r.severity
+                    WHEN 'critical' THEN 1 WHEN 'high' THEN 2
+                    WHEN 'medium' THEN 3 WHEN 'low' THEN 4
+                    ELSE 5
+                END,
                 r.due_date ASC NULLS LAST
             """
         ),

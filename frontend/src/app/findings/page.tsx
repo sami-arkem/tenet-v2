@@ -105,10 +105,11 @@ export default function FindingsPage() {
   const [selectedFinding, setSelectedFinding] = useState<FindingRow | null>(null);
   const [filters, setFilters] = useState<Filters>({ severity: "", type: "" });
 
-  const { data: audits = [], isLoading: auditsLoading } = useSWR(
+  const { data: auditsResponse, isLoading: auditsLoading } = useSWR(
     userId ? ["audits-findings", userId] : null,
     ([, uid]) => listAudits(uid!),
   );
+  const audits = Array.isArray(auditsResponse) ? auditsResponse : (auditsResponse as any)?.items ?? [];
 
   // Collect findings across all completed audits
   const completedAudits = audits.filter((a) =>

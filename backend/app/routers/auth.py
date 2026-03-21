@@ -14,9 +14,9 @@ from datetime import datetime, timedelta, timezone
 from typing import Optional
 from uuid import UUID, uuid4
 
+import bcrypt
 from fastapi import APIRouter, Depends, HTTPException
 from jose import JWTError, jwt
-from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr, Field
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -26,7 +26,6 @@ from app.db import get_db
 from app.schemas.response import ApiResponse
 
 router = APIRouter()
-pwd_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 # ─── Schemas ──────────────────────────────────────────────────────────────────
@@ -35,7 +34,7 @@ class SignupRequest(BaseModel):
     email: EmailStr
     password: str = Field(..., min_length=12)
     full_name: str = Field(..., min_length=1, max_length=200)
-    tenant_name: Optional[str] = None
+    company_name: Optional[str] = Field(None, alias="tenant_name")
 
 
 class LoginRequest(BaseModel):
@@ -64,11 +63,14 @@ class UserProfile(BaseModel):
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
 def _hash_password(plain: str) -> str:
-    return pwd_ctx.hash(plain)
+    # Truncate to 72 bytes (bcrypt limit)
+    pw_bytes = plain.encode("utf-8")[:72]
+    return bcrypt.hashpw(pw_bytes, bcrypt.gensalt()).decode("utf-8")
 
 
 def _verify_password(plain: str, hashed: str) -> bool:
-    return pwd_ctx.verify(plain, hashed)
+    pw_bytes = plain.encode("utf-8")[:72]
+    return bcrypt.checkpw(pw_bytes, hashed.encode("utf-8"))
 
 
 def _validate_password_strength(password: str) -> list[str]:
@@ -128,7 +130,7 @@ async def signup(
 
     # Create tenant (if new signup)
     tenant_id = str(uuid4())
-    tenant_name = body.tenant_name or f"{body.full_name.split()[0]}'s Workspace"
+    tenant_name = body.company_name or f"{body.full_name.split()[0]}'s Workspace"
     tenant_slug = tenant_name.lower().replace(" ", "-").replace("'", "")[:50]
 
     await db.execute(
@@ -187,7 +189,7 @@ async def login(
     user = row.mappings().fetchone()
 
     # Always verify (prevent timing attacks)
-    stored_hash = user["password_hash"] if user else pwd_ctx.hash("dummy-never-matches")
+    stored_hash = user["password_hash"] if user else _hash_password("dummy-never-matches")
     valid = _verify_password(body.password, stored_hash)
 
     if not user or not valid:

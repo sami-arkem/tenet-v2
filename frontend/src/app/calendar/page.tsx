@@ -269,8 +269,8 @@ export default function CalendarPage() {
       const today = new Date();
       const from = new Date(today.getFullYear(), today.getMonth() - 1, 1).toISOString().split("T")[0];
       const to = new Date(today.getFullYear(), today.getMonth() + 3, 0).toISOString().split("T")[0];
-      const res = await request(`/v1/calendar/events?from=${from}&to=${to}`) as { data?: { events?: CalendarEvent[] } };
-      const apiEvents = res?.data?.events ?? [];
+      const res = await request<{ events?: CalendarEvent[] } | CalendarEvent[]>(`/v1/calendar/events?from=${from}&to=${to}`);
+      const apiEvents = Array.isArray(res) ? res : (res as any)?.events ?? [];
       if (apiEvents.length > 0) setEvents(apiEvents);
     } catch {
       // keep mock data

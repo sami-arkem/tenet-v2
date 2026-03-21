@@ -178,7 +178,7 @@ export default function ReportsPage() {
   if (error)
     return <ErrorMessage message={error.message} onRetry={() => mutate()} />;
 
-  const audits = data ?? [];
+  const audits = Array.isArray(data) ? data : (data as any)?.items ?? [];
   const completedAudits = audits.filter(
     (a) => a.status === "COMPLETED" || a.status === "BLOCKED",
   );

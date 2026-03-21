@@ -236,11 +236,15 @@ function QuickActions() {
 export default function DashboardPage() {
   const { userId } = useAuth();
 
-  const { data: audits = [], isLoading: auditsLoading } = useSWR(
+  const { data: auditsResponse, isLoading: auditsLoading } = useSWR(
     userId ? ["audits-dash", userId] : null,
     ([, uid]) => listAudits(uid!),
     { refreshInterval: 30_000 },
   );
+  // Backend returns { items: [], total } — extract the array
+  const audits: AuditSummary[] = Array.isArray(auditsResponse)
+    ? auditsResponse
+    : (auditsResponse as any)?.items ?? [];
 
   const { data: remDash } = useSWR(
     userId ? ["rem-dash", userId] : null,
@@ -255,8 +259,8 @@ export default function DashboardPage() {
   const blockedAudits = audits.filter(
     (a) => a.status === "BLOCKED" || a.deployment_decision === "BLOCKED",
   ).length;
-  const overdueCount = remDash?.overdue_count ?? 0;
-  const openFindings = remDash?.open?.length ?? 0;
+  const overdueCount = remDash?.overdue_count ?? (Array.isArray(remDash?.overdue) ? remDash.overdue.length : 0);
+  const openFindings = Array.isArray(remDash?.open) ? remDash.open.length : 0;
 
   return (
     <>

@@ -8,12 +8,12 @@ import json as _json
 from typing import Any, Optional
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db import get_db
+from app.db import get_db, set_tenant_context
 from app.schemas.response import ApiResponse
 
 router = APIRouter()
@@ -47,9 +47,11 @@ class EntityUpdate(BaseModel):
 
 @router.post("", status_code=201)
 async def create_entity(
+    request: Request,
     body: EntityCreate,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     if body.entity_type not in VALID_ENTITY_TYPES:
         raise HTTPException(
             status_code=422,
@@ -92,6 +94,7 @@ async def create_entity(
 
 @router.get("")
 async def list_entities(
+    request: Request,
     jurisdiction: Optional[str] = None,
     entity_type: Optional[str] = None,
     is_active: Optional[bool] = None,
@@ -99,6 +102,7 @@ async def list_entities(
     offset: int = 0,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"]
     params: dict = {"limit": limit, "offset": offset}
 
@@ -139,8 +143,10 @@ async def list_entities(
 @router.get("/{entity_id}")
 async def get_entity(
     entity_id: str,
+    request: Request,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT id, name, entity_type, jurisdiction, description,
@@ -161,9 +167,11 @@ async def get_entity(
 @router.patch("/{entity_id}")
 async def update_entity(
     entity_id: str,
+    request: Request,
     body: EntityUpdate,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     updates: list[str] = ["updated_at = now()"]
     params: dict = {"id": entity_id}
 
@@ -202,8 +210,10 @@ async def update_entity(
 @router.delete("/{entity_id}")
 async def delete_entity(
     entity_id: str,
+    request: Request,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             UPDATE entities SET is_active = FALSE, updated_at = now()

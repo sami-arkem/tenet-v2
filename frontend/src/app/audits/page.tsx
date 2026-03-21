@@ -34,7 +34,7 @@ export default function AuditsPage() {
       />
     );
 
-  const audits = data ?? [];
+  const audits = Array.isArray(data) ? data : (data as any)?.items ?? [];
 
   return (
     <>

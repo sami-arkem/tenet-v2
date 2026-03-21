@@ -13,7 +13,7 @@ import os
 from typing import Optional
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -92,7 +92,7 @@ async def upload_evidence(
               (id, tenant_id, entity_id, audit_run_id, original_name,
                file_hash, file_size_bytes, mime_type, storage_path, status)
             VALUES
-              (:id, current_setting('app.current_tenant_id', TRUE), :entity_id, :audit_run_id,
+              (:id, current_setting('app.current_tenant_id', TRUE)::uuid, :entity_id, :audit_run_id,
                :original_name, :file_hash, :file_size, :mime_type, :storage_path, 'PROCESSING')
         """),
         {
@@ -148,13 +148,15 @@ async def upload_evidence(
 
 @router.get("")
 async def list_evidence(
+    request: Request,
     audit_run_id: Optional[str] = None,
     status: Optional[str] = None,
     limit: int = 50,
     offset: int = 0,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
-    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)"]
+    await set_tenant_context(db, request.state.tenant_id)
+    conditions = ["tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid"]
     params: dict = {"limit": limit, "offset": offset}
 
     if audit_run_id:
@@ -185,17 +187,45 @@ async def list_evidence(
     )
     total = count_row.scalar() or 0
 
-    items = [dict(r) for r in rows.mappings()]
+    raw_items = [dict(r) for r in rows.mappings()]
+    # Map backend column names to frontend EvidenceSummary field names
+    mapped_rows = []
+    for item in raw_items:
+        mapped_rows.append({
+            "evidence_id": str(item.get("id", "")),
+            "audit_id": str(item.get("audit_run_id", "")) if item.get("audit_run_id") else "",
+            "tenant_id": str(request.state.tenant_id),
+            "filename": item.get("original_name", ""),
+            "content_type": item.get("mime_type", ""),
+            "sha256": item.get("file_hash", ""),
+            "byte_size": item.get("file_size_bytes", 0),
+            "evidence_category": item.get("document_type", ""),
+            "status": item.get("status", "PROCESSING"),
+            "supersedes_id": None,
+            "version_number": 1,
+            "created_at": item.get("created_at"),
+            "updated_at": item.get("created_at"),
+        })
     return ApiResponse.success(
-        data={"items": items, "total": total, "limit": limit, "offset": offset}
+        data={
+            "rows": mapped_rows,
+            "total_items": total,
+            "total_ready": sum(1 for i in raw_items if i.get("status") == "READY"),
+            "total_processing": sum(1 for i in raw_items if i.get("status") == "PROCESSING"),
+            "total_failed": sum(1 for i in raw_items if i.get("status") == "FAILED"),
+            "total_cancelled": sum(1 for i in raw_items if i.get("status") == "CANCELLED"),
+            "audit_id": audit_run_id,
+        }
     ).model_dump()
 
 
 @router.get("/{item_id}")
 async def get_evidence_item(
     item_id: str,
+    request: Request,
     db: AsyncSession = Depends(get_db),
 ) -> dict:
+    await set_tenant_context(db, request.state.tenant_id)
     row = await db.execute(
         text("""
             SELECT id, tenant_id, original_name, file_hash, file_size_bytes,
@@ -203,7 +233,7 @@ async def get_evidence_item(
                    created_at, audit_run_id, entity_id, storage_path
             FROM evidence_items
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
         """),
         {"id": item_id},
     )
@@ -224,7 +254,7 @@ async def get_download_url(
             SELECT storage_path, original_name, mime_type
             FROM evidence_items
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
         """),
         {"id": item_id},
     )
@@ -253,7 +283,7 @@ async def delete_evidence_item(
         text("""
             UPDATE evidence_items SET status='DELETED'
             WHERE id = :id
-              AND tenant_id = current_setting('app.current_tenant_id', TRUE)
+              AND tenant_id = current_setting('app.current_tenant_id', TRUE)::uuid
             RETURNING id
         """),
         {"id": item_id},

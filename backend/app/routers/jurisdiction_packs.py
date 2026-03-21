@@ -13,6 +13,8 @@ Endpoints:
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
+from app.schemas.response import ApiResponse
+
 from app.agents.jurisdiction_packs import (
     Domain,
     JurisdictionCode,
@@ -188,8 +190,8 @@ def _pack_to_response(pack) -> JurisdictionPackDetailResponse:
 # ─── Endpoints ───────────────────────────────────────────────────────────────
 
 
-@router.get("", response_model=list[JurisdictionPackSummaryResponse], tags=["jurisdiction-packs"])
-async def list_packs() -> list[JurisdictionPackSummaryResponse]:
+@router.get("", tags=["jurisdiction-packs"])
+async def list_packs() -> dict:
     """
     List all available jurisdiction packs.
 
@@ -207,23 +209,15 @@ async def list_packs() -> list[JurisdictionPackSummaryResponse]:
                     version=pack.metadata.version,
                     control_count=len(pack.controls),
                     domains=[d.value for d in pack.metadata.domains],
-                )
+                ).model_dump()
             )
-    return response
+    return ApiResponse.success(data=response).model_dump()
 
 
-@router.get("/{jurisdiction}", response_model=JurisdictionPackDetailResponse, tags=["jurisdiction-packs"])
-async def get_pack(jurisdiction: str) -> JurisdictionPackDetailResponse:
+@router.get("/{jurisdiction}", tags=["jurisdiction-packs"])
+async def get_pack(jurisdiction: str) -> dict:
     """
     Get full jurisdiction pack with all controls and evidence requirements.
-
-    Args:
-        jurisdiction: Jurisdiction code (e.g., "US", "UAE", "EU")
-
-    Returns: Complete pack including all controls, evidence requirements, remediation templates.
-
-    Raises:
-        404: Jurisdiction pack not found.
     """
     try:
         jurisdiction_code = JurisdictionCode(jurisdiction.upper())
@@ -234,26 +228,15 @@ async def get_pack(jurisdiction: str) -> JurisdictionPackDetailResponse:
     if not pack:
         raise HTTPException(status_code=404, detail=f"Jurisdiction pack '{jurisdiction}' not available")
 
-    return _pack_to_response(pack)
+    return ApiResponse.success(data=_pack_to_response(pack).model_dump()).model_dump()
 
 
-@router.get("/{jurisdiction}/controls", response_model=list[JurisdictionControlResponse], tags=["jurisdiction-packs"])
+@router.get("/{jurisdiction}/controls", tags=["jurisdiction-packs"])
 async def get_controls(
     jurisdiction: str,
     domain: str | None = Query(None),
-) -> list[JurisdictionControlResponse]:
-    """
-    Get controls for a jurisdiction, optionally filtered by domain.
-
-    Args:
-        jurisdiction: Jurisdiction code (e.g., "US", "UAE", "EU")
-        domain: Optional domain filter (AML_KYC, SANCTIONS, FRAUD_TXN_MONITORING, etc.)
-
-    Returns: List of jurisdiction controls matching criteria.
-
-    Raises:
-        404: Jurisdiction pack not found.
-    """
+) -> dict:
+    """Get controls for a jurisdiction, optionally filtered by domain."""
     try:
         jurisdiction_code = JurisdictionCode(jurisdiction.upper())
     except ValueError:
@@ -263,7 +246,6 @@ async def get_controls(
     if not pack:
         raise HTTPException(status_code=404, detail=f"Jurisdiction pack '{jurisdiction}' not available")
 
-    # Filter by domain if provided
     if domain:
         try:
             domain_enum = Domain(domain.upper())
@@ -273,10 +255,12 @@ async def get_controls(
     else:
         controls = pack.controls
 
-    return [_control_to_response(c) for c in controls]
+    return ApiResponse.success(
+        data=[_control_to_response(c).model_dump() for c in controls]
+    ).model_dump()
 
 
-@router.get("/{jurisdiction}/controls/{control_id}", response_model=JurisdictionControlResponse, tags=["jurisdiction-packs"])
+@router.get("/{jurisdiction}/controls/{control_id}", tags=["jurisdiction-packs"])
 async def get_control(jurisdiction: str, control_id: str) -> JurisdictionControlResponse:
     """
     Get a single control by jurisdiction and control ID.
@@ -299,4 +283,4 @@ async def get_control(jurisdiction: str, control_id: str) -> JurisdictionControl
     if not control:
         raise HTTPException(status_code=404, detail=f"Control '{control_id}' not found in '{jurisdiction}' pack")
 
-    return _control_to_response(control)
+    return ApiResponse.success(data=_control_to_response(control).model_dump()).model_dump()
