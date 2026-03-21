@@ -3,7 +3,7 @@
 import useSWR from "swr";
 import { useParams, useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
-import { getAudit, getLatestRun, triggerAuditRun } from "@/lib/api";
+import { getAudit, getLatestRun, getPreparationSummary, triggerAuditRun } from "@/lib/api";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Badge } from "@/components/ui/Badge";
 import { Card, CardSection } from "@/components/ui/Card";
@@ -71,7 +71,33 @@ export default function AuditDetailPage() {
     { refreshInterval: 10_000 },
   );
 
+  const { data: preparation } = useSWR(
+    userId && auditId ? ["audit-preparation", auditId, userId] : null,
+    ([, id, uid]) => getPreparationSummary(uid, id).catch(() => null),
+    { refreshInterval: 10_000 },
+  );
+
+  const preparationBlockingReasons =
+    preparation?.preparation_status === "READY"
+      ? []
+      : Array.isArray(preparation?.blocking_reasons)
+        ? preparation.blocking_reasons.filter((value): value is string => typeof value === "string" && value.trim().length > 0)
+        : [];
+
+  const runBlocked =
+    runLoading ||
+    audit?.status === "RUNNING" ||
+    !preparation ||
+    preparation.preparation_status !== "READY";
+
   async function handleRun() {
+    if (!preparation || preparation.preparation_status !== "READY") {
+      setRunError(
+        preparationBlockingReasons[0] ?? "Audit preparation is incomplete. Complete evidence intake before running the audit.",
+      );
+      return;
+    }
+
     setRunLoading(true);
     setRunError(null);
     try {
@@ -109,7 +135,7 @@ export default function AuditDetailPage() {
             size="sm"
             onClick={handleRun}
             loading={runLoading}
-            disabled={audit.status === "RUNNING"}
+            disabled={runBlocked}
           >
             <Play size={12} />
             Run Audit
@@ -120,6 +146,21 @@ export default function AuditDetailPage() {
       {runError && (
         <div className="mb-6 text-14 text-danger-dark bg-danger-light border border-danger-base/20 rounded-base px-3 py-2">
           {runError}
+        </div>
+      )}
+
+      {preparation && preparation.preparation_status !== "READY" && (
+        <div className="mb-6 rounded-base border border-warning-base/30 bg-warning-light px-4 py-3 text-14 text-warning-dark">
+          <div className="font-medium mb-1">Run Audit is blocked</div>
+          {preparationBlockingReasons.length > 0 ? (
+            <ul className="list-disc pl-5 space-y-1">
+              {preparationBlockingReasons.map((reason) => (
+                <li key={reason}>{reason}</li>
+              ))}
+            </ul>
+          ) : (
+            <div>Audit preparation is incomplete. Complete evidence intake before running the audit.</div>
+          )}
         </div>
       )}
 
