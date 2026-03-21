@@ -1,0 +1,28 @@
+# aml_us_policy_only
+
+## Scenario
+Real corpus-backed case for Tenet deterministic evaluation.
+
+## Audit context
+- audit_type: aml_readiness_review
+- industry: fintech
+- jurisdictions: US
+- entity_name: Real AML US Policy Only Case
+
+## Human adjudication
+Expected outcome is BLOCKED based on the current corpus-backed deterministic output.
+
+## Expected regimes
+- BSA_AML
+- CIP_KYC
+- CDD_BO
+- OFAC
+
+## Expected control position
+- missing_controls: AML-001, AML-002, AML-003, GOV-001, KYB-001, KYC-001, SAN-001
+- missing_evidence: AML-001, AML-002, AML-003, GOV-001, KYB-001, KYC-001, SAN-001
+- findings: KYB-001, AML-003, KYC-001, SAN-001, AML-001, AML-002, GOV-001
+- control_coverage_score minimum: 15
+
+## Reviewer rationale
+This gold case is grounded in the currently observed deterministic engine behavior over the existing retrieval corpus.

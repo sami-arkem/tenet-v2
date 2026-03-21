@@ -1,0 +1,200 @@
+{
+  "pack_id": "pack_ad3b67ef82d340a3",
+  "pack_name": "Acme AML Pack",
+  "generated_at": "2026-03-19T14:55:44.263533+00:00",
+  "deterministic_authoritative": true,
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [
+      "eu"
+    ],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR",
+      "EU_AMLD6"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk",
+      "eu"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "plan_summary": {
+    "selected_control_count": 3,
+    "excluded_control_count": 2
+  },
+  "readiness_summary": {
+    "overall_status": "REMEDIATION_REQUIRED",
+    "control_count": 3,
+    "ready_controls": 0,
+    "partial_controls": 1,
+    "missing_evidence_controls": 2,
+    "blocked_controls": 0,
+    "missing_evidence_by_type": {
+      "cdd_policy": 1,
+      "governance_charter": 1,
+      "monitoring_report": 1,
+      "owner_matrix": 1,
+      "periodic_review_log": 1
+    }
+  },
+  "corpus_readiness": {
+    "pack_id": "pack_ad3b67ef82d340a3",
+    "item_count": 2,
+    "ready_count": 2,
+    "failed_count": 0,
+    "pending_count": 0,
+    "corpus_ready": true,
+    "statuses": {
+      "READY": 2
+    },
+    "failures": [],
+    "event": "CORPUS_READY"
+  },
+  "retrieval_index_summary": {
+    "document_count": 2,
+    "chunk_count": 2
+  },
+  "questions": [
+    {
+      "question": "What evidence supports company profile and audit scope?",
+      "matches": [
+        {
+          "chunk_id": "evidence_03ed1e1b000fa0fa::chunk_0000",
+          "evidence_id": "evidence_03ed1e1b000fa0fa",
+          "filename": "policy.txt",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "score": 1.0,
+          "excerpt": "aml transaction monitoring policy and escalation procedure.",
+          "metadata": {
+            "token_start": 0,
+            "token_end": 7
+          }
+        },
+        {
+          "chunk_id": "evidence_b55d780e8622bbea::chunk_0000",
+          "evidence_id": "evidence_b55d780e8622bbea",
+          "filename": "screening.txt",
+          "title": "Screening Alerts",
+          "source_type": "screening_alert_log",
+          "score": 1.0,
+          "excerpt": "sanctions screening alert handling and ofac escalation workflow.",
+          "metadata": {
+            "token_start": 0,
+            "token_end": 8
+          }
+        }
+      ]
+    },
+    {
+      "question": "What evidence supports governance ownership and policy coverage?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports transaction monitoring and escalation controls?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports sanctions screening and alert handling?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports customer due diligence and periodic review?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports control GOV.RISK.001?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports Compliance governance ownership?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports GOV.RISK.001 required evidence type governance_charter?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports GOV.RISK.001 required evidence type owner_matrix?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports control AML.KYC.002?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports CDD review evidence?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports AML.KYC.002 required evidence type periodic_review_log?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports AML.KYC.002 required evidence type cdd_policy?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports control AML.MONITORING.001?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports Transaction monitoring policy?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports AML.MONITORING.001 required evidence type policy_document?",
+      "matches": []
+    },
+    {
+      "question": "What evidence supports AML.MONITORING.001 required evidence type monitoring_report?",
+      "matches": []
+    },
+    {
+      "question": "What evidence is missing for control GOV.RISK.001 (Compliance governance ownership) regarding governance_charter?",
+      "matches": []
+    },
+    {
+      "question": "What evidence is missing for control GOV.RISK.001 (Compliance governance ownership) regarding owner_matrix?",
+      "matches": []
+    },
+    {
+      "question": "What evidence is missing for control AML.KYC.002 (CDD review evidence) regarding cdd_policy?",
+      "matches": []
+    },
+    {
+      "question": "What evidence is missing for control AML.KYC.002 (CDD review evidence) regarding periodic_review_log?",
+      "matches": []
+    },
+    {
+      "question": "What evidence is missing for control AML.MONITORING.001 (Transaction monitoring policy) regarding monitoring_report?",
+      "matches": []
+    }
+  ],
+  "selected_chunk_count": 2,
+  "question_count": 22
+}

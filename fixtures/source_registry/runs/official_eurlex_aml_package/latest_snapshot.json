@@ -1,0 +1,10 @@
+{
+  "source_id": "official_eurlex_aml_package",
+  "snapshot_id": "2026-03-19T192750.365924_0000_09c0c15f6003",
+  "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T192750.365924_0000_09c0c15f6003",
+  "raw_path": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T192750.365924_0000_09c0c15f6003/raw_source.bin",
+  "normalized_text_path": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T192750.365924_0000_09c0c15f6003/normalized_text.txt",
+  "metadata_path": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T192750.365924_0000_09c0c15f6003/fetch_metadata.json",
+  "fetched_at": "2026-03-19T19:27:50.365924+00:00",
+  "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b"
+}

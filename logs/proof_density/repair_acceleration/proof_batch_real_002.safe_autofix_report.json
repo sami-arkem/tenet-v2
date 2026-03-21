@@ -1,0 +1,471 @@
+{
+  "generated_at_epoch": 1773818644,
+  "mode": "write",
+  "entry_count": 11,
+  "changed_count": 11,
+  "blocked_count": 11,
+  "workspace_changed": true,
+  "workspace_backup": "/Users/samisayyed/tenet-v2/logs/proof_density/repair_acceleration/proof_batch_real_002.repair_workspace.before_safe_autofix.json",
+  "items": [
+    {
+      "item_id": "aml_australia_pack_001",
+      "kind": "customer_pack",
+      "source_dir": "intake/proof_batch_real_002/aml_australia_pack_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": null,
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_australia_pack_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "synchronized files_present[audit_context.json]=True"
+      ]
+    },
+    {
+      "item_id": "aml_canada_pack_001",
+      "kind": "customer_pack",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_pack_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": null,
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_canada_pack_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "synchronized files_present[audit_context.json]=True"
+      ]
+    },
+    {
+      "item_id": "aml_eu_pack_001",
+      "kind": "customer_pack",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_pack_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": null,
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_eu_pack_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "synchronized files_present[audit_context.json]=True"
+      ]
+    },
+    {
+      "item_id": "aml_canada_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_canada_case_001_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_canada_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_canada_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_canada_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "aml_eu_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_eu_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_eu_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_eu_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_eu_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "aml_global_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_global_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_global_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_global_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_global_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_global_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "aml_hong_kong_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_hong_kong_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_hong_kong_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_hong_kong_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_hong_kong_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_hong_kong_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "aml_india_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_india_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_india_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_india_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_india_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_india_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "aml_singapore_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/aml_singapore_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/aml_singapore_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/aml_singapore_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_singapore_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/aml_singapore_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "fraud_canada_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/fraud_canada_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/fraud_canada_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/fraud_canada_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/fraud_canada_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/fraud_canada_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    },
+    {
+      "item_id": "fraud_eu_case_001",
+      "kind": "gold_case",
+      "source_dir": "intake/proof_batch_real_002/fraud_eu_case_001",
+      "changed": true,
+      "blocked": true,
+      "backup_dir": "logs/proof_density/repair_acceleration/safe_autofix_backups/fraud_eu_case_001",
+      "mutations": [
+        {
+          "path": "intake/proof_batch_real_002/fraud_eu_case_001/audit_context.json",
+          "changed": false,
+          "reason": "left operator_fill_status.placeholder_free=false because placeholders remain; left operator_fill_status.ready_for_import=false because blockers remain; left operator_fill_status.real_sources_attached=false because real source metadata is incomplete; audit_type still missing after safe autofix; industry still missing after safe autofix; source_families/query_terms still incomplete after safe autofix; left operator_fill_status.ready_for_import=false because semantic blockers remain"
+        },
+        {
+          "path": "intake/proof_batch_real_002/fraud_eu_case_001/expected_assertions.json",
+          "changed": false,
+          "reason": "expected has no meaningful values; left unresolved"
+        },
+        {
+          "path": "intake/proof_batch_real_002/fraud_eu_case_001/case_notes.md",
+          "changed": true,
+          "reason": "trimmed case_notes whitespace"
+        },
+        {
+          "path": "repair_workspace.json::operator_repair",
+          "changed": true,
+          "reason": "synchronized files_present[audit_context.json]=True; synchronized files_present[expected_assertions.json]=True; synchronized files_present[case_notes.md]=True"
+        }
+      ],
+      "reasons": [
+        "placeholders still present: 2",
+        "left operator_fill_status.placeholder_free=false because placeholders remain",
+        "left operator_fill_status.ready_for_import=false because blockers remain",
+        "left operator_fill_status.real_sources_attached=false because real source metadata is incomplete",
+        "audit_type still missing after safe autofix",
+        "industry still missing after safe autofix",
+        "source_families/query_terms still incomplete after safe autofix",
+        "left operator_fill_status.ready_for_import=false because semantic blockers remain",
+        "expected has no meaningful values; left unresolved",
+        "trimmed case_notes whitespace",
+        "synchronized files_present[audit_context.json]=True",
+        "synchronized files_present[expected_assertions.json]=True",
+        "synchronized files_present[case_notes.md]=True"
+      ]
+    }
+  ],
+  "verifier_result": {
+    "passed": true,
+    "returncode": 0,
+    "duration_seconds": 0.09,
+    "stdout_tail": "{\n  \"entry_count\": 11,\n  \"verified_ready_count\": 0,\n  \"verified_blocked_count\": 11,\n  \"error_count\": 107,\n  \"warning_count\": 11,\n  \"verified_manifest\": \"/Users/samisayyed/tenet-v2/config/proof_batch_real_002.verified_ready_only.json\",\n  \"report_json\": \"/Users/samisayyed/tenet-v2/logs/proof_density/repair_acceleration/proof_batch_real_002.repair_verification.json\",\n  \"report_md\": \"/Users/samisayyed/tenet-v2/logs/proof_density/repair_acceleration/proof_batch_real_002.repair_verification.md\"\n}\n",
+    "stderr_tail": ""
+  }
+}

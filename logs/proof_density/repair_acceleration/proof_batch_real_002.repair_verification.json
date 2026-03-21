@@ -1,0 +1,1168 @@
+{
+  "generated_at_epoch": 1773818644,
+  "entry_count": 11,
+  "verified_ready_count": 0,
+  "verified_blocked_count": 11,
+  "error_count": 107,
+  "warning_count": 11,
+  "entries": [
+    {
+      "id": "aml_australia_pack_001",
+      "kind": "customer_pack",
+      "title": "AML Australia pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_australia_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "verified_ready": false,
+      "issue_count": 10,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_australia_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_australia_pack_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_canada_pack_001",
+      "kind": "customer_pack",
+      "title": "AML Canada pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "verified_ready": false,
+      "issue_count": 10,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_canada_pack_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_eu_pack_001",
+      "kind": "customer_pack",
+      "title": "AML EU pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "verified_ready": false,
+      "issue_count": 10,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_pack_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_eu_pack_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_canada_case_001",
+      "kind": "gold_case",
+      "title": "AML Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_canada_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_canada_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_eu_case_001",
+      "kind": "gold_case",
+      "title": "AML EU case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_eu_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_eu_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_global_case_001",
+      "kind": "gold_case",
+      "title": "AML Global case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_global_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "global"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_global_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_global_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_hong_kong_case_001",
+      "kind": "gold_case",
+      "title": "AML Hong Kong case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_hong_kong_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "hong_kong"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_hong_kong_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_india_case_001",
+      "kind": "gold_case",
+      "title": "AML India case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_india_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "india"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_india_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_india_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "aml_singapore_case_001",
+      "kind": "gold_case",
+      "title": "AML Singapore case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_singapore_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "singapore"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "aml_singapore_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "aml_singapore_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "fraud_canada_case_001",
+      "kind": "gold_case",
+      "title": "Fraud Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_canada_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_canada_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "fraud_canada_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    },
+    {
+      "id": "fraud_eu_case_001",
+      "kind": "gold_case",
+      "title": "Fraud EU case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_eu_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "verified_ready": false,
+      "issue_count": 11,
+      "issues": [
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "content.placeholder_present",
+          "message": "README.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "content.placeholder_present",
+          "message": "notes.md::placeholder"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_audit_type"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_industry"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_source_families"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.missing_or_invalid_query_terms"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_real_sources_attached_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_placeholder_free_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "audit_context.invalid",
+          "message": "audit_context.operator_fill_status_ready_for_import_not_true"
+        },
+        {
+          "severity": "error",
+          "item_id": "fraud_eu_case_001",
+          "code": "expected_assertions.invalid",
+          "message": "expected_assertions.no_meaningful_expected_values"
+        },
+        {
+          "severity": "warning",
+          "item_id": "fraud_eu_case_001",
+          "code": "operator_repair.not_completed",
+          "message": "operator_repair.completed is not true"
+        }
+      ],
+      "actual_checks": {
+        "source_dir_exists": true,
+        "required_files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "placeholders": [
+          "README.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "audit_context_issues": [
+          "audit_context.missing_audit_type",
+          "audit_context.missing_industry",
+          "audit_context.missing_or_invalid_source_families",
+          "audit_context.missing_or_invalid_query_terms",
+          "audit_context.operator_fill_status_real_sources_attached_not_true",
+          "audit_context.operator_fill_status_placeholder_free_not_true",
+          "audit_context.operator_fill_status_ready_for_import_not_true"
+        ],
+        "expected_assertions_issues": [
+          "expected_assertions.no_meaningful_expected_values"
+        ],
+        "case_notes_issues": [],
+        "operator_claim_mismatches": []
+      }
+    }
+  ]
+}

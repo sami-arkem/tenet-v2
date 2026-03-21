@@ -1,0 +1,13 @@
+{
+  "gold_case_count": 50,
+  "gold_case_target_band_met": true,
+  "eval_case_count": 50,
+  "eval_pass_count": 50,
+  "eval_fail_count": 0,
+  "eval_min_weighted_score": 1.0,
+  "stable_live_outputs": true,
+  "customer_pack_count": 1,
+  "customer_packs_with_completed_runs": 1,
+  "clear_enterprise_workflow": true,
+  "overall_readiness": true
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "official_eurlex_amld4",
+  "title": "EUR-Lex AMLD4 / Directive (EU) 2015/849",
+  "domain": "aml",
+  "jurisdictions": [
+    "eu"
+  ],
+  "countries": [
+    "EU"
+  ],
+  "source_class": "PUBLIC_OFFICIAL",
+  "acquisition_method": "PUBLIC_DOWNLOAD",
+  "license_status": "PUBLIC",
+  "owner": "tenet-platform",
+  "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng",
+  "approved": true,
+  "retrieval_allowed": true,
+  "metadata": {
+    "seeded_by": "official_corpus_bootstrap",
+    "priority": "high",
+    "dataset_goal": "eu_amld4"
+  }
+}

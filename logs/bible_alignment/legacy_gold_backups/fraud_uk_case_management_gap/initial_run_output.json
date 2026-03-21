@@ -1,0 +1,405 @@
+{
+  "audit_meta": {
+    "audit_id": "fraud-uk-case-management-gap-001",
+    "audit_version": "v1",
+    "timestamp_utc": "2026-03-17T15:09:11.422542+00:00",
+    "platform_version": "tenet-mvp",
+    "model_version": "deterministic-reasoner-v1",
+    "report_status": "draft",
+    "reasoning_mode": "deterministic"
+  },
+  "entity_profile": {
+    "legal_name": "Real Fraud UK Case Management Gap",
+    "trade_name": "",
+    "industry": "payments",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [
+      "api"
+    ],
+    "jurisdictions_of_operation": [
+      "UK"
+    ],
+    "customer_geographies": [],
+    "customer_types": [
+      "enterprise"
+    ],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "fraud_readiness_review",
+    "scope_statement": "fraud_readiness_review for payments across UK",
+    "included_domains": [
+      "aml_governance",
+      "governance",
+      "monitoring",
+      "fraud"
+    ],
+    "excluded_domains": [],
+    "documents_reviewed": [
+      "FINRA AML",
+      "ICO Accountability Governance",
+      "OFSI General Guidance"
+    ],
+    "evidence_received": [
+      "FINRA AML",
+      "ICO Accountability Governance",
+      "OFSI General Guidance"
+    ],
+    "evidence_missing_at_start": [
+      "Customer Risk Rating",
+      "Transaction Monitoring",
+      "Governance Roles and Escalation"
+    ]
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      "UK_MLR",
+      "GOVERNANCE_BASELINE"
+    ],
+    "secondary_regimes": [],
+    "frameworks": [
+      "UK_MLR",
+      "GOVERNANCE_BASELINE"
+    ],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [
+      "aml_governance",
+      "governance",
+      "monitoring"
+    ],
+    "regulatory_classification": {
+      "entity_type": "payments_platform",
+      "risk_tier": "HIGH",
+      "obligation_intensity": "HIGH",
+      "cross_border_complexity": "MODERATE"
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "Real Fraud UK Case Management Gap",
+    "overall_readiness": "BLOCKED",
+    "top_issues": [
+      "Transaction Monitoring",
+      "Customer Risk Rating",
+      "Governance Roles and Escalation"
+    ],
+    "decision_summary": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "board_message": "Tenet evaluated 3 required controls across 2 primary regimes. Current decision: BLOCKED."
+  },
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Transaction Monitoring"
+    ],
+    "conditions_precedent": [
+      "Customer Risk Rating",
+      "Transaction Monitoring",
+      "Governance Roles and Escalation"
+    ],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "HIGH",
+    "exposure_band": "HIGH",
+    "drivers": [
+      "aml_governance",
+      "governance",
+      "monitoring"
+    ],
+    "assumptions": [
+      "Exposure band is inferred from control severity, status, and evidence sufficiency",
+      "Human review is required before external reliance"
+    ],
+    "confidence_note": "Derived from average control confidence score of 0.267"
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "severity_if_missing": "critical",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "severity_if_missing": "high",
+        "status": "unknown",
+        "evidence_status": "partial",
+        "confidence": 0.4,
+        "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+        "matched_chunk_ids": [
+          1
+        ],
+        "citations": [
+          {
+            "chunk_id": 1,
+            "document_name": "ICO Accountability Governance",
+            "source_name": "ICO",
+            "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/"
+          }
+        ]
+      }
+    ],
+    "control_coverage_score": 12,
+    "evidence_coverage_score": 17
+  },
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "title": "Transaction Monitoring",
+      "domain": "monitoring",
+      "severity": "CRITICAL",
+      "status": "MISSING",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-003"
+    },
+    {
+      "finding_id": "F-002",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-002"
+    },
+    {
+      "finding_id": "F-003",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "HIGH",
+      "status": "UNKNOWN",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+      "citations": [
+        {
+          "chunk_id": 1,
+          "document_name": "ICO Accountability Governance",
+          "source_name": "ICO",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/"
+        }
+      ],
+      "control_id": "GOV-001"
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "R-001",
+      "risk_title": "Customer Risk Rating",
+      "category": "aml_governance",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-002",
+      "risk_title": "Transaction Monitoring",
+      "category": "monitoring",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-003",
+      "risk_title": "Governance Roles and Escalation",
+      "category": "governance",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "high",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction Monitoring",
+      "domain": "monitoring",
+      "severity": "critical",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "high",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1."
+    }
+  ],
+  "missing_evidence": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction Monitoring",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "needed_evidence_status": "partial",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=1."
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "Tenet evaluated 3 required controls across 2 primary regimes. Current decision: BLOCKED.",
+    "regulator_ready_summary": "Applicable regimes: UK_MLR, GOVERNANCE_BASELINE. Decision: BLOCKED. Missing controls: 3. Missing evidence items: 3.",
+    "client_facing_summary": "The current review outcome is BLOCKED. 3 findings were identified and require human-reviewed remediation tracking."
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 30,
+    "confidence_level": "LOW",
+    "confidence_drivers": [
+      "3 required controls evaluated",
+      "5 relevant chunks retrieved"
+    ],
+    "limiting_factors": [
+      "Human review remains mandatory for client-facing output",
+      "Evidence sufficiency remains incomplete for one or more controls",
+      "One or more required controls are not yet fully demonstrated"
+    ],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "chunk_id": 9,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 65,
+      "quality_status": "ok",
+      "excerpt": "from FINRA\u2019s ongoing regulatory operations, including (1) regulatory obligations, (2) findings and effective practices, and (3) additional resources. January 28, 2025 Podcast Special Investigations Unit: Combating Money Laundering and Fraud in the Securities Industry In the securities world today, there is little daylight between money laundering and fraud. On this episode, we learn how FINRA\u2019s Special Investigations Unit works to detect and investigate cases of illicit finance and market abuse,"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "OFSI General Guidance",
+      "source_name": "UK_OFSI",
+      "source_family": "enforcement",
+      "jurisdiction": "uk",
+      "industry": "cross_industry",
+      "audit_domain": "enforcement",
+      "url": "https://www.gov.uk/government/publications/financial-sanctions-general-guidance",
+      "score": 61,
+      "quality_status": "ok",
+      "excerpt": "Financial sanctions general guidance - GOV.UK Cookies on GOV.UK We use some essential cookies to make this website work. We\u2019d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services. We also use cookies set by other sites to help us deliver content from their services. You have accepted additional cookies. You can change your cookie settings at any time. You have rejected additional cookies. You can change your cookie settings at an"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "ICO Accountability Governance",
+      "source_name": "ICO",
+      "source_family": "frameworks",
+      "jurisdiction": "uk",
+      "industry": "cross_industry",
+      "audit_domain": "frameworks",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/",
+      "score": 57,
+      "quality_status": "ok",
+      "excerpt": "Guide to accountability and governance | ICO Skip to main content Home The ICO exists to empower you through information. Search Search Search Menu Home For the public For organisations Make a complaint Action we've taken About the ICO For organisations UK GDPR guidance and resources Accountability and governance Guide to accountability and governance Guide to accountability and governance Download options (Opens download panel) Pages All pages Format PDF Download Due to the Data (Use and Access"
+    },
+    {
+      "chunk_id": 3,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 54,
+      "quality_status": "ok",
+      "excerpt": "of data, specifically the ability to save data views and create and manage a Bond Watchlist. Login For Industry Professionals FINPRO GATEWAY Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks. Login For Member Firms FINRA GATEWAY Firm compliance professionals can access filings and requests, run reports and submit support tickets. Login For Case Participants DR PORTAL Arbitration and mediation case participa"
+    },
+    {
+      "chunk_id": 7,
+      "document_name": "FINRA AML",
+      "source_name": "FINRA",
+      "source_family": "industry_crypto",
+      "jurisdiction": "unknown",
+      "industry": "crypto",
+      "audit_domain": "industry_crypto",
+      "url": "https://www.finra.org/rules-guidance/key-topics/aml",
+      "score": 52,
+      "quality_status": "ok",
+      "excerpt": "rs 06-07 SEC Approves Amendments to Anti-Money Laundering Compliance Program Rule and Adoption of Interpretive Material 02/10/2006 Notice to Members 03-34 Treasury and SEC Issue Final Rule Regarding Customer Identification Programs for Broker/Dealers 06/20/2003 Notice to Members 02-80 Development Regarding Treasury Information Requests Under Section 314 of the PATRIOT Act 12/02/2002 Notice to Members 02-78 NASD Adopts Amendments to Rule 3011 to Require Members to Provide to NASD Contact Informat"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "entries": [
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T14:44:11.574247+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T144411.574247_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T144411.574247_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T14:44:18.051789+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T144418.051789_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T144418.051789_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:07:35.458740+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T170735.458740_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T170735.458740_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:08:30.349725+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T170830.349725_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T170830.349725_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:08:36.065221+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T170836.065221_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T170836.065221_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:14:36.954550+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T171436.954550_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T171436.954550_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:49:20.881677+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T174920.881677_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T174920.881677_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:49:37.033636+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T174937.033636_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T174937.033636_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:49:48.587504+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T174948.587504_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T174948.587504_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:50:01.191051+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T175001.191051_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T175001.191051_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T17:50:08.450751+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T175008.450751_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T175008.450751_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T18:35:07.021506+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T183507.021506_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T183507.021506_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T19:37:08.403659+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T193708.403659_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T193708.403659_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T20:13:57.971491+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T201357.971491_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T201357.971491_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T20:33:06.259242+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T203306.259242_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T203306.259242_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T21:10:48.257267+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T211048.257267_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T211048.257267_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T21:48:13.216130+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T214813.216130_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T214813.216130_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T22:04:33.736659+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T220433.736659_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T220433.736659_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T22:49:02.965739+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T224902.965739_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T224902.965739_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T22:55:00.077802+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T225500.077802_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T225500.077802_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-18T23:05:30.408797+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-18T230530.408797_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-18T230530.408797_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:06:23.757782+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T080623.757782_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T080623.757782_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:10:27.056034+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T081027.056034_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T081027.056034_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:19:31.946347+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T081931.946347_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T081931.946347_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:36:50.226468+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T083650.226468_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T083650.226468_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:39:40.795230+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T083940.795230_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T083940.795230_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T08:49:14.001560+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T084914.001560_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T084914.001560_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:12:47.734292+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T091247.734292_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T091247.734292_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:15:49.213132+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T091549.213132_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T091549.213132_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:25:43.498011+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T092543.498011_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T092543.498011_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:36:03.284771+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T093603.284771_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T093603.284771_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:44:50.562830+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T094450.562830_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T094450.562830_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:46:21.012609+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T094621.012609_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T094621.012609_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T09:56:57.397692+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T095657.397692_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T095657.397692_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T10:08:38.690376+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T100838.690376_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T100838.690376_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T10:18:12.645497+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T101812.645497_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T101812.645497_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T10:38:23.271519+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T103823.271519_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T103823.271519_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T10:53:37.642957+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T105337.642957_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T105337.642957_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T11:11:02.668260+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T111102.668260_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T111102.668260_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T11:32:09.247703+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T113209.247703_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T113209.247703_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T11:47:30.495870+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T114730.495870_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T114730.495870_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T12:05:42.857776+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T120542.857776_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T120542.857776_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T12:32:33.444838+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T123233.444838_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T123233.444838_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T12:58:52.703521+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T125852.703521_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T125852.703521_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T14:13:04.787054+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T141304.787054_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T141304.787054_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T14:55:46.448765+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T145546.448765_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T145546.448765_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T15:03:00.623724+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T150300.623724_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T150300.623724_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T15:04:34.420386+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T150434.420386_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T150434.420386_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T15:06:06.768397+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T150606.768397_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T150606.768397_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T15:06:42.883661+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T150642.883661_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T150642.883661_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T17:59:46.105362+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T175946.105362_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T175946.105362_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T19:10:10.516795+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T191010.516795_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T191010.516795_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T19:10:59.181536+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T191059.181536_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T191059.181536_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T19:14:16.741274+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T191416.741274_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T191416.741274_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    },
+    {
+      "source_id": "official_eurlex_amld4",
+      "dataset_id": "dataset_official_eurlex_amld4",
+      "fetched_at": "2026-03-19T19:27:50.424357+00:00",
+      "raw_sha256": "626b6e32b8767b3d0ccc4f4845dbc70b30fb1951ee2684a1b902ccd2f625e257",
+      "raw_size_bytes": 76,
+      "snapshot_id": "2026-03-19T192750.424357_0000_626b6e32b876",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_amld4/snapshots/2026-03-19T192750.424357_0000_626b6e32b876",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng"
+    }
+  ],
+  "entry_count": 55,
+  "latest_fetched_at": "2026-03-19T19:27:50.424357+00:00"
+}

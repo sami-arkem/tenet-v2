@@ -1,0 +1,19 @@
+{
+  "kind": "customer_pack",
+  "id": "aml_us_pack_006",
+  "source_dir": "/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_pack_006",
+  "target_dir": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/aml_us_pack_006",
+  "dry_run": false,
+  "validation": {
+    "domains": [
+      "aml",
+      "governance"
+    ],
+    "jurisdictions": [
+      "us"
+    ],
+    "title": "AML US Customer Pack 006"
+  },
+  "skip_gates": true,
+  "committed": true
+}

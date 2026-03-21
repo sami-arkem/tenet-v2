@@ -1,0 +1,23 @@
+{
+  "pack_id": "pack_123260b9a5e849f5",
+  "created_at": "2026-03-18T13:44:11.436726+00:00",
+  "updated_at": "2026-03-18T13:44:11.437001+00:00",
+  "items": [
+    {
+      "evidence_id": "evidence_630cb9a8a7fc6e1f",
+      "filename": "monitoring_policy.txt",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "detected_mime": "text/plain",
+      "size_bytes": 17,
+      "sha256": "630cb9a8a7fc6e1f3af2537bab38eec90351ce4fd347aca91f852460e3dfcd13",
+      "storage_path": "artifacts/evidence_blobs/pack_123260b9a5e849f5/630cb9a8a7fc6e1f3af2537bab38eec90351ce4fd347aca91f852460e3dfcd13.txt",
+      "citation": "monitoring_policy.txt#L1-L1",
+      "processing_status": "UPLOADED",
+      "malware_scan_status": "NOT_RUN",
+      "ocr_status": "NOT_REQUIRED",
+      "created_at": "2026-03-18T13:44:11.436701+00:00",
+      "updated_at": "2026-03-18T13:44:11.436705+00:00"
+    }
+  ]
+}

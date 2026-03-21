@@ -1,0 +1,28 @@
+{
+  "case_id": "australia_regulatory_licensing_vendor_governance_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "AU_GOVERNANCE_BASELINE"
+      ],
+      "missing_controls.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "missing_evidence.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "findings.control_id": [
+        "VEN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 18
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_id": "dataset_customer_uploaded_authorized",
+  "title": "Customer Provided Authorized Corpus",
+  "domain": "vendor_risk",
+  "jurisdictions": [
+    "global"
+  ],
+  "countries": [
+    "GLOBAL"
+  ],
+  "framework_ids": [
+    "TPRM"
+  ],
+  "dataset_type": "kyc_requirement",
+  "license_type": "INTERNAL_USE_ONLY",
+  "status": "ACTIVE",
+  "update_cadence": "AD_HOC",
+  "loader": {
+    "kind": "file_manifest",
+    "content_path": "customer_uploaded_authorized.md"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "freshness_check": "static",
+    "last_check": "2026-03-19T19:27:51.375828Z",
+    "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/compliance_docs/customer_uploaded_authorized.json",
+    "promoted_from_source_id": "customer_uploaded_authorized",
+    "promotion_acquisition_method": "CUSTOMER_UPLOAD",
+    "promotion_owner": "customer"
+  }
+}

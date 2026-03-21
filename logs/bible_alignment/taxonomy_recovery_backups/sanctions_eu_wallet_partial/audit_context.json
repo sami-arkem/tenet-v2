@@ -1,0 +1,33 @@
+{
+  "audit_id": "sanctions-eu-wallet-partial-001",
+  "entity_name": "Real EU Wallet Sanctions Partial Case",
+  "audit_type": "sanctions_readiness_review",
+  "industry": "crypto",
+  "jurisdictions": [
+    "EU"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet",
+    "blockchain_screening"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "enforcement",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "eu sanctions policy",
+    "screening procedure",
+    "wallet screening",
+    "alert escalation workflow",
+    "sanctions governance"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

@@ -1,0 +1,33 @@
+{
+  "audit_id": "remediation-uae-closure-evidence-gap-001",
+  "entity_name": "Real UAE Remediation Closure Evidence Gap",
+  "audit_type": "remediation_tracking_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "UAE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "domains": [
+    "remediation_tracking",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "closure evidence",
+    "issue register",
+    "action tracker",
+    "owner assignment",
+    "remediation governance"
+  ],
+  "top_k": 5
+}

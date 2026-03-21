@@ -1,0 +1,20 @@
+{
+  "run_id": "run_composed_api_001",
+  "non_authoritative": true,
+  "executive_narrative": {
+    "narrative": "The audit indicates a deterministically derived compliance posture that requires operator review and remediation tracking.",
+    "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+  },
+  "gap_narratives": [
+    {
+      "finding_id": "AML.MONITORING.001::finding",
+      "control_id": "AML.MONITORING.001",
+      "regime_id": "UK_MLR.001",
+      "non_authoritative": true,
+      "explanation": {
+        "narrative": "A compliance gap exists because required controls or evidence do not fully satisfy the mapped requirement.",
+        "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+      }
+    }
+  ]
+}

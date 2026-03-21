@@ -1,0 +1,11 @@
+URL SOURCE MANIFEST
+dataset_id: dataset_official_eurlex_aml_package
+title: EUR-Lex EU AML Package and AMLA Texts
+domain: aml
+dataset_type: law_text
+framework_ids: EU_AMLA, EU_AMLR, EU_AMLD6
+jurisdictions: eu
+countries: EU
+source_url: https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html
+ingested_at: 2026-03-19T19:27:49.698168+00:00
+fetch_mode: metadata_only

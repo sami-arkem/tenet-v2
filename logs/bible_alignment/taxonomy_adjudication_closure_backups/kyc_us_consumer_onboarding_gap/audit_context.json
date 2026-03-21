@@ -1,0 +1,32 @@
+{
+  "audit_id": "kyc-us-consumer-onboarding-gap-001",
+  "entity_name": "Real KYC US Consumer Gap Case",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "wallet_provider",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "kyc",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "cip policy",
+    "identity verification workflow",
+    "consumer onboarding",
+    "customer risk scoring",
+    "onboarding procedure"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

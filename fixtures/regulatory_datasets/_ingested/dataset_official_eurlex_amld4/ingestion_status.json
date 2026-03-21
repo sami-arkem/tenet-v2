@@ -1,0 +1,24 @@
+{
+  "dataset_id": "dataset_official_eurlex_amld4",
+  "title": "EUR-Lex AMLD4 / Directive (EU) 2015/849",
+  "domain": "aml",
+  "jurisdictions": [
+    "eu"
+  ],
+  "countries": [
+    "EU"
+  ],
+  "framework_ids": [
+    "EU_AMLD4"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "loader_kind": "url_manifest",
+  "retrieval_ready": true,
+  "normalized_text_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_amld4/normalized_text.txt",
+  "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_amld4/chunks.json",
+  "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_eurlex_amld4/retrieval_index.json",
+  "chunk_count": 1,
+  "ingested_at": "2026-03-19T19:27:49.711051+00:00"
+}

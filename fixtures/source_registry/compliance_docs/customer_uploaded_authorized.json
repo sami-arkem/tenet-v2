@@ -1,0 +1,22 @@
+{
+  "source_id": "customer_uploaded_authorized",
+  "title": "Customer Provided Authorized Corpus",
+  "domain": "vendor_risk",
+  "jurisdictions": [
+    "global"
+  ],
+  "countries": [
+    "GLOBAL"
+  ],
+  "source_class": "CUSTOMER_PROVIDED",
+  "acquisition_method": "CUSTOMER_UPLOAD",
+  "license_status": "CUSTOMER_AUTHORIZED",
+  "owner": "customer",
+  "source_url": null,
+  "approved": true,
+  "retrieval_allowed": true,
+  "metadata": {
+    "freshness_check": "static",
+    "last_check": "2026-03-19T19:27:51.375828Z"
+  }
+}

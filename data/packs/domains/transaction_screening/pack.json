@@ -1,0 +1,29 @@
+{
+  "pack_id": "domain_transaction_screening_v1",
+  "domain": "transaction_screening",
+  "label": "Transaction Screening",
+  "supported_audit_types": [
+    "sanctions_readiness_review",
+    "transaction_screening_review",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "SAN-001",
+    "AML-003",
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "screening_configuration",
+    "screening_alert_workflow",
+    "screening_thresholds",
+    "screening_governance",
+    "screening_quality_checks"
+  ],
+  "query_seeds": [
+    "transaction screening",
+    "screening alert workflow",
+    "screening thresholds",
+    "screening governance",
+    "screening quality checks"
+  ]
+}

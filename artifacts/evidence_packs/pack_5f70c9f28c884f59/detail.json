@@ -1,0 +1,19 @@
+{
+  "pack_id": "pack_5f70c9f28c884f59",
+  "name": "Acme AML Pack",
+  "created_by": "sami",
+  "created_at": "2026-03-18T13:43:23.363410+00:00",
+  "updated_at": "2026-03-18T13:43:23.369755+00:00",
+  "status": "READY",
+  "manifest_summary": {
+    "company_name": "Acme Fintech",
+    "audit_type": "aml_readiness_review",
+    "domain": "aml",
+    "jurisdictions": [
+      "uk"
+    ],
+    "control_count": 0,
+    "evidence_count": 2
+  },
+  "latest_execution": null
+}

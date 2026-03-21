@@ -1,0 +1,22 @@
+{
+  "source_id": "blocked_scraped_prohibited",
+  "title": "Blocked Scraped Prohibited Source",
+  "domain": "aml",
+  "jurisdictions": [
+    "us"
+  ],
+  "countries": [
+    "US"
+  ],
+  "source_class": "SCRAPED_PROHIBITED",
+  "acquisition_method": "SCRAPED_UNAUTHORIZED",
+  "license_status": "PROHIBITED",
+  "owner": "unknown",
+  "source_url": "https://blocked.example.com/data",
+  "approved": false,
+  "retrieval_allowed": false,
+  "metadata": {
+    "freshness_check": "daily",
+    "last_check": "2026-03-19T19:27:51.375828Z"
+  }
+}

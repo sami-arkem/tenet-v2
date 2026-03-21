@@ -1,0 +1,12 @@
+{
+  "dataset_id": "dataset_official_fatf_recommendations",
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 28,
+      "token_count": 28,
+      "text": "url source manifest dataset_id: dataset_official_fatf_recommendations title: fatf recommendations and standards updates domain: aml dataset_type: law_text framework_ids: fatf jurisdictions: global countries: global source_url: https://www.fatf-gafi.org/en/publications/fatfrecommendations.html ingested_at: 2026-03-19t19:27:49.721388 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

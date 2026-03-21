@@ -1,0 +1,34 @@
+{
+  "audit_id": "vendor-hong-kong-outsourcing-monitoring-gap-001",
+  "entity_name": "Real Hong Kong Vendor Outsourcing Monitoring Gap",
+  "audit_type": "vendor_internal_compliance_readiness_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "HONG_KONG"
+  ],
+  "entity_type": "vendor",
+  "products": [
+    "api"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "vendor_risk",
+    "governance",
+    "regulatory_licensing"
+  ],
+  "source_families": [
+    "vendor_risk",
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "vendor due diligence procedure",
+    "outsourcing governance",
+    "vendor monitoring cadence",
+    "third party risk assessment",
+    "licensing governance"
+  ],
+  "top_k": 5
+}

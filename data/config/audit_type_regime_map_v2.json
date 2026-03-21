@@ -1,0 +1,203 @@
+{
+  "aml_readiness_review": {
+    "US": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "UK": [
+      "UK_MLR"
+    ],
+    "EU": [
+      "EU_SANCTIONS"
+    ]
+  },
+  "kyc_kyb_policy_and_control_review": {
+    "US": [
+      "CIP_KYC",
+      "CDD_BO"
+    ],
+    "UK": [
+      "UK_MLR"
+    ],
+    "EU": []
+  },
+  "sanctions_readiness_review": {
+    "US": [
+      "OFAC"
+    ],
+    "UK": [
+      "UK_MLR"
+    ],
+    "EU": [
+      "EU_SANCTIONS"
+    ]
+  },
+  "policy_governance_gap_analysis": {
+    "US": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UK": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "EU": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ]
+  },
+  "vendor_internal_compliance_readiness_review": {
+    "US": [
+      "THIRD_PARTY_RISK",
+      "GOVERNANCE_BASELINE"
+    ],
+    "UK": [
+      "THIRD_PARTY_RISK",
+      "GOVERNANCE_BASELINE"
+    ],
+    "EU": [
+      "THIRD_PARTY_RISK",
+      "GOVERNANCE_BASELINE"
+    ]
+  },
+  "audit_report_generation_from_uploaded_evidence": {
+    "US": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC",
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UK": [
+      "UK_MLR",
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "EU": [
+      "EU_SANCTIONS",
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ]
+  },
+  "fraud_readiness_review": {
+    "US": [
+      "BSA_AML",
+      "GOVERNANCE_BASELINE"
+    ],
+    "UK": [
+      "UK_MLR",
+      "GOVERNANCE_BASELINE"
+    ],
+    "EU": [
+      "GOVERNANCE_BASELINE"
+    ],
+    "UAE": [
+      "UAE_AML_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "SINGAPORE": [
+      "SG_AML_BASELINE",
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "HONG_KONG": [
+      "HK_AML_BASELINE",
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "CANADA": [
+      "CA_AML_BASELINE",
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "AUSTRALIA": [
+      "AU_AML_BASELINE",
+      "AU_GOVERNANCE_BASELINE"
+    ]
+  },
+  "transaction_screening_review": {
+    "US": [
+      "OFAC",
+      "BSA_AML"
+    ],
+    "UK": [
+      "UK_MLR"
+    ],
+    "EU": [
+      "EU_SANCTIONS"
+    ],
+    "UAE": [
+      "UAE_SANCTIONS_BASELINE"
+    ],
+    "SINGAPORE": [
+      "SG_SANCTIONS_BASELINE"
+    ],
+    "HONG_KONG": [
+      "HK_SANCTIONS_BASELINE"
+    ],
+    "CANADA": [
+      "CA_SANCTIONS_BASELINE"
+    ],
+    "AUSTRALIA": [
+      "AU_SANCTIONS_BASELINE"
+    ]
+  },
+  "regulatory_licensing_readiness_review": {
+    "US": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UK": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "EU": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UAE": [
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "SINGAPORE": [
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "HONG_KONG": [
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "CANADA": [
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "AUSTRALIA": [
+      "AU_GOVERNANCE_BASELINE"
+    ]
+  },
+  "remediation_tracking_review": {
+    "US": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UK": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "EU": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "UAE": [
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "SINGAPORE": [
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "HONG_KONG": [
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "CANADA": [
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "AUSTRALIA": [
+      "AU_GOVERNANCE_BASELINE"
+    ]
+  }
+}

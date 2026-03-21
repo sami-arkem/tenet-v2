@@ -1,0 +1,25 @@
+{
+  "run_id": "run_release_gate_001",
+  "readiness_label": "READY",
+  "summary": {
+    "overall_posture": "GREEN",
+    "deployment_decision": "APPROVED",
+    "control_count": 1,
+    "passed_controls": 1,
+    "partial_controls": 0,
+    "failed_controls": 0,
+    "missing_evidence_controls": 0,
+    "critical_findings": 0,
+    "high_findings": 0,
+    "medium_findings": 0,
+    "low_findings": 0,
+    "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0."
+  },
+  "finding_counts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "remediation_items": []
+}

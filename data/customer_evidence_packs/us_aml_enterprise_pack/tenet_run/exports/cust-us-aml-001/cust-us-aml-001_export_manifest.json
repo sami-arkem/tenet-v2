@@ -1,0 +1,36 @@
+{
+  "audit_id": "cust-us-aml-001",
+  "exported_at_utc": "2026-03-18T07:33:41.506723+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_board_memo.docx",
+      "sha256": "b81541ecd4adda3f459d05e8b41c7fcaffe6a6c612aacfd0d6eb1fd88ff377b6",
+      "size_bytes": 2422
+    },
+    "board_pdf": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_board_memo.pdf",
+      "sha256": "e39dbf8641a9bc9f97d7bc96d232f90ff871af67308fb28f8eba774fa6cebe84",
+      "size_bytes": 1887
+    },
+    "client_docx": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_client_report.docx",
+      "sha256": "5867898eca44d51ea9f45c194d6d53cc03a3400e68b66d14ec878a35880d4d0d",
+      "size_bytes": 2576
+    },
+    "client_pdf": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_client_report.pdf",
+      "sha256": "dabe89bfae3c608a29f6f89a0285be8869d7cd3d8b7b006f50b42fd80b1e9133",
+      "size_bytes": 3194
+    },
+    "regulator_docx": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_regulator_memo.docx",
+      "sha256": "55ea199a896b954f7e5eda9c68bed8b3f879b95ee59a148a32668c7ab66eecab",
+      "size_bytes": 2411
+    },
+    "regulator_pdf": {
+      "path": "data/customer_evidence_packs/us_aml_enterprise_pack/tenet_run/exports/cust-us-aml-001/cust-us-aml-001_regulator_memo.pdf",
+      "sha256": "cff379063e7242ac291962d670f5a889a1e1a37b0222dd77f6894827690f7627",
+      "size_bytes": 1871
+    }
+  }
+}

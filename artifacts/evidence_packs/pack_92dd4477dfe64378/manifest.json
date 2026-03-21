@@ -1,0 +1,49 @@
+{
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [
+      "eu"
+    ],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "controls": [],
+  "evidence_catalog": [
+    {
+      "evidence_id": "evidence_00f5ab4ed51a58b5",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "file_path": "artifacts/evidence_blobs/pack_92dd4477dfe64378/00f5ab4ed51a58b5dac207765979da6b89e8a535bfc67980280627a5bf98c61a.txt",
+      "citation": "policy.txt#L1-L1"
+    }
+  ]
+}

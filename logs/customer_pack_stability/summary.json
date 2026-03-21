@@ -1,0 +1,12 @@
+{
+  "pack_count": 4,
+  "successful_workflow_runs": 4,
+  "failed_workflow_runs": 0,
+  "successful_packs": [
+    "us_aml_enterprise_pack",
+    "eu_sanctions_wallet_pack",
+    "uae_licensing_vendor_pack",
+    "canada_remediation_pack"
+  ],
+  "failed_packs": []
+}

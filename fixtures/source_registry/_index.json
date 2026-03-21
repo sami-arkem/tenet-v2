@@ -1,0 +1,227 @@
+{
+  "sources": {
+    "blocked_scraped_prohibited": {
+      "source_id": "blocked_scraped_prohibited",
+      "title": "Blocked Scraped Prohibited Source",
+      "domain": "aml",
+      "jurisdictions": [
+        "us"
+      ],
+      "countries": [
+        "US"
+      ],
+      "source_class": "SCRAPED_PROHIBITED",
+      "acquisition_method": "SCRAPED_UNAUTHORIZED",
+      "license_status": "PROHIBITED",
+      "owner": "unknown",
+      "source_url": "https://blocked.example.com/data",
+      "approved": false,
+      "retrieval_allowed": false,
+      "metadata": {
+        "freshness_check": "daily",
+        "last_check": "2026-03-19T19:27:51.375828Z",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/blocked/blocked_scraped_prohibited.json"
+      },
+      "_checksum": "ef524fa72bf1f9c25322b97bb37399c8e321582cb58f5c0134f007a056d4e30c"
+    },
+    "customer_uploaded_authorized": {
+      "source_id": "customer_uploaded_authorized",
+      "title": "Customer Provided Authorized Corpus",
+      "domain": "vendor_risk",
+      "jurisdictions": [
+        "global"
+      ],
+      "countries": [
+        "GLOBAL"
+      ],
+      "source_class": "CUSTOMER_PROVIDED",
+      "acquisition_method": "CUSTOMER_UPLOAD",
+      "license_status": "CUSTOMER_AUTHORIZED",
+      "owner": "customer",
+      "source_url": null,
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "freshness_check": "static",
+        "last_check": "2026-03-19T19:27:51.375828Z",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/compliance_docs/customer_uploaded_authorized.json"
+      },
+      "_checksum": "f9e940be07bdca882ab14b5822b57b766f2eaa72d79a6bb87bc6edf96975c430"
+    },
+    "licensed_vendor_feed": {
+      "source_id": "licensed_vendor_feed",
+      "title": "Licensed Vendor Feed",
+      "domain": "sanctions",
+      "jurisdictions": [
+        "us"
+      ],
+      "countries": [
+        "US"
+      ],
+      "source_class": "LICENSED",
+      "acquisition_method": "LICENSED_FEED",
+      "license_status": "LICENSED",
+      "owner": "tenet",
+      "source_url": "https://licensed.example.com/feed",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "freshness_check": "weekly",
+        "last_check": "2026-03-19T19:27:51.375828Z",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/licensed_vendor_feed.json"
+      },
+      "_checksum": "e025503878575248fd2017d231c0276e503035b43d0cec291f47234458135a79"
+    },
+    "official_eurlex_aml_package": {
+      "source_id": "official_eurlex_aml_package",
+      "title": "EUR-Lex EU AML Package and AMLA Texts",
+      "domain": "aml",
+      "jurisdictions": [
+        "eu"
+      ],
+      "countries": [
+        "EU"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet-platform",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "seeded_by": "official_corpus_bootstrap",
+        "priority": "critical",
+        "dataset_goal": "eu_aml_package",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/eurlex_aml_package.json"
+      },
+      "_checksum": "17222913e143addbfa744dbf0bca9ae262197779c6240143092d02259fdc80a1"
+    },
+    "official_eurlex_amld4": {
+      "source_id": "official_eurlex_amld4",
+      "title": "EUR-Lex AMLD4 / Directive (EU) 2015/849",
+      "domain": "aml",
+      "jurisdictions": [
+        "eu"
+      ],
+      "countries": [
+        "EU"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet-platform",
+      "source_url": "https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "seeded_by": "official_corpus_bootstrap",
+        "priority": "high",
+        "dataset_goal": "eu_amld4",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/eurlex_amld4.json"
+      },
+      "_checksum": "2741c73cb98302c24f31d9f1b210d267a650910b869b180ceaa3a0f2854a9a1e"
+    },
+    "official_fatf_recommendations": {
+      "source_id": "official_fatf_recommendations",
+      "title": "FATF Recommendations and Standards Updates",
+      "domain": "aml",
+      "jurisdictions": [
+        "global"
+      ],
+      "countries": [
+        "GLOBAL"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet-platform",
+      "source_url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations.html",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "seeded_by": "official_corpus_bootstrap",
+        "priority": "critical",
+        "dataset_goal": "global_aml_baseline",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/fatf_recommendations.json"
+      },
+      "_checksum": "1851c8b9929b4dd02cad6bad8f6256bc2ce897544896ea4f23d401aac9638653"
+    },
+    "official_fca_handbook": {
+      "source_id": "official_fca_handbook",
+      "title": "FCA Handbook of Rules and Guidance",
+      "domain": "governance",
+      "jurisdictions": [
+        "uk"
+      ],
+      "countries": [
+        "GB"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet-platform",
+      "source_url": "https://www.fca.org.uk/about/how-we-regulate/handbook",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "seeded_by": "official_corpus_bootstrap",
+        "priority": "high",
+        "dataset_goal": "uk_regulatory_rules",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/fca_handbook.json"
+      },
+      "_checksum": "3051bc32d2ff73bb97cad08d97dd976a988b8d1cd9f7e828ab73c213f2866611"
+    },
+    "official_ofac_sanctions_list_service": {
+      "source_id": "official_ofac_sanctions_list_service",
+      "title": "OFAC Sanctions List Service",
+      "domain": "sanctions",
+      "jurisdictions": [
+        "us"
+      ],
+      "countries": [
+        "US"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet-platform",
+      "source_url": "https://ofac.treasury.gov/ofac-sanctions-lists",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "seeded_by": "official_corpus_bootstrap",
+        "priority": "critical",
+        "dataset_goal": "sanctions_screening",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/ofac_sanctions_list_service.json"
+      },
+      "_checksum": "04cc7a21c42e4db94eca1658214e57ff9da67fa796b1b48fe59c2e17fad238f9"
+    },
+    "uk_fca_handbook_public": {
+      "source_id": "uk_fca_handbook_public",
+      "title": "UK FCA Handbook Public Source",
+      "domain": "aml",
+      "jurisdictions": [
+        "uk"
+      ],
+      "countries": [
+        "GB"
+      ],
+      "source_class": "PUBLIC_OFFICIAL",
+      "acquisition_method": "PUBLIC_DOWNLOAD",
+      "license_status": "PUBLIC",
+      "owner": "tenet",
+      "source_url": "https://www.fca.org.uk/handbook",
+      "approved": true,
+      "retrieval_allowed": true,
+      "metadata": {
+        "freshness_check": "daily",
+        "last_check": "2026-03-19T19:27:51.375828Z",
+        "manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/uk_fca_handbook_public.json"
+      },
+      "_checksum": "95ebc61682f49659541f89f19de4a83d94ad6dd69995fa07e28f4f915061dc71"
+    }
+  },
+  "count": 9,
+  "built_at": "2026-03-19T19:27:51.414758+00:00"
+}

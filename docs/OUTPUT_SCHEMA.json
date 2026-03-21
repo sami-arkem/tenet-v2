@@ -1,0 +1,178 @@
+{
+  "audit_meta": {
+    "audit_id": "",
+    "audit_version": "",
+    "timestamp_utc": "",
+    "platform_version": "",
+    "model_version": "",
+    "report_status": "draft | reviewed | finalized"
+  },
+  "entity_profile": {
+    "legal_name": "",
+    "trade_name": "",
+    "industry": "",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [],
+    "jurisdictions_of_operation": [],
+    "customer_geographies": [],
+    "customer_types": [],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "",
+    "scope_statement": "",
+    "included_domains": [],
+    "excluded_domains": [],
+    "documents_reviewed": [],
+    "evidence_received": [],
+    "evidence_missing_at_start": []
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      {
+        "name": "",
+        "jurisdiction": "",
+        "applicability_reason": "",
+        "relevance_score": 0
+      }
+    ],
+    "secondary_regimes": [],
+    "frameworks": [],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [],
+    "regulatory_classification": {
+      "entity_type": "",
+      "risk_tier": "",
+      "obligation_intensity": "",
+      "cross_border_complexity": ""
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "",
+    "overall_readiness": "",
+    "top_issues": [],
+    "decision_summary": "",
+    "board_message": ""
+  },
+  "deployment_decision": {
+    "status": "APPROVED | CONDITIONALLY_APPROVED | BLOCKED",
+    "decision_rationale": "",
+    "blocking_issues": [],
+    "conditions_precedent": [],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "",
+    "exposure_band": "LOW | MODERATE | HIGH | SEVERE",
+    "drivers": [],
+    "assumptions": [],
+    "confidence_note": ""
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "domain": "",
+        "status": "ADEQUATE | PARTIAL | INADEQUATE | NOT_EVIDENCED",
+        "required_controls": [],
+        "implemented_controls": [],
+        "missing_controls": [],
+        "control_gaps": [],
+        "evidence_quality": "STRONG | MODERATE | WEAK | NONE"
+      }
+    ],
+    "control_coverage_score": 0,
+    "evidence_coverage_score": 0
+  },
+  "findings": [
+    {
+      "finding_id": "",
+      "title": "",
+      "severity": "CRITICAL | HIGH | MEDIUM | LOW",
+      "likelihood": "HIGH | MEDIUM | LOW",
+      "impact": "HIGH | MEDIUM | LOW",
+      "domain": "",
+      "jurisdiction": "",
+      "regulatory_mapping": [],
+      "control_mapping": [],
+      "summary": "",
+      "root_cause": "",
+      "why_it_matters": "",
+      "business_impact": "",
+      "regulatory_impact": "",
+      "evidence_status": "CONFIRMED | PARTIAL | MISSING | CONTRADICTORY",
+      "evidence_reviewed": [],
+      "missing_evidence": [],
+      "observed_gaps": [],
+      "required_remediation": [],
+      "owner_recommendation": "",
+      "target_timeline": "",
+      "citations": [
+        {
+          "source_family": "",
+          "source_name": "",
+          "document_name": "",
+          "url": "",
+          "excerpt_reference": ""
+        }
+      ]
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "",
+      "risk_title": "",
+      "category": "",
+      "description": "",
+      "severity": "",
+      "linked_findings": []
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_name": "",
+      "domain": "",
+      "jurisdiction": "",
+      "reason_required": "",
+      "priority": ""
+    }
+  ],
+  "missing_evidence": [
+    {
+      "evidence_name": "",
+      "related_domain": "",
+      "reason_needed": "",
+      "priority": ""
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [],
+    "near_term_30_90_days": [],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "",
+    "regulator_ready_summary": "",
+    "client_facing_summary": ""
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 0,
+    "confidence_level": "HIGH | MODERATE | LOW",
+    "confidence_drivers": [],
+    "limiting_factors": [],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "evidence_id": "",
+      "name": "",
+      "type": "",
+      "status": "",
+      "notes": ""
+    }
+  ]
+}

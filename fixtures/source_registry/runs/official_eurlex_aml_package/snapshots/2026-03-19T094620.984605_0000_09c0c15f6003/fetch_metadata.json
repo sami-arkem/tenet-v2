@@ -1,0 +1,25 @@
+{
+  "source_id": "official_eurlex_aml_package",
+  "source_manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/official/eurlex_aml_package.json",
+  "fetched_at": "2026-03-19T09:46:20.984605+00:00",
+  "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html",
+  "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+  "raw_size_bytes": 160,
+  "normalized_text_chars": 160,
+  "fetch_meta": {
+    "status_code": 200,
+    "content_type": "text/plain",
+    "content_length_header": "20",
+    "final_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+  },
+  "provenance_checks": {
+    "robots_ok": true,
+    "freshness_ok": true,
+    "license_ok": true,
+    "approved": true,
+    "retrieval_allowed": true
+  },
+  "dataset_manifest_path": "fixtures/regulatory_datasets/promoted/official_eurlex_aml_package.json",
+  "dataset_id": "dataset_official_eurlex_aml_package",
+  "deterministic_authoritative": true
+}

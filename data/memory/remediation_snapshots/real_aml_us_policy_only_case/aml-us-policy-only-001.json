@@ -1,0 +1,113 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T16:29:57.294080+00:00",
+  "audit_id": "aml-us-policy-only-001",
+  "entity_name": "Real AML US Policy Only Case",
+  "audit_type": "aml_readiness_review",
+  "jurisdictions": [],
+  "domains": [
+    "kyb_beneficial_ownership",
+    "monitoring",
+    "customer_identification",
+    "sanctions",
+    "aml_governance",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Business Verification and Beneficial Ownership",
+      "Transaction Monitoring",
+      "Customer Identification Program",
+      "Sanctions Screening and Escalation"
+    ]
+  },
+  "remediation_status_by_control": {
+    "AML-003": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "AML-002": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "KYC-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "KYB-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "SAN-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "AML-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "GOV-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    }
+  },
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      },
+      {
+        "control_id": "KYB-001",
+        "title": "Business Verification and Beneficial Ownership",
+        "domain": "kyb_beneficial_ownership",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Business Verification and Beneficial Ownership"
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer Identification Program",
+        "domain": "customer_identification",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Customer Identification Program"
+      },
+      {
+        "control_id": "SAN-001",
+        "title": "Sanctions Screening and Escalation",
+        "domain": "sanctions",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Sanctions Screening and Escalation"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-001",
+        "title": "Enterprise AML Policy",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Enterprise AML Policy"
+      },
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

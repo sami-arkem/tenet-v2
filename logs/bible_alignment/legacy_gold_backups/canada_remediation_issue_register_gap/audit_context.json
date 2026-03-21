@@ -1,0 +1,32 @@
+{
+  "audit_id": "canada-remediation-issue-register-gap-001",
+  "entity_name": "Real Canada Remediation Issue Register Gap",
+  "audit_type": "remediation_tracking_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "CANADA"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "api"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "remediation_tracking",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "issue register",
+    "action tracker",
+    "owner assignment",
+    "closure evidence",
+    "remediation governance"
+  ],
+  "top_k": 5
+}

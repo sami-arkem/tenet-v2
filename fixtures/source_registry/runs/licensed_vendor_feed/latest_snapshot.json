@@ -1,0 +1,10 @@
+{
+  "source_id": "licensed_vendor_feed",
+  "snapshot_id": "2026-03-19T192750.206765_0000_653355e82e74",
+  "snapshot_root": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T192750.206765_0000_653355e82e74",
+  "raw_path": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T192750.206765_0000_653355e82e74/raw_source.bin",
+  "normalized_text_path": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T192750.206765_0000_653355e82e74/normalized_text.txt",
+  "metadata_path": "fixtures/source_registry/runs/licensed_vendor_feed/snapshots/2026-03-19T192750.206765_0000_653355e82e74/fetch_metadata.json",
+  "fetched_at": "2026-03-19T19:27:50.206765+00:00",
+  "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16"
+}

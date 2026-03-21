@@ -1,0 +1,32 @@
+{
+  "dataset_id": "dataset_eu_amld_guidance",
+  "title": "EU AML Guidance Corpus",
+  "domain": "aml",
+  "jurisdictions": [
+    "eu"
+  ],
+  "countries": [
+    "EU"
+  ],
+  "framework_ids": [
+    "EU_AMLD6"
+  ],
+  "dataset_type": "regulatory_guidance",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "MONTHLY",
+  "loader": {
+    "kind": "url_manifest",
+    "source_url": "https://example.org/eu-amld-guidance"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded": true,
+    "priority": "high"
+  }
+}

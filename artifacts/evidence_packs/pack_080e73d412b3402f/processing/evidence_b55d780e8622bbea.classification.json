@@ -1,0 +1,6 @@
+{
+  "evidence_id": "evidence_b55d780e8622bbea",
+  "category": "screening_alert_log",
+  "confidence": "HIGH",
+  "reason": "matched deterministic rule for screening_alert_log"
+}

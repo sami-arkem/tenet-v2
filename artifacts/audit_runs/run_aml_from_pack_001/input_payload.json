@@ -1,0 +1,119 @@
+{
+  "run_id": "run_aml_from_pack_001",
+  "company_profile": {
+    "company_name": "Acme Fintech",
+    "industry": "fintech",
+    "primary_jurisdiction": "uk",
+    "additional_jurisdictions": [
+      "eu"
+    ],
+    "products": [
+      "payments"
+    ],
+    "entities": [
+      "Acme Fintech Ltd"
+    ]
+  },
+  "scope": {
+    "audit_id": "audit_001",
+    "audit_type": "aml_readiness_review",
+    "framework_ids": [
+      "UK_MLR",
+      "EU_AMLD6"
+    ],
+    "domain": "aml",
+    "domains": [
+      "aml"
+    ],
+    "jurisdictions": [
+      "uk",
+      "eu"
+    ],
+    "in_scope_entities": [
+      "Acme Fintech Ltd"
+    ],
+    "in_scope_products": [
+      "payments"
+    ],
+    "evaluation_date": "2026-03-18",
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "controls": [
+    {
+      "control": {
+        "control_id": "GOV.RISK.001",
+        "regime_id": "INT_GOV.001",
+        "title": "Compliance governance ownership",
+        "description": "Planned from deterministic control library for INT_GOV.",
+        "test_procedure": "Deterministically test required evidence for GOV.RISK.001.",
+        "required_evidence_types": [
+          "governance_charter",
+          "owner_matrix"
+        ],
+        "severity_if_missing": "MEDIUM"
+      },
+      "provided_evidence": [],
+      "declared_control_present": true,
+      "declared_operating_effective": true,
+      "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+    },
+    {
+      "control": {
+        "control_id": "AML.KYC.002",
+        "regime_id": "UK_MLR.002",
+        "title": "CDD review evidence",
+        "description": "Planned from deterministic control library for UK_MLR.",
+        "test_procedure": "Deterministically test required evidence for AML.KYC.002.",
+        "required_evidence_types": [
+          "periodic_review_log",
+          "cdd_policy"
+        ],
+        "severity_if_missing": "HIGH"
+      },
+      "provided_evidence": [],
+      "declared_control_present": true,
+      "declared_operating_effective": true,
+      "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+    },
+    {
+      "control": {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "title": "Transaction monitoring policy",
+        "description": "Planned from deterministic control library for UK_MLR.",
+        "test_procedure": "Deterministically test required evidence for AML.MONITORING.001.",
+        "required_evidence_types": [
+          "policy_document",
+          "monitoring_report"
+        ],
+        "severity_if_missing": "HIGH"
+      },
+      "provided_evidence": [
+        {
+          "evidence_id": "evidence_b62e065c961cb1ba",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "artifacts/evidence_blobs/pack_f7699655f9514158/b62e065c961cb1baf3cd91f5b82d4eed80b457ced4899c84a772d2ddfb1f6279.txt",
+          "citation": "monitoring_policy.txt#L1-L1"
+        }
+      ],
+      "declared_control_present": true,
+      "declared_operating_effective": true,
+      "notes": "Auto-planned from reusable control library. Match reasons: domain_match, jurisdiction_match, framework_match, entity_match, product_match"
+    }
+  ],
+  "default_remediation_owner": "compliance@acme.com",
+  "prior_historical_context": {
+    "prior_findings": 2
+  },
+  "metadata": {
+    "source": "unit_test",
+    "evidence_pack_id": "pack_f7699655f9514158",
+    "evidence_pack_name": "Acme AML Pack",
+    "planned_control_count": 3,
+    "executed_from": "api_test",
+    "corpus_ready": true,
+    "ready_evidence_count": 1
+  }
+}

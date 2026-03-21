@@ -1,0 +1,33 @@
+{
+  "pack_id": "jurisdiction_uae_v1",
+  "jurisdiction": "UAE",
+  "label": "United Arab Emirates",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "UAE_AML_BASELINE",
+    "UAE_SANCTIONS_BASELINE",
+    "UAE_GOVERNANCE_BASELINE"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

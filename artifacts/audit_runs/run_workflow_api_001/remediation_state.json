@@ -1,0 +1,49 @@
+{
+  "run_id": "run_workflow_api_001",
+  "generated_at": "2026-03-19T19:27:51.924118+00:00",
+  "updated_at": "2026-03-19T19:27:51.924118+00:00",
+  "items": [
+    {
+      "remediation_id": "remediation::0001",
+      "finding_id": "GOV.RISK.001::finding",
+      "title": "Remediate GOV.RISK.001",
+      "owner": "compliance@acme.com",
+      "due_date": null,
+      "status": "OPEN",
+      "action_required": "Provide evidence covering missing evidence types: governance_charter, owner_matrix.",
+      "evidence_links": [],
+      "comment_history": [],
+      "created_at": "2026-03-19T19:27:51.924118+00:00",
+      "updated_at": "2026-03-19T19:27:51.924118+00:00",
+      "status_source": "deterministic_seed"
+    },
+    {
+      "remediation_id": "remediation::0002",
+      "finding_id": "AML.KYC.002::finding",
+      "title": "Remediate AML.KYC.002",
+      "owner": "compliance@acme.com",
+      "due_date": null,
+      "status": "OPEN",
+      "action_required": "Provide evidence covering missing evidence types: cdd_policy, periodic_review_log.",
+      "evidence_links": [],
+      "comment_history": [],
+      "created_at": "2026-03-19T19:27:51.924118+00:00",
+      "updated_at": "2026-03-19T19:27:51.924118+00:00",
+      "status_source": "deterministic_seed"
+    },
+    {
+      "remediation_id": "remediation::0003",
+      "finding_id": "AML.MONITORING.001::finding",
+      "title": "Remediate AML.MONITORING.001",
+      "owner": "compliance@acme.com",
+      "due_date": null,
+      "status": "OPEN",
+      "action_required": "Provide evidence covering missing evidence types: monitoring_report.",
+      "evidence_links": [],
+      "comment_history": [],
+      "created_at": "2026-03-19T19:27:51.924118+00:00",
+      "updated_at": "2026-03-19T19:27:51.924118+00:00",
+      "status_source": "deterministic_seed"
+    }
+  ]
+}

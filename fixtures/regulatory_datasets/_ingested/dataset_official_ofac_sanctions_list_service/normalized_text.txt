@@ -1,0 +1,11 @@
+URL SOURCE MANIFEST
+dataset_id: dataset_official_ofac_sanctions_list_service
+title: OFAC Sanctions List Service
+domain: sanctions
+dataset_type: law_text
+framework_ids: OFAC
+jurisdictions: us
+countries: US
+source_url: https://ofac.treasury.gov/ofac-sanctions-lists
+ingested_at: 2026-03-19T19:27:49.745868+00:00
+fetch_mode: metadata_only

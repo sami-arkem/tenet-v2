@@ -1,0 +1,24 @@
+{
+  "dataset_id": "dataset_official_ofac_sanctions_list_service",
+  "title": "OFAC Sanctions List Service",
+  "domain": "sanctions",
+  "jurisdictions": [
+    "us"
+  ],
+  "countries": [
+    "US"
+  ],
+  "framework_ids": [
+    "OFAC"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "loader_kind": "url_manifest",
+  "retrieval_ready": true,
+  "normalized_text_path": "fixtures/regulatory_datasets/_ingested/dataset_official_ofac_sanctions_list_service/normalized_text.txt",
+  "chunks_path": "fixtures/regulatory_datasets/_ingested/dataset_official_ofac_sanctions_list_service/chunks.json",
+  "index_path": "fixtures/regulatory_datasets/_ingested/dataset_official_ofac_sanctions_list_service/retrieval_index.json",
+  "chunk_count": 1,
+  "ingested_at": "2026-03-19T19:27:49.746775+00:00"
+}

@@ -1,0 +1,110 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-18T07:33:41.507034+00:00",
+  "audit_id": "cust-us-aml-001",
+  "entity_name": "Northstar Pay US",
+  "audit_type": "aml_readiness_review",
+  "jurisdictions": [],
+  "domains": [
+    "kyb_beneficial_ownership",
+    "monitoring",
+    "customer_identification",
+    "sanctions",
+    "aml_governance",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Business Verification and Beneficial Ownership",
+      "Transaction Monitoring",
+      "Customer Identification Program",
+      "Sanctions Screening and Escalation"
+    ]
+  },
+  "findings_control_ids": [
+    "KYB-001",
+    "AML-003",
+    "KYC-001",
+    "SAN-001",
+    "AML-001",
+    "AML-002",
+    "GOV-001"
+  ],
+  "missing_controls_control_ids": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "KYB-001",
+    "KYC-001",
+    "SAN-001"
+  ],
+  "missing_evidence_refs": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "KYB-001",
+    "KYC-001",
+    "SAN-001"
+  ],
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      },
+      {
+        "control_id": "KYB-001",
+        "title": "Business Verification and Beneficial Ownership",
+        "domain": "kyb_beneficial_ownership",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Business Verification and Beneficial Ownership"
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer Identification Program",
+        "domain": "customer_identification",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Customer Identification Program"
+      },
+      {
+        "control_id": "SAN-001",
+        "title": "Sanctions Screening and Escalation",
+        "domain": "sanctions",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Sanctions Screening and Escalation"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-001",
+        "title": "Enterprise AML Policy",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Enterprise AML Policy"
+      },
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

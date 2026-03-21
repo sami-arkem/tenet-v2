@@ -1,0 +1,46 @@
+{
+  "case_id": "aml_us_policy_only",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "BSA_AML",
+        "CIP_KYC",
+        "CDD_BO",
+        "OFAC"
+      ],
+      "missing_controls.control_id": [
+        "AML-001",
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001",
+        "SAN-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-001",
+        "AML-002",
+        "AML-003",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001",
+        "SAN-001"
+      ],
+      "findings.control_id": [
+        "KYB-001",
+        "AML-003",
+        "KYC-001",
+        "SAN-001",
+        "AML-001",
+        "AML-002",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 15
+    }
+  }
+}

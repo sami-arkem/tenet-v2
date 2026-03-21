@@ -1,0 +1,1053 @@
+<!doctype html>
+<html class="no-js" lang="en-GB">
+<head>
+    <base href="https://www.privacy.org.nz/"><!--[if lte IE 6]></base><![endif]-->
+<title>Office of the Privacy Commissioner | Privacy Act 2020</title>
+<meta name="generator" content="Silverstripe CMS 5.3">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+<meta name="author" content="Office of the Privacy Commissioner">
+
+<style type="text/css">
+    body {
+        padding-bottom: 20px;
+    }
+</style>
+
+<script type="text/javascript">
+    (function(w){
+
+        // This fix addresses an iOS bug, so return early if the UA claims its something else.
+        if ( !( /iPhone|iPad|iPod/.test( navigator.platform ) && navigator.userAgent.indexOf( "AppleWebKit" ) > -1 ) ){
+            return;
+        }
+
+        var doc = w.document;
+
+        if ( !doc.querySelector ){ return; }
+
+        var meta = doc.querySelector( "meta[name=viewport]" ),
+                initialContent = meta && meta.getAttribute( "content" ),
+                disabledZoom = initialContent + ",maximum-scale=1",
+                enabledZoom = initialContent + ",maximum-scale=10",
+                enabled = true,
+                x, y, z, aig;
+
+        if (!meta){ return; }
+
+        function restoreZoom(){
+            meta.setAttribute( "content", enabledZoom );
+            enabled = true;
+        }
+
+        function disableZoom(){
+            meta.setAttribute( "content", disabledZoom );
+            enabled = false;
+        }
+
+        function checkTilt( e ){
+            aig = e.accelerationIncludingGravity;
+            x = Math.abs( aig.x );
+            y = Math.abs( aig.y );
+            z = Math.abs( aig.z );
+
+            // If portrait orientation and in one of the danger zones
+            if( (!w.orientation || w.orientation === 180) && ( x > 7 || ( ( z > 6 && y < 8 || z < 8 && y > 6 ) && x > 5 ) ) ){
+                if( enabled ){
+                    disableZoom();
+                }
+            }
+            else if( !enabled ){
+                restoreZoom();
+            }
+        }
+
+        w.addEventListener( "orientationchange", restoreZoom, false );
+        w.addEventListener( "devicemotion", checkTilt, false );
+
+    })( this );
+</script>
+
+<!-- favicon and touch icons -->
+<link rel="shortcut icon" href="/_resources/themes/privacy/images/icons/fav.ico?m=1773186404" />
+
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Bitter|Lato:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- Matomo Tag Manager -->
+<script type="text/javascript">
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src='https://cdn.innocraft.cloud/privacynz.innocraft.cloud/container_gGJgRIDA.js'; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager -->
+
+<link rel="stylesheet" type="text/css" href="/_resources/themes/privacy/css/layout.css?m=1773186404">
+<link rel="stylesheet" type="text/css" href="/_resources/themes/privacy/css/typography.css?m=1773186404">
+<link rel="stylesheet" type="text/css" href="/_resources/themes/privacy/css/print.css?m=1773186404" media="print">
+<link rel="stylesheet" type="text/css" href="/_resources/themes/privacy/thirdparty/webuipopover/jquery.webui-popover.min.css?m=1773186404">
+<link rel="stylesheet" type="text/css" href="/_resources/vendor/nzta/silverstripe-sitebanner/client/css/site-banner.css?m=1773186404">
+<link rel="alternate" type="application/rss+xml" title="RSS feed" href="/privacy-principles/rss/" />
+</head>
+<body data-spy="scroll">
+    
+<div id="trackingmessage">
+	<div class="container">
+		<div class="row" id="trackingmessage-cookies">
+			<div class="span9"><p>Our website uses cookies so we can&nbsp;<span>analyse our site usage and</span> give you the best experience. Click "Accept" if you’re happy with this, or click "More" for information about cookies on our site, how to opt out, and how to disable cookies altogether.</p></div>
+			<div class="span3 text-right"><p>
+				<a class="btn btn-default" id="tracking-cookies-optout" href="/about-us/opc-policies/our-cookie-policy/">More</a>
+				<a class="btn btn-primary" id="tracking-cookies-close"><strong>Accept &times;</strong></a>
+			</p></div>
+		</div>
+		<div class="row" id="trackingmessage-dnt">
+			<div class="span9"><p>We respect your Do Not Track preference.</p></div>
+			<div class="span3 text-right">
+				<p><a class="btn btn-primary" id="tracking-dnt-close"><strong>Close &times;</strong></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<div class="site-banner site-banner-alert" role="alert">
+		<div class="site-banner-container container">
+			
+				<span class="icon-warning-sign"></span>
+			
+			<div class="site-banner-content">
+				<p>There is high demand right now for our services. We're working hard, but there might be delays in progressing your complaint or enquiry. Thank you for being patient.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+<header class="container header">
+	<div class="row">
+		<div class="span12 header-controls">
+		<div class="hidden accesskeys">
+	
+		<a href="/site-map/" accesskey="2">2 = Site map</a>
+	
+		<a href="/new-on-the-website/" accesskey="3">3 = New on the website</a>
+	
+		<a href="/about-us/who-we-are/" accesskey="4">4 = About OPC</a>
+	
+		<a href="/home/privacy-act-2020/the-privacy-act-and-codes/" accesskey="5">5 = The Privacy Act 1993</a>
+	
+		<a href="/your-rights/your-privacy-rights/" accesskey="6">6 = Your privacy rights</a>
+	
+		<a href="/responsibilities/your-obligations/" accesskey="7">7 = Privacy for agencies</a>
+	
+		<a href="/responsibilities/poupou-matatapu-doing-privacy-well/breach-management/" accesskey="8">8 = Data breaches</a>
+	
+</div>
+			<div class="brand">
+				<a title="Office of the Privacy Commissioner" href="https://www.privacy.org.nz/">
+				
+					<img width="275" height="62" alt="opc header logo" src="/assets/Uploads/opc-header-logo.png" loading="lazy" />
+
+				
+				</a>
+			</div>
+
+			
+
+			<div class="navbar noCorners container">
+				<div class="navbar-inner">
+					<a class="btn btn-navbar" id="mobileNav">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</a>
+
+<div class="nav-collapse" style="display: none;">
+	<div class="site-search">
+		
+			
+<form id="Form_SearchForm" action="/search/" method="GET" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="Form_SearchForm_error" class="message " style="display: none"></p>
+	
+
+	<fieldset>
+		
+		
+			<div id="Form_SearchForm_q_Holder" class="field text form-group--no-label">
+	
+	
+
+	<input type="search" name="q" class="text form-group--no-label" id="Form_SearchForm_q" placeholder="Search" />
+
+	
+	
+</div>
+
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			<input type="submit" name="action_search" value="Search" class="action" id="Form_SearchForm_action_search">
+		
+	</div>
+	
+
+</form>
+
+
+		
+	</div>
+	<ul class="nav size_7" id="MainNav">
+		
+	<li class="current  first active  dropdown ">
+		<a href="/privacy-principles/" title="Go to the Privacy Act 2020 page" class="current  dropdown-toggle" data-toggle="dropdown" data-target="#">
+			Privacy Act 2020  <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/privacy-principles/1/" title="Go to the Principle 1 - Purpose for collection of personal information page">Principle 1 - Purpose for collection of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/2/" title="Go to the Principle 2 - Source of personal information - collect it from the individual page">Principle 2 - Source of personal information - collect it from the individual</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/3/" title="Go to the Principle 3 - Collection of information from subject - what to tell the individual page">Principle 3 - Collection of information from subject - what to tell the individual</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/4/" title="Go to the Principle 4 - Manner of collection page">Principle 4 - Manner of collection</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/5/" title="Go to the Principle 5 - Storage and security of information page">Principle 5 - Storage and security of information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/6/" title="Go to the Principle 6 - Access to personal information page">Principle 6 - Access to personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/7/" title="Go to the Principle 7 - Correction of personal information page">Principle 7 - Correction of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/8/" title="Go to the Principle 8 - Accuracy of personal information page">Principle 8 - Accuracy of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/9/" title="Go to the Principle 9 - Retention of personal information page">Principle 9 - Retention of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/10/" title="Go to the Principle 10 - Limits on use of personal information page">Principle 10 - Limits on use of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/11/" title="Go to the Principle 11 - Disclosure of personal information page">Principle 11 - Disclosure of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/12/" title="Go to the Principle 12 - Disclosure outside New Zealand page">Principle 12 - Disclosure outside New Zealand</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/13/" title="Go to the Principle 13 - Unique identifiers page">Principle 13 - Unique identifiers</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/codes-of-practice/" title="Go to the Codes of practice page">Codes of practice</a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/reports-on-new-zealand-adequacy-to-the-european-commission/" title="Go to the New Zealand - EU data protection adequacy  page">New Zealand - EU data protection adequacy </a>
+					</li>
+				
+					<li class="">
+						<a href="/privacy-principles/section-30-authorisations/" title="Go to the Section 30 authorisations page">Section 30 authorisations</a>
+					</li>
+				
+					<li class="last">
+						<a href="/privacy-principles/comparing-the-privacy-acts-1993-and-2020/" title="Go to the Comparing the Privacy Acts - 1993 and 2020 page">Comparing the Privacy Acts - 1993 and 2020</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link     dropdown ">
+		<a href="/your-rights/your-privacy-rights/" title="Go to the Your privacy rights page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#" accesskey="6">
+			Your privacy rights <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/your-rights/protect-your-personal-information/" title="Go to the Protect your personal information page">Protect your personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/your-privacy-rights/" title="Go to the What are your privacy rights? page">What are your privacy rights?</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/ask-for-your-information/" title="Go to the Ask for your information page">Ask for your information</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/aboutme-request-my-info-tool/" title="Go to the AboutMe (Request My Info Tool) page">AboutMe (Request My Info Tool)</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/correct-your-information/" title="Go to the Correct your information page">Correct your information</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/sorting-out-privacy-problems/" title="Go to the Sorting out privacy problems  page">Sorting out privacy problems </a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/lodge-a-privacy-complaint-with-another-agency/" title="Go to the Complain to another agency page">Complain to another agency</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/making-a-complaint-to-the-privacy-commissioner/" title="Go to the Complain to the Privacy Commissioner page">Complain to the Privacy Commissioner</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/complaints-process/" title="Go to the How we settle complaints page">How we settle complaints</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/complaint-or-privacy-breach/" title="Go to the Complaint or privacy breach: how do we deal with your enquiry?  page">Complaint or privacy breach?</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/how-well-work-together/" title="Go to the How we&#039;ll work together page">How we&#039;ll work together</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/other-dispute-resolution-schemes/" title="Go to the Other complaint options page">Other complaint options</a>
+					</li>
+				
+					<li class="">
+						<a href="/your-rights/the-human-rights-review-tribunal/" title="Go to the The Human Rights Review Tribunal page">The Human Rights Review Tribunal</a>
+					</li>
+				
+					<li class="last">
+						<a href="/your-rights/reasons-we-wont-investigate/" title="Go to the Reasons we won&#039;t investigate page">Reasons we won&#039;t investigate</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link     dropdown ">
+		<a href="/responsibilities/your-obligations/" title="Go to the Privacy for agencies page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#" accesskey="7">
+			Privacy for agencies <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/responsibilities/your-obligations/" title="Go to the Complying with the Privacy Act page">Complying with the Privacy Act</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/collecting/" title="Go to the Collecting personal information page">Collecting personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/holding/" title="Go to the Holding personal information page">Holding personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/working-with-sensitive-information/" title="Go to the Working with sensitive personal information page">Working with sensitive personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/charging-for-access-to-personal-information/" title="Go to the Charging for access to personal information page">Charging for access to personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/using-and-disclosing/" title="Go to the Using and disposing of personal information page">Using and disposing of personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/sharing-personal-information/" title="Go to the Sharing personal information page">Sharing personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/releasing-personal-information-to-police-and-law-enforcement-agencies/" title="Go to the Releasing information to Police and law enforcement agencies  page">Releasing information to Police and law enforcement agencies </a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/disclosing-personal-information-outside-new-zealand/" title="Go to the Sending information overseas page">Sending information overseas</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/responding-to-access-requests-for-cctv-footage/" title="Go to the Responding to access requests for CCTV footage page">Responding to access requests for CCTV footage</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/responding-to-requests-for-personal-information-about-children-and-young-people/" title="Go to the Responding to requests for a child or young person’s personal information page">Responding to requests for a child or young person’s personal information</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/privacy-tools-for-agencies/" title="Go to the Privacy tools for agencies page">Privacy tools for agencies</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/poupou-matatapu-doing-privacy-well/" title="Go to the Poupou Matatapu: doing privacy well page">Poupou Matatapu: doing privacy well</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/privacy-statement-generator/" title="Go to the Privacy Statement Generator page">Privacy Statement Generator</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/privacy-impact-assessments/" title="Go to the Privacy Impact Assessments page">Privacy Impact Assessments</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/handling-privacy-complaints-a-step-by-step-guide/" title="Go to the Handling privacy complaints: a step-by-step guide page">Handling privacy complaints: a step-by-step guide</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/privacy-officers/" title="Go to the Information for Privacy officers page">Information for Privacy officers</a>
+					</li>
+				
+					<li class="">
+						<a href="/responsibilities/events-and-networks/" title="Go to the Privacy support and networks page">Privacy support and networks</a>
+					</li>
+				
+					<li class="last">
+						<a href="/responsibilities/privacy-breaches/" title="Go to the Sorting out privacy breaches page">Sorting out privacy breaches</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link     dropdown ">
+		<a href="/resources-and-learning/" title="Go to the Resources and learning page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#">
+			Resources and learning <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/resources-and-learning/online-privacy-training-free/" title="Go to the E-learning page">E-learning</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/knowledge-base/" title="Go to the AskUs page">AskUs</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/a-z-topics/" title="Go to the A - Z guidance topics page">A - Z guidance topics</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/case-notes-and-court-decisions/" title="Go to the Case notes  page">Case notes </a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/tribunal-decisions/" title="Go to the Tribunal decisions page">Tribunal decisions</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/court-decisions/" title="Go to the Court decisions page">Court decisions</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/public-inquiries/" title="Go to the Public inquiries page">Public inquiries</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/decision-notes/" title="Go to the Decision notes page">Decision notes</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/advisory-opinions/" title="Go to the Advisory opinions page">Advisory opinions</a>
+					</li>
+				
+					<li class="">
+						<a href="/resources-and-learning/brochures-posters/" title="Go to the Brochures and posters page">Brochures and posters</a>
+					</li>
+				
+					<li class="last">
+						<a href="/resources-and-learning/insights-reports/" title="Go to the Insights reports page">Insights reports</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link     dropdown ">
+		<a href="/tuhono-connect/" title="Go to the Tūhono│Connect page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#">
+			Tūhono│Connect <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/tuhono-connect/statements-media-releases/" title="Go to the News and media releases page">News and media releases</a>
+					</li>
+				
+					<li class="">
+						<a href="/tuhono-connect/privacy-news/" title="Go to the Our newsletter, Privacy News page">Our newsletter</a>
+					</li>
+				
+					<li class="">
+						<a href="/blog/" title="Go to the Rangitaki│blog page">Rangitaki│blog</a>
+					</li>
+				
+					<li class="">
+						<a href="/tuhono-connect/haveyoursay/" title="Go to the Have your say page">Have your say</a>
+					</li>
+				
+					<li class="">
+						<a href="/tuhono-connect/surveys/" title="Go to the Surveys page">Surveys</a>
+					</li>
+				
+					<li class="">
+						<a href="/tuhono-connect/events/" title="Go to the Events page">Events</a>
+					</li>
+				
+					<li class="last">
+						<a href="/tuhono-connect/contact-us/" title="Go to the Contact us page">Contact us</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link     dropdown ">
+		<a href="/about-us/who-we-are/" title="Go to the About OPC page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#" accesskey="4">
+			About OPC <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/about-us/who-we-are/" title="Go to the Who we are page">Who we are</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/work-at-opc/" title="Go to the Work at OPC page">Work at OPC</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/what-we-do/" title="Go to the We are regulators page">We are regulators</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/international-privacy-networks/" title="Go to the International privacy networks page">International privacy networks</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/information-sharing/" title="Go to the Information sharing page">Information sharing</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/access-directions/" title="Go to the Access directions page">Access directions</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/website-privacy-statement/" title="Go to the Our privacy statement page">Our privacy statement</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/opc-policies/" title="Go to the OPC policies page">OPC policies</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/corporate-reports/" title="Go to the Corporate reports page">Corporate reports</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/briefings-to-the-incoming-minister/" title="Go to the Briefings to the Incoming Minister page">Briefings to the Incoming Minister</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/submissions/" title="Go to the Our submissions page">Our submissions</a>
+					</li>
+				
+					<li class="">
+						<a href="/about-us/microsoft-azure-privacy-impact-assessment/" title="Go to the Microsoft Azure Privacy Impact Assessment page">Microsoft Azure Privacy Impact Assessment</a>
+					</li>
+				
+					<li class="last">
+						<a href="/about-us/copyright-and-disclaimer/" title="Go to the Copyright and disclaimer page">Copyright and disclaimer</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	<li class="link  last   dropdown ">
+		<a href="/focus-areas/" title="Go to the Focus areas page" class="link  dropdown-toggle" data-toggle="dropdown" data-target="#">
+			Focus areas <span class="showChildren"><b class="caret"></b></span>
+		</a>
+		
+			<ul class="dropdown-menu" role="menu">
+				
+					<li class="first">
+						<a href="/focus-areas/biometrics/" title="Go to the Biometrics Project page">Biometrics Project</a>
+					</li>
+				
+					<li class="">
+						<a href="/focus-areas/children-and-young-people-policy-project/" title="Go to the Children&#039;s Privacy Project page">Children&#039;s Privacy Project</a>
+					</li>
+				
+					<li class="">
+						<a href="/focus-areas/frt-inquiry-report/" title="Go to the FRT Inquiry report page">FRT Inquiry report</a>
+					</li>
+				
+					<li class="">
+						<a href="/focus-areas/ipp3a/" title="Go to the IPP3A page">IPP3A</a>
+					</li>
+				
+					<li class="last">
+						<a href="/focus-areas/manage-my-health-inquiry/" title="Go to the Manage My Health Inquiry page">Manage My Health Inquiry</a>
+					</li>
+				
+			</ul>
+		
+	</li>
+
+	</ul>
+</div>
+				</div>
+			</div>
+
+			
+
+
+
+
+	
+		<button class="hidden-desktop kb-global-btn" id="KBGlobalBtn" role="button" type="button">
+			<span class="hide-text kb-global-btn__remove">Remove</span>Ask
+		</button>
+
+		<button class="visible-desktop kb-sticky-btn" id="KBStickyBtn" role="button" type="button">
+			<span class="hide-text kb-sticky-btn__logo">Knowledge Base</span>Ask us a question
+		</button>
+
+		<aside class="kb-global" id="KBGlobal">
+
+			
+			<header class="kb-header kb-header__global-entry">
+				<a class="kb-header__logo" href="/resources-and-learning/knowledge-base/"></a>
+				<div class="row-fluid">
+					<div class="kb-header-search">
+						<form action="/resources-and-learning/knowledge-base/" data-action="/resources-and-learning/knowledge-base/globalsearch" class="form-search kb-form-search" role="search" method="get">
+                            <input
+								autocomplete="off"
+								class="kb-form-search__input"
+								id="FAQSearchForm_FAQSearchForm_Search"
+								type="search"
+								name="q"
+								placeholder="Ask us a question"
+								title="Ask us a question"
+								maxlength="180" />
+							<button class="hide-text kb-form-search__btn" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</header>
+
+			<div class="kb-global-loading"></div>
+			<section class="kb-global-results"></section>
+
+			<button class="hide-text visible-desktop kb-global__btn-close" id="KBStickyClose" role="button" type="button">Close</button>
+
+		</aside>
+	
+
+
+
+
+		</div>
+	</div>
+</header>
+
+
+    
+
+    
+    
+
+    
+
+    <div class="container typography layout" id="layout">
+        <div class="row">
+	<section class="span9 mainContent">
+		
+	<ul class="breadcrumb">
+		<li><a href="">Home</a> <span class="divider">/</span></li>
+		
+			
+				<li class="active">Privacy Act 2020</li>
+			
+		
+	</ul>
+    
+
+
+		<h1 class="print-only">Privacy Act 2020 </h1>
+		<header class="page-header subhead">
+			<p class="pull-right printShare">
+	<a href="" onclick="window.print(); return false;">Print</a>
+
+	
+
+	| <a href="mailto:?subject=From%20the%20Privacy%20Commissioner%20website%3A%20Privacy%20Act%202020&amp;body=I%20thought%20that%20you%20might%20be%20interested%20in%20this%20page%20from%20the%20Privacy%20Commissioner%27s%20website.%0A%0APrivacy%20Act%202020%0Ahttps%3A%2F%2Fwww.privacy.org.nz%2Fprivacy-principles%2F" title="Email this page">
+		Email this page
+	</a>
+
+</p>
+
+			<h2>Privacy Act 2020</h2>
+		</header>
+		
+
+		<p>The Privacy Act 2020 has 13 privacy principles that govern how agencies (organisations and businesses) can collect, store, use and share personal information. All New&nbsp;Zealanders regardless of age or circumstance have privacy rights.</p>
+<p>The Privacy Act makes sure that:</p>
+<p><img width="321" height="482" alt="A person with glasses reads a page in a large folder of papers while sitting at a desk." src="/assets/IMAGES/100625-woman-filing__ResizedImageWzMyMSw0ODJd.JPEG" loading="lazy" class="right ss-htmleditorfield-file image">
+
+</p>
+<ul>
+<li>you know when your information is being collected</li>
+<li>your information is used and shared appropriately</li>
+<li>your information is kept safe and secure</li>
+<li>you can get access to your information.</li>
+</ul>
+<h2>See the privacy principles in detail below</h2>
+<ul>
+<li><a title="Privacy Principle 1" rel="noopener noreferrer" href="/privacy-principles/1/" target="_blank">Principle 1&nbsp; &nbsp;- Purpose for collection</a></li>
+<li><a title="Privacy Principle 2" rel="noopener noreferrer" href="/privacy-principles/2/" target="_blank">Principle 2&nbsp; &nbsp;- Source of information - collection from the individual</a></li>
+<li><a title="Privacy Principle 3" rel="noopener noreferrer" href="/privacy-principles/3/" target="_blank">Principle 3&nbsp; &nbsp;- What to tell the individual about collection</a></li>
+<li><a title="Privacy Principle 4" rel="noopener noreferrer" href="/privacy-principles/4/" target="_blank">Principle 4&nbsp; &nbsp;- Manner of collection</a></li>
+<li><a title="Privacy Principle 5" rel="noopener noreferrer" href="/privacy-principles/5/" target="_blank">Principle 5&nbsp; &nbsp;- Storage and security of information</a></li>
+<li><a title="Privacy Principle 6" rel="noopener noreferrer" href="/privacy-principles/6/" target="_blank">Principle 6&nbsp; &nbsp;- Providing people access to their information</a></li>
+<li><a title="Privacy Principle 7" rel="noopener noreferrer" href="/privacy-principles/7/" target="_blank">Principle 7&nbsp; &nbsp;- Correction of personal information</a></li>
+<li><a title="Privacy Principle 8" rel="noopener noreferrer" href="/privacy-principles/8/" target="_blank">Principle 8&nbsp; &nbsp;- Ensure accuracy before using information</a></li>
+<li><a title="Privacy Principle 9" rel="noopener noreferrer" href="/privacy-principles/9/" target="_blank">Principle 9&nbsp; &nbsp;- Limits on retention of personal information</a></li>
+<li><a title="Privacy Principle 10" rel="noopener noreferrer" href="/privacy-principles/10/" target="_blank">Principle 10 - Use of personal information</a></li>
+<li><a title="Privacy Principle 11" rel="noopener noreferrer" href="/privacy-principles/11/" target="_blank">Principle 11 - Disclosing personal information</a></li>
+<li><a title="Privacy Principle 12" rel="noopener noreferrer" href="/privacy-principles/12/" target="_blank">Principle 12 -&nbsp;Disclosure outside New Zealand</a></li>
+<li><a title="Privacy Principle 13" rel="noopener noreferrer" href="/privacy-principles/13/" target="_blank">Principle 13 - Unique identifiers</a></li>
+</ul>
+<p><br><a rel="noopener noreferrer" href="https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html" target="_blank">Read the Privacy Act on the New Zealand legislation website</a>.<br><a rel="noopener noreferrer" href="https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23312.html" target="_blank">Read the definition of what ‘personal information’ means</a>.<br><br><a rel="noopener noreferrer" href="/assets/Privacy-Act-2020-content/20250326-A-quick-tour-of-the-privacy-principles.pdf" target="_blank">Download a two-page PDF of the privacy principles</a> (opens to PDF, 178 KB).</p>
+<p><span style="color: rgb(98, 16, 66); font-family: inherit; font-size: 20px; font-weight: bold;">Codes of practice</span></p>
+<p>The Privacy Act 2020 gives the Privacy Commissioner the power to issue codes of practice that become part of the law. These codes modify the operation of the Privacy Act and set rules for specific industries, organisations, or types of personal information.<br><br><a rel="noopener noreferrer" href="/privacy-principles/codes-of-practice/" target="_blank">Read about the Codes of Practice and what they mean</a>.&nbsp;<br><a title="Privacy Principle 13" href="/privacy-principles/13/"></a></p>
+<h2>Case notes</h2>
+<p><a rel="noopener noreferrer" href="/resources-and-learning/case-notes-and-court-decisions/" target="_blank">We have a large archive of case notes</a>. These are detailed records summarising the key information, progress, and actions taken in a specific case. They are a great reference for seeing how the Privacy Act has applied in various situations. The Privacy Act 2020 came into force on 1 December 2020, replacing the Privacy Act 1993.</p>
+<h2>Privacy Act 2020</h2>
+<p>New Zealand’s Privacy Act 2020 came into effect on 1 December, modernising the 1993 Act. It reflected changes in the wider economy and society to ensure the Act was fit for the technological world in which we live. <a title="Open our page on the comparison of the 1993 and 2020 Privacy Acts." rel="noopener noreferrer" href="/privacy-principles/comparing-the-privacy-acts-1993-and-2020/" target="_blank">Compare the two versions in a table form</a> or <a title="Privacy Act 2020 full set of information sheets" rel="noopener noreferrer" href="/assets/New-order/Privacy-Act-2020/Privacy-Act-2020/Privacy-Act-2020-information-sheets-full-final-set-A711970.pdf" target="_blank">read a series of information sheets about the changes that were made</a>.</p>
+
+		
+
+		
+
+		
+	</section>
+	
+<div role="complementary" class="span3 sidebar">
+	<div class="sidebar-nav sidebar-device">
+			<h2 class="sidenav-title">Privacy Act 2020 </h2>
+			
+			
+			
+			<ul class="nav nav-list">
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/1/"><span></span>Principle 1 - Purpose for collection of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/2/"><span></span>Principle 2 - Source of personal information - collect it from the individual</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/3/"><span></span>Principle 3 - Collection of information from subject - what to tell the individual</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/4/"><span></span>Principle 4 - Manner of collection</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/5/"><span></span>Principle 5 - Storage and security of information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/6/"><span></span>Principle 6 - Access to personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/7/"><span></span>Principle 7 - Correction of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/8/"><span></span>Principle 8 - Accuracy of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/9/"><span></span>Principle 9 - Retention of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/10/"><span></span>Principle 10 - Limits on use of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/11/"><span></span>Principle 11 - Disclosure of personal information</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/12/"><span></span>Principle 12 - Disclosure outside New Zealand</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/13/"><span></span>Principle 13 - Unique identifiers</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/codes-of-practice/"><span></span>Codes of practice</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/reports-on-new-zealand-adequacy-to-the-european-commission/"><span></span>New Zealand - EU data protection adequacy </a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/section-30-authorisations/"><span></span>Section 30 authorisations</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+
+					<!-- second level pages -->
+					<li class="link ">
+						<a href="/privacy-principles/comparing-the-privacy-acts-1993-and-2020/"><span></span>Comparing the Privacy Acts - 1993 and 2020</a>
+						
+					</li>
+					<!-- end second level pages -->
+
+				
+			</ul>
+		</div>
+	
+
+</div>
+
+
+
+	
+</div>
+
+
+        <div class="row">
+	<div class="span12 content-footer">
+		<a class="back-to-top" href="/privacy-principles/#">Back to top</a>
+		<hr class="content-footer-hr">
+	</div>
+</div>
+
+    </div>
+
+    <footer class="container">
+	<div class="row">
+		<div class="span12">
+			
+				
+				<div class="footer-logo">
+					<a href="https://www.privacy.org.nz/" accesskey="/">
+						<img width="22" height="30" alt="opc footer icon" src="/assets/Uploads/opc-footer-icon.jpg" loading="lazy" />
+
+					</a>
+				</div>
+				
+				<ul class="nav nav-pills" id="footerLinks">
+					
+						
+							<li class="link ">
+								<a href="/about-us/" title="Go to the About us page"  class="link">
+									About us
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/resources-and-learning/knowledge-base/" title="Go to the AskUs page"  class="link">
+									AskUs
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/tuhono-connect/contact-us/" title="Go to the Contact us page"  class="link">
+									Contact us
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/rss-feeds/" title="Go to the RSS page"  class="link">
+									RSS
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/site-map/" title="Go to the Site Map page"  class="link">
+									Site Map
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/about-us/website-privacy-statement/" title="Go to the Privacy statement page"  class="link">
+									Privacy statement
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="/about-us/copyright-and-disclaimer/" title="Go to the Copyright page"  class="link">
+									Copyright
+								</a>
+							</li>
+						
+							<li class="link ">
+								<a href="https://www.govt.nz/" title="Go to the Govt.nz page"  class="link">
+									Govt.nz
+								</a>
+							</li>
+						
+					
+				</ul>
+			
+            <a href="/privacy-principles/#" class="footer-shielded" id="shielded-logo">
+                <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="30" width="30">
+            </a>
+            <script src="https://staticcdn.co.nz/embed/embed.js"></script>
+
+			<p class="clear"><small>Office of the Privacy Commissioner &copy; 2013</small></p>
+		</div>
+	</div>
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['setCustomUrl', 'https://privacy.org.nz/privacy-act-2020/privacy-principles/']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://privacynz.innocraft.cloud/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 2]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="https://privacynz.innocraft.cloud/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" /></p></noscript>
+    
+
+
+<script type="application/javascript" src="/assets/assets/_compiled/p/scripts-4e1f6e3.js"></script>
+<script type="application/javascript" src="/_resources/vendor/nzta/silverstripe-sitebanner/client/javascript/site-banner.js?m=1773186404"></script>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=63693327" async></script></body>
+</html>

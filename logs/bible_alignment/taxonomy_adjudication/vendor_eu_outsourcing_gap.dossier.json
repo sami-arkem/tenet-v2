@@ -1,0 +1,125 @@
+{
+  "case_dir": "evals/gold_cases/vendor_eu_outsourcing_gap",
+  "case_name": "vendor_eu_outsourcing_gap",
+  "issues": [
+    "domains must be a non-empty list"
+  ],
+  "audit_context_current": {
+    "audit_id": "vendor-eu-outsourcing-gap-001",
+    "entity_name": "Real Vendor EU Outsourcing Gap Case",
+    "audit_type": "vendor_internal_compliance_readiness_review",
+    "industry": "payments",
+    "jurisdictions": [
+      "EU"
+    ],
+    "entity_type": "vendor",
+    "products": [
+      "api"
+    ],
+    "customer_types": [
+      "enterprise"
+    ],
+    "source_families": [
+      "regulations",
+      "vendor_risk",
+      "governance",
+      "industry_fintech"
+    ],
+    "query_terms": [
+      "vendor due diligence procedure",
+      "outsourcing governance",
+      "third party risk assessment",
+      "vendor monitoring cadence",
+      "approval workflow"
+    ],
+    "top_k": 5,
+    "historical_context_is_non_authoritative": true,
+    "deterministic_current_audit_truth_only": true
+  },
+  "folder_name_hints": {
+    "domains": [
+      "vendor_risk"
+    ],
+    "jurisdictions": [
+      "eu"
+    ]
+  },
+  "taxonomy_recovery_context": {
+    "case_dir": "evals/gold_cases/vendor_eu_outsourcing_gap",
+    "changed": false,
+    "blocked": true,
+    "domain_before": null,
+    "jurisdiction_before": [
+      "EU"
+    ],
+    "domain_after": null,
+    "jurisdiction_after": [
+      "EU"
+    ],
+    "reasons": [
+      "domain: ambiguous top candidates at same confidence: ['governance', 'vendor_risk']"
+    ],
+    "backup_dir": null
+  },
+  "text_snippets": [
+    {
+      "path": "evals/gold_cases/vendor_eu_outsourcing_gap/audit_context.json",
+      "snippet": "{\n  \"audit_id\": \"vendor-eu-outsourcing-gap-001\",\n  \"entity_name\": \"Real Vendor EU Outsourcing Gap Case\",\n  \"audit_type\": \"vendor_internal_compliance_readiness_review\",\n  \"industry\": \"payments\",\n  \"jurisdictions\": [\n    \"EU\"\n  ],\n  \"entity_type\": \"vendor\",\n  \"products\": [\n    \"api\"\n  ],\n  \"customer_types\": [\n    \"enterprise\"\n  ],\n  \"source_families\": [\n    \"regulations\",\n    \"vendor_risk\",\n    \"governance\",\n    \"industry_fintech\"\n  ],\n  \"query_terms\": [\n    \"vendor due diligence procedure\",\n    \"outsourcing governance\",\n    \"third party risk assessment\",\n    \"vendor monitoring cadence\",\n    \"approval workflow\"\n  ],\n  \"top_k\": 5,\n  \"historical_context_is_non_authoritative\": true,\n  \"deterministic_current_audit_truth_only\": true\n}"
+    },
+    {
+      "path": "evals/gold_cases/vendor_eu_outsourcing_gap/case_notes.md",
+      "snippet": "# vendor_eu_outsourcing_gap\n\n## Scenario\nReal corpus-backed case for Tenet deterministic evaluation.\n\n## Audit context\n- audit_type: vendor_internal_compliance_readiness_review\n- industry: payments\n- jurisdictions: EU\n- entity_name: Real Vendor EU Outsourcing Gap Case\n\n## Human adjudication\nExpected outcome is BLOCKED based on the current corpus-backed deterministic output.\n\n## Expected regimes\n- THIRD_PARTY_RISK\n- GOVERNANCE_BASELINE\n\n## Expected control position\n- missing_controls: GOV-001, VEN-001\n- missing_evidence: GOV-001, VEN-001\n- findings: VEN-001, GOV-001\n- control_coverage_score minimum: 18\n\n## Reviewer rationale\nThis gold case is grounded in the currently observed deterministic engine behavior over the existing retrieval corpus."
+    },
+    {
+      "path": "evals/gold_cases/vendor_eu_outsourcing_gap/expected_assertions.json",
+      "snippet": "{\n  \"case_id\": \"vendor_eu_outsourcing_gap\",\n  \"expected\": {\n    \"equals\": {\n      \"deployment_decision.status\": \"BLOCKED\"\n    },\n    \"contains\": {\n      \"regulatory_applicability.primary_regimes\": [\n        \"THIRD_PARTY_RISK\",\n        \"GOVERNANCE_BASELINE\"\n      ],\n      \"missing_controls.control_id\": [\n        \"GOV-001\",\n        \"VEN-001\"\n      ],\n      \"missing_evidence.control_id\": [\n        \"GOV-001\",\n        \"VEN-001\"\n      ],\n      \"findings.control_id\": [\n        \"VEN-001\",\n        \"GOV-001\"\n      ]\n    },\n    \"minimums\": {\n      \"control_assessment.control_coverage_score\": 18\n    }\n  },\n  \"rules\": {\n    \"no_invented_pass_outcome\": true,\n    \"deterministic_current_truth_only\": true,\n    \"historical_context_cannot_override_current_truth\": true\n  }\n}"
+    },
+    {
+      "path": "evals/gold_cases/vendor_eu_outsourcing_gap/initial_run_output.json",
+      "snippet": "{\n  \"audit_meta\": {\n    \"audit_id\": \"vendor-eu-outsourcing-gap-001\",\n    \"audit_version\": \"v1\",\n    \"timestamp_utc\": \"2026-03-17T15:09:12.144439+00:00\",\n    \"platform_version\": \"tenet-mvp\",\n    \"model_version\": \"deterministic-reasoner-v1\",\n    \"report_status\": \"draft\",\n    \"reasoning_mode\": \"deterministic\"\n  },\n  \"entity_profile\": {\n    \"legal_name\": \"Real Vendor EU Outsourcing Gap Case\",\n    \"trade_name\": \"\",\n    \"industry\": \"payments\",\n    \"subindustry\": \"\",\n    \"business_model\": \"\",\n    \"products_services\": [\n      \"api\"\n    ],\n    \"jurisdictions_of_operation\": [\n      \"EU\"\n    ],\n    \"customer_geographies\": [],\n    \"customer_types\": [\n      \"enterprise\"\n    ],\n    \"distribution_channels\": [],\n    \"payment_flows\": [],\n    \"data_categories_processed\": [],\n    \"high_risk_activities\": []\n  },\n  \"audit_scope\": {\n    \"audit_type\": \"vendor_internal_compliance_readiness_review\",\n    \"scope_statement\": \"vendor_internal_compliance_readiness_review for payments across EU\",\n    \"included_domains\": [\n      \"governance\",\n      \"vendor_risk\"\n    ],\n    \"excluded_domains\": [],\n    \"documents_reviewed\": [\n      \"EBA AML CFT\",\n      \"NYDFS Cybersecurity\",\n      \"UK MLR 2017\"\n    ],\n    \"evidence"
+    }
+  ],
+  "decision_contract": {
+    "required_fields": [
+      "case_dir",
+      "domains",
+      "jurisdictions",
+      "decided_by",
+      "rationale",
+      "evidence_refs"
+    ],
+    "allowed_domains": [
+      "aml",
+      "fraud",
+      "governance",
+      "kyb",
+      "kyc",
+      "regulatory_licensing",
+      "regulatory_reporting",
+      "remediation_tracking",
+      "sanctions",
+      "third_party_risk",
+      "transaction_screening",
+      "vendor_risk"
+    ],
+    "allowed_jurisdictions": [
+      "australia",
+      "canada",
+      "eu",
+      "global",
+      "hong_kong",
+      "india",
+      "singapore",
+      "uae",
+      "uk",
+      "us"
+    ],
+    "rules": [
+      "do not guess",
+      "do not infer beyond available case evidence",
+      "do not invent outcomes",
+      "use only explicit adjudication decisions",
+      "domains and jurisdictions must be non-empty lists"
+    ]
+  }
+}

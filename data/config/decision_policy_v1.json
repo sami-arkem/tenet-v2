@@ -1,0 +1,17 @@
+{
+  "blocked": {
+    "critical_missing_controls_gte": 1,
+    "high_missing_controls_gte": 2,
+    "min_confidence_override": 0.35
+  },
+  "conditionally_approved": {
+    "allow_partial_controls": true,
+    "allow_missing_evidence": true,
+    "min_confidence": 0.35
+  },
+  "approved": {
+    "max_critical_missing_controls": 0,
+    "max_high_missing_controls": 0,
+    "min_confidence": 0.75
+  }
+}

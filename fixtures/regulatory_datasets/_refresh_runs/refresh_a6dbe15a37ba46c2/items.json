@@ -1,0 +1,20 @@
+{
+  "run_id": "refresh_a6dbe15a37ba46c2",
+  "items": [
+    {
+      "dataset_id": "dataset_eu_amld_guidance",
+      "source_id": "mock_source",
+      "fetch_executed": true,
+      "fetch_payload": {
+        "ok": true
+      },
+      "ingestion_payload": {
+        "ok": true
+      },
+      "refreshed_at": "2026-03-18T00:00:00+00:00",
+      "deterministic_authoritative": true
+    }
+  ],
+  "failures": [],
+  "deterministic_authoritative": true
+}

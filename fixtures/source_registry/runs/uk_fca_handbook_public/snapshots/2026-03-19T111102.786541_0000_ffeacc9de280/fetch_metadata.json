@@ -1,0 +1,25 @@
+{
+  "source_id": "uk_fca_handbook_public",
+  "source_manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/uk_fca_handbook_public.json",
+  "fetched_at": "2026-03-19T11:11:02.786541+00:00",
+  "source_url": "https://www.fca.org.uk/handbook",
+  "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+  "raw_size_bytes": 58,
+  "normalized_text_chars": 58,
+  "fetch_meta": {
+    "status_code": 200,
+    "content_type": "text/plain",
+    "content_length_header": "20",
+    "final_url": "https://www.fca.org.uk/handbook"
+  },
+  "provenance_checks": {
+    "robots_ok": true,
+    "freshness_ok": true,
+    "license_ok": true,
+    "approved": true,
+    "retrieval_allowed": true
+  },
+  "dataset_manifest_path": "fixtures/regulatory_datasets/promoted/uk_fca_handbook_public.json",
+  "dataset_id": "dataset_uk_fca_handbook_public",
+  "deterministic_authoritative": true
+}

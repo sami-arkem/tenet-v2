@@ -1,0 +1,11 @@
+URL SOURCE MANIFEST
+dataset_id: dataset_official_eurlex_amld4
+title: EUR-Lex AMLD4 / Directive (EU) 2015/849
+domain: aml
+dataset_type: law_text
+framework_ids: EU_AMLD4
+jurisdictions: eu
+countries: EU
+source_url: https://eur-lex.europa.eu/eli/dir/2015/849/oj/eng
+ingested_at: 2026-03-19T19:27:49.710023+00:00
+fetch_mode: metadata_only

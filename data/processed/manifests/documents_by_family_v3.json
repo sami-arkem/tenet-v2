@@ -1,0 +1,18 @@
+{
+  "aml": 6,
+  "enforcement": 4,
+  "sanctions": 390892,
+  "training": 20,
+  "frameworks": 5,
+  "industry_adult": 1,
+  "industry_banking": 3,
+  "industry_crypto": 4,
+  "industry_defense": 1,
+  "industry_energy": 1,
+  "industry_gambling": 1,
+  "industry_gov_vendor": 1,
+  "industry_healthcare": 4,
+  "industry_insurance": 3,
+  "industry_payments": 2,
+  "regulations": 15
+}

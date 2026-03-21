@@ -1,0 +1,20 @@
+{
+  "audit_id": "cust-eu-sanctions-001",
+  "entity_name": "Continental Wallet EU",
+  "audit_type": "sanctions_readiness_review",
+  "industry": "crypto",
+  "jurisdictions": ["EU"],
+  "entity_type": "wallet_provider",
+  "products": ["wallet", "blockchain_screening"],
+  "customer_types": ["consumer"],
+  "domains": ["sanctions", "transaction_screening", "governance"],
+  "source_families": ["regulations", "sanctions", "industry_fintech"],
+  "query_terms": [
+    "sanctions policy",
+    "screening procedure",
+    "transaction screening",
+    "alert escalation workflow",
+    "screening governance"
+  ],
+  "top_k": 5
+}

@@ -1,0 +1,76 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T16:29:57.298720+00:00",
+  "audit_id": "kyb-us-partial-evidence-001",
+  "entity_name": "Real KYB Partial Evidence Case",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "jurisdictions": [],
+  "domains": [
+    "kyb_beneficial_ownership",
+    "customer_identification",
+    "aml_governance",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Business Verification and Beneficial Ownership",
+      "Customer Identification Program"
+    ]
+  },
+  "remediation_status_by_control": {
+    "AML-002": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "KYC-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "KYB-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "GOV-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    }
+  },
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "KYB-001",
+        "title": "Business Verification and Beneficial Ownership",
+        "domain": "kyb_beneficial_ownership",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Business Verification and Beneficial Ownership"
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer Identification Program",
+        "domain": "customer_identification",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Customer Identification Program"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

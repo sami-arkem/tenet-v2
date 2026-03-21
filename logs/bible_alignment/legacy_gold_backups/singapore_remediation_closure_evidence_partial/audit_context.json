@@ -1,0 +1,33 @@
+{
+  "audit_id": "singapore-remediation-closure-evidence-partial-001",
+  "entity_name": "Real Singapore Remediation Closure Evidence Partial",
+  "audit_type": "remediation_tracking_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "SINGAPORE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer",
+    "enterprise"
+  ],
+  "domains": [
+    "remediation_tracking",
+    "governance"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "closure evidence",
+    "issue register",
+    "action tracker",
+    "remediation governance",
+    "owner assignment"
+  ],
+  "top_k": 5
+}

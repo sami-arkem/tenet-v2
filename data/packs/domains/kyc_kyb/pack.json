@@ -1,0 +1,29 @@
+{
+  "pack_id": "domain_kyc_kyb_v1",
+  "domain": "kyc_kyb",
+  "label": "KYC_KYB",
+  "supported_audit_types": [
+    "kyc_kyb_policy_and_control_review",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "KYC-001",
+    "KYB-001",
+    "AML-002",
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "cip_policy",
+    "identity_verification",
+    "business_verification",
+    "beneficial_ownership",
+    "onboarding_workflow"
+  ],
+  "query_seeds": [
+    "cip policy",
+    "identity verification workflow",
+    "business onboarding workflow",
+    "beneficial ownership procedure",
+    "customer risk scoring"
+  ]
+}

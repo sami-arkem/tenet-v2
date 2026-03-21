@@ -1,0 +1,32 @@
+{
+  "dataset_id": "dataset_us_ofac_metadata",
+  "title": "OFAC Sanctions Metadata",
+  "domain": "sanctions",
+  "jurisdictions": [
+    "us"
+  ],
+  "countries": [
+    "US"
+  ],
+  "framework_ids": [
+    "OFAC"
+  ],
+  "dataset_type": "sanctions_list_metadata",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "DAILY",
+  "loader": {
+    "kind": "url_manifest",
+    "source_url": "https://example.org/ofac-metadata"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded": true,
+    "priority": "critical"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audit_id": "aml-us-policy-only-001",
+  "entity_name": "Real AML US Policy Only Case",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "US"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet"
+  ],
+  "customer_types": [
+    "consumer"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "enforcement",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "aml policy",
+    "policy approval",
+    "customer risk scoring",
+    "transaction monitoring",
+    "alert workflow"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

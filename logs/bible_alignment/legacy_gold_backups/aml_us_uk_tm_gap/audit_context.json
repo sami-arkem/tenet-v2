@@ -1,0 +1,20 @@
+{
+  "audit_id": "aml-us-uk-tm-gap-001",
+  "entity_name": "Real AML Case 001",
+  "audit_type": "aml_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": ["US", "UK"],
+  "entity_type": "payments_platform",
+  "products": ["wallet", "cross_border_payments"],
+  "customer_types": ["smb", "consumer"],
+  "source_families": ["regulations", "aml", "enforcement", "industry_fintech"],
+  "query_terms": [
+    "aml policy",
+    "kyc procedure",
+    "sanctions screening",
+    "transaction monitoring",
+    "alert handling",
+    "customer risk scoring"
+  ],
+  "top_k": 12
+}

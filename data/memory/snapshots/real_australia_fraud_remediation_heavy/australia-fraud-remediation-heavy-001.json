@@ -1,0 +1,75 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T15:22:56.390036+00:00",
+  "audit_id": "australia-fraud-remediation-heavy-001",
+  "entity_name": "Real Australia Fraud Remediation Heavy",
+  "audit_type": "fraud_readiness_review",
+  "jurisdictions": [],
+  "domains": [
+    "monitoring",
+    "aml_governance",
+    "governance",
+    "vendor_risk"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Transaction Monitoring"
+    ]
+  },
+  "findings_control_ids": [
+    "AML-003",
+    "AML-002",
+    "GOV-001",
+    "VEN-001"
+  ],
+  "missing_controls_control_ids": [
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "VEN-001"
+  ],
+  "missing_evidence_refs": [
+    "AML-002",
+    "AML-003",
+    "GOV-001",
+    "VEN-001"
+  ],
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Vendor Due Diligence and Oversight"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

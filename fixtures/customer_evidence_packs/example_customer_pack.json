@@ -1,0 +1,15 @@
+{
+  "pack_id": "customer_pack_example_001",
+  "customer_name": "Example Fintech",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk"
+  ],
+  "framework_ids": [
+    "UK_MLR"
+  ],
+  "expected_executable": true,
+  "metadata": {
+    "seeded": true
+  }
+}

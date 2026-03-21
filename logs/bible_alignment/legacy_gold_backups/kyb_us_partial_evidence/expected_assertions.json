@@ -1,0 +1,35 @@
+{
+  "case_id": "kyb_us_partial_evidence",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "CIP_KYC",
+        "CDD_BO"
+      ],
+      "missing_controls.control_id": [
+        "AML-002",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-002",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001"
+      ],
+      "findings.control_id": [
+        "KYB-001",
+        "KYC-001",
+        "AML-002",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 0
+    }
+  }
+}

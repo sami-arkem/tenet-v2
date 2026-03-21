@@ -1,0 +1,32 @@
+{
+  "audit_id": "screening-hk-false-positive-review-001",
+  "entity_name": "Real Hong Kong False Positive Review",
+  "audit_type": "transaction_screening_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "HONG_KONG"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "false positive review",
+    "screening alert workflow",
+    "screening governance"
+  ],
+  "top_k": 5
+}

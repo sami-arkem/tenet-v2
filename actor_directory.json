@@ -1,0 +1,19 @@
+{
+  "users": {
+    "user_alice": {
+      "tenant_id": "tenant_001",
+      "role": "AUDITOR",
+      "display_name": "Alice Chen"
+    },
+    "user_bob": {
+      "tenant_id": "tenant_001",
+      "role": "REVIEWER",
+      "display_name": "Bob Patel"
+    },
+    "user_admin": {
+      "tenant_id": "tenant_001",
+      "role": "ADMIN",
+      "display_name": "Admin User"
+    }
+  }
+}

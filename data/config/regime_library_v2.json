@@ -1,0 +1,60 @@
+{
+  "regimes": [
+    {
+      "regime_id": "BSA_AML",
+      "jurisdiction": "US",
+      "domain": "aml",
+      "title": "Bank Secrecy Act / AML baseline",
+      "control_ids": ["AML-001", "AML-002", "AML-003", "KYC-001", "SAN-001", "GOV-001"]
+    },
+    {
+      "regime_id": "CIP_KYC",
+      "jurisdiction": "US",
+      "domain": "kyc",
+      "title": "Customer Identification Program baseline",
+      "control_ids": ["KYC-001", "AML-002", "GOV-001"]
+    },
+    {
+      "regime_id": "CDD_BO",
+      "jurisdiction": "US",
+      "domain": "kyb",
+      "title": "Customer Due Diligence / Beneficial Ownership baseline",
+      "control_ids": ["KYB-001", "AML-002", "GOV-001"]
+    },
+    {
+      "regime_id": "OFAC",
+      "jurisdiction": "US",
+      "domain": "sanctions",
+      "title": "US OFAC sanctions screening baseline",
+      "control_ids": ["SAN-001", "GOV-001"]
+    },
+    {
+      "regime_id": "UK_MLR",
+      "jurisdiction": "UK",
+      "domain": "aml",
+      "title": "UK Money Laundering Regulations baseline",
+      "control_ids": ["AML-001", "AML-002", "AML-003", "KYC-001", "KYB-001", "SAN-001", "GOV-001"]
+    },
+    {
+      "regime_id": "EU_SANCTIONS",
+      "jurisdiction": "EU",
+      "domain": "sanctions",
+      "title": "EU sanctions screening baseline",
+      "control_ids": ["SAN-001", "GOV-001"]
+    },
+    {
+      "regime_id": "GOVERNANCE_BASELINE",
+      "jurisdiction": "GLOBAL",
+      "domain": "governance",
+      "title": "Governance baseline",
+      "control_ids": ["GOV-001"]
+    },
+    {
+      "regime_id": "THIRD_PARTY_RISK",
+      "jurisdiction": "GLOBAL",
+      "domain": "vendor",
+      "title": "Third-party risk baseline",
+      "control_ids": ["VEN-001", "GOV-001"]
+    }
+  ]
+}

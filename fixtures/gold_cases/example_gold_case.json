@@ -1,0 +1,19 @@
+{
+  "case_id": "gold_case_example_001",
+  "title": "Example AML Gold Case",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk"
+  ],
+  "framework_ids": [
+    "UK_MLR"
+  ],
+  "expected": {
+    "deployment_decision": "APPROVED",
+    "overall_posture": "GREEN"
+  },
+  "payload_path": "example_payload.json",
+  "metadata": {
+    "seeded": true
+  }
+}

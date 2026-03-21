@@ -1,0 +1,41 @@
+{
+  "trend_version": "v1",
+  "generated_at_utc": "2026-03-17T17:04:38.591581+00:00",
+  "entity_name": "Real EU Screening Quality Gap",
+  "audit_count": 1,
+  "audit_ids": [
+    "screening-eu-quality-checks-gap-001"
+  ],
+  "jurisdictions": [],
+  "domains": [
+    "monitoring",
+    "sanctions",
+    "governance"
+  ],
+  "decision_trajectory": {
+    "status": "insufficient_history",
+    "first_decision": "BLOCKED",
+    "latest_decision": "BLOCKED",
+    "history": [
+      {
+        "audit_id": "screening-eu-quality-checks-gap-001",
+        "decision": "BLOCKED",
+        "written_at_utc": "2026-03-17T15:22:56.397929+00:00"
+      }
+    ]
+  },
+  "recurring_missing_controls": [],
+  "recurring_findings": [],
+  "repeated_governance_weaknesses": [],
+  "repeated_screening_weaknesses": [],
+  "repeated_licensing_weaknesses": [],
+  "repeated_remediation_weaknesses": [],
+  "remediation_improvement_trajectory": {
+    "status": "insufficient_history",
+    "comparison_count": 0,
+    "newly_closed_total": 0,
+    "newly_open_total": 0,
+    "still_open_total": 0,
+    "improved_total": 0
+  }
+}

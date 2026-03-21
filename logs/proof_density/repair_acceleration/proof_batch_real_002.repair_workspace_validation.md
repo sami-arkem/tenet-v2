@@ -1,0 +1,94 @@
+# Proof Intake Repair Workspace Validation
+
+- entry_count: `11`
+- blocked_entry_count: `11`
+- repair_ready_count: `0`
+- issue_count: `87`
+
+- [error] `aml_australia_pack_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_australia_pack_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_australia_pack_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_australia_pack_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_australia_pack_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_canada_pack_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_canada_pack_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_canada_pack_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_canada_pack_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_canada_pack_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_eu_pack_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_eu_pack_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_eu_pack_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_eu_pack_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_eu_pack_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_canada_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_canada_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_canada_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_canada_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_canada_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_canada_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_eu_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_eu_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_eu_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_eu_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_eu_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_eu_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_global_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_global_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_global_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_global_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_global_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_global_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_global_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_global_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_global_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_hong_kong_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_hong_kong_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_hong_kong_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_hong_kong_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_hong_kong_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_hong_kong_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_hong_kong_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_hong_kong_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_hong_kong_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_india_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_india_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_india_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_india_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_india_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_india_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_india_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_india_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_india_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `aml_singapore_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `aml_singapore_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `aml_singapore_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `aml_singapore_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `aml_singapore_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `aml_singapore_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `aml_singapore_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `aml_singapore_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `aml_singapore_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `fraud_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `fraud_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `fraud_canada_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `fraud_canada_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `fraud_canada_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `fraud_canada_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `fraud_canada_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `fraud_canada_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `fraud_canada_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings
+- [error] `fraud_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: audit_context.json
+- [error] `fraud_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: expected_assertions.json
+- [error] `fraud_eu_case_001` `repair.required_file_not_confirmed` - required file not confirmed: case_notes.md
+- [error] `fraud_eu_case_001` `repair.audit_context_unchecked` - audit_context_checked must be true
+- [error] `fraud_eu_case_001` `repair.expected_assertions_unchecked` - expected_assertions_checked must be true for gold cases
+- [error] `fraud_eu_case_001` `repair.case_notes_unchecked` - case_notes_checked must be true for gold cases
+- [error] `fraud_eu_case_001` `repair.placeholders_not_cleared` - placeholders_removed must be true
+- [error] `fraud_eu_case_001` `repair.missing_notes` - repair_notes must be non-empty
+- [error] `fraud_eu_case_001` `repair.invalid_evidence_refs` - evidence_refs must be non-empty list of strings

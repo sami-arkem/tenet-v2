@@ -1,0 +1,32 @@
+{
+  "audit_id": "kyb-uk-beneficial-ownership-partial-001",
+  "entity_name": "Real KYB UK BO Partial Case",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "UK"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "merchant_acquiring"
+  ],
+  "customer_types": [
+    "smb"
+  ],
+  "source_families": [
+    "regulations",
+    "aml",
+    "kyc",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "kyb policy",
+    "beneficial ownership procedure",
+    "business onboarding workflow",
+    "ubo verification",
+    "review cadence"
+  ],
+  "top_k": 5,
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true
+}

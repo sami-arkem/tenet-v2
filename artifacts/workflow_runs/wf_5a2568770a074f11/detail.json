@@ -1,0 +1,307 @@
+{
+  "workflow_id": "wf_5a2568770a074f11",
+  "pack_id": "pack_38e3b2fab0684e4e",
+  "pack_name": "Acme AML Pack",
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk",
+    "eu"
+  ],
+  "created_by": "sami",
+  "created_at": "2026-03-18T09:13:34.022982+00:00",
+  "updated_at": "2026-03-18T09:13:34.032342+00:00",
+  "status": "COMPLETED_NO_REMEDIATION",
+  "latest_readiness": {
+    "pack_id": "pack_38e3b2fab0684e4e",
+    "pack_name": "Acme AML Pack",
+    "summary": {
+      "overall_status": "READY",
+      "control_count": 1,
+      "requested_evidence_action_count": 0
+    },
+    "controls": [
+      {
+        "control_id": "AML.MONITORING.001",
+        "regime_id": "UK_MLR.001",
+        "declared_control_present": true,
+        "required_evidence_types": [
+          "policy_document"
+        ],
+        "provided_evidence_types": [
+          "policy_document"
+        ],
+        "missing_evidence_types": [],
+        "unknown_evidence_ids": [],
+        "ready": true
+      }
+    ],
+    "requested_evidence_actions": []
+  },
+  "latest_execution": {
+    "run_id": "run_workflow_api_001",
+    "created_at": "2026-03-18T09:13:34.028308+00:00",
+    "deterministic_audit_result": {
+      "run_id": "run_workflow_api_001",
+      "status": "COMPLETED",
+      "created_at": "2026-03-18T09:13:34.027810+00:00",
+      "completed_at": "2026-03-18T09:13:34.027827+00:00",
+      "company_profile": {
+        "company_name": "Acme Fintech",
+        "industry": "fintech",
+        "primary_jurisdiction": "uk",
+        "additional_jurisdictions": [
+          "eu"
+        ],
+        "products": [
+          "payments"
+        ],
+        "entities": [
+          "Acme Fintech Ltd"
+        ]
+      },
+      "scope": {
+        "audit_id": "audit_001",
+        "audit_type": "aml_readiness_review",
+        "framework_ids": [
+          "UK_MLR",
+          "EU_AMLD6"
+        ],
+        "domain": "aml",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk",
+          "eu"
+        ],
+        "in_scope_entities": [
+          "Acme Fintech Ltd"
+        ],
+        "in_scope_products": [
+          "payments"
+        ],
+        "evaluation_date": "2026-03-18",
+        "historical_context_is_non_authoritative": true,
+        "deterministic_current_audit_truth_only": true
+      },
+      "control_evaluations": [
+        {
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "verdict": "SATISFIED",
+          "evidence_coverage_ratio": 1.0,
+          "evidence_refs": [
+            {
+              "evidence_id": "ev_001",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "evidence/policy.pdf",
+              "citation": "policy.pdf#L1-L20",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "findings": [],
+          "rationale": "Required evidence types are covered and control is declared effective."
+        }
+      ],
+      "findings": [],
+      "remediation_items": [],
+      "summary": {
+        "overall_posture": "GREEN",
+        "deployment_decision": "APPROVED",
+        "control_count": 1,
+        "passed_controls": 1,
+        "partial_controls": 0,
+        "failed_controls": 0,
+        "missing_evidence_controls": 0,
+        "critical_findings": 0,
+        "high_findings": 0,
+        "medium_findings": 0,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0."
+      },
+      "prior_historical_context": {},
+      "metadata": {
+        "workflow_id": "wf_5a2568770a074f11",
+        "evidence_pack_id": "pack_38e3b2fab0684e4e",
+        "evidence_pack_name": "Acme AML Pack"
+      }
+    },
+    "report_pack": {
+      "report_pack_version": "v1",
+      "generated_at": "2026-03-18T09:13:34.027845+00:00",
+      "run_id": "run_workflow_api_001",
+      "company_profile": {
+        "company_name": "Acme Fintech",
+        "industry": "fintech",
+        "primary_jurisdiction": "uk",
+        "additional_jurisdictions": [
+          "eu"
+        ],
+        "products": [
+          "payments"
+        ],
+        "entities": [
+          "Acme Fintech Ltd"
+        ]
+      },
+      "scope": {
+        "audit_id": "audit_001",
+        "audit_type": "aml_readiness_review",
+        "framework_ids": [
+          "UK_MLR",
+          "EU_AMLD6"
+        ],
+        "domain": "aml",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk",
+          "eu"
+        ],
+        "in_scope_entities": [
+          "Acme Fintech Ltd"
+        ],
+        "in_scope_products": [
+          "payments"
+        ],
+        "evaluation_date": "2026-03-18",
+        "historical_context_is_non_authoritative": true,
+        "deterministic_current_audit_truth_only": true
+      },
+      "summary": {
+        "overall_posture": "GREEN",
+        "deployment_decision": "APPROVED",
+        "control_count": 1,
+        "passed_controls": 1,
+        "partial_controls": 0,
+        "failed_controls": 0,
+        "missing_evidence_controls": 0,
+        "critical_findings": 0,
+        "high_findings": 0,
+        "medium_findings": 0,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0."
+      },
+      "controls": [
+        {
+          "control_id": "AML.MONITORING.001",
+          "regime_id": "UK_MLR.001",
+          "verdict": "SATISFIED",
+          "evidence_coverage_ratio": 1.0,
+          "evidence_refs": [
+            {
+              "evidence_id": "ev_001",
+              "title": "Monitoring Policy",
+              "source_type": "policy_document",
+              "file_path": "evidence/policy.pdf",
+              "citation": "policy.pdf#L1-L20",
+              "content_hash": null,
+              "collected_at": null
+            }
+          ],
+          "rationale": "Required evidence types are covered and control is declared effective."
+        }
+      ],
+      "findings": [],
+      "remediation_items": [],
+      "prior_historical_context": {},
+      "metadata": {
+        "workflow_id": "wf_5a2568770a074f11",
+        "evidence_pack_id": "pack_38e3b2fab0684e4e",
+        "evidence_pack_name": "Acme AML Pack"
+      }
+    },
+    "report_bundle": {
+      "run_id": "run_workflow_api_001",
+      "markdown": "# Tenet Deterministic Audit Report: run_workflow_api_001\n\nGenerated: 2026-03-18T09:13:34.027770+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk, eu\n- Overall posture: GREEN\n- Deployment decision: APPROVED\n- Summary: Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: SATISFIED\n- Evidence coverage ratio: 1.0\n- Rationale: Required evidence types are covered and control is declared effective.\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L20\n\n## Findings\n\n- No open findings.\n\n## Remediation Plan\n\n- No remediation items.\n\n## Prior / Historical Context\n\n- None provided.\n\n## Readiness Statement\n\nThe system is ready for deployment based on current deterministic audit truth.\n",
+      "deployment_decision": "APPROVED",
+      "overall_posture": "GREEN",
+      "finding_count": 0,
+      "remediation_count": 0
+    },
+    "snapshot": {
+      "run_id": "run_workflow_api_001",
+      "readiness_label": "READY",
+      "summary": {
+        "overall_posture": "GREEN",
+        "deployment_decision": "APPROVED",
+        "control_count": 1,
+        "passed_controls": 1,
+        "partial_controls": 0,
+        "failed_controls": 0,
+        "missing_evidence_controls": 0,
+        "critical_findings": 0,
+        "high_findings": 0,
+        "medium_findings": 0,
+        "low_findings": 0,
+        "summary_text": "Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0."
+      },
+      "finding_counts": {
+        "CRITICAL": 0,
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0
+      },
+      "remediation_items": []
+    },
+    "topline": {
+      "run_id": "run_workflow_api_001",
+      "overall_posture": "GREEN",
+      "deployment_decision": "APPROVED",
+      "control_count": 1,
+      "finding_count": 0,
+      "remediation_item_count": 0
+    },
+    "export_package": null
+  },
+  "latest_remediation_summary": {
+    "run_id": "run_workflow_api_001",
+    "item_count": 0,
+    "status_counts": {},
+    "items": []
+  },
+  "timeline": [
+    {
+      "created_at": "2026-03-18T09:13:34.022990+00:00",
+      "event_type": "workflow_created",
+      "payload": {
+        "pack_id": "pack_38e3b2fab0684e4e",
+        "pack_name": "Acme AML Pack",
+        "created_by": "sami"
+      }
+    },
+    {
+      "created_at": "2026-03-18T09:13:34.025488+00:00",
+      "event_type": "readiness_refreshed",
+      "payload": {
+        "overall_status": "READY",
+        "control_count": 1,
+        "requested_evidence_actions": 0
+      }
+    },
+    {
+      "created_at": "2026-03-18T09:13:34.029768+00:00",
+      "event_type": "audit_executed",
+      "payload": {
+        "run_id": "run_workflow_api_001",
+        "deployment_decision": "APPROVED",
+        "overall_posture": "GREEN",
+        "finding_count": 0
+      }
+    },
+    {
+      "created_at": "2026-03-18T09:13:34.032339+00:00",
+      "event_type": "remediation_refreshed",
+      "payload": {
+        "run_id": "run_workflow_api_001",
+        "item_count": 0,
+        "status_counts": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_id": "dataset_official_fatf_recommendations",
+  "chunk_count": 1,
+  "document_frequency": {
+    "00:00": 1,
+    "2026-03-19t19:27:49.721388": 1,
+    "aml": 1,
+    "and": 1,
+    "countries:": 1,
+    "dataset_id:": 1,
+    "dataset_official_fatf_recommendations": 1,
+    "dataset_type:": 1,
+    "domain:": 1,
+    "fatf": 1,
+    "fetch_mode:": 1,
+    "framework_ids:": 1,
+    "global": 1,
+    "https://www.fatf-gafi.org/en/publications/fatfrecommendations.html": 1,
+    "ingested_at:": 1,
+    "jurisdictions:": 1,
+    "law_text": 1,
+    "manifest": 1,
+    "metadata_only": 1,
+    "recommendations": 1,
+    "source": 1,
+    "source_url:": 1,
+    "standards": 1,
+    "title:": 1,
+    "updates": 1,
+    "url": 1
+  },
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 28,
+      "token_count": 28,
+      "text": "url source manifest dataset_id: dataset_official_fatf_recommendations title: fatf recommendations and standards updates domain: aml dataset_type: law_text framework_ids: fatf jurisdictions: global countries: global source_url: https://www.fatf-gafi.org/en/publications/fatfrecommendations.html ingested_at: 2026-03-19t19:27:49.721388 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "case_id": "fraud_us_monitoring_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "missing_controls": [
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "GOV-001"
+    ],
+    "findings": [
+      "GOV-001"
+    ],
+    "coverage": 0
+  },
+  {
+    "case_id": "fraud_uk_case_management_gap",
+    "decision": "CONDITIONALLY_APPROVED",
+    "regimes": [
+      "UK_MLR"
+    ],
+    "missing_controls": [
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "GOV-001"
+    ],
+    "findings": [
+      "GOV-001"
+    ],
+    "coverage": 35
+  },
+  {
+    "case_id": "screening_us_transaction_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "missing_controls": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "findings": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "screening_eu_quality_checks_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "EU_SANCTIONS"
+    ],
+    "missing_controls": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "findings": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "licensing_uae_vendor_readiness",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UAE_AML_BASELINE",
+      "UAE_SANCTIONS_BASELINE",
+      "UAE_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "licensing_singapore_governance_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "SG_AML_BASELINE",
+      "SG_SANCTIONS_BASELINE",
+      "SG_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "remediation_us_issue_tracker_gap",
+    "decision": "CONDITIONALLY_APPROVED",
+    "regimes": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "missing_controls": [
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "GOV-001"
+    ],
+    "findings": [
+      "GOV-001"
+    ],
+    "coverage": 35
+  },
+  {
+    "case_id": "remediation_canada_closure_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CA_AML_BASELINE",
+      "CA_SANCTIONS_BASELINE",
+      "CA_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "screening_hk_false_positive_review",
+    "decision": "BLOCKED",
+    "regimes": [
+      "HK_AML_BASELINE",
+      "HK_SANCTIONS_BASELINE",
+      "HK_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "SAN-001",
+      "AML-003",
+      "GOV-001"
+    ],
+    "missing_evidence": [
+      "SAN-001",
+      "AML-003",
+      "GOV-001"
+    ],
+    "findings": [
+      "AML-003",
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 23
+  },
+  {
+    "case_id": "fraud_australia_governance_heavy",
+    "decision": "BLOCKED",
+    "regimes": [
+      "AU_AML_BASELINE",
+      "AU_SANCTIONS_BASELINE",
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "AML-003",
+      "AML-002",
+      "GOV-001",
+      "VEN-001"
+    ],
+    "coverage": 9
+  }
+]

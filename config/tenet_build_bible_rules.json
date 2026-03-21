@@ -1,0 +1,85 @@
+{
+  "version": "v6",
+  "governing_bible_version": "final bible final version",
+  "governing_bible_path": "/Users/samisayyed/Downloads/final bible final version.md",
+  "required_paths_any": [
+    "core",
+    "src/core",
+    "scripts",
+    "tests"
+  ],
+  "required_paths_all": [
+    "logs"
+  ],
+  "deterministic_roots": [
+    "core",
+    "src/core",
+    "backend/core"
+  ],
+  "model_boundary_allowlist": [
+    "core/model_manager.py"
+  ],
+  "frontend_roots": [
+    "app",
+    "frontend",
+    "ui"
+  ],
+  "gold_case_roots": [
+    "evals/gold_cases",
+    "data/gold_cases"
+  ],
+  "report_roots": [
+    "export",
+    "reports",
+    "src/export",
+    "src/reporting"
+  ],
+  "forbidden_text_markers": [
+    "TODO",
+    "todo",
+    "lorem ipsum",
+    "console.log(",
+    "debugger;",
+    "PLACEHOLDER",
+    "placeholder"
+  ],
+  "forbidden_ui_markers": [
+    "AI-powered",
+    "✨",
+    "🚀",
+    "🔥",
+    "gradient-purple",
+    "bg-gradient",
+    "animate-spin"
+  ],
+  "forbidden_in_deterministic_code": [
+    "openai",
+    "anthropic",
+    "google.generativeai",
+    "from openai",
+    "import openai",
+    "requests.",
+    "httpx.",
+    "aiohttp.",
+    "subprocess.",
+    "eval(",
+    "exec("
+  ],
+  "required_bools_in_audit_context": [
+    "historical_context_is_non_authoritative",
+    "deterministic_current_audit_truth_only"
+  ],
+  "required_bools_in_expected_assertions_rules": [
+    "no_invented_pass_outcome",
+    "deterministic_current_truth_only",
+    "historical_context_cannot_override_current_truth"
+  ],
+  "allowed_expected_assertion_types": [
+    "finding",
+    "gap",
+    "missing_evidence",
+    "coverage",
+    "decision"
+  ],
+  "max_forbidden_hits_per_file": 50
+}

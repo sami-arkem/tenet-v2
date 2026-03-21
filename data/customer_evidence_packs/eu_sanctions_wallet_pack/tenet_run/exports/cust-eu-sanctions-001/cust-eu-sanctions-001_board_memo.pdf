@@ -1,0 +1,83 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1037 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Board Memo) Tj
+/F1 10 Tf
+1 0 0 1 50 754 Tm
+(Entity: Continental Wallet EU) Tj
+/F1 10 Tf
+1 0 0 1 50 740 Tm
+(Deployment Decision: BLOCKED) Tj
+/F2 13 Tf
+1 0 0 1 50 712 Tm
+(Executive Position) Tj
+/F1 10 Tf
+1 0 0 1 50 692 Tm
+(Deployment blocked due to missing critical/high-severity controls or insufficient confidence.) Tj
+/F2 13 Tf
+1 0 0 1 50 664 Tm
+(Top Issues) Tj
+/F1 10 Tf
+1 0 0 1 50 644 Tm
+(? Transaction Monitoring) Tj
+/F1 10 Tf
+1 0 0 1 50 630 Tm
+(? Sanctions Screening and Escalation) Tj
+/F1 10 Tf
+1 0 0 1 50 616 Tm
+(? Governance Roles and Escalation) Tj
+/F2 13 Tf
+1 0 0 1 50 588 Tm
+(Priority Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 568 Tm
+(? Transaction Monitoring \(AML-003\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 554 Tm
+(? Sanctions Screening and Escalation \(SAN-001\) [CRITICAL]) Tj
+/F1 10 Tf
+1 0 0 1 50 540 Tm
+(? Governance Roles and Escalation \(GOV-001\) [HIGH]) Tj
+/F2 13 Tf
+1 0 0 1 50 512 Tm
+(Prior / Historical Context) Tj
+/F1 10 Tf
+1 0 0 1 50 492 Tm
+(? No prior historical context available.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000001346 00000 n 
+0000001416 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1491
+%%EOF

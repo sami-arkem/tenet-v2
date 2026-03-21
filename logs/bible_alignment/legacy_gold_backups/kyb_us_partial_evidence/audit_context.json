@@ -1,0 +1,20 @@
+{
+  "audit_id": "kyb-us-partial-evidence-001",
+  "entity_name": "Real KYB Partial Evidence Case",
+  "audit_type": "kyc_kyb_policy_and_control_review",
+  "industry": "fintech",
+  "jurisdictions": ["US"],
+  "entity_type": "payments_platform",
+  "products": ["merchant_acquiring", "wallet"],
+  "customer_types": ["smb"],
+  "source_families": ["regulations", "aml", "kyc", "industry_fintech"],
+  "query_terms": [
+    "kyb policy",
+    "beneficial ownership",
+    "ubo verification",
+    "business onboarding",
+    "cip",
+    "refresh procedure"
+  ],
+  "top_k": 5
+}

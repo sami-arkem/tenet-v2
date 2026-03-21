@@ -1,0 +1,36 @@
+{
+  "audit_id": "report-live-001",
+  "exported_at_utc": "2026-03-17T14:09:37.137597+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "logs/exports/report-live-001/report-live-001_board_memo.docx",
+      "sha256": "eecf1d2d115d4a3600a3e7ab9b7daf756cae82679311da5736ce6112cd544479",
+      "size_bytes": 2563
+    },
+    "board_pdf": {
+      "path": "logs/exports/report-live-001/report-live-001_board_memo.pdf",
+      "sha256": "a0fb975c247d5d6a112b599201b2952a8e6d0ab0efc41371bb2d704723260310",
+      "size_bytes": 2185
+    },
+    "client_docx": {
+      "path": "logs/exports/report-live-001/report-live-001_client_report.docx",
+      "sha256": "9e4a9c05c356a6d101d1d6f1eab915b5330217d2a78bd7c78e24a690c69efc62",
+      "size_bytes": 2671
+    },
+    "client_pdf": {
+      "path": "logs/exports/report-live-001/report-live-001_client_report.pdf",
+      "sha256": "4b81c8d837abff539b99d9ba35f91aee22f6ccd7d8f2e4a3854749c895dfca48",
+      "size_bytes": 2844
+    },
+    "regulator_docx": {
+      "path": "logs/exports/report-live-001/report-live-001_regulator_memo.docx",
+      "sha256": "1f6a8ba954de4659fc68fa548fe6216b51730fae7c7768aecc7d158c3592d5e0",
+      "size_bytes": 2685
+    },
+    "regulator_pdf": {
+      "path": "logs/exports/report-live-001/report-live-001_regulator_memo.pdf",
+      "sha256": "14b72607ca12c84b3e86166d61e67e5f6f5ee53991d5eeff6e0daaf0fc346dd3",
+      "size_bytes": 2450
+    }
+  }
+}

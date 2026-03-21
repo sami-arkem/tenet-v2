@@ -1,0 +1,25 @@
+{
+  "source_id": "licensed_vendor_feed",
+  "source_manifest_path": "/Users/samisayyed/tenet-v2/fixtures/source_registry/regulatory_feeds/licensed_vendor_feed.json",
+  "fetched_at": "2026-03-19T08:06:23.714714+00:00",
+  "source_url": "https://licensed.example.com/feed",
+  "raw_sha256": "653355e82e740ff0b4f6d62e963392d98e9e9c174b0d32f4a06fa8fbddc4ab16",
+  "raw_size_bytes": 60,
+  "normalized_text_chars": 60,
+  "fetch_meta": {
+    "status_code": 200,
+    "content_type": "text/plain",
+    "content_length_header": "20",
+    "final_url": "https://licensed.example.com/feed"
+  },
+  "provenance_checks": {
+    "robots_ok": true,
+    "freshness_ok": true,
+    "license_ok": true,
+    "approved": true,
+    "retrieval_allowed": true
+  },
+  "dataset_manifest_path": "fixtures/regulatory_datasets/promoted/licensed_vendor_feed.json",
+  "dataset_id": "dataset_licensed_vendor_feed",
+  "deterministic_authoritative": true
+}

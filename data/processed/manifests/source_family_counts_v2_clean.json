@@ -1,0 +1,21 @@
+{
+  "aml": 18,
+  "corporate": 17,
+  "enforcement": 21,
+  "frameworks": 12,
+  "industry_adult": 11,
+  "industry_banking": 16,
+  "industry_crypto": 11,
+  "industry_defense": 3,
+  "industry_energy": 10,
+  "industry_fintech": 8,
+  "industry_gambling": 8,
+  "industry_gov_vendor": 12,
+  "industry_healthcare": 3,
+  "industry_insurance": 9,
+  "industry_payments": 11,
+  "industry_telecom": 9,
+  "licensing": 16,
+  "regulations": 37,
+  "sanctions": 7
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "official_eurlex_aml_package",
+  "title": "EUR-Lex EU AML Package and AMLA Texts",
+  "domain": "aml",
+  "jurisdictions": [
+    "eu"
+  ],
+  "countries": [
+    "EU"
+  ],
+  "source_class": "PUBLIC_OFFICIAL",
+  "acquisition_method": "PUBLIC_DOWNLOAD",
+  "license_status": "PUBLIC",
+  "owner": "tenet-platform",
+  "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html",
+  "approved": true,
+  "retrieval_allowed": true,
+  "metadata": {
+    "seeded_by": "official_corpus_bootstrap",
+    "priority": "critical",
+    "dataset_goal": "eu_aml_package"
+  }
+}

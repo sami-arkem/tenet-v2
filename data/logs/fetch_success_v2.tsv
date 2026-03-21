@@ -1,0 +1,61 @@
+source_family	source_name	document_name	url	status
+aml	FINCEN	FinCEN Guidance	https://www.fincen.gov/guidance	ok
+aml	EBA	EBA AML CFT	https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism	ok
+aml	FCA	FCA Money Laundering Regulations	https://www.fca.org.uk/firms/financial-crime/money-laundering-regulations	ok
+corporate	SEC	SEC Company Search	https://www.sec.gov/edgar/searchedgar/companysearch	ok
+corporate	UK_COMPANIES_HOUSE	Companies House	https://find-and-update.company-information.service.gov.uk/	ok
+corporate	CANADA_CORPORATIONS	Corporations Canada	https://ised-isde.canada.ca/site/corporations-canada/en	ok
+corporate	ASIC	ASIC Registers	https://asic.gov.au/for-business/registers/	ok
+corporate	ACRA	ACRA Company Registration	https://www.acra.gov.sg/how-to-guides/browse-topics/company-registration	ok
+licensing	NMLS	NMLS Consumer Access	https://www.nmlsconsumeraccess.org/	ok
+licensing	RBI	RBI Digital Lending	https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12194	ok
+enforcement	SEC	SEC Litigation Releases	https://www.sec.gov/enforcement-litigation/litigation-releases	ok
+enforcement	UK_OFSI	OFSI General Guidance	https://www.gov.uk/government/publications/financial-sanctions-general-guidance	ok
+frameworks	OECD	OECD AI Principles	https://oecd.ai/en/ai-principles	ok
+frameworks	OECD	OECD AI Classification	https://oecd.ai/en/classification	ok
+frameworks	WHO	WHO Health Data Governance	https://www.who.int/teams/digital-health-and-innovation/health-data-governance	ok
+frameworks	CISA	CISA Cybersecurity Performance Goals	https://www.cisa.gov/cross-sector-cybersecurity-performance-goals	ok
+frameworks	ICO	ICO Accountability Governance	https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/	ok
+regulations	US_FTC	FTC Safeguards Rule	https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314	ok
+regulations	US_FTC	GLBA	https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act	ok
+regulations	UK	UK MLR 2017	https://www.legislation.gov.uk/uksi/2017/692/contents/made	ok
+regulations	UK_ICO	ICO AI Guidance	https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/	ok
+regulations	EDPB	EDPB DSA GDPR Guidelines	https://www.edpb.europa.eu/our-work-tools/documents/public-consultations/2025/guidelines-32025-interplay-between-dsa-and-gdpr_bg	ok
+regulations	CANADA	PCMLTFA	https://laws-lois.justice.gc.ca/eng/acts/P-8.6/	ok
+regulations	CANADA	PIPEDA	https://laws-lois.justice.gc.ca/eng/acts/P-21/	ok
+regulations	AUSTRALIA_OAIC	Privacy Act	https://www.oaic.gov.au/privacy/the-privacy-act	ok
+regulations	AUSTRALIA	AML CTF Act	https://www.legislation.gov.au/Latest/C2018C00295	ok
+regulations	NEW_ZEALAND	Privacy Act 2020	https://www.privacy.org.nz/privacy-act-2020/	ok
+regulations	SOUTH_AFRICA	POPIA	https://popia.co.za/act/	ok
+industry_fintech	CFPB	CFPB Supervision	https://www.consumerfinance.gov/compliance/supervision-examinations/	ok
+industry_fintech	CFPB	CFPB Compliance Resources	https://www.consumerfinance.gov/compliance/compliance-resources/	ok
+industry_fintech	FCA	FCA Innovation	https://www.fca.org.uk/firms/innovation	ok
+industry_fintech	SEC	SEC FinHub	https://www.sec.gov/finhub	ok
+industry_gov_vendor	FAR	FAR	https://www.acquisition.gov/far	ok
+industry_gov_vendor	FAR	FAR Part 52	https://www.acquisition.gov/far-part-52	ok
+industry_gov_vendor	FEDRAMP	FedRAMP	https://www.fedramp.gov/	ok
+industry_healthcare	WHO	WHO Health Data Governance	https://www.who.int/teams/digital-health-and-innovation/health-data-governance	ok
+industry_payments	US	Regulation E	https://www.ecfr.gov/current/title-12/chapter-X/part-1005	ok
+industry_payments	CFPB	CFPB Compliance Resources	https://www.consumerfinance.gov/compliance/compliance-resources/	ok
+industry_payments	FTC	GLBA	https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act	ok
+industry_crypto	FINCEN	FinCEN Guidance	https://www.fincen.gov/guidance	ok
+industry_crypto	FINRA	FINRA AML	https://www.finra.org/rules-guidance/key-topics/aml	ok
+industry_crypto	SEC	SEC FinHub	https://www.sec.gov/finhub	ok
+industry_banking	FFIEC	FFIEC BSA AML Manual	https://bsaaml.ffiec.gov/manual	ok
+industry_banking	OCC	OCC Comptroller Handbook	https://www.occ.treas.gov/publications-and-resources/publications/comptrollers-handbook/index-comptrollers-handbook.html	ok
+industry_banking	BCBS	Operational Resilience	https://www.bis.org/bcbs/publ/d550.htm	ok
+industry_banking	FDIC	FDIC BSA AML	https://www.fdic.gov/banker-resource-center/bank-secrecy-act-anti-money-laundering-bsaaml	ok
+industry_insurance	APRA	APRA Information Security	https://www.apra.gov.au/information-security	ok
+industry_insurance	NAIC	NAIC Cybersecurity	https://content.naic.org/cipr-topics/cybersecurity	ok
+industry_insurance	NYDFS	NYDFS Cybersecurity	https://www.dfs.ny.gov/industry_guidance/cybersecurity	ok
+industry_telecom	CISA	Communications Resiliency	https://www.cisa.gov/communications-resiliency	ok
+industry_telecom	CISA	Communications Hardening	https://www.cisa.gov/resources-tools/resources/enhanced-visibility-and-hardening-guidance-communications-infrastructure	ok
+industry_telecom	CISA	Mobile Communications Guidance	https://www.cisa.gov/resources-tools/resources/mobile-communications-best-practice-guidance	ok
+industry_defense	NIST	NIST 800-171	https://csrc.nist.gov/pubs/sp/800/171/r3/final	ok
+industry_defense	DFARS	DFARS	https://www.acquisition.gov/dfars	ok
+industry_energy	NERC	NERC CIP Standards	https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx	ok
+industry_energy	DOE	CESER	https://www.energy.gov/ceser/office-cybersecurity-energy-security-and-emergency-response	ok
+industry_energy	CISA	Industrial Control Systems	https://www.cisa.gov/topics/industrial-control-systems	ok
+industry_adult	DOJ	DOJ Obscenity Law	https://www.justice.gov/criminal/criminal-ceos/obscenity	ok
+industry_adult	DOJ	DOJ Human Trafficking	https://www.justice.gov/humantrafficking	ok
+industry_adult	FTC	FTC Privacy Security	https://www.ftc.gov/business-guidance/privacy-security	ok

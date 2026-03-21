@@ -1,0 +1,556 @@
+{
+  "entries": [
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T14:44:11.567048+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T144411.567048_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T144411.567048_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T14:44:18.044229+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T144418.044229_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T144418.044229_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:07:35.449680+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T170735.449680_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T170735.449680_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:08:30.336328+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T170830.336328_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T170830.336328_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:08:36.055911+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T170836.055911_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T170836.055911_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:14:36.943980+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T171436.943980_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T171436.943980_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:49:20.870025+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T174920.870025_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T174920.870025_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:49:37.020636+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T174937.020636_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T174937.020636_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:49:48.575296+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T174948.575296_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T174948.575296_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:50:01.175458+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T175001.175458_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T175001.175458_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T17:50:08.437408+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T175008.437408_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T175008.437408_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T18:35:07.006800+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T183507.006800_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T183507.006800_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T19:37:08.382600+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T193708.382600_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T193708.382600_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T20:13:57.954292+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T201357.954292_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T201357.954292_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T20:33:06.244678+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T203306.244678_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T203306.244678_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T21:10:48.241433+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T211048.241433_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T211048.241433_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T21:48:13.199959+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T214813.199959_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T214813.199959_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T22:04:33.719196+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T220433.719196_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T220433.719196_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T22:49:02.947620+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T224902.947620_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T224902.947620_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T22:55:00.059635+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T225500.059635_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T225500.059635_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-18T23:05:30.390026+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-18T230530.390026_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-18T230530.390026_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:06:23.736126+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T080623.736126_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T080623.736126_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:10:27.036591+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T081027.036591_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T081027.036591_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:19:31.925952+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T081931.925952_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T081931.925952_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:36:50.205792+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T083650.205792_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T083650.205792_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:39:40.774165+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T083940.774165_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T083940.774165_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T08:49:13.979650+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T084913.979650_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T084913.979650_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:12:47.711053+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T091247.711053_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T091247.711053_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:15:49.189325+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T091549.189325_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T091549.189325_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:25:43.474546+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T092543.474546_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T092543.474546_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:36:03.259968+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T093603.259968_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T093603.259968_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:44:50.538273+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T094450.538273_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T094450.538273_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:46:20.984605+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T094620.984605_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T094620.984605_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T09:56:57.369690+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T095657.369690_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T095657.369690_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T10:08:38.662421+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T100838.662421_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T100838.662421_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T10:18:12.617751+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T101812.617751_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T101812.617751_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T10:38:23.242420+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T103823.242420_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T103823.242420_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T10:53:37.614176+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T105337.614176_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T105337.614176_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T11:11:02.632521+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T111102.632521_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T111102.632521_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T11:32:09.216907+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T113209.216907_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T113209.216907_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T11:47:30.464556+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T114730.464556_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T114730.464556_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T12:05:42.826481+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T120542.826481_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T120542.826481_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T12:32:33.413398+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T123233.413398_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T123233.413398_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T12:58:52.670877+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T125852.670877_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T125852.670877_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T14:13:04.752526+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T141304.752526_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T141304.752526_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T14:55:46.415388+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T145546.415388_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T145546.415388_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T15:03:00.590628+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T150300.590628_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T150300.590628_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T15:04:34.386435+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T150434.386435_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T150434.386435_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T15:06:06.734525+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T150606.734525_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T150606.734525_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T15:06:42.847253+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T150642.847253_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T150642.847253_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T17:59:46.069696+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T175946.069696_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T175946.069696_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T19:10:10.475386+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T191010.475386_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T191010.475386_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T19:10:59.138145+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T191059.138145_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T191059.138145_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T19:14:16.688975+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T191416.688975_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T191416.688975_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    },
+    {
+      "source_id": "official_eurlex_aml_package",
+      "dataset_id": "dataset_official_eurlex_aml_package",
+      "fetched_at": "2026-03-19T19:27:50.365924+00:00",
+      "raw_sha256": "09c0c15f6003cd6fb879e5d31eb8e9063ec5060d6333241fe071950dc9c73f1b",
+      "raw_size_bytes": 160,
+      "snapshot_id": "2026-03-19T192750.365924_0000_09c0c15f6003",
+      "snapshot_root": "fixtures/source_registry/runs/official_eurlex_aml_package/snapshots/2026-03-19T192750.365924_0000_09c0c15f6003",
+      "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/authority-for-anti-money-laundering-and-countering-the-financing-of-terrorism.html"
+    }
+  ],
+  "entry_count": 55,
+  "latest_fetched_at": "2026-03-19T19:27:50.365924+00:00"
+}

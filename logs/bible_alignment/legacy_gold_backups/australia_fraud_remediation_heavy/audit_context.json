@@ -1,0 +1,35 @@
+{
+  "audit_id": "australia-fraud-remediation-heavy-001",
+  "entity_name": "Real Australia Fraud Remediation Heavy",
+  "audit_type": "fraud_readiness_review",
+  "industry": "fintech",
+  "jurisdictions": [
+    "AUSTRALIA"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "wallet",
+    "merchant_acquiring"
+  ],
+  "customer_types": [
+    "consumer",
+    "smb"
+  ],
+  "domains": [
+    "fraud",
+    "governance",
+    "remediation_tracking"
+  ],
+  "source_families": [
+    "governance",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "fraud monitoring rules",
+    "issue register",
+    "action tracker",
+    "fraud governance",
+    "closure evidence"
+  ],
+  "top_k": 5
+}

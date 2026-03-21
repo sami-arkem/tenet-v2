@@ -1,0 +1,20 @@
+{
+  "batch_label": "proof_batch_real_002",
+  "operator_task_dir": "logs/proof_density/execution/proof_batch_real_002/operator_tasks",
+  "task_file_count": 11,
+  "ready_count": 0,
+  "blocked_count": 11,
+  "task_files": [
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_canada_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_eu_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_global_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_hong_kong_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_india_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_singapore_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/fraud_canada_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/fraud_eu_case_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_australia_pack_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_canada_pack_001.md",
+    "logs/proof_density/execution/proof_batch_real_002/operator_tasks/aml_eu_pack_001.md"
+  ]
+}

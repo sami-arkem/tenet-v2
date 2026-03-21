@@ -1,0 +1,10 @@
+{
+  "source_id": "official_fca_handbook",
+  "snapshot_id": "2026-03-19T192750.553732_0000_29798498777d",
+  "snapshot_root": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T192750.553732_0000_29798498777d",
+  "raw_path": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T192750.553732_0000_29798498777d/raw_source.bin",
+  "normalized_text_path": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T192750.553732_0000_29798498777d/normalized_text.txt",
+  "metadata_path": "fixtures/source_registry/runs/official_fca_handbook/snapshots/2026-03-19T192750.553732_0000_29798498777d/fetch_metadata.json",
+  "fetched_at": "2026-03-19T19:27:50.553732+00:00",
+  "raw_sha256": "29798498777d1cb2dd2c3e2bb0fad3eda32aa932f6894c550fdff04466466b46"
+}

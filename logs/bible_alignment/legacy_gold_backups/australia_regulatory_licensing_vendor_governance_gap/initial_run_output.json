@@ -1,0 +1,356 @@
+{
+  "audit_meta": {
+    "audit_id": "australia-regulatory-licensing-vendor-governance-gap-001",
+    "audit_version": "v1",
+    "timestamp_utc": "2026-03-17T15:15:13.473833+00:00",
+    "platform_version": "tenet-mvp",
+    "model_version": "deterministic-reasoner-v1",
+    "report_status": "draft",
+    "reasoning_mode": "deterministic"
+  },
+  "entity_profile": {
+    "legal_name": "Real Australia Regulatory Licensing Vendor Governance Gap",
+    "trade_name": "",
+    "industry": "fintech",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [
+      "api",
+      "dashboard"
+    ],
+    "jurisdictions_of_operation": [
+      "AUSTRALIA"
+    ],
+    "customer_geographies": [],
+    "customer_types": [
+      "enterprise"
+    ],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "regulatory_licensing_readiness_review",
+    "scope_statement": "regulatory_licensing_readiness_review for fintech across AUSTRALIA",
+    "included_domains": [
+      "governance",
+      "vendor_risk",
+      "regulatory_licensing"
+    ],
+    "excluded_domains": [],
+    "documents_reviewed": [
+      "APRA Information Security",
+      "ASIC Registers",
+      "ICO Accountability Governance",
+      "OECD AI Principles",
+      "UK MLR 2017"
+    ],
+    "evidence_received": [
+      "APRA Information Security",
+      "ASIC Registers",
+      "ICO Accountability Governance",
+      "OECD AI Principles",
+      "UK MLR 2017"
+    ],
+    "evidence_missing_at_start": [
+      "Governance Roles and Escalation",
+      "Vendor Due Diligence and Oversight"
+    ]
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "secondary_regimes": [],
+    "frameworks": [
+      "AU_GOVERNANCE_BASELINE"
+    ],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [
+      "governance",
+      "vendor_risk"
+    ],
+    "regulatory_classification": {
+      "entity_type": "vendor",
+      "risk_tier": "HIGH",
+      "obligation_intensity": "HIGH",
+      "cross_border_complexity": "MODERATE"
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "Real Australia Regulatory Licensing Vendor Governance Gap",
+    "overall_readiness": "BLOCKED",
+    "top_issues": [
+      "Vendor Due Diligence and Oversight",
+      "Governance Roles and Escalation"
+    ],
+    "decision_summary": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "board_message": "Tenet evaluated 2 required controls across 1 primary regimes. Current decision: BLOCKED."
+  },
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [],
+    "conditions_precedent": [
+      "Governance Roles and Escalation",
+      "Vendor Due Diligence and Oversight"
+    ],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "HIGH",
+    "exposure_band": "HIGH",
+    "drivers": [
+      "governance",
+      "vendor_risk"
+    ],
+    "assumptions": [
+      "Exposure band is inferred from control severity, status, and evidence sufficiency",
+      "Human review is required before external reliance"
+    ],
+    "confidence_note": "Derived from average control confidence score of 0.3"
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "severity_if_missing": "high",
+        "status": "unknown",
+        "evidence_status": "partial",
+        "confidence": 0.4,
+        "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=2.",
+        "matched_chunk_ids": [
+          1,
+          1
+        ],
+        "citations": [
+          {
+            "chunk_id": 1,
+            "document_name": "ICO Accountability Governance",
+            "source_name": "ICO",
+            "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/"
+          },
+          {
+            "chunk_id": 1,
+            "document_name": "OECD AI Principles",
+            "source_name": "OECD",
+            "url": "https://oecd.ai/en/ai-principles"
+          }
+        ]
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "control_coverage_score": 18,
+    "evidence_coverage_score": 25
+  },
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "title": "Vendor Due Diligence and Oversight",
+      "domain": "vendor_risk",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "VEN-001"
+    },
+    {
+      "finding_id": "F-002",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "HIGH",
+      "status": "UNKNOWN",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=2.",
+      "citations": [
+        {
+          "chunk_id": 1,
+          "document_name": "ICO Accountability Governance",
+          "source_name": "ICO",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/"
+        },
+        {
+          "chunk_id": 1,
+          "document_name": "OECD AI Principles",
+          "source_name": "OECD",
+          "url": "https://oecd.ai/en/ai-principles"
+        }
+      ],
+      "control_id": "GOV-001"
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "R-001",
+      "risk_title": "Governance Roles and Escalation",
+      "category": "governance",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=2.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002"
+      ]
+    },
+    {
+      "risk_id": "R-002",
+      "risk_title": "Vendor Due Diligence and Oversight",
+      "category": "vendor_risk",
+      "description": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002"
+      ]
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "high",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=2."
+    },
+    {
+      "control_id": "VEN-001",
+      "title": "Vendor Due Diligence and Oversight",
+      "domain": "vendor_risk",
+      "severity": "high",
+      "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "missing_evidence": [
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "needed_evidence_status": "partial",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=3, matched_chunks=2."
+    },
+    {
+      "control_id": "VEN-001",
+      "title": "Vendor Due Diligence and Oversight",
+      "needed_evidence_status": "missing",
+      "rationale": "Control VEN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [],
+    "near_term_30_90_days": [
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      },
+      {
+        "control_id": "VEN-001",
+        "title": "Vendor Due Diligence and Oversight",
+        "domain": "vendor_risk",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Vendor Due Diligence and Oversight"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "Tenet evaluated 2 required controls across 1 primary regimes. Current decision: BLOCKED.",
+    "regulator_ready_summary": "Applicable regimes: AU_GOVERNANCE_BASELINE. Decision: BLOCKED. Missing controls: 2. Missing evidence items: 2.",
+    "client_facing_summary": "The current review outcome is BLOCKED. 2 findings were identified and require human-reviewed remediation tracking."
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 32,
+    "confidence_level": "LOW",
+    "confidence_drivers": [
+      "2 required controls evaluated",
+      "5 relevant chunks retrieved"
+    ],
+    "limiting_factors": [
+      "Human review remains mandatory for client-facing output",
+      "Evidence sufficiency remains incomplete for one or more controls",
+      "One or more required controls are not yet fully demonstrated"
+    ],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "chunk_id": 3,
+      "document_name": "UK MLR 2017",
+      "source_name": "UK",
+      "source_family": "regulations",
+      "jurisdiction": "uk",
+      "industry": "cross_industry",
+      "audit_domain": "regulations",
+      "url": "https://www.legislation.gov.uk/uksi/2017/692/contents/made",
+      "score": 88,
+      "quality_status": "ok",
+      "excerpt": "ervice providers 13. Estate agents 14. High value dealers, casinos and auction platforms 15. Exclusions CHAPTER 2 Risk assessment and controls 16. Risk assessment by the Treasury and Home Office 17. Risk assessment by supervisory authorities 18. Risk assessment by relevant persons 19. Policies, controls and procedures 20. Policies, controls and procedures: group level 21. Internal controls 22. Central contact points: electronic money issuers and payment service providers 23. Requirement on autho"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "ICO Accountability Governance",
+      "source_name": "ICO",
+      "source_family": "frameworks",
+      "jurisdiction": "uk",
+      "industry": "cross_industry",
+      "audit_domain": "frameworks",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/",
+      "score": 86,
+      "quality_status": "ok",
+      "excerpt": "Guide to accountability and governance | ICO Skip to main content Home The ICO exists to empower you through information. Search Search Search Menu Home For the public For organisations Make a complaint Action we've taken About the ICO For organisations UK GDPR guidance and resources Accountability and governance Guide to accountability and governance Guide to accountability and governance Download options (Opens download panel) Pages All pages Format PDF Download Due to the Data (Use and Access"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "APRA Information Security",
+      "source_name": "APRA",
+      "source_family": "industry_insurance",
+      "jurisdiction": "us",
+      "industry": "insurance",
+      "audit_domain": "industry_insurance",
+      "url": "https://www.apra.gov.au/information-security",
+      "score": 70,
+      "quality_status": "ok",
+      "excerpt": "Information Security | APRA Skip to main content Australian Prudential Regulation Authority (APRA) - click to go to the home page Choose Industry Open Menu Search Open/Close Menu Choose your industry Open/Close Menu Authorised deposit-taking institutions Prudential and reporting standards Consultations Register of authorised deposit-taking institutions News and publications Statistical publications Letters, notes and advice Reporting resources Fees and levies Licensing guidelines Legislation, de"
+    },
+    {
+      "chunk_id": 3,
+      "document_name": "ASIC Registers",
+      "source_name": "ASIC",
+      "source_family": "corporate",
+      "jurisdiction": "australia",
+      "industry": "cross_industry",
+      "audit_domain": "corporate",
+      "url": "https://asic.gov.au/for-business/registers/",
+      "score": 67,
+      "quality_status": "ok",
+      "excerpt": "Regulatory portal. Changing your licence details through the Regulatory Portal Already have an account? Log in Need to create an account? Sign up Log in to ASIC Connect to appoint and update AFS representative's details. Financial advisers and authorised representatives Already have an account? Log in Need to create an account? Sign up Lodge regulatory documents and transaction in the ASIC Regulatory Portal Already have an account? Log in Need to create an account? Sign up You can register a man"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "OECD AI Principles",
+      "source_name": "OECD",
+      "source_family": "frameworks",
+      "jurisdiction": "global",
+      "industry": "cross_industry",
+      "audit_domain": "frameworks",
+      "url": "https://oecd.ai/en/ai-principles",
+      "score": 66,
+      "quality_status": "ok",
+      "excerpt": "AI Principles Overview - OECD.AI Going Digital DPP Blog Live data Policies and initiatives Priority issues Tools Resources About Search AI Risk & Accountability AI has risks and all actors must be accountable. AI, Data & Privacy Data and privacy are primary policy issues for AI. Generative AI Managing the risks and benefits of generative AI. Future of Work How AI can and will affect workers and working environments AI Index The OECD AI will be a synthetic measurement framework on Trustworthy Art"
+    }
+  ]
+}

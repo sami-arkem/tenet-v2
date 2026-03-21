@@ -1,0 +1,28 @@
+{
+  "pack_id": "domain_fraud_v1",
+  "domain": "fraud",
+  "label": "Fraud",
+  "supported_audit_types": [
+    "fraud_readiness_review",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "AML-002",
+    "AML-003",
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "fraud_policy",
+    "fraud_rules",
+    "case_management",
+    "fraud_governance",
+    "fraud_monitoring"
+  ],
+  "query_seeds": [
+    "fraud policy",
+    "fraud monitoring rules",
+    "fraud case management",
+    "fraud governance",
+    "fraud escalation"
+  ]
+}

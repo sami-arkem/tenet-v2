@@ -1,0 +1,107 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2186 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 50 792 Tm
+(Client Report: Report Live Entity) Tj
+/F2 13 Tf
+1 0 0 1 50 754 Tm
+(Executive Summary) Tj
+/F1 10 Tf
+1 0 0 1 50 734 Tm
+(The current AML readiness review outcome for Report Live Entity is BLOCKED. Seven findings have) Tj
+/F1 10 Tf
+1 0 0 1 50 720 Tm
+(been identified, each requiring remediation and evidence substantiation before deployment can) Tj
+/F1 10 Tf
+1 0 0 1 50 706 Tm
+(be considered.) Tj
+/F2 13 Tf
+1 0 0 1 50 678 Tm
+(Key Findings) Tj
+/F1 10 Tf
+1 0 0 1 50 658 Tm
+(? Transaction monitoring framework documented) Tj
+/F1 10 Tf
+1 0 0 1 50 644 Tm
+(? Sanctions screening program defined) Tj
+/F1 10 Tf
+1 0 0 1 50 630 Tm
+(? Enterprise AML policy approved and version controlled) Tj
+/F2 13 Tf
+1 0 0 1 50 602 Tm
+(Missing Controls) Tj
+/F1 10 Tf
+1 0 0 1 50 582 Tm
+(Critical missing controls include AML-001 \(Enterprise AML policy approved and version) Tj
+/F1 10 Tf
+1 0 0 1 50 568 Tm
+(controlled\), AML-002 \(Customer risk rating methodology defined\), AML-003 \(Transaction) Tj
+/F1 10 Tf
+1 0 0 1 50 554 Tm
+(monitoring framework documented\), GOV-001 \(Compliance governance roles and escalation paths) Tj
+/F1 10 Tf
+1 0 0 1 50 540 Tm
+(defined\), KYB-001 \(Beneficial ownership and business verification controls documented\), KYC-001) Tj
+/F1 10 Tf
+1 0 0 1 50 526 Tm
+(\(Customer identification procedures documented\), and SAN-001 \(Sanctions screening program) Tj
+/F1 10 Tf
+1 0 0 1 50 512 Tm
+(defined\).) Tj
+/F2 13 Tf
+1 0 0 1 50 484 Tm
+(Remediation Priorities) Tj
+/F1 10 Tf
+1 0 0 1 50 464 Tm
+(Immediate remediation \(0-30 days\) must focus on the transaction monitoring framework and) Tj
+/F1 10 Tf
+1 0 0 1 50 450 Tm
+(sanctions screening program, both critical controls. Near-term efforts \(30-90 days\) should) Tj
+/F1 10 Tf
+1 0 0 1 50 436 Tm
+(address the enterprise AML policy, customer risk rating methodology, compliance governance) Tj
+/F1 10 Tf
+1 0 0 1 50 422 Tm
+(roles, beneficial ownership controls, and customer identification procedures. Remediation) Tj
+/F1 10 Tf
+1 0 0 1 50 408 Tm
+(progress will require documented evidence and human-reviewed validation before the entity can) Tj
+/F1 10 Tf
+1 0 0 1 50 394 Tm
+(progress towards deployment readiness.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000002495 00000 n 
+0000002565 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2640
+%%EOF

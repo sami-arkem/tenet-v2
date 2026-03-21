@@ -1,0 +1,36 @@
+{
+  "audit_id": "cust-uae-licensing-001",
+  "exported_at_utc": "2026-03-18T07:33:41.597940+00:00",
+  "artifacts": {
+    "board_docx": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.docx",
+      "sha256": "8731cac697b7e527e002bbbbc45e095ca5cf7a9aafe3a6f2834e072717bad248",
+      "size_bytes": 2328
+    },
+    "board_pdf": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.pdf",
+      "sha256": "7732bab8b9c614273e9a6ffec48b02937ef764df2b87e5a1527e48d863700dfa",
+      "size_bytes": 1547
+    },
+    "client_docx": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.docx",
+      "sha256": "13faa84934fca6006b073fbb1958fb89687f91e18e4c4196afbad6f8470a1604",
+      "size_bytes": 2306
+    },
+    "client_pdf": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.pdf",
+      "sha256": "6f601b64b652ece53be3b776b8ecfbb81c21a9f358527e07cadc383910932333",
+      "size_bytes": 1566
+    },
+    "regulator_docx": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.docx",
+      "sha256": "6c65f4149846afbbcb749a3ec6e1651ebfd82cefdcd6c563f0699779427f47b4",
+      "size_bytes": 2275
+    },
+    "regulator_pdf": {
+      "path": "data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.pdf",
+      "sha256": "ea3d6d6d2158f1e64d385c592f5cf7c9c31229d98d2e5b2b45b8f031f5cccea7",
+      "size_bytes": 1391
+    }
+  }
+}

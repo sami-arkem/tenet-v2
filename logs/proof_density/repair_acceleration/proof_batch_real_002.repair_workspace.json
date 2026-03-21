@@ -1,0 +1,1225 @@
+{
+  "version": "v1",
+  "generated_at_epoch": 1773817613,
+  "instructions": {
+    "goal": "Turn blocked proof intake items into truly ready importable items without inventing anything.",
+    "rules": [
+      "real corpus only",
+      "do not invent expected outcomes",
+      "do not weaken deterministic truth",
+      "do not let historical context override current truth",
+      "remove placeholders completely",
+      "mark completed=true only when the item is actually ready",
+      "repair_notes must describe what changed and why",
+      "evidence_refs must point to real source files or real case files"
+    ]
+  },
+  "entries": [
+    {
+      "kind": "customer_pack",
+      "id": "aml_australia_pack_001",
+      "title": "AML Australia pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_australia_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "australia"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 10,
+        "blocker_score": 720,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": true,
+        "case_notes_checked": true,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_canada_pack_001",
+      "title": "AML Canada pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 10,
+        "blocker_score": 720,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": true,
+        "case_notes_checked": true,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_eu_pack_001",
+      "title": "AML EU pack 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_pack_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 10,
+        "blocker_score": 720,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": true,
+        "case_notes_checked": true,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_canada_case_001",
+      "title": "AML Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_canada_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_eu_case_001",
+      "title": "AML EU case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_eu_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_global_case_001",
+      "title": "AML Global case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_global_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "global"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_hong_kong_case_001",
+      "title": "AML Hong Kong case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_hong_kong_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "hong_kong"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_india_case_001",
+      "title": "AML India case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_india_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "india"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "aml_singapore_case_001",
+      "title": "AML Singapore case 001",
+      "source_dir": "intake/proof_batch_real_002/aml_singapore_case_001",
+      "domains": [
+        "aml"
+      ],
+      "jurisdictions": [
+        "singapore"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_canada_case_001",
+      "title": "Fraud Canada case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_canada_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "canada"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    },
+    {
+      "kind": "gold_case",
+      "id": "fraud_eu_case_001",
+      "title": "Fraud EU case 001",
+      "source_dir": "intake/proof_batch_real_002/fraud_eu_case_001",
+      "domains": [
+        "fraud"
+      ],
+      "jurisdictions": [
+        "eu"
+      ],
+      "reason": "zero_coverage",
+      "status": "blocked",
+      "required_files": [
+        "audit_context.json",
+        "expected_assertions.json",
+        "case_notes.md"
+      ],
+      "current_findings": {
+        "missing_required": [],
+        "validation_errors": [
+          "audit_context.json::empty_audit_type",
+          "audit_context.json::empty_industry",
+          "audit_context.json::missing_source_families",
+          "audit_context.json::missing_query_terms",
+          "expected_assertions.json::no_meaningful_expected_values"
+        ],
+        "placeholder_findings": [
+          "README.md::placeholder",
+          "audit_context.json::placeholder",
+          "case_notes.md::placeholder",
+          "notes.md::placeholder"
+        ],
+        "blocker_count": 12,
+        "blocker_score": 850,
+        "primary_blocker_type": "missing_required",
+        "issues": [
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_audit_type",
+            "fix_hint": "set audit_type to the real audit type used by Tenet for this corpus-backed item"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::empty_industry",
+            "fix_hint": "set industry to the real industry under audit"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_source_families",
+            "fix_hint": "add one or more real source_families grounded in the corpus"
+          },
+          {
+            "issue_type": "missing_required",
+            "message": "audit_context.json::missing_query_terms",
+            "fix_hint": "add real retrieval query_terms grounded in the corpus"
+          },
+          {
+            "issue_type": "assertions_semantics",
+            "message": "expected_assertions.json::no_meaningful_expected_values",
+            "fix_hint": "add real expected.equals, expected.contains, or expected.minimums values from observed deterministic output"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "README.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "case_notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "notes.md::placeholder",
+            "fix_hint": "remove placeholder text and replace it with real intake content"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_real_sources_attached_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "placeholder",
+            "message": "audit_context.json::operator_fill_status_placeholder_free_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          },
+          {
+            "issue_type": "audit_context_semantics",
+            "message": "audit_context.json::operator_fill_status_ready_for_import_must_be_true",
+            "fix_hint": "set operator_fill_status flags to true only after real sources are attached and placeholders are removed"
+          }
+        ]
+      },
+      "operator_repair": {
+        "completed": false,
+        "files_present": {
+          "audit_context.json": true,
+          "expected_assertions.json": true,
+          "case_notes.md": true
+        },
+        "audit_context_checked": false,
+        "expected_assertions_checked": false,
+        "case_notes_checked": false,
+        "placeholders_removed": false,
+        "repair_notes": "",
+        "evidence_refs": []
+      }
+    }
+  ]
+}

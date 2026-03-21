@@ -1,0 +1,10 @@
+{
+  "case_id": "kyc_uk_periodic_review_failure_052",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {},
+    "minimums": {}
+  }
+}

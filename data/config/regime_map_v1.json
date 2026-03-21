@@ -1,0 +1,32 @@
+{
+  "aml_readiness_review": {
+    "US": ["BSA_AML", "CIP_KYC", "CDD_BO"],
+    "UK": ["UK_MLR"],
+    "EU": ["EU_AMLD"]
+  },
+  "kyc_kyb_policy_and_control_review": {
+    "US": ["CIP_KYC", "CDD_BO"],
+    "UK": ["UK_MLR"],
+    "EU": ["EU_AMLD"]
+  },
+  "sanctions_readiness_review": {
+    "US": ["OFAC"],
+    "UK": ["UK_OFSI"],
+    "EU": ["EU_SANCTIONS"]
+  },
+  "policy_governance_gap_analysis": {
+    "US": ["GOVERNANCE_BASELINE", "THIRD_PARTY_RISK"],
+    "UK": ["GOVERNANCE_BASELINE", "THIRD_PARTY_RISK"],
+    "EU": ["GOVERNANCE_BASELINE", "THIRD_PARTY_RISK"]
+  },
+  "vendor_internal_compliance_readiness_review": {
+    "US": ["THIRD_PARTY_RISK", "GOVERNANCE_BASELINE"],
+    "UK": ["THIRD_PARTY_RISK", "GOVERNANCE_BASELINE"],
+    "EU": ["THIRD_PARTY_RISK", "GOVERNANCE_BASELINE"]
+  },
+  "audit_report_generation_from_uploaded_evidence": {
+    "US": [],
+    "UK": [],
+    "EU": []
+  }
+}

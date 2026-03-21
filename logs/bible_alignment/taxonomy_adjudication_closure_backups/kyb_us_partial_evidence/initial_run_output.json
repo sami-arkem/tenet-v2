@@ -1,0 +1,452 @@
+{
+  "audit_meta": {
+    "audit_id": "kyb-us-partial-evidence-001",
+    "audit_version": "v1",
+    "timestamp_utc": "2026-03-17T15:09:11.647216+00:00",
+    "platform_version": "tenet-mvp",
+    "model_version": "deterministic-reasoner-v1",
+    "report_status": "draft",
+    "reasoning_mode": "deterministic"
+  },
+  "entity_profile": {
+    "legal_name": "Real KYB Partial Evidence Case",
+    "trade_name": "",
+    "industry": "fintech",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [
+      "merchant_acquiring",
+      "wallet"
+    ],
+    "jurisdictions_of_operation": [
+      "US"
+    ],
+    "customer_geographies": [],
+    "customer_types": [
+      "smb"
+    ],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "kyc_kyb_policy_and_control_review",
+    "scope_statement": "kyc_kyb_policy_and_control_review for fintech across US",
+    "included_domains": [
+      "aml_governance",
+      "customer_identification",
+      "governance",
+      "kyb_beneficial_ownership",
+      "kyc_kyb"
+    ],
+    "excluded_domains": [],
+    "documents_reviewed": [
+      "AML CTF Act",
+      "ASIC Registers",
+      "GLBA",
+      "OFSI General Guidance"
+    ],
+    "evidence_received": [
+      "AML CTF Act",
+      "ASIC Registers",
+      "GLBA",
+      "OFSI General Guidance"
+    ],
+    "evidence_missing_at_start": [
+      "Customer Risk Rating",
+      "Governance Roles and Escalation",
+      "Business Verification and Beneficial Ownership",
+      "Customer Identification Program"
+    ]
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      "CIP_KYC",
+      "CDD_BO"
+    ],
+    "secondary_regimes": [],
+    "frameworks": [
+      "CIP_KYC",
+      "CDD_BO"
+    ],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [
+      "aml_governance",
+      "customer_identification",
+      "governance",
+      "kyb_beneficial_ownership"
+    ],
+    "regulatory_classification": {
+      "entity_type": "payments_platform",
+      "risk_tier": "HIGH",
+      "obligation_intensity": "HIGH",
+      "cross_border_complexity": "MODERATE"
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "Real KYB Partial Evidence Case",
+    "overall_readiness": "BLOCKED",
+    "top_issues": [
+      "Business Verification and Beneficial Ownership",
+      "Customer Identification Program",
+      "Customer Risk Rating"
+    ],
+    "decision_summary": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "board_message": "Tenet evaluated 4 required controls across 2 primary regimes. Current decision: BLOCKED."
+  },
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Business Verification and Beneficial Ownership",
+      "Customer Identification Program"
+    ],
+    "conditions_precedent": [
+      "Customer Risk Rating",
+      "Governance Roles and Escalation",
+      "Business Verification and Beneficial Ownership",
+      "Customer Identification Program"
+    ],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "HIGH",
+    "exposure_band": "HIGH",
+    "drivers": [
+      "aml_governance",
+      "customer_identification",
+      "governance",
+      "kyb_beneficial_ownership"
+    ],
+    "assumptions": [
+      "Exposure band is inferred from control severity, status, and evidence sufficiency",
+      "Human review is required before external reliance"
+    ],
+    "confidence_note": "Derived from average control confidence score of 0.2"
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "KYB-001",
+        "title": "Business Verification and Beneficial Ownership",
+        "domain": "kyb_beneficial_ownership",
+        "severity_if_missing": "critical",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer Identification Program",
+        "domain": "customer_identification",
+        "severity_if_missing": "critical",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "control_coverage_score": 0,
+    "evidence_coverage_score": 0
+  },
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "title": "Business Verification and Beneficial Ownership",
+      "domain": "kyb_beneficial_ownership",
+      "severity": "CRITICAL",
+      "status": "MISSING",
+      "description": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "KYB-001"
+    },
+    {
+      "finding_id": "F-002",
+      "title": "Customer Identification Program",
+      "domain": "customer_identification",
+      "severity": "CRITICAL",
+      "status": "MISSING",
+      "description": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "KYC-001"
+    },
+    {
+      "finding_id": "F-003",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-002"
+    },
+    {
+      "finding_id": "F-004",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "GOV-001"
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "R-001",
+      "risk_title": "Customer Risk Rating",
+      "category": "aml_governance",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-002",
+      "risk_title": "Governance Roles and Escalation",
+      "category": "governance",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-003",
+      "risk_title": "Business Verification and Beneficial Ownership",
+      "category": "kyb_beneficial_ownership",
+      "description": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-004",
+      "risk_title": "Customer Identification Program",
+      "category": "customer_identification",
+      "description": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "domain": "aml_governance",
+      "severity": "high",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "domain": "governance",
+      "severity": "high",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYB-001",
+      "title": "Business Verification and Beneficial Ownership",
+      "domain": "kyb_beneficial_ownership",
+      "severity": "critical",
+      "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYC-001",
+      "title": "Customer Identification Program",
+      "domain": "customer_identification",
+      "severity": "critical",
+      "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "missing_evidence": [
+    {
+      "control_id": "AML-002",
+      "title": "Customer Risk Rating",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Governance Roles and Escalation",
+      "needed_evidence_status": "missing",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYB-001",
+      "title": "Business Verification and Beneficial Ownership",
+      "needed_evidence_status": "missing",
+      "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYC-001",
+      "title": "Customer Identification Program",
+      "needed_evidence_status": "missing",
+      "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "KYB-001",
+        "title": "Business Verification and Beneficial Ownership",
+        "domain": "kyb_beneficial_ownership",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Business Verification and Beneficial Ownership"
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer Identification Program",
+        "domain": "customer_identification",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Customer Identification Program"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-002",
+        "title": "Customer Risk Rating",
+        "domain": "aml_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer Risk Rating"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "Tenet evaluated 4 required controls across 2 primary regimes. Current decision: BLOCKED.",
+    "regulator_ready_summary": "Applicable regimes: CIP_KYC, CDD_BO. Decision: BLOCKED. Missing controls: 4. Missing evidence items: 4.",
+    "client_facing_summary": "The current review outcome is BLOCKED. 4 findings were identified and require human-reviewed remediation tracking."
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 24,
+    "confidence_level": "LOW",
+    "confidence_drivers": [
+      "4 required controls evaluated",
+      "5 relevant chunks retrieved"
+    ],
+    "limiting_factors": [
+      "Human review remains mandatory for client-facing output",
+      "Evidence sufficiency remains incomplete for one or more controls",
+      "One or more required controls are not yet fully demonstrated"
+    ],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "chunk_id": 2,
+      "document_name": "GLBA",
+      "source_name": "US_FTC",
+      "source_family": "regulations",
+      "jurisdiction": "us",
+      "industry": "cross_industry",
+      "audit_domain": "regulations",
+      "url": "https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act",
+      "score": 87,
+      "quality_status": "ok",
+      "excerpt": "escripts Matthew Chesnes (DAD, BE Antitrust I) and Ted Rosenbaum (Acting BE Director) February 13, 2026 View all Competition Matters Blog posts Show/hide Policy menu items Policy We work to advance government policies that protect consumers and promote competition. View Policy Search or browse the Legal Library Find legal resources and guidance to understand your business responsibilities and comply with the law. Browse legal resources Search small Search Sections Advocacy and Research Advisory "
+    },
+    {
+      "chunk_id": 2,
+      "document_name": "GLBA",
+      "source_name": "FTC",
+      "source_family": "industry_payments",
+      "jurisdiction": "us",
+      "industry": "payments",
+      "audit_domain": "industry_payments",
+      "url": "https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act",
+      "score": 83,
+      "quality_status": "ok",
+      "excerpt": "escripts Matthew Chesnes (DAD, BE Antitrust I) and Ted Rosenbaum (Acting BE Director) February 13, 2026 View all Competition Matters Blog posts Show/hide Policy menu items Policy We work to advance government policies that protect consumers and promote competition. View Policy Search or browse the Legal Library Find legal resources and guidance to understand your business responsibilities and comply with the law. Browse legal resources Search small Search Sections Advocacy and Research Advisory "
+    },
+    {
+      "chunk_id": 2,
+      "document_name": "AML CTF Act",
+      "source_name": "AUSTRALIA",
+      "source_family": "regulations",
+      "jurisdiction": "australia",
+      "industry": "cross_industry",
+      "audit_domain": "regulations",
+      "url": "https://www.legislation.gov.au/Latest/C2018C00295",
+      "score": 77,
+      "quality_status": "ok",
+      "excerpt": "23 Continuity of partnerships 24 Crown to be bound 25 Extension to external Territories 26 Extra territorial application Collapse Part 2\u2014Identification procedures etc. Collapse Division 1\u2014Introduction 27 Simplified outline Division 2\u2014Identification procedures for certain pre commencement customers 28 Identification procedures for certain pre commencement customers 29 Verification of identity of pre commencement customer etc. Division 3\u2014Identification procedures for certain low risk services 30 I"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "ASIC Registers",
+      "source_name": "ASIC",
+      "source_family": "corporate",
+      "jurisdiction": "australia",
+      "industry": "cross_industry",
+      "audit_domain": "corporate",
+      "url": "https://asic.gov.au/for-business/registers/",
+      "score": 63,
+      "quality_status": "ok",
+      "excerpt": "404 | ASIC --> --> Skip to main content For business and companies For finance professionals Regulatory resources ASIC portals ASIC portals I am a I am a Business name holder I want to Register a business name Renew my business name Update my details Cancel or transfer my business name Learn about ASIC's online services Information and steps on how to register a business name Register a business name To renew a business name, you will need your account number or ABN handy. Renewing your business"
+    },
+    {
+      "chunk_id": 1,
+      "document_name": "OFSI General Guidance",
+      "source_name": "UK_OFSI",
+      "source_family": "enforcement",
+      "jurisdiction": "uk",
+      "industry": "cross_industry",
+      "audit_domain": "enforcement",
+      "url": "https://www.gov.uk/government/publications/financial-sanctions-general-guidance",
+      "score": 62,
+      "quality_status": "ok",
+      "excerpt": "Financial sanctions general guidance - GOV.UK Cookies on GOV.UK We use some essential cookies to make this website work. We\u2019d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services. We also use cookies set by other sites to help us deliver content from their services. You have accepted additional cookies. You can change your cookie settings at any time. You have rejected additional cookies. You can change your cookie settings at an"
+    }
+  ]
+}

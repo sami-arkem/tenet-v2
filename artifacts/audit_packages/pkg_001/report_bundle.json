@@ -1,0 +1,8 @@
+{
+  "run_id": "run_release_gate_001",
+  "markdown": "# Tenet Deterministic Audit Report: run_release_gate_001\n\nGenerated: 2026-03-19T19:27:50.951927+00:00\n\n## Executive Summary\n\n- Company: Acme Fintech\n- Industry: fintech\n- Primary jurisdiction: uk\n- Audit type: aml_readiness_review\n- Domains: aml\n- Jurisdictions: uk\n- Overall posture: GREEN\n- Deployment decision: APPROVED\n- Summary: Deterministic audit completed with posture=GREEN, decision=APPROVED, controls=1, passed=1, partial=0, failed=0, missing_evidence=0.\n\n## Deterministic Guardrails\n\n- Current audit truth is authoritative.\n- Historical context is included only as prior context and never overrides current truth.\n- Findings below are evidence-grounded and control-specific.\n\n## Control Evaluations\n\n### AML.MONITORING.001 (UK_MLR.001)\n- Verdict: SATISFIED\n- Evidence coverage ratio: 1.0\n- Rationale: Required evidence types are covered and control is declared effective.\n- Evidence refs:\n  - Monitoring Policy \u2014 policy.pdf#L1-L2\n\n## Findings\n\n- No open findings.\n\n## Remediation Plan\n\n- No remediation items.\n\n## Prior / Historical Context\n\n- None provided.\n\n## Readiness Statement\n\nThe system is ready for deployment based on current deterministic audit truth.\n",
+  "deployment_decision": "APPROVED",
+  "overall_posture": "GREEN",
+  "finding_count": 0,
+  "remediation_count": 0
+}

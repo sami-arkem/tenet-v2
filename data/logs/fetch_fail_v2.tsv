@@ -1,0 +1,28 @@
+source_family	source_name	document_name	url	status
+aml	FATF	FATF Digital Identity	https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-on-Digital-Identity.html	blocked
+aml	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html	blocked
+corporate	MCA_INDIA	MCA Company Registration	https://www.mca.gov.in/content/mca/global/en/company-llp-registration.html	blocked
+licensing	UK_FCA	FCA Register	https://register.fca.org.uk/s/	too_short
+licensing	CANADA	Canada Financial Institutions	https://www.canada.ca/en/financial-consumer-agency/services/financial-toolkit/financial-institutions.html	fetch_failed
+licensing	ASIC	ASIC Connect	https://connectonline.asic.gov.au/	fetch_failed
+enforcement	DOJ	DOJ Corporate Compliance	https://www.justice.gov/criminal/criminal-fraud/evaluation-corporate-compliance-programs	blocked
+enforcement	EU	EU Restrictive Measures	https://finance.ec.europa.eu/financial-crime/eu-restrictive-measures_en	blocked
+enforcement	FINCEN	FinCEN News Releases	https://www.fincen.gov/news/news-releases	blocked
+regulations	EU	GDPR Official	https://eur-lex.europa.eu/eli/reg/2016/679/oj/engg	blocked
+regulations	BRAZIL	LGPD Planalto	https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2018/08/sancionada-lei-geral-de-protecao-de-dados-pessoais	too_short
+industry_gov_vendor	EU	EU AI Act Official	https://eur-lex.europa.eu/eli/reg/2024/1689/oj/engg	blocked
+industry_gov_vendor	CMMC	CMMC	https://dodcio.defense.gov/CMMC/	blocked
+industry_healthcare	HHS	HIPAA Security Overview	https://www.hhs.gov/hipaa/for-professionals/security/index.html	blocked
+industry_healthcare	HHS	HIPAA Security Rule	https://www.hhs.gov/ocr/privacy/hipaa/administrative/securityrule/index.html	blocked
+industry_healthcare	CMS	CMS HIPAA	https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/health-insurance-portability-and-accountability-act-hipaa	blocked
+industry_healthcare	FDA	FDA Device Cybersecurity FAQ	https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions	too_short
+industry_healthcare	FDA	FDA AI ML Medical Devices	https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-and-machine-learning-ail-ml-enabled-medical-devices	too_short
+industry_payments	EU	PSD2 Payments	https://finance.ec.europa.eu/consumer-finance-and-payments/payment-services/payment-services-psd-2_en	blocked
+industry_crypto	EU	MiCA Official	https://eur-lex.europa.eu/eli/reg/2023/1114/oj/engg	blocked
+industry_crypto	FATF	FATF VASP Guidance	https://www.fatf-gafi.org/en/publications/Virtualassets/Guidance-rba-virtual-assets-vasps.html	blocked
+industry_insurance	APRA	APRA CPS 234	https://www.apra.gov.au/cps-234-information-security	blocked
+industry_insurance	IAIS	IAIS Standards	https://www.iaisweb.org/activities-topics/standards/	blocked
+industry_defense	CMMC	CMMC	https://dodcio.defense.gov/CMMC/	blocked
+industry_gambling	UKGC	UK Gambling AML	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/anti-money-laundering	blocked
+industry_gambling	UKGC	LCCP	https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/licence-conditions-and-codes-of-practice	blocked
+industry_gambling	AUSTRAC	AUSTRAC Gambling	https://www.austrac.gov.au/business/industry-specific-guidance/gambling-industry	fetch_failed

@@ -1,0 +1,9 @@
+{
+  "enable_model_reasoning": true,
+  "model_overlay_sections": [
+    "executive_summary",
+    "reporting_outputs"
+  ],
+  "fallback_to_deterministic_on_model_error": true,
+  "require_retrieved_chunks_for_model_reasoning": true
+}

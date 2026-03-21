@@ -1,0 +1,34 @@
+{
+  "audit_id": "screening-singapore-alert-workflow-gap-001",
+  "entity_name": "Real Singapore Screening Alert Workflow Gap",
+  "audit_type": "transaction_screening_review",
+  "industry": "payments",
+  "jurisdictions": [
+    "SINGAPORE"
+  ],
+  "entity_type": "payments_platform",
+  "products": [
+    "cross_border_payments"
+  ],
+  "customer_types": [
+    "enterprise"
+  ],
+  "domains": [
+    "transaction_screening",
+    "sanctions",
+    "governance"
+  ],
+  "source_families": [
+    "regulations",
+    "sanctions",
+    "industry_fintech"
+  ],
+  "query_terms": [
+    "transaction screening",
+    "screening alert workflow",
+    "screening escalation",
+    "alert disposition",
+    "screening governance"
+  ],
+  "top_k": 5
+}

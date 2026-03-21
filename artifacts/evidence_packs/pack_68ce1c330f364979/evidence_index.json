@@ -1,0 +1,62 @@
+{
+  "pack_id": "pack_68ce1c330f364979",
+  "created_at": "2026-03-18T11:06:46.239541+00:00",
+  "updated_at": "2026-03-18T11:06:46.247860+00:00",
+  "items": [
+    {
+      "evidence_id": "evidence_ec0ba4be0c0069aa",
+      "filename": "monitoring_policy.txt",
+      "title": "Monitoring Policy",
+      "source_type": "policy_document",
+      "detected_mime": "text/plain",
+      "size_bytes": 31,
+      "sha256": "ec0ba4be0c0069aab7a543411dd4226c43f4d5bdadf969bba5119306240d71cc",
+      "storage_path": "artifacts/evidence_blobs/pack_68ce1c330f364979/ec0ba4be0c0069aab7a543411dd4226c43f4d5bdadf969bba5119306240d71cc.txt",
+      "citation": "monitoring_policy.txt#L1-L1",
+      "processing_status": "READY",
+      "malware_scan_status": "NOT_RUN",
+      "ocr_status": "NOT_REQUIRED",
+      "created_at": "2026-03-18T11:06:46.239516+00:00",
+      "updated_at": "2026-03-18T11:06:46.239520+00:00",
+      "extracted_text_path": "artifacts/evidence_packs/pack_68ce1c330f364979/processing/evidence_ec0ba4be0c0069aa.txt",
+      "classification": {
+        "evidence_id": "evidence_ec0ba4be0c0069aa",
+        "category": "monitoring_report",
+        "confidence": "HIGH",
+        "reason": "matched deterministic rule for monitoring_report"
+      },
+      "classification_path": "artifacts/evidence_packs/pack_68ce1c330f364979/processing/evidence_ec0ba4be0c0069aa.classification.json",
+      "key_facts": {
+        "category": "monitoring_report",
+        "line_count": 1,
+        "char_count": 30,
+        "preview": "Transaction monitoring policy."
+      },
+      "key_facts_path": "artifacts/evidence_packs/pack_68ce1c330f364979/processing/evidence_ec0ba4be0c0069aa.facts.json"
+    },
+    {
+      "evidence_id": "evidence_59213a5a08f6daa7",
+      "filename": "owner_matrix.json",
+      "title": "Owner Matrix",
+      "source_type": "owner_matrix",
+      "detected_mime": "application/json",
+      "size_bytes": 22,
+      "sha256": "59213a5a08f6daa7829381975c44e0379d9bc059d681938e87b0d20339485541",
+      "storage_path": "artifacts/evidence_blobs/pack_68ce1c330f364979/59213a5a08f6daa7829381975c44e0379d9bc059d681938e87b0d20339485541.json",
+      "citation": "owner_matrix.json#L1-L1",
+      "processing_status": "READY",
+      "malware_scan_status": "NOT_RUN",
+      "ocr_status": "NOT_REQUIRED",
+      "created_at": "2026-03-18T11:06:46.247790+00:00",
+      "updated_at": "2026-03-18T11:06:46.247794+00:00",
+      "extracted_text_path": "artifacts/evidence_packs/pack_68ce1c330f364979/processing/evidence_59213a5a08f6daa7.txt",
+      "classification": {
+        "evidence_id": "evidence_59213a5a08f6daa7",
+        "category": "unclassified",
+        "confidence": "UNCLASSIFIED",
+        "reason": "no deterministic classification rule matched"
+      },
+      "classification_path": "artifacts/evidence_packs/pack_68ce1c330f364979/processing/evidence_59213a5a08f6daa7.classification.json"
+    }
+  ]
+}

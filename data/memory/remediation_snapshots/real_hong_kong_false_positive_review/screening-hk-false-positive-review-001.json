@@ -1,0 +1,64 @@
+{
+  "snapshot_version": "v1",
+  "written_at_utc": "2026-03-17T16:29:57.297812+00:00",
+  "audit_id": "screening-hk-false-positive-review-001",
+  "entity_name": "Real Hong Kong False Positive Review",
+  "audit_type": "transaction_screening_review",
+  "jurisdictions": [],
+  "domains": [
+    "monitoring",
+    "sanctions",
+    "governance"
+  ],
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Transaction Monitoring",
+      "Sanctions Screening and Escalation"
+    ]
+  },
+  "remediation_status_by_control": {
+    "AML-003": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "SAN-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    },
+    "GOV-001": {
+      "status": "open",
+      "rationale": "Control still appears in missing_controls."
+    }
+  },
+  "remediation_roadmap_summary": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction Monitoring",
+        "domain": "monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction Monitoring"
+      },
+      {
+        "control_id": "SAN-001",
+        "title": "Sanctions Screening and Escalation",
+        "domain": "sanctions",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Sanctions Screening and Escalation"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "GOV-001",
+        "title": "Governance Roles and Escalation",
+        "domain": "governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Governance Roles and Escalation"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  }
+}

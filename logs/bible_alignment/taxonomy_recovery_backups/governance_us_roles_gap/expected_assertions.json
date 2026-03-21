@@ -1,0 +1,34 @@
+{
+  "case_id": "governance_us_roles_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "GOVERNANCE_BASELINE",
+        "THIRD_PARTY_RISK"
+      ],
+      "missing_controls.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "missing_evidence.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "findings.control_id": [
+        "VEN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 18
+    }
+  },
+  "rules": {
+    "no_invented_pass_outcome": true,
+    "deterministic_current_truth_only": true,
+    "historical_context_cannot_override_current_truth": true
+  }
+}

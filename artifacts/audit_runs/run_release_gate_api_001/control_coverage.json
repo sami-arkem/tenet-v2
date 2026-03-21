@@ -1,0 +1,53 @@
+{
+  "run_id": "run_release_gate_api_001",
+  "generated_at": "2026-03-19T19:27:50.937132+00:00",
+  "deterministic_authoritative": true,
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "summary": {
+    "control_count": 1,
+    "supported_controls": 1,
+    "partial_controls": 0,
+    "blocked_controls": 0
+  },
+  "controls": [
+    {
+      "control_id": "AML.MONITORING.001",
+      "regime_id": "UK_MLR.001",
+      "title": "Transaction monitoring policy",
+      "coverage_status": "SUPPORTED",
+      "declared_control_present": true,
+      "declared_operating_effective": true,
+      "required_evidence_types": [
+        "policy_document"
+      ],
+      "covered_evidence_types": [
+        "policy_document"
+      ],
+      "missing_required_evidence_types": [],
+      "direct_evidence": [
+        {
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L2"
+        }
+      ],
+      "context_matches": [
+        {
+          "question": "What evidence supports AML.MONITORING.001?",
+          "chunk_id": "ev_001::chunk_0000",
+          "evidence_id": "ev_001",
+          "filename": "policy.txt",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "score": 2.5,
+          "excerpt": "transaction monitoring policy"
+        }
+      ],
+      "rationale": "Required evidence is covered by direct evidence and/or retrieved context.",
+      "deterministic_authoritative": true
+    }
+  ]
+}

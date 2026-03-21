@@ -1,0 +1,22 @@
+{
+  "source_id": "licensed_vendor_feed",
+  "title": "Licensed Vendor Feed",
+  "domain": "sanctions",
+  "jurisdictions": [
+    "us"
+  ],
+  "countries": [
+    "US"
+  ],
+  "source_class": "LICENSED",
+  "acquisition_method": "LICENSED_FEED",
+  "license_status": "LICENSED",
+  "owner": "tenet",
+  "source_url": "https://licensed.example.com/feed",
+  "approved": true,
+  "retrieval_allowed": true,
+  "metadata": {
+    "freshness_check": "weekly",
+    "last_check": "2026-03-19T19:27:51.375828Z"
+  }
+}

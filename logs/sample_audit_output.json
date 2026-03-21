@@ -1,0 +1,593 @@
+{
+  "audit_meta": {
+    "audit_id": "report-pack-001",
+    "audit_version": "v1",
+    "timestamp_utc": "2026-03-17T12:25:09.600343+00:00",
+    "platform_version": "tenet-mvp",
+    "model_version": "deterministic-reasoner-v1",
+    "report_status": "draft",
+    "reasoning_mode": "deterministic"
+  },
+  "entity_profile": {
+    "legal_name": "Report Pack Entity",
+    "trade_name": "",
+    "industry": "fintech",
+    "subindustry": "",
+    "business_model": "",
+    "products_services": [],
+    "jurisdictions_of_operation": [
+      "US"
+    ],
+    "customer_geographies": [],
+    "customer_types": [],
+    "distribution_channels": [],
+    "payment_flows": [],
+    "data_categories_processed": [],
+    "high_risk_activities": []
+  },
+  "audit_scope": {
+    "audit_type": "aml_readiness_review",
+    "scope_statement": "aml_readiness_review for fintech across US",
+    "included_domains": [
+      "beneficial_ownership",
+      "customer_identification_and_verification",
+      "customer_risk_assessment",
+      "policy_governance",
+      "sanctions_screening",
+      "transaction_monitoring"
+    ],
+    "excluded_domains": [],
+    "documents_reviewed": [
+      "EBA AML CFT"
+    ],
+    "evidence_received": [
+      "EBA AML CFT"
+    ],
+    "evidence_missing_at_start": [
+      "Enterprise AML policy approved and version controlled",
+      "Customer risk rating methodology defined",
+      "Transaction monitoring framework documented",
+      "Compliance governance roles and escalation paths defined",
+      "Beneficial ownership and business verification controls documented",
+      "Customer identification procedures documented",
+      "Sanctions screening program defined"
+    ]
+  },
+  "regulatory_applicability": {
+    "primary_regimes": [
+      "BSA_AML",
+      "CDD_BO",
+      "CIP_KYC"
+    ],
+    "secondary_regimes": [],
+    "frameworks": [
+      "BSA_AML",
+      "CDD_BO",
+      "CIP_KYC"
+    ],
+    "licensing_obligations": [],
+    "enforcement_exposure_areas": [
+      "beneficial_ownership",
+      "customer_identification_and_verification",
+      "customer_risk_assessment",
+      "policy_governance",
+      "sanctions_screening",
+      "transaction_monitoring"
+    ],
+    "regulatory_classification": {
+      "entity_type": "",
+      "risk_tier": "HIGH",
+      "obligation_intensity": "CRITICAL",
+      "cross_border_complexity": "MODERATE"
+    }
+  },
+  "executive_summary": {
+    "system_or_business_reviewed": "Report Pack Entity",
+    "overall_readiness": "BLOCKED",
+    "top_issues": [
+      "Transaction monitoring framework documented",
+      "Sanctions screening program defined",
+      "Enterprise AML policy approved and version controlled"
+    ],
+    "decision_summary": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "board_message": "Tenet evaluated 7 required controls across 3 primary regimes. Current decision: BLOCKED."
+  },
+  "deployment_decision": {
+    "status": "BLOCKED",
+    "decision_rationale": "Deployment blocked due to missing critical/high-severity controls or insufficient confidence.",
+    "blocking_issues": [
+      "Transaction monitoring framework documented",
+      "Sanctions screening program defined"
+    ],
+    "conditions_precedent": [
+      "Enterprise AML policy approved and version controlled",
+      "Customer risk rating methodology defined",
+      "Transaction monitoring framework documented",
+      "Compliance governance roles and escalation paths defined",
+      "Beneficial ownership and business verification controls documented",
+      "Customer identification procedures documented",
+      "Sanctions screening program defined"
+    ],
+    "conditions_ongoing": []
+  },
+  "financial_exposure": {
+    "estimated_regulatory_exposure": "HIGH",
+    "exposure_band": "HIGH",
+    "drivers": [
+      "beneficial_ownership",
+      "customer_identification_and_verification",
+      "customer_risk_assessment",
+      "policy_governance",
+      "sanctions_screening",
+      "transaction_monitoring"
+    ],
+    "assumptions": [
+      "Exposure band is inferred from control severity, status, and evidence sufficiency",
+      "Human review is required before external reliance"
+    ],
+    "confidence_note": "Derived from average control confidence score of 0.229"
+  },
+  "control_assessment": {
+    "domains": [
+      {
+        "control_id": "AML-001",
+        "title": "Enterprise AML policy approved and version controlled",
+        "domain": "policy_governance",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "AML-002",
+        "title": "Customer risk rating methodology defined",
+        "domain": "customer_risk_assessment",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "AML-003",
+        "title": "Transaction monitoring framework documented",
+        "domain": "transaction_monitoring",
+        "severity_if_missing": "critical",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Compliance governance roles and escalation paths defined",
+        "domain": "policy_governance",
+        "severity_if_missing": "high",
+        "status": "unknown",
+        "evidence_status": "partial",
+        "confidence": 0.4,
+        "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=2, matched_chunks=1.",
+        "matched_chunk_ids": [
+          11
+        ],
+        "citations": [
+          {
+            "chunk_id": 11,
+            "document_name": "EBA AML CFT",
+            "source_name": "EBA",
+            "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism"
+          }
+        ]
+      },
+      {
+        "control_id": "KYB-001",
+        "title": "Beneficial ownership and business verification controls documented",
+        "domain": "beneficial_ownership",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer identification procedures documented",
+        "domain": "customer_identification_and_verification",
+        "severity_if_missing": "high",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      },
+      {
+        "control_id": "SAN-001",
+        "title": "Sanctions screening program defined",
+        "domain": "sanctions_screening",
+        "severity_if_missing": "critical",
+        "status": "missing",
+        "evidence_status": "missing",
+        "confidence": 0.2,
+        "rationale": "Control SAN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+        "matched_chunk_ids": [],
+        "citations": []
+      }
+    ],
+    "control_coverage_score": 5,
+    "evidence_coverage_score": 7
+  },
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "title": "Transaction monitoring framework documented",
+      "domain": "transaction_monitoring",
+      "severity": "CRITICAL",
+      "status": "MISSING",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-003"
+    },
+    {
+      "finding_id": "F-002",
+      "title": "Sanctions screening program defined",
+      "domain": "sanctions_screening",
+      "severity": "CRITICAL",
+      "status": "MISSING",
+      "description": "Control SAN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "SAN-001"
+    },
+    {
+      "finding_id": "F-003",
+      "title": "Enterprise AML policy approved and version controlled",
+      "domain": "policy_governance",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control AML-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-001"
+    },
+    {
+      "finding_id": "F-004",
+      "title": "Customer risk rating methodology defined",
+      "domain": "customer_risk_assessment",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "AML-002"
+    },
+    {
+      "finding_id": "F-005",
+      "title": "Beneficial ownership and business verification controls documented",
+      "domain": "beneficial_ownership",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "KYB-001"
+    },
+    {
+      "finding_id": "F-006",
+      "title": "Customer identification procedures documented",
+      "domain": "customer_identification_and_verification",
+      "severity": "HIGH",
+      "status": "MISSING",
+      "description": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "citations": [],
+      "control_id": "KYC-001"
+    },
+    {
+      "finding_id": "F-007",
+      "title": "Compliance governance roles and escalation paths defined",
+      "domain": "policy_governance",
+      "severity": "HIGH",
+      "status": "UNKNOWN",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=2, matched_chunks=1.",
+      "citations": [
+        {
+          "chunk_id": 11,
+          "document_name": "EBA AML CFT",
+          "source_name": "EBA",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism"
+        }
+      ],
+      "control_id": "GOV-001"
+    }
+  ],
+  "key_risks": [
+    {
+      "risk_id": "R-001",
+      "risk_title": "Enterprise AML policy approved and version controlled",
+      "category": "policy_governance",
+      "description": "Control AML-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-002",
+      "risk_title": "Customer risk rating methodology defined",
+      "category": "customer_risk_assessment",
+      "description": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-003",
+      "risk_title": "Transaction monitoring framework documented",
+      "category": "transaction_monitoring",
+      "description": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-004",
+      "risk_title": "Compliance governance roles and escalation paths defined",
+      "category": "policy_governance",
+      "description": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=2, matched_chunks=1.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-005",
+      "risk_title": "Beneficial ownership and business verification controls documented",
+      "category": "beneficial_ownership",
+      "description": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-006",
+      "risk_title": "Customer identification procedures documented",
+      "category": "customer_identification_and_verification",
+      "description": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "HIGH",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    },
+    {
+      "risk_id": "R-007",
+      "risk_title": "Sanctions screening program defined",
+      "category": "sanctions_screening",
+      "description": "Control SAN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0.",
+      "severity": "CRITICAL",
+      "linked_findings": [
+        "F-001",
+        "F-002",
+        "F-003"
+      ]
+    }
+  ],
+  "missing_controls": [
+    {
+      "control_id": "AML-001",
+      "title": "Enterprise AML policy approved and version controlled",
+      "domain": "policy_governance",
+      "severity": "high",
+      "rationale": "Control AML-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-002",
+      "title": "Customer risk rating methodology defined",
+      "domain": "customer_risk_assessment",
+      "severity": "high",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction monitoring framework documented",
+      "domain": "transaction_monitoring",
+      "severity": "critical",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Compliance governance roles and escalation paths defined",
+      "domain": "policy_governance",
+      "severity": "high",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=2, matched_chunks=1."
+    },
+    {
+      "control_id": "KYB-001",
+      "title": "Beneficial ownership and business verification controls documented",
+      "domain": "beneficial_ownership",
+      "severity": "high",
+      "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYC-001",
+      "title": "Customer identification procedures documented",
+      "domain": "customer_identification_and_verification",
+      "severity": "high",
+      "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "SAN-001",
+      "title": "Sanctions screening program defined",
+      "domain": "sanctions_screening",
+      "severity": "critical",
+      "rationale": "Control SAN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "missing_evidence": [
+    {
+      "control_id": "AML-001",
+      "title": "Enterprise AML policy approved and version controlled",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-002",
+      "title": "Customer risk rating methodology defined",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-002 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "AML-003",
+      "title": "Transaction monitoring framework documented",
+      "needed_evidence_status": "missing",
+      "rationale": "Control AML-003 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "GOV-001",
+      "title": "Compliance governance roles and escalation paths defined",
+      "needed_evidence_status": "partial",
+      "rationale": "Control GOV-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=2, matched_chunks=1."
+    },
+    {
+      "control_id": "KYB-001",
+      "title": "Beneficial ownership and business verification controls documented",
+      "needed_evidence_status": "missing",
+      "rationale": "Control KYB-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "KYC-001",
+      "title": "Customer identification procedures documented",
+      "needed_evidence_status": "missing",
+      "rationale": "Control KYC-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    },
+    {
+      "control_id": "SAN-001",
+      "title": "Sanctions screening program defined",
+      "needed_evidence_status": "missing",
+      "rationale": "Control SAN-001 evaluated using keyword and artifact matching over retrieved evidence. Best score=0, matched_chunks=0."
+    }
+  ],
+  "remediation_roadmap": {
+    "immediate_0_30_days": [
+      {
+        "control_id": "AML-003",
+        "title": "Transaction monitoring framework documented",
+        "domain": "transaction_monitoring",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Transaction monitoring framework documented"
+      },
+      {
+        "control_id": "SAN-001",
+        "title": "Sanctions screening program defined",
+        "domain": "sanctions_screening",
+        "priority": "CRITICAL",
+        "action": "Remediate and evidence control: Sanctions screening program defined"
+      }
+    ],
+    "near_term_30_90_days": [
+      {
+        "control_id": "AML-001",
+        "title": "Enterprise AML policy approved and version controlled",
+        "domain": "policy_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Enterprise AML policy approved and version controlled"
+      },
+      {
+        "control_id": "AML-002",
+        "title": "Customer risk rating methodology defined",
+        "domain": "customer_risk_assessment",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer risk rating methodology defined"
+      },
+      {
+        "control_id": "GOV-001",
+        "title": "Compliance governance roles and escalation paths defined",
+        "domain": "policy_governance",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Compliance governance roles and escalation paths defined"
+      },
+      {
+        "control_id": "KYB-001",
+        "title": "Beneficial ownership and business verification controls documented",
+        "domain": "beneficial_ownership",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Beneficial ownership and business verification controls documented"
+      },
+      {
+        "control_id": "KYC-001",
+        "title": "Customer identification procedures documented",
+        "domain": "customer_identification_and_verification",
+        "priority": "HIGH",
+        "action": "Remediate and evidence control: Customer identification procedures documented"
+      }
+    ],
+    "medium_term_90_180_days": [],
+    "strategic_180_plus_days": []
+  },
+  "reporting_outputs": {
+    "board_ready_summary": "Tenet evaluated 7 required controls across 3 primary regimes. Current decision: BLOCKED.",
+    "regulator_ready_summary": "Applicable regimes: BSA_AML, CDD_BO, CIP_KYC. Decision: BLOCKED. Missing controls: 7. Missing evidence items: 7.",
+    "client_facing_summary": "The current review outcome is BLOCKED. 7 findings were identified and require human-reviewed remediation tracking."
+  },
+  "confidence_assessment": {
+    "overall_confidence_score": 22,
+    "confidence_level": "LOW",
+    "confidence_drivers": [
+      "7 required controls evaluated",
+      "2 relevant chunks retrieved"
+    ],
+    "limiting_factors": [
+      "Human review remains mandatory for client-facing output",
+      "Evidence sufficiency remains incomplete for one or more controls",
+      "One or more required controls are not yet fully demonstrated"
+    ],
+    "human_review_required": true
+  },
+  "evidence_appendix": [
+    {
+      "chunk_id": 12,
+      "document_name": "EBA AML CFT",
+      "source_name": "EBA",
+      "source_family": "aml",
+      "jurisdiction": "eu",
+      "industry": "cross_industry",
+      "audit_domain": "aml",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism",
+      "score": 43,
+      "quality_status": "ok",
+      "excerpt": "Download document 16 December 2022 AML/CFT Newsletter - Issue 9 Download document 2 September 2022 AML/CFT Newsletter - Issue 8 Download document 3 May 2022 AML/CFT Newsletter - Issue 7 Download document 21 December 2021 AML/CFT Newsletter - Issue 6 Download document 26 July 2021 AML/CFT Newsletter - Issue 5 Download document 7 May 2021 AML/CFT Newsletter - Issue 4 Download document 18 December 2020 AML/CFT Newsletter - Issue 3 Download document 22 September 2020 AML/CFT Newsletter - Issue 2 Dow"
+    },
+    {
+      "chunk_id": 11,
+      "document_name": "EBA AML CFT",
+      "source_name": "EBA",
+      "source_family": "aml",
+      "jurisdiction": "eu",
+      "industry": "cross_industry",
+      "audit_domain": "aml",
+      "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism",
+      "score": 41,
+      "quality_status": "ok",
+      "excerpt": "7 April 2022 EBA statement on financial inclusion in relation to Ukraine.pdf EBA statement on financial inclusion in the context of the invasion of Ukraine Download document View press release 19 August 2020 EBA response to the consultation on the Commission's AMLCFT action plan final for publication.pdf EBA response to the European Commission public consultation on AML/CFT action plan and establishment of an EU-level AML/CFT supervisor Download document View press release 5 February 2020 AML CF"
+    }
+  ]
+}

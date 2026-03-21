@@ -1,0 +1,57 @@
+{
+  "aml_readiness_review": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "KYC-001",
+    "KYB-001",
+    "SAN-001",
+    "GOV-001"
+  ],
+  "kyc_kyb_policy_and_control_review": [
+    "KYC-001",
+    "KYB-001",
+    "AML-002",
+    "GOV-001"
+  ],
+  "sanctions_readiness_review": [
+    "SAN-001",
+    "GOV-001"
+  ],
+  "policy_governance_gap_analysis": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "vendor_internal_compliance_readiness_review": [
+    "VEN-001",
+    "GOV-001"
+  ],
+  "audit_report_generation_from_uploaded_evidence": [
+    "AML-001",
+    "AML-002",
+    "AML-003",
+    "KYC-001",
+    "KYB-001",
+    "SAN-001",
+    "GOV-001",
+    "VEN-001"
+  ],
+  "fraud_readiness_review": [
+    "AML-002",
+    "AML-003",
+    "GOV-001"
+  ],
+  "transaction_screening_review": [
+    "SAN-001",
+    "AML-003",
+    "GOV-001"
+  ],
+  "regulatory_licensing_readiness_review": [
+    "GOV-001",
+    "VEN-001"
+  ],
+  "remediation_tracking_review": [
+    "GOV-001",
+    "VEN-001"
+  ]
+}

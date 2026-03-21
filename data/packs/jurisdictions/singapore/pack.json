@@ -1,0 +1,33 @@
+{
+  "pack_id": "jurisdiction_singapore_v1",
+  "jurisdiction": "SINGAPORE",
+  "label": "Singapore",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "SG_AML_BASELINE",
+    "SG_SANCTIONS_BASELINE",
+    "SG_GOVERNANCE_BASELINE"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

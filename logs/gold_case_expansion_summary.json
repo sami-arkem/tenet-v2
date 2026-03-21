@@ -1,0 +1,269 @@
+[
+  {
+    "case_id": "aml_us_policy_only",
+    "decision": "BLOCKED",
+    "regimes": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "missing_controls": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-003",
+      "SAN-001",
+      "AML-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 10
+  },
+  {
+    "case_id": "aml_uk_monitoring_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UK_MLR"
+    ],
+    "missing_controls": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-003",
+      "SAN-001",
+      "AML-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 10
+  },
+  {
+    "case_id": "aml_us_alerting_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "BSA_AML",
+      "CIP_KYC",
+      "CDD_BO",
+      "OFAC"
+    ],
+    "missing_controls": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "AML-001",
+      "AML-002",
+      "AML-003",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-003",
+      "SAN-001",
+      "AML-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 10
+  },
+  {
+    "case_id": "kyc_us_consumer_onboarding_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "CIP_KYC",
+      "CDD_BO"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 0
+  },
+  {
+    "case_id": "kyb_uk_beneficial_ownership_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "UK_MLR"
+    ],
+    "missing_controls": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "missing_evidence": [
+      "AML-002",
+      "GOV-001",
+      "KYB-001",
+      "KYC-001"
+    ],
+    "findings": [
+      "KYB-001",
+      "KYC-001",
+      "AML-002",
+      "GOV-001"
+    ],
+    "coverage": 9
+  },
+  {
+    "case_id": "sanctions_eu_wallet_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "EU_SANCTIONS"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "sanctions_us_false_positive_review",
+    "decision": "CONDITIONALLY_APPROVED",
+    "regimes": [
+      "OFAC"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "SAN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "SAN-001"
+    ],
+    "findings": [
+      "SAN-001",
+      "GOV-001"
+    ],
+    "coverage": 35
+  },
+  {
+    "case_id": "governance_us_roles_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "GOVERNANCE_BASELINE",
+      "THIRD_PARTY_RISK"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  },
+  {
+    "case_id": "vendor_eu_outsourcing_gap",
+    "decision": "BLOCKED",
+    "regimes": [
+      "THIRD_PARTY_RISK",
+      "GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "coverage": 0
+  },
+  {
+    "case_id": "vendor_global_monitoring_partial",
+    "decision": "BLOCKED",
+    "regimes": [
+      "THIRD_PARTY_RISK",
+      "GOVERNANCE_BASELINE"
+    ],
+    "missing_controls": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "missing_evidence": [
+      "GOV-001",
+      "VEN-001"
+    ],
+    "findings": [
+      "VEN-001",
+      "GOV-001"
+    ],
+    "coverage": 18
+  }
+]

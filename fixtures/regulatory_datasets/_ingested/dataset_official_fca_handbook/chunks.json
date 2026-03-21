@@ -1,0 +1,12 @@
+{
+  "dataset_id": "dataset_official_fca_handbook",
+  "chunks": [
+    {
+      "chunk_id": "chunk_0000",
+      "token_start": 0,
+      "token_end": 29,
+      "token_count": 29,
+      "text": "url source manifest dataset_id: dataset_official_fca_handbook title: fca handbook of rules and guidance domain: governance dataset_type: law_text framework_ids: fca_handbook jurisdictions: uk countries: gb source_url: https://www.fca.org.uk/about/how-we-regulate/handbook ingested_at: 2026-03-19t19:27:49.733971 00:00 fetch_mode: metadata_only"
+    }
+  ]
+}

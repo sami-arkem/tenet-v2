@@ -1,0 +1,159 @@
+{
+  "generated_at_epoch": 1773819124,
+  "mode": "write",
+  "target_case_count": 7,
+  "valid_decision_count": 7,
+  "missing_decision_count": 0,
+  "issue_count": 0,
+  "issues": [],
+  "execution": {
+    "apply_result": {
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/gold_case_taxonomy_adjudication.py",
+        "apply-decisions",
+        "--decisions-json",
+        "logs/bible_alignment/taxonomy_adjudication/normalized_taxonomy_adjudications.json",
+        "--backup-root",
+        "/Users/samisayyed/tenet-v2/logs/bible_alignment/taxonomy_adjudication_closure_backups",
+        "--apply-report-json",
+        "logs/bible_alignment/taxonomy_adjudication/apply_report.json",
+        "--apply-report-md",
+        "logs/bible_alignment/taxonomy_adjudication/apply_report.md",
+        "--write"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.094,
+      "stdout_tail": "{\n  \"generated_at_epoch\": 1773819124,\n  \"mode\": \"write\",\n  \"applied_count\": 7,\n  \"applied\": [\n    {\n      \"case_dir\": \"evals/gold_cases/kyb_uk_beneficial_ownership_partial\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"UK\"\n      ],\n      \"after_domains\": [\n        \"kyb\"\n      ],\n      \"after_jurisdictions\": [\n        \"uk\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/kyb_uk_beneficial_ownership_partial\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/kyb_us_beneficial_ownership_gap\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"US\"\n      ],\n      \"after_domains\": [\n        \"kyb\"\n      ],\n      \"after_jurisdictions\": [\n        \"us\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/kyb_us_beneficial_ownership_gap\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/kyb_us_partial_evidence\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"US\"\n      ],\n      \"after_domains\": [\n        \"kyb\"\n      ],\n      \"after_jurisdictions\": [\n        \"us\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/kyb_us_partial_evidence\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/kyc_us_consumer_onboarding_gap\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"US\"\n      ],\n      \"after_domains\": [\n        \"kyc\"\n      ],\n      \"after_jurisdictions\": [\n        \"us\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/kyc_us_consumer_onboarding_gap\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/vendor_eu_outsourcing_gap\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"EU\"\n      ],\n      \"after_domains\": [\n        \"vendor_risk\"\n      ],\n      \"after_jurisdictions\": [\n        \"eu\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/vendor_eu_outsourcing_gap\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/vendor_global_monitoring_partial\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"US\",\n        \"UK\",\n        \"EU\"\n      ],\n      \"after_domains\": [\n        \"vendor_risk\"\n      ],\n      \"after_jurisdictions\": [\n        \"global\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/vendor_global_monitoring_partial\"\n    },\n    {\n      \"case_dir\": \"evals/gold_cases/vendor_readiness_us_uk\",\n      \"before_domains\": null,\n      \"before_jurisdictions\": [\n        \"US\",\n        \"UK\"\n      ],\n      \"after_domains\": [\n        \"vendor_risk\"\n      ],\n      \"after_jurisdictions\": [\n        \"uk\",\n        \"us\"\n      ],\n      \"decided_by\": \"codex\",\n      \"backup_dir\": \"logs/bible_alignment/taxonomy_adjudication_closure_backups/vendor_readiness_us_uk\"\n    }\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    "bible_gate_result": {
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/bible_alignment_gate.py",
+        "--output-json",
+        "/Users/samisayyed/tenet-v2/logs/bible_alignment/alignment_report.json",
+        "--output-md",
+        "/Users/samisayyed/tenet-v2/logs/bible_alignment/alignment_report.md"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.082,
+      "stdout_tail": "{\n  \"status\": \"green\",\n  \"issue_count\": 0,\n  \"severity_counts\": {},\n  \"category_counts\": {},\n  \"output_json\": \"/Users/samisayyed/tenet-v2/logs/bible_alignment/alignment_report.json\",\n  \"output_md\": \"/Users/samisayyed/tenet-v2/logs/bible_alignment/alignment_report.md\"\n}\n",
+      "stderr_tail": ""
+    },
+    "program_control_result": {
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/tenet_program_control.py",
+        "--output-json",
+        "/Users/samisayyed/tenet-v2/logs/program_control/program_control_report.json",
+        "--output-md",
+        "/Users/samisayyed/tenet-v2/logs/program_control/program_control_report.md"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.103,
+      "stdout_tail": "{\n  \"enterprise_readiness_score\": 63.62,\n  \"blocker_count\": 4,\n  \"top_blocker\": \"proof.gold_cases_below_target\",\n  \"worklist_count\": 5,\n  \"output_json\": \"/Users/samisayyed/tenet-v2/logs/program_control/program_control_report.json\",\n  \"output_md\": \"/Users/samisayyed/tenet-v2/logs/program_control/program_control_report.md\"\n}\n",
+      "stderr_tail": ""
+    },
+    "program_control_topline_after": {
+      "enterprise_readiness_score": 63.62,
+      "blocker_count": 4,
+      "top_blocker": "proof.gold_cases_below_target"
+    }
+  },
+  "queue": {
+    "generated_at_epoch": 1773819123,
+    "target_case_count": 7,
+    "rows": [
+      {
+        "priority": 1,
+        "case_dir": "evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+        "status": "present",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "uk"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 2,
+        "case_dir": "evals/gold_cases/kyb_us_beneficial_ownership_gap",
+        "status": "present",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 3,
+        "case_dir": "evals/gold_cases/kyb_us_partial_evidence",
+        "status": "present",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 4,
+        "case_dir": "evals/gold_cases/kyc_us_consumer_onboarding_gap",
+        "status": "present",
+        "domains": [
+          "kyc"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 5,
+        "case_dir": "evals/gold_cases/vendor_eu_outsourcing_gap",
+        "status": "present",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 6,
+        "case_dir": "evals/gold_cases/vendor_global_monitoring_partial",
+        "status": "present",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "global"
+        ],
+        "decided_by": "codex"
+      },
+      {
+        "priority": 7,
+        "case_dir": "evals/gold_cases/vendor_readiness_us_uk",
+        "status": "present",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "us",
+          "uk"
+        ],
+        "decided_by": "codex"
+      }
+    ]
+  },
+  "normalized_decisions_path": "logs/bible_alignment/taxonomy_adjudication/normalized_taxonomy_adjudications.json"
+}

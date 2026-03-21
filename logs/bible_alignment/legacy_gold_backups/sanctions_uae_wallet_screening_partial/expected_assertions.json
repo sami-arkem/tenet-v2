@@ -1,0 +1,33 @@
+{
+  "case_id": "sanctions_uae_wallet_screening_partial",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "UAE_AML_BASELINE",
+        "UAE_SANCTIONS_BASELINE",
+        "UAE_GOVERNANCE_BASELINE"
+      ],
+      "missing_controls.control_id": [
+        "GOV-001",
+        "SAN-001",
+        "AML-003"
+      ],
+      "missing_evidence.control_id": [
+        "GOV-001",
+        "SAN-001",
+        "AML-003"
+      ],
+      "findings.control_id": [
+        "AML-003",
+        "SAN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 23
+    }
+  }
+}

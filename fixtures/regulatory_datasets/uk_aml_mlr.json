@@ -1,0 +1,32 @@
+{
+  "dataset_id": "dataset_uk_mlr_primary",
+  "title": "UK Money Laundering Regulations Primary Text",
+  "domain": "aml",
+  "jurisdictions": [
+    "uk"
+  ],
+  "countries": [
+    "GB"
+  ],
+  "framework_ids": [
+    "UK_MLR"
+  ],
+  "dataset_type": "law_text",
+  "license_type": "PUBLIC",
+  "status": "ACTIVE",
+  "update_cadence": "AD_HOC",
+  "loader": {
+    "kind": "url_manifest",
+    "source_url": "https://example.org/uk-mlr"
+  },
+  "freshness": {
+    "as_of_date": "2026-03-18"
+  },
+  "retrieval": {
+    "ready": false
+  },
+  "metadata": {
+    "seeded": true,
+    "priority": "high"
+  }
+}

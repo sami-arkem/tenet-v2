@@ -1,0 +1,27 @@
+{
+  "audit_id": "aml_singapore_case_001",
+  "entity_name": "AML Singapore case 001",
+  "audit_type": "",
+  "industry": "",
+  "jurisdictions": [
+    "singapore"
+  ],
+  "entity_type": "",
+  "products": [],
+  "customer_types": [],
+  "domains": [
+    "aml"
+  ],
+  "source_families": [],
+  "query_terms": [],
+  "top_k": 5,
+  "notes": "",
+  "historical_context_is_non_authoritative": true,
+  "deterministic_current_audit_truth_only": true,
+  "operator_fill_status": {
+    "real_sources_attached": false,
+    "placeholder_free": false,
+    "ready_for_import": false
+  },
+  "intake_identity_hint": "aml_singapore_case_001"
+}

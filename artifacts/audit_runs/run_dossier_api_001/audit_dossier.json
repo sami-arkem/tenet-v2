@@ -1,0 +1,76 @@
+{
+  "run_id": "run_dossier_api_001",
+  "deterministic_authoritative": true,
+  "company_name": "Acme Fintech",
+  "audit_type": "aml_readiness_review",
+  "overall_posture": "AMBER",
+  "deployment_decision": "CONDITIONALLY_APPROVED",
+  "summary_text": "Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0.",
+  "control_count": 1,
+  "supported_controls": 0,
+  "partial_controls": 1,
+  "blocked_controls": 0,
+  "controls": [
+    {
+      "control_id": "AML.MONITORING.001",
+      "regime_id": "UK_MLR.001",
+      "title": "Transaction monitoring policy",
+      "coverage_status": "PARTIAL",
+      "required_evidence_types": [
+        "policy_document",
+        "monitoring_report"
+      ],
+      "covered_evidence_types": [
+        "policy_document"
+      ],
+      "missing_required_evidence_types": [
+        "monitoring_report"
+      ],
+      "rationale": "Not all required evidence types are covered by direct evidence or retrieved context.",
+      "deterministic_authoritative": true,
+      "evidence_citations": [
+        {
+          "citation_type": "direct_evidence",
+          "evidence_id": "ev_001",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "file_path": "evidence/policy.pdf",
+          "citation": "policy.pdf#L1-L20"
+        },
+        {
+          "citation_type": "retrieved_context",
+          "chunk_id": "ev_001::chunk_0000",
+          "evidence_id": "ev_001",
+          "filename": "policy.txt",
+          "title": "Monitoring Policy",
+          "source_type": "policy_document",
+          "score": 3.2,
+          "excerpt": "AML transaction monitoring policy",
+          "question": "What evidence supports AML.MONITORING.001?"
+        }
+      ],
+      "linked_findings": [
+        {
+          "finding_id": "AML.MONITORING.001::finding",
+          "title": "Gap in Transaction monitoring policy",
+          "severity": "HIGH",
+          "status": "OPEN",
+          "verdict": "PARTIAL",
+          "description": "Deterministic evaluation found verdict=PARTIAL for control AML.MONITORING.001.",
+          "rationale": "Control present but evidence coverage is incomplete.",
+          "linked_remediation_items": [
+            {
+              "remediation_id": "remediation::0001",
+              "finding_id": "AML.MONITORING.001::finding",
+              "title": "Remediate AML.MONITORING.001",
+              "owner": "compliance@acme.com",
+              "due_date": null,
+              "status": "OPEN",
+              "action_required": "Provide evidence covering missing evidence types: monitoring_report."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

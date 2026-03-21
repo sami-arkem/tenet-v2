@@ -1,0 +1,33 @@
+{
+  "pack_id": "jurisdiction_australia_v1",
+  "jurisdiction": "AUSTRALIA",
+  "label": "Australia",
+  "supported_domains": [
+    "aml",
+    "kyc_kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "screening",
+    "regulatory_reporting",
+    "fraud",
+    "transaction_screening",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "regimes": [
+    "AU_AML_BASELINE",
+    "AU_SANCTIONS_BASELINE",
+    "AU_GOVERNANCE_BASELINE"
+  ],
+  "evidence_categories": [
+    "policy",
+    "procedure",
+    "workflow",
+    "governance_record",
+    "monitoring_record",
+    "screening_record",
+    "licensing_record",
+    "remediation_record"
+  ]
+}

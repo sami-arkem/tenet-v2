@@ -1,0 +1,556 @@
+{
+  "entries": [
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T14:44:11.604882+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T144411.604882_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T144411.604882_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T14:44:18.082730+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T144418.082730_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T144418.082730_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:07:35.496840+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T170735.496840_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T170735.496840_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:08:30.388944+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T170830.388944_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T170830.388944_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:08:36.102803+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T170836.102803_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T170836.102803_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:14:36.998295+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T171436.998295_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T171436.998295_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:49:20.925718+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T174920.925718_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T174920.925718_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:49:37.094524+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T174937.094524_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T174937.094524_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:49:48.638164+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T174948.638164_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T174948.638164_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:50:01.251803+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T175001.251803_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T175001.251803_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T17:50:08.505527+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T175008.505527_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T175008.505527_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T18:35:07.076801+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T183507.076801_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T183507.076801_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T19:37:08.586399+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T193708.586399_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T193708.586399_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T20:13:58.034034+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T201358.034034_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T201358.034034_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T20:33:06.321717+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T203306.321717_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T203306.321717_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T21:10:48.322519+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T211048.322519_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T211048.322519_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T21:48:13.282246+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T214813.282246_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T214813.282246_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T22:04:33.806508+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T220433.806508_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T220433.806508_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T22:49:03.037672+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T224903.037672_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T224903.037672_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T22:55:00.151877+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T225500.151877_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T225500.151877_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-18T23:05:30.486277+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-18T230530.486277_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-18T230530.486277_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:06:23.840107+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T080623.840107_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T080623.840107_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:10:27.134022+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T081027.134022_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T081027.134022_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:19:32.030822+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T081932.030822_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T081932.030822_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:36:50.312273+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T083650.312273_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T083650.312273_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:39:40.884242+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T083940.884242_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T083940.884242_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T08:49:14.090121+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T084914.090121_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T084914.090121_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:12:47.829458+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T091247.829458_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T091247.829458_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:15:49.311482+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T091549.311482_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T091549.311482_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:25:43.599371+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T092543.599371_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T092543.599371_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:36:03.384352+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T093603.384352_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T093603.384352_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:44:50.662644+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T094450.662644_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T094450.662644_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:46:21.120414+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T094621.120414_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T094621.120414_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T09:56:57.507795+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T095657.507795_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T095657.507795_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T10:08:38.821126+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T100838.821126_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T100838.821126_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T10:18:12.757116+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T101812.757116_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T101812.757116_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T10:38:23.383658+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T103823.383658_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T103823.383658_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T10:53:37.757539+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T105337.757539_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T105337.757539_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T11:11:02.786541+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T111102.786541_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T111102.786541_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T11:32:09.370510+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T113209.370510_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T113209.370510_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T11:47:30.618275+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T114730.618275_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T114730.618275_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T12:05:42.981891+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T120542.981891_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T120542.981891_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T12:32:33.572992+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T123233.572992_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T123233.572992_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T12:58:52.830996+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T125852.830996_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T125852.830996_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T14:13:04.918178+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T141304.918178_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T141304.918178_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T14:55:46.582490+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T145546.582490_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T145546.582490_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T15:03:00.763986+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T150300.763986_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T150300.763986_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T15:04:34.587677+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T150434.587677_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T150434.587677_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T15:06:06.912948+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T150606.912948_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T150606.912948_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T15:06:43.026494+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T150643.026494_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T150643.026494_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T17:59:46.275815+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T175946.275815_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T175946.275815_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T19:10:10.678026+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T191010.678026_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T191010.678026_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T19:10:59.350287+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T191059.350287_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T191059.350287_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T19:14:16.948625+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T191416.948625_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T191416.948625_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    },
+    {
+      "source_id": "uk_fca_handbook_public",
+      "dataset_id": "dataset_uk_fca_handbook_public",
+      "fetched_at": "2026-03-19T19:27:50.638069+00:00",
+      "raw_sha256": "ffeacc9de2804b9f12dc96a5fdd27f69138ff5a504b6ff186f3cf43bd8697658",
+      "raw_size_bytes": 58,
+      "snapshot_id": "2026-03-19T192750.638069_0000_ffeacc9de280",
+      "snapshot_root": "fixtures/source_registry/runs/uk_fca_handbook_public/snapshots/2026-03-19T192750.638069_0000_ffeacc9de280",
+      "source_url": "https://www.fca.org.uk/handbook"
+    }
+  ],
+  "entry_count": 55,
+  "latest_fetched_at": "2026-03-19T19:27:50.638069+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "batch_label": "proof_batch_real_001_preflight",
+  "validate_only": true,
+  "item_count": 3,
+  "pre_counts": {
+    "gold_cases_count": 50,
+    "customer_packs_count": 5
+  },
+  "validation_results": [
+    {
+      "kind": "gold_case",
+      "id": "aml_us_monitoring_gap_051",
+      "source_dir": "intake/proof_batch/aml_us_monitoring_gap_051",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "gold_case",
+        "--id",
+        "aml_us_monitoring_gap_051",
+        "--source-dir",
+        "intake/proof_batch/aml_us_monitoring_gap_051",
+        "--title",
+        "AML US monitoring escalation gap",
+        "--domains",
+        "aml,governance",
+        "--jurisdictions",
+        "us",
+        "--dry-run",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.123,
+      "stdout_tail": "{\n  \"kind\": \"gold_case\",\n  \"id\": \"aml_us_monitoring_gap_051\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_monitoring_gap_051\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_monitoring_gap_051\",\n  \"dry_run\": true,\n  \"validation\": {\n    \"domains\": [\n      \"aml\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"us\"\n    ],\n    \"title\": \"Real AML US Monitoring Gap 051\"\n  },\n  \"skip_gates\": true,\n  \"committed\": false\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "gold_case",
+      "id": "kyc_uk_periodic_review_failure_052",
+      "source_dir": "intake/proof_batch/kyc_uk_periodic_review_failure_052",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "gold_case",
+        "--id",
+        "kyc_uk_periodic_review_failure_052",
+        "--source-dir",
+        "intake/proof_batch/kyc_uk_periodic_review_failure_052",
+        "--title",
+        "KYC UK periodic review failure",
+        "--domains",
+        "kyc,governance",
+        "--jurisdictions",
+        "uk",
+        "--dry-run",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.112,
+      "stdout_tail": "{\n  \"kind\": \"gold_case\",\n  \"id\": \"kyc_uk_periodic_review_failure_052\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/kyc_uk_periodic_review_failure_052\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_uk_periodic_review_failure_052\",\n  \"dry_run\": true,\n  \"validation\": {\n    \"domains\": [\n      \"kyc\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"uk\"\n    ],\n    \"title\": \"Real KYC UK Periodic Review Failure 052\"\n  },\n  \"skip_gates\": true,\n  \"committed\": false\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "customer_pack",
+      "id": "aml_us_pack_006",
+      "source_dir": "intake/proof_batch/aml_us_pack_006",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "/Users/samisayyed/tenet-v2/scripts/proof_expansion_pipeline.py",
+        "--config",
+        "/Users/samisayyed/tenet-v2/config/proof_expansion_config.json",
+        "--kind",
+        "customer_pack",
+        "--id",
+        "aml_us_pack_006",
+        "--source-dir",
+        "intake/proof_batch/aml_us_pack_006",
+        "--title",
+        "AML US customer evidence pack 006",
+        "--domains",
+        "aml,governance",
+        "--jurisdictions",
+        "us",
+        "--dry-run",
+        "--skip-gates"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "duration_seconds": 0.109,
+      "stdout_tail": "{\n  \"kind\": \"customer_pack\",\n  \"id\": \"aml_us_pack_006\",\n  \"source_dir\": \"/Users/samisayyed/tenet-v2/intake/proof_batch/aml_us_pack_006\",\n  \"target_dir\": \"/Users/samisayyed/tenet-v2/data/customer_evidence_packs/aml_us_pack_006\",\n  \"dry_run\": true,\n  \"validation\": {\n    \"domains\": [\n      \"aml\",\n      \"governance\"\n    ],\n    \"jurisdictions\": [\n      \"us\"\n    ],\n    \"title\": \"AML US Customer Pack 006\"\n  },\n  \"skip_gates\": true,\n  \"committed\": false\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "validation_green": true
+}

@@ -1,0 +1,10 @@
+{
+  "source_id": "official_ofac_sanctions_list_service",
+  "snapshot_id": "2026-03-19T192750.595559_0000_b33bab166a74",
+  "snapshot_root": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.595559_0000_b33bab166a74",
+  "raw_path": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.595559_0000_b33bab166a74/raw_source.bin",
+  "normalized_text_path": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.595559_0000_b33bab166a74/normalized_text.txt",
+  "metadata_path": "fixtures/source_registry/runs/official_ofac_sanctions_list_service/snapshots/2026-03-19T192750.595559_0000_b33bab166a74/fetch_metadata.json",
+  "fetched_at": "2026-03-19T19:27:50.595559+00:00",
+  "raw_sha256": "b33bab166a7488e3a93a69e45dafed57d2d7f1e41b99888abb9b5c2c2d506171"
+}

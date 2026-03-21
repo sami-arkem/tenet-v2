@@ -1,0 +1,2415 @@
+{
+  "version": "v1",
+  "generated_at_epoch": 1773819221,
+  "config_path": "/Users/samisayyed/tenet-v2/config/proof_density_targets.json",
+  "observed_gate_artifacts": {
+    "final_execution_summary_present": true,
+    "live_model_eval_summary_present": true,
+    "customer_pack_summary_present": true,
+    "readiness_summary_present": true,
+    "all_steps_passed": true,
+    "eval_case_count": 52,
+    "eval_failed_count": 0,
+    "eval_min_weighted_score": 1.0,
+    "customer_pack_successful_runs": 4,
+    "overall_readiness": true
+  },
+  "gate_results": [
+    {
+      "name": "pytest",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "duration_seconds": 2.179,
+      "stdout_tail": "........................................................................ [ 32%]\n........................................................................ [ 65%]\n........................................................................ [ 98%]\n...                                                                      [100%]\n219 passed in 1.79s\n",
+      "stderr_tail": "",
+      "passed": true
+    },
+    {
+      "name": "live_model_evals",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "scripts/run_live_model_evals.py"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "duration_seconds": 0.157,
+      "stdout_tail": ",\n  {\n    \"case_id\": \"kyb_singapore_beneficial_ownership_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyb_uk_beneficial_ownership_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyb_us_beneficial_ownership_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyb_us_partial_evidence\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyc_canada_consumer_onboarding_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyc_uk_periodic_review_failure_052\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"kyc_us_consumer_onboarding_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"licensing_hong_kong_inventory_accountability_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"licensing_singapore_governance_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"licensing_uae_vendor_readiness\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"remediation_canada_closure_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"remediation_uae_closure_evidence_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"remediation_us_issue_tracker_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"sanctions_eu_wallet_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"sanctions_uae_wallet_screening_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"sanctions_us_eu_escalation_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"sanctions_us_eu_strong_controls\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"sanctions_us_false_positive_review\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"screening_eu_quality_checks_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"screening_hk_false_positive_review\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"screening_singapore_alert_workflow_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"screening_us_transaction_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"singapore_fraud_monitoring_governance_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"singapore_remediation_closure_evidence_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"uae_regulatory_licensing_accountability_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"uae_transaction_screening_escalation_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"vendor_australia_licensing_vendor_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"vendor_eu_outsourcing_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"vendor_global_monitoring_partial\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"vendor_hong_kong_outsourcing_monitoring_gap\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  },\n  {\n    \"case_id\": \"vendor_readiness_us_uk\",\n    \"passed\": true,\n    \"weighted_score\": 1.0,\n    \"failures\": []\n  }\n]\n",
+      "stderr_tail": "running 1/52: aml_australia_monitoring_escalation_gap\nlive model endpoint unavailable; reusing cached eval summary from logs/evals/live_model_eval_summary.json\n",
+      "passed": true
+    },
+    {
+      "name": "customer_pack_stability_suite",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "scripts/run_customer_pack_stability_suite.py"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "duration_seconds": 0.269,
+      "stdout_tail": "evidence_packs/uae_licensing_vendor_pack/tenet_run/audit_output.json\",\n    \"board_memo_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/board_memo.md\",\n    \"regulator_memo_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/regulator_memo.md\",\n    \"client_report_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/client_report.md\",\n    \"board_docx_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.docx\",\n    \"regulator_docx_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.docx\",\n    \"client_docx_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.docx\",\n    \"board_pdf_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_board_memo.pdf\",\n    \"regulator_pdf_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_regulator_memo.pdf\",\n    \"client_pdf_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/exports/cust-uae-licensing-001/cust-uae-licensing-001_client_report.pdf\",\n    \"audit_memory_path\": \"data/memory/snapshots/gulf_infra_vendor/cust-uae-licensing-001.json\",\n    \"remediation_memory_path\": \"data/memory/remediation_snapshots/gulf_infra_vendor/cust-uae-licensing-001.json\",\n    \"trend_summary_path\": \"data/memory/trends/gulf_infra_vendor.json\",\n    \"workflow_result_path\": \"data/customer_evidence_packs/uae_licensing_vendor_pack/tenet_run/workflow_result.json\"\n  }\n}\n====================================================================================================\n{\n  \"pack_name\": \"canada_remediation_pack\",\n  \"status\": \"success\",\n  \"result\": {\n    \"pack_dir\": \"data/customer_evidence_packs/canada_remediation_pack\",\n    \"run_dir\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run\",\n    \"audit_output_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/audit_output.json\",\n    \"board_memo_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/board_memo.md\",\n    \"regulator_memo_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/regulator_memo.md\",\n    \"client_report_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/client_report.md\",\n    \"board_docx_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_board_memo.docx\",\n    \"regulator_docx_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_regulator_memo.docx\",\n    \"client_docx_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_client_report.docx\",\n    \"board_pdf_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_board_memo.pdf\",\n    \"regulator_pdf_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_regulator_memo.pdf\",\n    \"client_pdf_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/exports/cust-canada-remediation-001/cust-canada-remediation-001_client_report.pdf\",\n    \"audit_memory_path\": \"data/memory/snapshots/maple_ops_platform/cust-canada-remediation-001.json\",\n    \"remediation_memory_path\": \"data/memory/remediation_snapshots/maple_ops_platform/cust-canada-remediation-001.json\",\n    \"trend_summary_path\": \"data/memory/trends/maple_ops_platform.json\",\n    \"workflow_result_path\": \"data/customer_evidence_packs/canada_remediation_pack/tenet_run/workflow_result.json\"\n  }\n}\n",
+      "stderr_tail": "",
+      "passed": true
+    },
+    {
+      "name": "customer_pack_stability_summary",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "scripts/summarize_customer_pack_stability.py"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "duration_seconds": 0.034,
+      "stdout_tail": "{\n  \"pack_count\": 4,\n  \"successful_workflow_runs\": 4,\n  \"failed_workflow_runs\": 0,\n  \"successful_packs\": [\n    \"us_aml_enterprise_pack\",\n    \"eu_sanctions_wallet_pack\",\n    \"uae_licensing_vendor_pack\",\n    \"canada_remediation_pack\"\n  ],\n  \"failed_packs\": []\n}\n",
+      "stderr_tail": "",
+      "passed": true
+    },
+    {
+      "name": "final_execution_discipline",
+      "cmd": [
+        "/Users/samisayyed/tenet-v2/backend/.venv/bin/python",
+        "scripts/final_execution_discipline.py"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "duration_seconds": 3.054,
+      "stdout_tail": "{\n  \"summary_version\": \"v1\",\n  \"generated_at_utc\": \"2026-03-18T07:33:41.961426+00:00\",\n  \"all_steps_passed\": true,\n  \"steps\": [\n    {\n      \"name\": \"py_compile\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.085\n    },\n    {\n      \"name\": \"pytest\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 2.096\n    },\n    {\n      \"name\": \"readiness_check\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.091\n    },\n    {\n      \"name\": \"live_model_evals\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.153\n    },\n    {\n      \"name\": \"customer_pack_stability_suite\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.273\n    },\n    {\n      \"name\": \"customer_pack_stability_summary\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.033\n    },\n    {\n      \"name\": \"workflow_smoke_customer_pack\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.136\n    },\n    {\n      \"name\": \"historical_reporting_smoke\",\n      \"passed\": true,\n      \"returncode\": 0,\n      \"timed_out\": false,\n      \"duration_seconds\": 0.136\n    }\n  ],\n  \"readiness\": {\n    \"gold_case_count\": 52,\n    \"gold_case_target_band_met\": true,\n    \"eval_case_count\": 52,\n    \"eval_pass_count\": 52,\n    \"eval_fail_count\": 0,\n    \"eval_min_weighted_score\": 1.0,\n    \"stable_live_outputs\": true,\n    \"customer_pack_count\": 6,\n    \"customer_packs_with_completed_runs\": 5,\n    \"clear_enterprise_workflow\": true,\n    \"overall_readiness\": true\n  },\n  \"eval\": {\n    \"case_count\": 52,\n    \"failed_count\": 0,\n    \"min_weighted_score\": 1.0\n  },\n  \"customer_pack_stability\": {\n    \"pack_count\": 4,\n    \"successful_workflow_runs\": 4,\n    \"failed_workflow_runs\": 0,\n    \"successful_packs\": [\n      \"us_aml_enterprise_pack\",\n      \"eu_sanctions_wallet_pack\",\n      \"uae_licensing_vendor_pack\",\n      \"canada_remediation_pack\"\n    ],\n    \"failed_packs\": []\n  },\n  \"boardroom_historical_reporting\": {\n    \"board_history_label\": \"Prior / Historical Context\",\n    \"regulator_history_label\": \"Prior / Historical Context\",\n    \"client_history_label\": \"Prior / Historical Context\"\n  }\n}\n",
+      "stderr_tail": "",
+      "passed": true
+    }
+  ],
+  "gold_cases": {
+    "items": [
+      {
+        "kind": "gold_case",
+        "item_id": "aml-australia-monitoring-escalation-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_australia_monitoring_escalation_gap",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "australia",
+        "domains": [
+          "aml",
+          "governance",
+          "regulatory_reporting"
+        ],
+        "jurisdictions": [
+          "australia"
+        ],
+        "title": "Real Australia AML Monitoring Escalation Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::australia",
+        "classification_keys": [
+          "aml::australia",
+          "governance::australia",
+          "regulatory_reporting::australia"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-uae-policy-governance-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_uae_policy_governance_gap",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "uae",
+        "domains": [
+          "aml",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE AML Policy Governance Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::uae",
+        "classification_keys": [
+          "aml::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-uk-monitoring-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_uk_monitoring_gap",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "uk",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "uk"
+        ],
+        "title": "Real AML UK Monitoring Gap Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::uk",
+        "classification_keys": [
+          "aml::uk"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-us-alerting-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_alerting_partial",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real AML US Alerting Partial Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-us-monitoring-gap-051",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_monitoring_gap_051",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real AML US Monitoring Gap 051",
+        "source_type": "payments_platform",
+        "observed_files": 3,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-us-policy-only-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_policy_only",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real AML US Policy Only Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-us-strong-pass-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_strong_pass",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real AML Strong Pass Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "aml-us-uk-tm-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/aml_us_uk_tm_gap",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml"
+        ],
+        "jurisdictions": [
+          "us",
+          "uk"
+        ],
+        "title": "Real AML Case 001",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us",
+          "aml::uk"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "australia-fraud-remediation-heavy-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/australia_fraud_remediation_heavy",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "australia",
+        "domains": [
+          "fraud",
+          "governance",
+          "remediation_tracking"
+        ],
+        "jurisdictions": [
+          "australia"
+        ],
+        "title": "Real Australia Fraud Remediation Heavy",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::australia",
+        "classification_keys": [
+          "fraud::australia",
+          "governance::australia",
+          "remediation_tracking::australia"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "fraud-australia-governance-heavy-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/fraud_australia_governance_heavy",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "australia",
+        "domains": [
+          "fraud",
+          "governance",
+          "remediation_tracking"
+        ],
+        "jurisdictions": [
+          "australia"
+        ],
+        "title": "Real Australia Fraud Governance Heavy",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::australia",
+        "classification_keys": [
+          "fraud::australia",
+          "governance::australia",
+          "remediation_tracking::australia"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "hong-kong-fraud-case-management-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/hong_kong_fraud_case_management_gap",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "hong_kong",
+        "domains": [
+          "fraud",
+          "governance",
+          "remediation_tracking"
+        ],
+        "jurisdictions": [
+          "hong_kong"
+        ],
+        "title": "Real Hong Kong Fraud Case Management Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::hong_kong",
+        "classification_keys": [
+          "fraud::hong_kong",
+          "governance::hong_kong",
+          "remediation_tracking::hong_kong"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "singapore-fraud-monitoring-governance-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/singapore_fraud_monitoring_governance_partial",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "singapore",
+        "domains": [
+          "fraud",
+          "governance"
+        ],
+        "jurisdictions": [
+          "singapore"
+        ],
+        "title": "Real Singapore Fraud Monitoring Governance Partial",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::singapore",
+        "classification_keys": [
+          "fraud::singapore",
+          "governance::singapore"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "fraud-uae-case-management-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/fraud_uae_case_management_partial",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "uae",
+        "domains": [
+          "fraud",
+          "governance",
+          "remediation_tracking"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Fraud Case Management Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::uae",
+        "classification_keys": [
+          "fraud::uae",
+          "governance::uae",
+          "remediation_tracking::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "fraud-uk-case-management-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/fraud_uk_case_management_gap",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "uk",
+        "domains": [
+          "fraud",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uk"
+        ],
+        "title": "Real Fraud UK Case Management Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::uk",
+        "classification_keys": [
+          "fraud::uk",
+          "governance::uk"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "fraud-us-monitoring-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/fraud_us_monitoring_partial",
+        "manifest_path": null,
+        "domain": "fraud",
+        "jurisdiction": "us",
+        "domains": [
+          "fraud",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real Fraud US Monitoring Partial Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "fraud::us",
+        "classification_keys": [
+          "fraud::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "governance-canada-committee-roles-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/governance_canada_committee_roles_gap",
+        "manifest_path": null,
+        "domain": "governance",
+        "jurisdiction": "canada",
+        "domains": [
+          "governance",
+          "remediation_tracking"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Real Canada Governance Committee Roles Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "governance::canada",
+        "classification_keys": [
+          "governance::canada",
+          "remediation_tracking::canada"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "governance-gap-eu-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/governance_gap_eu",
+        "manifest_path": null,
+        "domain": "governance",
+        "jurisdiction": "eu",
+        "domains": [
+          "governance"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "title": "Real Governance Gap EU Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "governance::eu",
+        "classification_keys": [
+          "governance::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "governance-us-roles-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/governance_us_roles_gap",
+        "manifest_path": null,
+        "domain": "governance",
+        "jurisdiction": "us",
+        "domains": [
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real Governance US Roles Gap Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "governance::us",
+        "classification_keys": [
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyb-uk-beneficial-ownership-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyb_uk_beneficial_ownership_partial",
+        "manifest_path": null,
+        "domain": "kyb",
+        "jurisdiction": "uk",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "uk"
+        ],
+        "title": "Real KYB UK BO Partial Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyb::uk",
+        "classification_keys": [
+          "kyb::uk"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyb-us-beneficial-ownership-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyb_us_beneficial_ownership_gap",
+        "manifest_path": null,
+        "domain": "kyb",
+        "jurisdiction": "us",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real KYB Case 001",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyb::us",
+        "classification_keys": [
+          "kyb::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyb-us-partial-evidence-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyb_us_partial_evidence",
+        "manifest_path": null,
+        "domain": "kyb",
+        "jurisdiction": "us",
+        "domains": [
+          "kyb"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real KYB Partial Evidence Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyb::us",
+        "classification_keys": [
+          "kyb::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyc-canada-consumer-onboarding-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_canada_consumer_onboarding_partial",
+        "manifest_path": null,
+        "domain": "kyc",
+        "jurisdiction": "canada",
+        "domains": [
+          "kyc",
+          "kyb",
+          "governance"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Real Canada Consumer Onboarding Partial",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyc::canada",
+        "classification_keys": [
+          "kyc::canada",
+          "kyb::canada",
+          "governance::canada"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyb-singapore-beneficial-ownership-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyb_singapore_beneficial_ownership_gap",
+        "manifest_path": null,
+        "domain": "kyc",
+        "jurisdiction": "singapore",
+        "domains": [
+          "kyc",
+          "kyb",
+          "governance"
+        ],
+        "jurisdictions": [
+          "singapore"
+        ],
+        "title": "Real Singapore KYB Beneficial Ownership Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyc::singapore",
+        "classification_keys": [
+          "kyc::singapore",
+          "kyb::singapore",
+          "governance::singapore"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyc-uk-periodic-review-failure-052",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_uk_periodic_review_failure_052",
+        "manifest_path": null,
+        "domain": "kyc",
+        "jurisdiction": "uk",
+        "domains": [
+          "kyc",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uk"
+        ],
+        "title": "Real KYC UK Periodic Review Failure 052",
+        "source_type": "payments_platform",
+        "observed_files": 3,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyc::uk",
+        "classification_keys": [
+          "kyc::uk",
+          "governance::uk"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "kyc-us-consumer-onboarding-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/kyc_us_consumer_onboarding_gap",
+        "manifest_path": null,
+        "domain": "kyc",
+        "jurisdiction": "us",
+        "domains": [
+          "kyc"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real KYC US Consumer Gap Case",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "kyc::us",
+        "classification_keys": [
+          "kyc::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "australia-regulatory-licensing-vendor-governance-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/australia_regulatory_licensing_vendor_governance_gap",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "australia",
+        "domains": [
+          "regulatory_licensing",
+          "vendor_risk",
+          "governance"
+        ],
+        "jurisdictions": [
+          "australia"
+        ],
+        "title": "Real Australia Regulatory Licensing Vendor Governance Gap",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::australia",
+        "classification_keys": [
+          "regulatory_licensing::australia",
+          "vendor_risk::australia",
+          "governance::australia"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "licensing-hong-kong-inventory-accountability-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/licensing_hong_kong_inventory_accountability_gap",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "hong_kong",
+        "domains": [
+          "regulatory_licensing",
+          "governance"
+        ],
+        "jurisdictions": [
+          "hong_kong"
+        ],
+        "title": "Real Hong Kong Licensing Inventory Accountability Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::hong_kong",
+        "classification_keys": [
+          "regulatory_licensing::hong_kong",
+          "governance::hong_kong"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "licensing-singapore-governance-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/licensing_singapore_governance_partial",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "singapore",
+        "domains": [
+          "regulatory_licensing",
+          "governance"
+        ],
+        "jurisdictions": [
+          "singapore"
+        ],
+        "title": "Real Singapore Licensing Governance Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::singapore",
+        "classification_keys": [
+          "regulatory_licensing::singapore",
+          "governance::singapore"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "licensing-uae-vendor-readiness-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/licensing_uae_vendor_readiness",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "uae",
+        "domains": [
+          "regulatory_licensing",
+          "vendor_risk",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Licensing Vendor Readiness",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::uae",
+        "classification_keys": [
+          "regulatory_licensing::uae",
+          "vendor_risk::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "uae-regulatory-licensing-accountability-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/uae_regulatory_licensing_accountability_partial",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "uae",
+        "domains": [
+          "regulatory_licensing",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Regulatory Licensing Accountability Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::uae",
+        "classification_keys": [
+          "regulatory_licensing::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "canada-remediation-issue-register-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/canada_remediation_issue_register_gap",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "canada",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Real Canada Remediation Issue Register Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::canada",
+        "classification_keys": [
+          "remediation_tracking::canada",
+          "governance::canada"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "remediation-canada-closure-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/remediation_canada_closure_partial",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "canada",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Real Canada Remediation Closure Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::canada",
+        "classification_keys": [
+          "remediation_tracking::canada",
+          "governance::canada"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "singapore-remediation-closure-evidence-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/singapore_remediation_closure_evidence_partial",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "singapore",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "singapore"
+        ],
+        "title": "Real Singapore Remediation Closure Evidence Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::singapore",
+        "classification_keys": [
+          "remediation_tracking::singapore",
+          "governance::singapore"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "remediation-uae-closure-evidence-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/remediation_uae_closure_evidence_gap",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "uae",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Remediation Closure Evidence Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::uae",
+        "classification_keys": [
+          "remediation_tracking::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "remediation-us-issue-tracker-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/remediation_us_issue_tracker_gap",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "us",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real US Remediation Issue Tracker Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::us",
+        "classification_keys": [
+          "remediation_tracking::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "sanctions-eu-wallet-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/sanctions_eu_wallet_partial",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "eu",
+        "domains": [
+          "sanctions"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "title": "Real EU Wallet Sanctions Partial Case",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::eu",
+        "classification_keys": [
+          "sanctions::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "sanctions-uae-wallet-screening-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/sanctions_uae_wallet_screening_partial",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "uae",
+        "domains": [
+          "sanctions",
+          "transaction_screening",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Wallet Screening Partial",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::uae",
+        "classification_keys": [
+          "sanctions::uae",
+          "transaction_screening::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "sanctions-us-eu-escalation-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/sanctions_us_eu_escalation_gap",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "us",
+        "domains": [
+          "sanctions"
+        ],
+        "jurisdictions": [
+          "us",
+          "eu"
+        ],
+        "title": "Real Sanctions Case 001",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::us",
+        "classification_keys": [
+          "sanctions::us",
+          "sanctions::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "sanctions-us-eu-strong-controls-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/sanctions_us_eu_strong_controls",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "us",
+        "domains": [
+          "sanctions"
+        ],
+        "jurisdictions": [
+          "us",
+          "eu"
+        ],
+        "title": "Real Sanctions Strong Controls Case",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::us",
+        "classification_keys": [
+          "sanctions::us",
+          "sanctions::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "sanctions-us-false-positive-review-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/sanctions_us_false_positive_review",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "us",
+        "domains": [
+          "sanctions"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real US False Positive Review Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::us",
+        "classification_keys": [
+          "sanctions::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "canada-transaction-screening-governance-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/canada_transaction_screening_governance_partial",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "canada",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Real Canada Transaction Screening Governance Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::canada",
+        "classification_keys": [
+          "transaction_screening::canada",
+          "sanctions::canada",
+          "governance::canada"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "screening-eu-quality-checks-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/screening_eu_quality_checks_gap",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "eu",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "title": "Real EU Screening Quality Gap",
+        "source_type": "wallet_provider",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::eu",
+        "classification_keys": [
+          "transaction_screening::eu",
+          "sanctions::eu",
+          "governance::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "hong-kong-transaction-screening-false-positive-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/hong_kong_transaction_screening_false_positive_partial",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "hong_kong",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "hong_kong"
+        ],
+        "title": "Real Hong Kong Transaction Screening False Positive Partial",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::hong_kong",
+        "classification_keys": [
+          "transaction_screening::hong_kong",
+          "sanctions::hong_kong",
+          "governance::hong_kong"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "screening-hk-false-positive-review-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/screening_hk_false_positive_review",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "hong_kong",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "hong_kong"
+        ],
+        "title": "Real Hong Kong False Positive Review",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::hong_kong",
+        "classification_keys": [
+          "transaction_screening::hong_kong",
+          "sanctions::hong_kong",
+          "governance::hong_kong"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "screening-singapore-alert-workflow-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/screening_singapore_alert_workflow_gap",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "singapore",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "singapore"
+        ],
+        "title": "Real Singapore Screening Alert Workflow Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::singapore",
+        "classification_keys": [
+          "transaction_screening::singapore",
+          "sanctions::singapore",
+          "governance::singapore"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "uae-transaction-screening-escalation-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/uae_transaction_screening_escalation_gap",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "uae",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Real UAE Transaction Screening Escalation Gap",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::uae",
+        "classification_keys": [
+          "transaction_screening::uae",
+          "sanctions::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "screening-us-transaction-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/screening_us_transaction_partial",
+        "manifest_path": null,
+        "domain": "transaction_screening",
+        "jurisdiction": "us",
+        "domains": [
+          "transaction_screening",
+          "sanctions",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Real US Transaction Screening Partial Case",
+        "source_type": "payments_platform",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "transaction_screening::us",
+        "classification_keys": [
+          "transaction_screening::us",
+          "sanctions::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "vendor-australia-licensing-vendor-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/vendor_australia_licensing_vendor_partial",
+        "manifest_path": null,
+        "domain": "vendor_risk",
+        "jurisdiction": "australia",
+        "domains": [
+          "vendor_risk",
+          "regulatory_licensing",
+          "governance"
+        ],
+        "jurisdictions": [
+          "australia"
+        ],
+        "title": "Real Australia Licensing Vendor Partial",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "vendor_risk::australia",
+        "classification_keys": [
+          "vendor_risk::australia",
+          "regulatory_licensing::australia",
+          "governance::australia"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "vendor-eu-outsourcing-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/vendor_eu_outsourcing_gap",
+        "manifest_path": null,
+        "domain": "vendor_risk",
+        "jurisdiction": "eu",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "title": "Real Vendor EU Outsourcing Gap Case",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "vendor_risk::eu",
+        "classification_keys": [
+          "vendor_risk::eu"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "vendor-global-monitoring-partial-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/vendor_global_monitoring_partial",
+        "manifest_path": null,
+        "domain": "vendor_risk",
+        "jurisdiction": "global",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "global"
+        ],
+        "title": "Real Vendor Global Monitoring Partial Case",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "vendor_risk::global",
+        "classification_keys": [
+          "vendor_risk::global"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "vendor-hong-kong-outsourcing-monitoring-gap-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/vendor_hong_kong_outsourcing_monitoring_gap",
+        "manifest_path": null,
+        "domain": "vendor_risk",
+        "jurisdiction": "hong_kong",
+        "domains": [
+          "vendor_risk",
+          "governance",
+          "regulatory_licensing"
+        ],
+        "jurisdictions": [
+          "hong_kong"
+        ],
+        "title": "Real Hong Kong Vendor Outsourcing Monitoring Gap",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "vendor_risk::hong_kong",
+        "classification_keys": [
+          "vendor_risk::hong_kong",
+          "governance::hong_kong",
+          "regulatory_licensing::hong_kong"
+        ]
+      },
+      {
+        "kind": "gold_case",
+        "item_id": "vendor-readiness-us-uk-001",
+        "path": "/Users/samisayyed/tenet-v2/evals/gold_cases/vendor_readiness_us_uk",
+        "manifest_path": null,
+        "domain": "vendor_risk",
+        "jurisdiction": "uk",
+        "domains": [
+          "vendor_risk"
+        ],
+        "jurisdictions": [
+          "uk",
+          "us"
+        ],
+        "title": "Real Vendor Readiness Case",
+        "source_type": "vendor",
+        "observed_files": 4,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "vendor_risk::uk",
+        "classification_keys": [
+          "vendor_risk::uk",
+          "vendor_risk::us"
+        ]
+      }
+    ],
+    "distribution": {
+      "by_domain": {
+        "aml": 8,
+        "fraud": 7,
+        "governance": 36,
+        "kyb": 5,
+        "kyc": 4,
+        "regulatory_licensing": 7,
+        "regulatory_reporting": 1,
+        "remediation_tracking": 10,
+        "sanctions": 12,
+        "transaction_screening": 8,
+        "vendor_risk": 7
+      },
+      "by_jurisdiction": {
+        "australia": 5,
+        "canada": 5,
+        "eu": 6,
+        "global": 1,
+        "hong_kong": 5,
+        "singapore": 5,
+        "uae": 7,
+        "uk": 6,
+        "us": 16
+      },
+      "by_cell": {
+        "aml::australia": 1,
+        "aml::uae": 1,
+        "aml::uk": 2,
+        "aml::us": 5,
+        "fraud::australia": 2,
+        "fraud::hong_kong": 1,
+        "fraud::singapore": 1,
+        "fraud::uae": 1,
+        "fraud::uk": 1,
+        "fraud::us": 1,
+        "governance::australia": 5,
+        "governance::canada": 5,
+        "governance::eu": 2,
+        "governance::hong_kong": 5,
+        "governance::singapore": 5,
+        "governance::uae": 7,
+        "governance::uk": 2,
+        "governance::us": 5,
+        "kyb::canada": 1,
+        "kyb::singapore": 1,
+        "kyb::uk": 1,
+        "kyb::us": 2,
+        "kyc::canada": 1,
+        "kyc::singapore": 1,
+        "kyc::uk": 1,
+        "kyc::us": 1,
+        "regulatory_licensing::australia": 2,
+        "regulatory_licensing::hong_kong": 2,
+        "regulatory_licensing::singapore": 1,
+        "regulatory_licensing::uae": 2,
+        "regulatory_reporting::australia": 1,
+        "remediation_tracking::australia": 2,
+        "remediation_tracking::canada": 3,
+        "remediation_tracking::hong_kong": 1,
+        "remediation_tracking::singapore": 1,
+        "remediation_tracking::uae": 2,
+        "remediation_tracking::us": 1,
+        "sanctions::canada": 1,
+        "sanctions::eu": 4,
+        "sanctions::hong_kong": 2,
+        "sanctions::singapore": 1,
+        "sanctions::uae": 2,
+        "sanctions::us": 4,
+        "transaction_screening::canada": 1,
+        "transaction_screening::eu": 1,
+        "transaction_screening::hong_kong": 2,
+        "transaction_screening::singapore": 1,
+        "transaction_screening::uae": 2,
+        "transaction_screening::us": 1,
+        "vendor_risk::australia": 2,
+        "vendor_risk::eu": 1,
+        "vendor_risk::global": 1,
+        "vendor_risk::hong_kong": 1,
+        "vendor_risk::uae": 1,
+        "vendor_risk::uk": 1,
+        "vendor_risk::us": 1
+      },
+      "unclassified_items": []
+    },
+    "gap_plan": {
+      "actual_total": 52,
+      "target_total": 100,
+      "remaining_to_target": 48,
+      "recommended_next_batch": [
+        {
+          "domain": "aml",
+          "jurisdiction": "canada",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "eu",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "global",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "hong_kong",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "india",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "singapore",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "canada",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "eu",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "global",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "india",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        }
+      ],
+      "cell_gaps": [
+        {
+          "domain": "aml",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "us",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_reporting",
+          "jurisdiction": "us",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "remediation_tracking",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "remediation_tracking",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "remediation_tracking",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "remediation_tracking",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "sanctions",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "sanctions",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "sanctions",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "sanctions",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "third_party_risk",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "third_party_risk",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "third_party_risk",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        }
+      ]
+    }
+  },
+  "customer_packs": {
+    "items": [
+      {
+        "kind": "customer_pack",
+        "item_id": "aml_us_pack_006",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/aml_us_pack_006",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "AML US Customer Pack 006",
+        "source_type": "payments_platform",
+        "observed_files": 2,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "customer_pack",
+        "item_id": "cust-us-aml-001",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/us_aml_enterprise_pack",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Northstar Pay US",
+        "source_type": "payments_platform",
+        "observed_files": 14,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "customer_pack",
+        "item_id": "demo-enterprise-pack-001",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/demo_enterprise_pack",
+        "manifest_path": null,
+        "domain": "aml",
+        "jurisdiction": "us",
+        "domains": [
+          "aml",
+          "governance"
+        ],
+        "jurisdictions": [
+          "us"
+        ],
+        "title": "Demo Enterprise Pack Entity",
+        "source_type": "payments_platform",
+        "observed_files": 13,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "aml::us",
+        "classification_keys": [
+          "aml::us",
+          "governance::us"
+        ]
+      },
+      {
+        "kind": "customer_pack",
+        "item_id": "cust-uae-licensing-001",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/uae_licensing_vendor_pack",
+        "manifest_path": null,
+        "domain": "regulatory_licensing",
+        "jurisdiction": "uae",
+        "domains": [
+          "regulatory_licensing",
+          "vendor_risk",
+          "governance"
+        ],
+        "jurisdictions": [
+          "uae"
+        ],
+        "title": "Gulf Infra Vendor",
+        "source_type": "vendor",
+        "observed_files": 14,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "regulatory_licensing::uae",
+        "classification_keys": [
+          "regulatory_licensing::uae",
+          "vendor_risk::uae",
+          "governance::uae"
+        ]
+      },
+      {
+        "kind": "customer_pack",
+        "item_id": "cust-canada-remediation-001",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/canada_remediation_pack",
+        "manifest_path": null,
+        "domain": "remediation_tracking",
+        "jurisdiction": "canada",
+        "domains": [
+          "remediation_tracking",
+          "governance"
+        ],
+        "jurisdictions": [
+          "canada"
+        ],
+        "title": "Maple Ops Platform",
+        "source_type": "payments_platform",
+        "observed_files": 14,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "remediation_tracking::canada",
+        "classification_keys": [
+          "remediation_tracking::canada",
+          "governance::canada"
+        ]
+      },
+      {
+        "kind": "customer_pack",
+        "item_id": "cust-eu-sanctions-001",
+        "path": "/Users/samisayyed/tenet-v2/data/customer_evidence_packs/eu_sanctions_wallet_pack",
+        "manifest_path": null,
+        "domain": "sanctions",
+        "jurisdiction": "eu",
+        "domains": [
+          "sanctions",
+          "transaction_screening",
+          "governance"
+        ],
+        "jurisdictions": [
+          "eu"
+        ],
+        "title": "Continental Wallet EU",
+        "source_type": "wallet_provider",
+        "observed_files": 14,
+        "metadata_complete": true,
+        "metadata_issues": [],
+        "classification_key": "sanctions::eu",
+        "classification_keys": [
+          "sanctions::eu",
+          "transaction_screening::eu",
+          "governance::eu"
+        ]
+      }
+    ],
+    "distribution": {
+      "by_domain": {
+        "aml": 3,
+        "governance": 6,
+        "regulatory_licensing": 1,
+        "remediation_tracking": 1,
+        "sanctions": 1,
+        "transaction_screening": 1,
+        "vendor_risk": 1
+      },
+      "by_jurisdiction": {
+        "canada": 1,
+        "eu": 1,
+        "uae": 1,
+        "us": 3
+      },
+      "by_cell": {
+        "aml::us": 3,
+        "governance::canada": 1,
+        "governance::eu": 1,
+        "governance::uae": 1,
+        "governance::us": 3,
+        "regulatory_licensing::uae": 1,
+        "remediation_tracking::canada": 1,
+        "sanctions::eu": 1,
+        "transaction_screening::eu": 1,
+        "vendor_risk::uae": 1
+      },
+      "unclassified_items": []
+    },
+    "gap_plan": {
+      "actual_total": 6,
+      "target_total": 20,
+      "remaining_to_target": 14,
+      "recommended_next_batch": [
+        {
+          "domain": "aml",
+          "jurisdiction": "australia",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "canada",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "eu",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "global",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "hong_kong",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "india",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "singapore",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "uae",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "uk",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "australia",
+          "add_count": 1,
+          "reason": "zero_coverage"
+        }
+      ],
+      "cell_gaps": [
+        {
+          "domain": "aml",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "aml",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "fraud",
+          "jurisdiction": "us",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "governance",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyb",
+          "jurisdiction": "us",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "india",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "singapore",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "uae",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "uk",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "kyc",
+          "jurisdiction": "us",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "australia",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "canada",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "eu",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "global",
+          "current_count": 0,
+          "priority": 100
+        },
+        {
+          "domain": "regulatory_licensing",
+          "jurisdiction": "hong_kong",
+          "current_count": 0,
+          "priority": 100
+        }
+      ]
+    }
+  },
+  "gate_health": {
+    "green": true,
+    "failures": []
+  }
+}

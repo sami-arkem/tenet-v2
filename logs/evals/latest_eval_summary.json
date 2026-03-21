@@ -1,0 +1,188 @@
+{
+  "case_count": 18,
+  "passed": 18,
+  "failed": 0,
+  "average_weighted_score": 1.0,
+  "results": [
+    {
+      "case_id": "aml_uk_monitoring_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "aml_us_alerting_partial",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "aml_us_policy_only",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "aml_us_strong_pass",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "aml_us_uk_tm_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "governance_gap_eu",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "governance_us_roles_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "kyb_uk_beneficial_ownership_partial",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "kyb_us_beneficial_ownership_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "kyb_us_partial_evidence",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "kyc_us_consumer_onboarding_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "sanctions_eu_wallet_partial",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "sanctions_us_eu_escalation_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "sanctions_us_eu_strong_controls",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "sanctions_us_false_positive_review",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "vendor_eu_outsourcing_gap",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "vendor_global_monitoring_partial",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    },
+    {
+      "case_id": "vendor_readiness_us_uk",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "weighted_score": 1.0,
+      "threshold": 0.85,
+      "failure_count": 0,
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "call_id": "mc_973bf5b006674000",
+  "call_type": "executive_narrative",
+  "model_version": "claude-sonnet",
+  "fallback_used": false,
+  "success": true,
+  "created_at": "2026-03-19T09:12:47.130270+00:00",
+  "duration_ms": 0,
+  "system_prompt": "You write an executive compliance narrative from deterministic facts only. You must not invent verdicts or change posture. Return JSON only with key: narrative.",
+  "user_prompt": "Write executive narrative.\nSummary JSON: {'overall_posture': 'AMBER', 'deployment_decision': 'CONDITIONALLY_APPROVED', 'control_count': 1, 'passed_controls': 0, 'partial_controls': 1, 'failed_controls': 0, 'missing_evidence_controls': 0, 'critical_findings': 0, 'high_findings': 1, 'medium_findings': 0, 'low_findings': 0, 'summary_text': 'Deterministic audit completed with posture=AMBER, decision=CONDITIONALLY_APPROVED, controls=1, passed=0, partial=1, failed=0, missing_evidence=0.'}\nHighlights JSON: [{'finding_id': 'AML.MONITORING.001::finding', 'title': 'Gap in Transaction monitoring policy', 'severity': 'HIGH', 'verdict': 'PARTIAL'}]\nKeep it concise, board-ready, and grounded in the supplied facts.",
+  "response": {
+    "narrative": "The audit indicates a deterministically derived compliance posture that requires operator review and remediation tracking."
+  },
+  "error": null,
+  "non_authoritative": true,
+  "label": "MODEL-GENERATED NON-AUTHORITATIVE OUTPUT. Deterministic verdicts remain authoritative."
+}

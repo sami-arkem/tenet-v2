@@ -1,0 +1,85 @@
+{
+  "version": "v1",
+  "targets": {
+    "gold_cases_target": 100,
+    "customer_packs_target": 20
+  },
+  "allowed_domains": [
+    "aml",
+    "kyc",
+    "kyb",
+    "sanctions",
+    "governance",
+    "vendor_risk",
+    "third_party_risk",
+    "fraud",
+    "transaction_screening",
+    "regulatory_reporting",
+    "regulatory_licensing",
+    "remediation_tracking"
+  ],
+  "allowed_jurisdictions": [
+    "global",
+    "eu",
+    "uk",
+    "us",
+    "uae",
+    "canada",
+    "australia",
+    "singapore",
+    "india",
+    "hong_kong"
+  ],
+  "gold_case_search_roots": [
+    "data/gold_cases",
+    "data/evals/gold_cases",
+    "evals/gold_cases",
+    "fixtures/gold_cases",
+    "tests/gold_cases"
+  ],
+  "customer_pack_search_roots": [
+    "data/customer_evidence_packs"
+  ],
+  "gold_case_manifest_names": [
+    "case_manifest.json",
+    "gold_case_manifest.json",
+    "manifest.json"
+  ],
+  "customer_pack_manifest_names": [
+    "pack_manifest.json",
+    "customer_pack_manifest.json",
+    "manifest.json"
+  ],
+  "gate_commands": [
+    {
+      "name": "pytest",
+      "argv": ["-m", "pytest", "-q"],
+      "enabled": true,
+      "timeout_seconds": 1800
+    },
+    {
+      "name": "live_model_evals",
+      "argv": ["scripts/run_live_model_evals.py"],
+      "enabled": true,
+      "timeout_seconds": 2400
+    },
+    {
+      "name": "customer_pack_stability_suite",
+      "argv": ["scripts/run_customer_pack_stability_suite.py"],
+      "enabled": true,
+      "timeout_seconds": 2400
+    },
+    {
+      "name": "customer_pack_stability_summary",
+      "argv": ["scripts/summarize_customer_pack_stability.py"],
+      "enabled": true,
+      "timeout_seconds": 900
+    },
+    {
+      "name": "final_execution_discipline",
+      "argv": ["scripts/final_execution_discipline.py"],
+      "enabled": true,
+      "timeout_seconds": 2400
+    }
+  ]
+}

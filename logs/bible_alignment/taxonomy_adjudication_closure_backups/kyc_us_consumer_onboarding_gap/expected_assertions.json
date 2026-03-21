@@ -1,0 +1,40 @@
+{
+  "case_id": "kyc_us_consumer_onboarding_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "CIP_KYC",
+        "CDD_BO"
+      ],
+      "missing_controls.control_id": [
+        "AML-002",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001"
+      ],
+      "missing_evidence.control_id": [
+        "AML-002",
+        "GOV-001",
+        "KYB-001",
+        "KYC-001"
+      ],
+      "findings.control_id": [
+        "KYB-001",
+        "KYC-001",
+        "AML-002",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 0
+    }
+  },
+  "rules": {
+    "no_invented_pass_outcome": true,
+    "deterministic_current_truth_only": true,
+    "historical_context_cannot_override_current_truth": true
+  }
+}

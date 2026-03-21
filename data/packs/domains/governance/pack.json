@@ -1,0 +1,24 @@
+{
+  "pack_id": "domain_governance_v1",
+  "domain": "governance",
+  "label": "Governance",
+  "supported_audit_types": [
+    "policy_governance_gap_analysis",
+    "audit_report_generation_from_uploaded_evidence"
+  ],
+  "control_ids": [
+    "GOV-001"
+  ],
+  "evidence_categories": [
+    "governance_framework",
+    "roles_and_responsibilities",
+    "committee_charter",
+    "escalation_matrix"
+  ],
+  "query_seeds": [
+    "governance framework",
+    "roles and responsibilities",
+    "committee charter",
+    "escalation matrix"
+  ]
+}

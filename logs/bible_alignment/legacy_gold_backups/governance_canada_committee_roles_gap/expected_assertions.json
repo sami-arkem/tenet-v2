@@ -1,0 +1,30 @@
+{
+  "case_id": "governance_canada_committee_roles_gap",
+  "expected": {
+    "equals": {
+      "deployment_decision.status": "BLOCKED"
+    },
+    "contains": {
+      "regulatory_applicability.primary_regimes": [
+        "CA_AML_BASELINE",
+        "CA_SANCTIONS_BASELINE",
+        "CA_GOVERNANCE_BASELINE"
+      ],
+      "missing_controls.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "missing_evidence.control_id": [
+        "GOV-001",
+        "VEN-001"
+      ],
+      "findings.control_id": [
+        "VEN-001",
+        "GOV-001"
+      ]
+    },
+    "minimums": {
+      "control_assessment.control_coverage_score": 18
+    }
+  }
+}

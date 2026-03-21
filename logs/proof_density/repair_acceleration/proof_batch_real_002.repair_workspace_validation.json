@@ -1,0 +1,531 @@
+{
+  "generated_at_epoch": 1773817617,
+  "entry_count": 11,
+  "blocked_entry_count": 11,
+  "repair_ready_count": 0,
+  "issue_count": 87,
+  "issues": [
+    {
+      "severity": "error",
+      "item_id": "aml_australia_pack_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_australia_pack_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_australia_pack_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_australia_pack_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_australia_pack_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_pack_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_pack_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_pack_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_pack_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_pack_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_pack_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_pack_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_pack_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_pack_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_pack_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_canada_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_eu_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_global_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_hong_kong_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_india_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "aml_singapore_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_canada_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: audit_context.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: expected_assertions.json"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.required_file_not_confirmed",
+      "message": "required file not confirmed: case_notes.md"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.audit_context_unchecked",
+      "message": "audit_context_checked must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.expected_assertions_unchecked",
+      "message": "expected_assertions_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.case_notes_unchecked",
+      "message": "case_notes_checked must be true for gold cases"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.placeholders_not_cleared",
+      "message": "placeholders_removed must be true"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.missing_notes",
+      "message": "repair_notes must be non-empty"
+    },
+    {
+      "severity": "error",
+      "item_id": "fraud_eu_case_001",
+      "code": "repair.invalid_evidence_refs",
+      "message": "evidence_refs must be non-empty list of strings"
+    }
+  ]
+}
